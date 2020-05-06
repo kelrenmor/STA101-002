@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Case Study 2: China’s Economic Transformation</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Case Studies</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="policies.html">Policies</a>
+</li>
+<li>
+  <a href="donkeys.html">Dosing Donkeys</a>
+</li>
+<li>
+  <a href="incomechina.html">China's Economic Development</a>
+</li>
+<li>
+  <a href="dontworrybehappy.html">Stress Detection Using Wearables</a>
+</li>
+<li>
+  <a href="individual.html">Individual Project</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Case Study 2: China’s Economic Transformation</h1>
+
+</div>
+
+
+<div class="figure">
+<img src="images/china.jpg" alt="Source: Sarah (who is presumably tied to Ireland) at https://graphs.net/economic-growth-china.html" />
+<p class="caption">Source: Sarah (who is presumably tied to Ireland) at <a href="https://graphs.net/economic-growth-china.html" class="uri">https://graphs.net/economic-growth-china.html</a></p>
+</div>
+<div id="learning-objectives" class="section level1">
+<h1>Learning Objectives</h1>
+<ul>
+<li>learn the basic features that complicate analysis of longitudinal data</li>
+<li>understand why interaction is a crucial consideration for longitudinal data</li>
+<li>learn about the framework of hierarchical models and the linear mixed effects model</li>
+<li>weigh different covariance functions for correlated data</li>
+<li>learn about missing data patterns and mechanisms, and understand how to determine appropriate methods for analysis of data subject to missing values</li>
+</ul>
+</div>
+<div id="case-study-goals" class="section level1">
+<h1>Case Study Goals</h1>
+<ul>
+<li>Describe per capita household income (scaled to year 2015 dollars) over time in the CHNS</li>
+<li>Determine whether changes in per capita household income over time vary by province or urban/rural status</li>
+<li>Determine whether patterns of household income over time vary by income source (business, farming, fishing, etc.)</li>
+<li>Determine whether income inequality is increasing over time, and whether any changes vary across province, urban/rural status, or source of primary income</li>
+</ul>
+</div>
+<div id="data" class="section level1">
+<h1>Data</h1>
+<ul>
+<li>Data for this case study are available on the Sakai website in a SAS dataset. The function <em>read_sas</em> in the <em>haven</em> package can be used to pull them into R.</li>
+<li>Other CHNS household and individual-level data can be downloaded from the <a href="https://www.cpc.unc.edu/projects/china/data/datasets">CHNS Website</a> by providing basic personal information.</li>
+</ul>
+</div>
+<div id="assignments-and-reports" class="section level1">
+<h1>Assignments and Reports</h1>
+<ul>
+<li><p>Report, reproducible code, and video (Group assignment due 6/3): produce a 8 page (maximum) report using R markdown that clearly addresses the case study goals. This report should follow the format of a standard scientific report and should include sections for the introduction, methods, results, and discussion. The methods section should clearly identify the approach to model selection and evaluation, and the results section should clearly specify the final model selected, along with evidence the model provides a good fit to the data. Code should be fully reproducible.</p></li>
+<li><p>Peer review of reports (Individual assignment due 6/4): using the peer review rubric provided, provide constructive feedback on the other group’s report you have been assigned</p></li>
+<li><p>Revised report and response to reviews (Group assignment due 6/5): groups may submit revised reports and must submit a point-by-point response to the review comments provided</p></li>
+</ul>
+</div>
+<div id="resources" class="section level1">
+<h1>Resources</h1>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869031/">China Health and Nutrition Survey (CHNS) Overview</a></p>
+<p><a href="https://www.cpc.unc.edu/projects/china/data/datasets/Household%20Income%20Variable%20Construction.pdf/view">Construction of Household Income Variables in CHNS</a></p>
+<p><a href="http://home.iitk.ac.in/~shalab/regression/Chapter2-Regression-SimpleLinearRegressionAnalysis.pdf">Review of Ordinary Least Squares in Scalar Notation</a></p>
+<p><a href="https://www.stat.purdue.edu/~boli/stat512/lectures/topic3.pdf">Regression in Matrix Notation</a></p>
+</div>
+<div id="video-lectures-see-sakai" class="section level1">
+<h1>Video Lectures (See Sakai)</h1>
+<p><a href="https://sakai.duke.edu/access/content/group/4764eb60-fee9-4d30-8965-a6cfbe32615b/Project%20Part%20II/Videos/matrixlinearmodel.mp4">Simple Intro to Regression in Matrix Notation</a></p>
+<p><a href="https://sakai.duke.edu/access/content/group/4764eb60-fee9-4d30-8965-a6cfbe32615b/Project%20Part%20II/Videos/interaction.mp4">Interaction</a></p>
+<p>[Scale and Collinearity with the Intercept]</p>
+<p>[Longitudinal Data]</p>
+<p>[Missing Data]</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

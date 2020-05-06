@@ -1,0 +1,56 @@
+---
+title: "Individual Project"
+---
+
+```{r, echo=FALSE, include=FALSE}
+library(kableExtra)
+library(knitr)
+library(tidyverse)
+```
+
+
+# Learning Objectives
+
+- identify interesting hypotheses to evaluate in your own data
+- gain experience selecting appropriate statistical methods and writing an analysis plan that directly addresses your hypotheses
+- gain experience communicating statistical findings in writing and in an oral presentation
+
+# Case Study Goals
+
+- analyze data and interpret findings of your own study 
+- effectively communicate results of your analysis to your peers using compelling graphical displays and text
+
+
+
+# Data 
+
+Students seeking interesting datasets may wish to consider one or more of the following resources. Students may provide their own data, with the understanding that these data should not have been analyzed previously as part of a course assignment or internship (if you would like to take a prior analysis to the next level, please provide the full prior analysis write-up with your proposal for evaluation).
+
+  - <a href="http://derekogle.com/fishR/packages#packages-of-data">fishR</a> : this is a collection of freshwater fisheries datasets
+  - <a href="https://cornelllabofornithology.github.io/auk/">auk</a>: R packaage for downloading and reading the eBird data (spatio-temporal big data)
+  - <a href="https://www.fisheries.noaa.gov/alaska/commercial-fishing/alaska-groundfish-bottom-trawl-survey-data">Alaska Fish Surveys</a>: Alaska Groundfish Bottom Trawl Survey Data (spatio-temporal data involving ocean temperature and species abundance)
+  - One of many COVID datasets
+    - <a href="https://covidseverity.com/">COVID</a>: County and hospital-level data from Bin Yu's group
+    - <a href="https://github.com/MIDS-at-Duke/duke-social-distancing-survey">Social Distancing</a>: Survey on social distancing in NC
+    - <a href="https://github.com/DukeStatSci/covid19-data">More COVID</a>: Repository from DataFest 2020
+
+
+
+
+# Resources
+
+- Duke Global Health Institute Research Data Analysis Center (RDAC) Statistical Analysis Plan Template (on Sakai): while you don't need to follow this format, it's helpful to look at the structure and content needed when requesting analysis from a professional statistics core.
+- Structure of a Data Analysis Report by Prof. Brian Junker (on Sakai): great guide to the bones of a good project report
+
+# Reports 
+
+- A proposal is due May 19 at noon EDT. The proposal can be no more than 5 pages (11 point font or larger -- adhere to this requirement throughout) in length. The proposal should follow the helpful [USC Libraries Guidelines](https://libguides.usc.edu/writingguide/researchproposal). Note those guidelines are for a more substantial (10-35 page) proposal, so bear that in mind when interpreting their guidance.
+- Submission I of the individual project is due at noon on May 27.  This part should include your introduction and description of the data and can be no more than 2 pages in length. If you would like feedback on a draft analysis plan, you can include an additional page for that purpose, and an additional page can also be used for feedback on draft tables and figures. Feedback will be provided by peers and the instructional team. 
+- Submission II of the individual project is due at noon on June 8. This part should build on submission I, adding the methods section and preliminary results, and can be no more than 6 pages in length. Feedback will be provided by peers and the instructional team. 
+- Submission III of the individual project is due at noon on June 16. This part should build on prior submissions, adding the final results and discussion, and should be the complete report. Accompanying this report should be a 5 minute video presentation explaining the project and results. Feedback will be provided by peers and the instructional team. 
+- The final submission is due at 2pm on June 25 and will consist of (1) the final report, and (2) a point-by-point response to the feedback provided by peers and the instructional team, with any edits to the report noted.
+
+
+
+
+

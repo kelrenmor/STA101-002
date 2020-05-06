@@ -1,0 +1,99 @@
+---
+title: "STA 540: Case Studies in Statistical and Data Science"
+output: 
+  html_document:
+    toc_float: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+title: "STA 540: Case Studies in Statistical and Data Science"
+description: "Students apply statistical analysis skills to in-depth data analysis projects in a variety of areas of application. Students design and implement a data analysis plan based on substantive questions or hypotheses and communicate their results both technically and non-technically in oral presentations and written reports. Prerequisite: STA 360, 601, or 602. QS, W."
+markup: "mmark"
+---
+
+
+
+#Welcome to STA540!
+
+### Goal of the Course
+
+One goal of STA 540 is to prepare you for work as a practicing statistician. Important skills required of practicing statisticians (in addition to having a great set of tools in the statistics toolbox!) include creativity, critical thinking, teamwork, the ability to identify needed new skills and to learn them with minimal direction, the ability to craft a statistical analysis plan to fit a scientific hypothesis or question, teamwork, and the ability to communicate to a variety of audiences (including other statisticians, experts in areas other than statistics, a supervisor at work, and the general public, among others). 
+
+Mini lectures will include some new material you may not have seen, as well as material that you have already seen but that is often poorly understood. My goal is for you to be as prepared as possible to tackle real-world problems. This means that questions of interest will typically not be framed in much statistical detail -- part of your job will be to figure out which tools to use to analyze the data.  You should expect to be working without a "play by play" guide.
+
+Because of the nature of the course, we will encounter many more advanced topics that could easily be the subject of entire courses. For the benefit of those whose interest is piqued, I will post additional resources for further exploration. Part of the goal of this course is to learn how (and what!) to teach yourself in order to complete a project, but we'll also  delve more deeply into topics, time permitting.
+
+Flexibility, work ethic, knowledge of statistical science, pragmatism, the ability to proceed with minimal direction, professionalism, communication skills, and the willingness to try new things are all strong predictors of success in STA 540 (as well as in the working world). Don't worry if you haven't mastered all of these -- we'll work on them in class! 
+
+### Class Meetings
+
+<font color="#6CA0DC"><i class="fas fa-university fa-lg"></i></font> &nbsp; Zoom (asynchronous)
+
+<font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MTWThF (office hours with instructor or TA, some live lectures to be recorded)
+
+Recordings will be placed on Sakai, arranged by date.
+
+
+### Teaching team and office hours 
+
+
+Note: office hours may vary. Revisions to office hours will be noted via e-mail and on my webpage. 
+
+| Team member | Office hours | Location |
+| ----------  | -------------------------------------         | ---- |
+| [Professor Amy Herring](https://stat.duke.edu/people/amy-h-herring)  <a href="mailto:amy.herring@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | Weekdays 2:00-3:15pm EDT | Zoom (see Sakai) |
+ [TA Rapha&euml;l Morsomme](https://stat.duke.edu/people/raphaël-morsomme-0)  <a href="mailto:raphael.morsomme@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | TBA | Zoom (see Sakai)
+
+                  
+
+
+### Materials
+
+Texts and readings will be assigned as needed. We will support computation in R and RStudio. 
+
+
+### Topics and Important Dates
+
+STA 540 contain a mixture of short lecture, lab, and work sessions. Frequent smaller-scale assessments will be provided to check mastery and identify areas for additional focus. The schedule below lists deadlines for major assignments; the smaller-scale assessments will be assigned frequently (approximately every other day) with a tight turnaround to ensure no one falls behind.
+
+Note: this schedule is approximate and is likely to be modified as the course progresses. Some sessions may be swapped due to course timing. Assignments are due by noon EDT unless otherwise specified. 
+
+
+
+|Date           |Topic                      |Deliverables     |
+| ----------    | ---------------------------         | --------------- |
+| May 13     | Welcome and Introductions, Course Goals, Writing Scientific Reports, and  Popes      |         |
+| May 14    | Case Study 1: Dosing Donkeys; Introduction of Lab Case  |   Getting to Know You Video |             
+| May 15     | What is a Good Model?      |  Popes Assignment (Individual)     |
+| May 18    | Simulations, Evaluating Models;  Lab Case   |  Research Ethics and Privacy Video (Group) |
+| May 19   | Loss Functions | Individual Project Proposal (Report and Video)   |
+| May 20   | Q\&A |   |
+| May 21  | Writing Methods, Results, and Discussion Sections; Lab Case | Case Study 1 (Report, Video, Reproducible Code); Feedback on Individual Proposals  |
+| May 22  | Regression in Matrix Notation; Interaction | Case Study 1 Comments (including reproducibility)   |
+| May 26  | Case Study 2: China's Economic Development and  Household Income; Gini Index | Case Study 1 Response and Revision; Regression Simulation (Individual)    |
+| May 27  | Recap of Case Study 1; Longitudinal Data Analysis: Mixed Effects Model  | Individual Project Submission I: Introduction and Data Description |
+| May 28  | Mixed Effects Model, Covariance |   |
+| May 29  | Missing Data |  Comments on Individual Project Submission I |
+| June 1  | Missing Data Simulation Study |  |
+| June 2 |  |  |
+| June 3 |   |  Case Study 2 (Report, Video, Reproducible Code) |
+| June 4  |         | Case Study 2 Comments (peer and instructor, including reproducibility) |
+| June 5    |  | Case Study 2 Response and Revision   | 
+| June 8   | Recap of Case Study 2 | Individual Project Submission II: Methods and Preliminary Results (Report, Video, Reproducible Code) | 
+| June 9   | Case Study 3: Wearables and Stress |  |
+| June 10  |  | Comments on Individual Project Submission II (peer and instructor) |
+| June 11   |  |   |
+| June 12    | Guest Lecture on Professional Opportunities: Prof David Banks |   |
+| June 15  | |  | 
+| June 16    | | Case Study 3 (Report, Video, Reproducible Code)  | 
+| June 17    |  |  Case Study 3 Comments (peer and instructor, including reproducibility) | 
+| June 18   |  | Case Study 2 Response and Revision |
+| June 19   | | Individual Project Submission III (Report, Video, Reproducible Code) | 
+| June 22   | | Individual Project Comments on Submission III (peer and instructor) |  
+| June 25    | | Individual Project Response and Final Revision (due at 2pm) | 
+

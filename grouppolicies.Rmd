@@ -1,0 +1,51 @@
+---
+  title: "Group dynamics"
+---
+  
+```{r, echo=FALSE, include=FALSE}
+library(kableExtra)
+library(knitr)
+library(tidyverse)
+```
+
+### Policies
+
+Your group has a number of responsibilities for problem and project assignments, described below.
+
+- Designate a coordinator, recorder, reproducibility checker, and monitor/reviewer for each assignment. These should vary so that each group member takes a different role on a new assignment. For smaller teams, members may need to take on multiple roles.
+- Agree on meeting times in advance and on what each member should have complete before the meetings (readings, initial analysis, coding, etc.).
+- Do the required individual preparation.
+- Coordinator sends reminder before meeting that includes meeting location, time, and individual preparation assignments
+- Meet and work. Coordinator keeps everyone on task and makes sure everyone is involved, recorder prepares final solution to be turned in, monitor makes sure everyone understands the solution, including the coding, the checker double-checks the work for reproducibility (and errors!), and the reviewer is responsible for (1) sharing comments on the graded project (and interim submissions) with the team (2) leading a discussion about them, with a focus on the revision and how to improve moving forward, and (3) reviewing effort apportionment in a constructive conversation with the team.
+- Checker turns in assignment, which also indicates which student took on each role.
+- All team members complete written evaluations of effort put forth by other team members.
+- Reviewer coordinates review of returned assignments.
+
+### Team expectations agreement
+
+On a single sheet of paper, list the names of all group members along with a list of expectations the team wishes to adopt.  Suggestions are below, but you can add or subtract any items as needed. Each member should sign the sheet and turn it in within two days of group formation.
+
+Potential expectations include the following (not an exhaustive list!):
+
+- Make a serious effort at assigned work before meetings
+- Make sure anyone who misses a meeting for a good cause gets caught up on progress
+- Attend meetings
+- Show up on time and stay for full meeting
+- Notify project coordinator as soon as possible if unable to attend a meeting or fulfill a responsibility
+- Listen thoughtfully to all team members
+- Follow up promptly on assigned tasks
+- Complete high quality work
+- Discuss team-related issues frankly and honestly with the group
+- You get the picture!
+
+
+
+<tiny> Group policies adapted from Felder and Brent, 2000 </tiny>
+
+### Group evaluations
+
+After each case study, each group member will provide evaluations of the other team members on Sakai. In the case you feel one or more team members deserves a different grade on the assignment than the others, you'll provide a description of why that member or members deserves a different grade. 
+
+If a team member indicates each group member participated appropriately, but later voices a complaint that the work was not equally divided, then evaluations will be consulted (and if, at the time, you felt work was equally divided, then that will be used as strong evidence against your claim).  That is, it's generally not to your advantage to ``be nice'' and give everyone equal credit if it is not deserved.
+
+At any time a group can request a meeting with the instructor to discuss group dynamics or other challenges.

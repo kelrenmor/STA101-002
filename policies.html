@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Policies</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Case Studies</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="policies.html">Policies</a>
+</li>
+<li>
+  <a href="donkeys.html">Dosing Donkeys</a>
+</li>
+<li>
+  <a href="elec02.html">China's Economic Development</a>
+</li>
+<li>
+  <a href="fun03.html">Stress Detection Using Wearables</a>
+</li>
+<li>
+  <a href="individual.html">Individual Project</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Policies</h1>
+
+</div>
+
+
+<div id="diversity-inclusiveness" class="section level3">
+<h3>Diversity &amp; inclusiveness</h3>
+<p>The Duke University Community Commitment states: “Because diversity is essential to fulfilling the university’s mission, Duke is committed to building an inclusive and diverse university community. Every student, faculty, and staff member —whatever their race, gender, age, ethnicity, cultural heritage or nationality; religious or political beliefs; sexual orientation or gender identity; or socioeconomic, veteran or ability status—has the right to inclusion, respect, agency and voice in the Duke community. Further, all members of the University community have a responsibility to uphold these values and actively foster full participation in university life.”</p>
+<p>It is my goal for our learning environment to facilitate learning and intellectual development for everyone. To help accomplish this:</p>
+<ul>
+<li>If you have a name and/or set of pronouns that differ from those that appear in your official Duke records, please let me know.</li>
+<li>We are constantly learning more about diverse perspectives and identities. If something occurred in class that made you feel uncomfortable, please talk to me about it.</li>
+</ul>
+</div>
+<div id="academic-integrity" class="section level3">
+<h3>Academic integrity</h3>
+<p>Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, respect, and accountability. Citizens of this community commit to reflect upon and uphold these principles in all academic and nonacademic endeavors, and to protect and promote a culture of integrity.</p>
+<p>Remember the Duke Community Standard that you have agreed to abide by:</p>
+<p>To uphold the Duke Community Standard:</p>
+<ul>
+<li>I will not lie, cheat, or steal in my academic endeavors;</li>
+<li>I will conduct myself honorably in all my endeavors; and</li>
+<li>I will act if the Standard is compromised.</li>
+</ul>
+<p>Cheating or plagiarism on assignments, lying about an illness or absence and other forms of academic dishonesty are a breach of trust with classmates and faculty, violate the <a href="http://www.studentaffairs.duke.edu/conduct/resources/dcs">Duke Community Standard</a>, and will not be tolerated. Such incidences will result in a 0 grade. Additionally, there may be penalties to your final class grade along with being reported to the <a href="http://www.studentaffairs.duke.edu/conduct/about/ucbhearings">Undergraduate Conduct Board</a> (undergraduates) or relevant Director of Graduate Studies (graduate students).</p>
+<p>Please review the Academic Dishonesty policies <a href="https://studentaffairs.duke.edu/conduct">here</a>.</p>
+<ul>
+<li><p>Occasionally datasets we are privileged to use in class are confidential and cannot be distributed more broadly. Further dissemination of such datasets, made available on Sakai, will be considered a violation of the Duke Community Standard. If you are unsure whether you can use a dataset for purposes beyond class, please ask me.</p></li>
+<li><p>Much of the work assigned in class is collaborative. The individual case study must be completed independently. Group case studies are to be completed by groups. For other assignments, while you may talk about strategies for completing them with other students in the class, the work you submit must be your own individual work.</p></li>
+<li><p>Important note: do not share your course materials with other students after completion of this course. Doing so will be considered a violation of the Duke Community Standard.</p></li>
+</ul>
+<p><strong>Referencing code:</strong> The web contains an enormous volume of code that you may find useful. You are welcome to make use of any online resources (e.g. StackOverflow), but you must explicitly cite your sources. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. On the individual case study you may not directly share code with another student in this class, and on team assignments you may not share code with another team in this class (you are welcome to discuss the problems together and ask for advice, but you may not send or make use of code from another team).</p>
+</div>
+<div id="course-components" class="section level3">
+<h3>Course components</h3>
+<div id="class-sessions" class="section level4">
+<h4>Class sessions</h4>
+<p>Any live sessions, which would occur weekdays 2-3:15 EDT, will be recorded and made available on Sakai.</p>
+</div>
+<div id="teams" class="section level4">
+<h4>Teams</h4>
+<p>Each group case study will be completed by a team of 2-3 students. Groups will change throughout the semester to allow you the opportunity to work with more students. Groups should adhere to specified <a href="grouppolicies.html">group policies</a>.</p>
+</div>
+<div id="group-case-studies" class="section level4">
+<h4>Group case studies</h4>
+<p>STA 540 involves detailed analysis of case studies using current, relevant data. Each case study will involve two submissions by the group, as well as a peer review of another group’s submission. Case study submissions will involve an initial written report and an oral presentation to be viewed by the other teams. After receipt of comments from the instructor and classmates, groups will have the opportunity to submit a revised report.</p>
+<p>Individual contributions to each submission will be assessed. Team members must provide these assessments in order to receive credit for an assignment. An individual team member’s grade will be modified if assessments indicate this is appropriate.</p>
+<p>Each case study will have a page limit, and under no circumstances should font sizes less than 11 point be used, with the exception of labels in figures (and then only if they are still clearly legible to readers of all ages).</p>
+</div>
+<div id="peer-review" class="section level4">
+<h4>Peer review</h4>
+<p>Students will be asked (on an individual, not group, basis) to provide feedback and comments on the case studies presented by other groups throughout the course. This feedback will be provided to the groups and will also be assessed as part of the course.</p>
+</div>
+<div id="individual-project" class="section level4">
+<h4>Individual project</h4>
+<p>Each student will complete an individual project as part of the course. The individual project should use data that have not previously been used by the student in a project, and the analysis should be entirely the student’s own work. Any external resources used should be clearly documented. The student may use self-identified data or a resource provided by the instructor.</p>
+</div>
+<div id="lab-and-class-activities" class="section level4">
+<h4>Lab and class activities</h4>
+<p>A number of smaller scale assessments will be administered, with the goal of honing skills in a variety of areas, including scientific communication, model evaluation, use and conduct of simulation studies, and interpretation of results. Additional topics will be added based on the course trajectory and student needs. These activities will provide a way to obtain individual feedback on important statistical science skills.</p>
+</div>
+</div>
+<div id="grading" class="section level3">
+<h3>Grading</h3>
+<p>Your final grade will be comprised of the following.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>% of Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Individual Assignments (including peer reviews)</td>
+<td>10%</td>
+</tr>
+<tr class="even">
+<td>Group case study 1</td>
+<td>20%</td>
+</tr>
+<tr class="odd">
+<td>Group case study 2</td>
+<td>20%</td>
+</tr>
+<tr class="even">
+<td>Group case study 3</td>
+<td>20%</td>
+</tr>
+<tr class="odd">
+<td>Individual case study proposal and part I</td>
+<td>5%</td>
+</tr>
+<tr class="even">
+<td>Individual case study part II</td>
+<td>10%</td>
+</tr>
+<tr class="odd">
+<td>Individual case study final report (part III) and revision</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
+<p>Each report will be graded based on the initial submission, with the ability to earn additional points based on the revised report.</p>
+<p>Cumulative numerical averages of 90 - 100 are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-; however, the exact ranges for letter grades will be determined at the end of the semester. The grade ranges may need to be shifted to the left, and when appropriate, students will be given guidance on interpreting grades when assignments are returned. The more evidence there is that the class is performing at the highest level, the higher the grade distribution will be.</p>
+</div>
+<div id="accommodations" class="section level3">
+<h3>Accommodations</h3>
+<ul>
+<li>Students who need accommodations in this class should contact the <a href="http://access.duke.edu/students/">Student Disability Access Office</a> as soon as possible to ensure appropriate accommodations can be made.</li>
+</ul>
+</div>
+<div id="excused-absences" class="section level3">
+<h3>Excused absences</h3>
+<p>If you are faced with a personal or family emergency or a chronic health condition that interferes with your ability to attend or complete classes, you should contact your academic dean’s office (undergraduate) or the Director of Graduate Studies in your department (graduate). See more information on policies surrounding these conditions at <a href="https://trinity.duke.edu/undergraduate/academic-policies/personal-emergencies" class="uri">https://trinity.duke.edu/undergraduate/academic-policies/personal-emergencies</a>.</p>
+</div>
+<div id="late-missed-work" class="section level3">
+<h3>Late / missed work</h3>
+<p>Late work policy for assignments:</p>
+<ul>
+<li>late, but within 24 hours of due date/time: -20%</li>
+<li>any later: no credit</li>
+</ul>
+</div>
+<div id="regrade-requests" class="section level3">
+<h3>Regrade requests</h3>
+<p>Regrade requests must be made within two days of when a report is returned. These will be honored if points were tallied incorrectly, or if you feel part of your report is correct, but it was marked wrong (these things do happen!). No regrade will be made to alter the number of points deducted for an issue. When a regrade request is evaluated, if new errors are identified, additional points may be deducted from the grade. The last day to file a grade change request is June 22.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

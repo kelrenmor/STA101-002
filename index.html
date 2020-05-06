@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>STA 540: Case Studies in Statistical and Data Science</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Case Studies</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="policies.html">Policies</a>
+</li>
+<li>
+  <a href="donkeys.html">Dosing Donkeys</a>
+</li>
+<li>
+  <a href="incomechina.html">China's Economic Development</a>
+</li>
+<li>
+  <a href="dontworrybehappy.html">Stress Detection Using Wearables</a>
+</li>
+<li>
+  <a href="individual.html">Individual Project</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">STA 540: Case Studies in Statistical and Data Science</h1>
+
+</div>
+
+
+<div id="welcome-to-sta540" class="section level1">
+<h1>Welcome to STA540!</h1>
+<div id="goal-of-the-course" class="section level3">
+<h3>Goal of the Course</h3>
+<p>One goal of STA 540 is to prepare you for work as a practicing statistician. Important skills required of practicing statisticians (in addition to having a great set of tools in the statistics toolbox!) include creativity, critical thinking, teamwork, the ability to identify needed new skills and to learn them with minimal direction, the ability to craft a statistical analysis plan to fit a scientific hypothesis or question, teamwork, and the ability to communicate to a variety of audiences (including other statisticians, experts in areas other than statistics, a supervisor at work, and the general public, among others).</p>
+<p>Mini lectures will include some new material you may not have seen, as well as material that you have already seen but that is often poorly understood. My goal is for you to be as prepared as possible to tackle real-world problems. This means that questions of interest will typically not be framed in much statistical detail – part of your job will be to figure out which tools to use to analyze the data. You should expect to be working without a “play by play” guide.</p>
+<p>Because of the nature of the course, we will encounter many more advanced topics that could easily be the subject of entire courses. For the benefit of those whose interest is piqued, I will post additional resources for further exploration. Part of the goal of this course is to learn how (and what!) to teach yourself in order to complete a project, but we’ll also delve more deeply into topics, time permitting.</p>
+<p>Flexibility, work ethic, knowledge of statistical science, pragmatism, the ability to proceed with minimal direction, professionalism, communication skills, and the willingness to try new things are all strong predictors of success in STA 540 (as well as in the working world). Don’t worry if you haven’t mastered all of these – we’ll work on them in class!</p>
+</div>
+<div id="class-meetings" class="section level3">
+<h3>Class Meetings</h3>
+<p><font color="#6CA0DC"><i class="fas fa-university fa-lg"></i></font>   Zoom (asynchronous)</p>
+<p><font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font>   MTWThF (office hours with instructor or TA, some live lectures to be recorded)</p>
+<p>Recordings will be placed on Sakai, arranged by date.</p>
+</div>
+<div id="teaching-team-and-office-hours" class="section level3">
+<h3>Teaching team and office hours</h3>
+<p>Note: office hours may vary. Revisions to office hours will be noted via e-mail and on my webpage.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Team member</th>
+<th>Office hours</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://stat.duke.edu/people/amy-h-herring">Professor Amy Herring</a> <a href="mailto:amy.herring@duke.edu" title="email"><i class="fa fa-envelope"></i></a>  </td>
+<td>Weekdays 2:00-3:15pm EDT</td>
+<td>Zoom (see Sakai)</td>
+</tr>
+<tr class="even">
+<td><a href="https://stat.duke.edu/people/raphaël-morsomme-0">TA Raphaël Morsomme</a> <a href="mailto:raphael.morsomme@duke.edu" title="email"><i class="fa fa-envelope"></i></a>  </td>
+<td>TBA</td>
+<td>Zoom (see Sakai)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="materials" class="section level3">
+<h3>Materials</h3>
+<p>Texts and readings will be assigned as needed. We will support computation in R and RStudio.</p>
+</div>
+<div id="topics-and-important-dates" class="section level3">
+<h3>Topics and Important Dates</h3>
+<p>STA 540 contain a mixture of short lecture, lab, and work sessions. Frequent smaller-scale assessments will be provided to check mastery and identify areas for additional focus. The schedule below lists deadlines for major assignments; the smaller-scale assessments will be assigned frequently (approximately every other day) with a tight turnaround to ensure no one falls behind.</p>
+<p>Note: this schedule is approximate and is likely to be modified as the course progresses. Some sessions may be swapped due to course timing. Assignments are due by noon EDT unless otherwise specified.</p>
+<table style="width:76%;">
+<colgroup>
+<col width="15%" />
+<col width="38%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Topic</th>
+<th>Deliverables</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>May 13</td>
+<td>Welcome and Introductions, Course Goals, Writing Scientific Reports, and Popes</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>May 14</td>
+<td>Case Study 1: Dosing Donkeys; Introduction of Lab Case</td>
+<td>Getting to Know You Video</td>
+</tr>
+<tr class="odd">
+<td>May 15</td>
+<td>What is a Good Model?</td>
+<td>Popes Assignment (Individual)</td>
+</tr>
+<tr class="even">
+<td>May 18</td>
+<td>Simulations, Evaluating Models; Lab Case</td>
+<td>Research Ethics and Privacy Video (Group)</td>
+</tr>
+<tr class="odd">
+<td>May 19</td>
+<td>Loss Functions</td>
+<td>Individual Project Proposal (Report and Video)</td>
+</tr>
+<tr class="even">
+<td>May 20</td>
+<td>Q&amp;A</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>May 21</td>
+<td>Writing Methods, Results, and Discussion Sections; Lab Case</td>
+<td>Case Study 1 (Report, Video, Reproducible Code); Feedback on Individual Proposals</td>
+</tr>
+<tr class="even">
+<td>May 22</td>
+<td>Regression in Matrix Notation; Interaction</td>
+<td>Case Study 1 Comments (including reproducibility)</td>
+</tr>
+<tr class="odd">
+<td>May 26</td>
+<td>Case Study 2: China’s Economic Development and Household Income; Gini Index</td>
+<td>Case Study 1 Response and Revision; Regression Simulation (Individual)</td>
+</tr>
+<tr class="even">
+<td>May 27</td>
+<td>Recap of Case Study 1; Longitudinal Data Analysis: Mixed Effects Model</td>
+<td>Individual Project Submission I: Introduction and Data Description</td>
+</tr>
+<tr class="odd">
+<td>May 28</td>
+<td>Mixed Effects Model, Covariance</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>May 29</td>
+<td>Missing Data</td>
+<td>Comments on Individual Project Submission I</td>
+</tr>
+<tr class="odd">
+<td>June 1</td>
+<td>Missing Data Simulation Study</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>June 2</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>June 3</td>
+<td></td>
+<td>Case Study 2 (Report, Video, Reproducible Code)</td>
+</tr>
+<tr class="even">
+<td>June 4</td>
+<td></td>
+<td>Case Study 2 Comments (peer and instructor, including reproducibility)</td>
+</tr>
+<tr class="odd">
+<td>June 5</td>
+<td></td>
+<td>Case Study 2 Response and Revision</td>
+</tr>
+<tr class="even">
+<td>June 8</td>
+<td>Recap of Case Study 2</td>
+<td>Individual Project Submission II: Methods and Preliminary Results (Report, Video, Reproducible Code)</td>
+</tr>
+<tr class="odd">
+<td>June 9</td>
+<td>Case Study 3: Wearables and Stress</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>June 10</td>
+<td></td>
+<td>Comments on Individual Project Submission II (peer and instructor)</td>
+</tr>
+<tr class="odd">
+<td>June 11</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>June 12</td>
+<td>Guest Lecture on Professional Opportunities: Prof David Banks</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>June 15</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>June 16</td>
+<td></td>
+<td>Case Study 3 (Report, Video, Reproducible Code)</td>
+</tr>
+<tr class="odd">
+<td>June 17</td>
+<td></td>
+<td>Case Study 3 Comments (peer and instructor, including reproducibility)</td>
+</tr>
+<tr class="even">
+<td>June 18</td>
+<td></td>
+<td>Case Study 2 Response and Revision</td>
+</tr>
+<tr class="odd">
+<td>June 19</td>
+<td></td>
+<td>Individual Project Submission III (Report, Video, Reproducible Code)</td>
+</tr>
+<tr class="even">
+<td>June 22</td>
+<td></td>
+<td>Individual Project Comments on Submission III (peer and instructor)</td>
+</tr>
+<tr class="odd">
+<td>June 25</td>
+<td></td>
+<td>Individual Project Response and Final Revision (due at 2pm)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
