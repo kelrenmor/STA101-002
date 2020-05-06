@@ -1,24 +1,23 @@
-name: Case Studies in Statistical and Data Science
+name: Data Analysis and Statistical Inference
 output_dir: '.'
 navbar:
-  title: Case Studies
+  title: STA101-002
   type: inverse
   left:
   - text: Home
     href: index.html
-  - text: Policies
-    href: policies.html
-  - text: Dosing Donkeys
-    href: donkeys.html
-  - text: China's Economic Development
-    href: incomechina.html
-  - text: Stress Detection Using Wearables
-    href: dontworrybehappy.html
-  - text: Individual Project
-    href: individual.html
-  
-
-  
+  - text: Syllabus
+    href: syllabus.html
+  - text: Problem sets
+    href: problem_sets.html
+  - text: Daily schedule
+    href: daily_schedule.html
+  - text: Sakai
+    href: https://sakai.duke.edu/
+  - text: Piazza
+    href: https://piazza.com/class/k9ucop5biop1do
+  - text: Rstudio
+    href: https://vm-manage.oit.duke.edu/containers
 
 output:html_document:
   theme: yeti

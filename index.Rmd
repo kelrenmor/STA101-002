@@ -1,5 +1,5 @@
 ---
-title: "STA 540: Case Studies in Statistical and Data Science"
+title: "STA 101-002: Data Analysis and Statistical Inference (Summer 1 2020)"
 output: 
   html_document:
     toc_float: true
@@ -11,24 +11,18 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ---
-title: "STA 540: Case Studies in Statistical and Data Science"
-description: "Students apply statistical analysis skills to in-depth data analysis projects in a variety of areas of application. Students design and implement a data analysis plan based on substantive questions or hypotheses and communicate their results both technically and non-technically in oral presentations and written reports. Prerequisite: STA 360, 601, or 602. QS, W."
+title: "STA 101-002: Data Analysis and Statistical Inference (Summer 1 2020)"
+description: ". Prerequisite: None."
 markup: "mmark"
 ---
 
+# Welcome to STA101-002!
 
+### About the Course
 
-#Welcome to STA540!
+STA 101-002 introduces students to the discipline of statistics as a science of understanding and analyzing data. Throughout the semester, students will learn how to effectively make use of data in the face of uncertainty: How to collect data, how to analyze data, and how to use data to make inferences and conclusions about real world phenomena. The course emphasizes examples from marine science, environmental science, conservation and energy issues. It is ordinarily taught in person at Duke's Marine Lab campus, but will be taught asynchronously online for Summer Term 1 2020.
 
-### Goal of the Course
-
-One goal of STA 540 is to prepare you for work as a practicing statistician. Important skills required of practicing statisticians (in addition to having a great set of tools in the statistics toolbox!) include creativity, critical thinking, teamwork, the ability to identify needed new skills and to learn them with minimal direction, the ability to craft a statistical analysis plan to fit a scientific hypothesis or question, teamwork, and the ability to communicate to a variety of audiences (including other statisticians, experts in areas other than statistics, a supervisor at work, and the general public, among others). 
-
-Mini lectures will include some new material you may not have seen, as well as material that you have already seen but that is often poorly understood. My goal is for you to be as prepared as possible to tackle real-world problems. This means that questions of interest will typically not be framed in much statistical detail -- part of your job will be to figure out which tools to use to analyze the data.  You should expect to be working without a "play by play" guide.
-
-Because of the nature of the course, we will encounter many more advanced topics that could easily be the subject of entire courses. For the benefit of those whose interest is piqued, I will post additional resources for further exploration. Part of the goal of this course is to learn how (and what!) to teach yourself in order to complete a project, but we'll also  delve more deeply into topics, time permitting.
-
-Flexibility, work ethic, knowledge of statistical science, pragmatism, the ability to proceed with minimal direction, professionalism, communication skills, and the willingness to try new things are all strong predictors of success in STA 540 (as well as in the working world). Don't worry if you haven't mastered all of these -- we'll work on them in class! 
+Work ethic, the ability to self-motivate, flexibility, logical thinking, professionalism, and communication skills are all strong predictors of success in STA 101-002 (as well as in the working world). Don't worry if you haven't mastered all of these -- we'll work on them in class! 
 
 ### Class Meetings
 
@@ -42,58 +36,61 @@ Recordings will be placed on Sakai, arranged by date.
 ### Teaching team and office hours 
 
 
-Note: office hours may vary. Revisions to office hours will be noted via e-mail and on my webpage. 
+Note: office hours may vary. Revisions to office hours will be noted via e-mail and on the webpage. 
 
 | Team member | Office hours | Location |
 | ----------  | -------------------------------------         | ---- |
-| [Professor Amy Herring](https://stat.duke.edu/people/amy-h-herring)  <a href="mailto:amy.herring@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | Weekdays 2:00-3:15pm EDT | Zoom (see Sakai) |
- [TA Rapha&euml;l Morsomme](https://stat.duke.edu/people/raphaël-morsomme-0)  <a href="mailto:raphael.morsomme@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | TBA | Zoom (see Sakai)
-
-                  
-
+| [Professor Kelly Moran](https://stat.duke.edu/people/kelly-moran)  <a href="mailto:kelly.r.moran@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | TBA | Zoom |
+ [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo)  <a href="mailto:ezinne.nwankwo@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | TBA | Zoom
 
 ### Materials
 
-Texts and readings will be assigned as needed. We will support computation in R and RStudio. 
-
+The course textbook is [OpenIntro Statistics 4th Ed](https://leanpub.com/openintro-statistics) - Diez, Barr, Cetinkaya-Rundel (2019). It is free online, or can be purchased from Amazon at cost of printing. Additional texts and readings will be assigned as needed. We will support computation in R and RStudio. You will be allowed to use a calculator in class; a simple calculator that can take square roots will be sufficient.
 
 ### Topics and Important Dates
 
-STA 540 contain a mixture of short lecture, lab, and work sessions. Frequent smaller-scale assessments will be provided to check mastery and identify areas for additional focus. The schedule below lists deadlines for major assignments; the smaller-scale assessments will be assigned frequently (approximately every other day) with a tight turnaround to ensure no one falls behind.
+STA 101-002 contain a mixture of short video lectures, textbook readings, seminar presentations, lab, and work sessions. Frequent smaller-scale problem sets and labs will be provided to check mastery and identify areas for additional focus. There is a tight turnaround on due dates to ensure no one falls behind; in return, .
 
-Note: this schedule is approximate and is likely to be modified as the course progresses. Some sessions may be swapped due to course timing. Assignments are due by noon EDT unless otherwise specified. 
+Note: this schedule is approximate and is likely to be modified as the course progresses. Some sessions may be swapped due to course timing. Assignments are due by 11:59 PM EDT unless otherwise specified. 
 
-
-
-|Date           |Topic                      |Deliverables     |
-| ----------    | ---------------------------         | --------------- |
-| May 13     | Welcome and Introductions, Course Goals, Writing Scientific Reports, and  Popes      |         |
-| May 14    | Case Study 1: Dosing Donkeys; Introduction of Lab Case  |   Getting to Know You Video |             
-| May 15     | What is a Good Model?      |  Popes Assignment (Individual)     |
-| May 18    | Simulations, Evaluating Models;  Lab Case   |  Research Ethics and Privacy Video (Group) |
-| May 19   | Loss Functions | Individual Project Proposal (Report and Video)   |
-| May 20   | Q\&A |   |
-| May 21  | Writing Methods, Results, and Discussion Sections; Lab Case | Case Study 1 (Report, Video, Reproducible Code); Feedback on Individual Proposals  |
-| May 22  | Regression in Matrix Notation; Interaction | Case Study 1 Comments (including reproducibility)   |
-| May 26  | Case Study 2: China's Economic Development and  Household Income; Gini Index | Case Study 1 Response and Revision; Regression Simulation (Individual)    |
-| May 27  | Recap of Case Study 1; Longitudinal Data Analysis: Mixed Effects Model  | Individual Project Submission I: Introduction and Data Description |
-| May 28  | Mixed Effects Model, Covariance |   |
-| May 29  | Missing Data |  Comments on Individual Project Submission I |
-| June 1  | Missing Data Simulation Study |  |
-| June 2 |  |  |
-| June 3 |   |  Case Study 2 (Report, Video, Reproducible Code) |
-| June 4  |         | Case Study 2 Comments (peer and instructor, including reproducibility) |
-| June 5    |  | Case Study 2 Response and Revision   | 
-| June 8   | Recap of Case Study 2 | Individual Project Submission II: Methods and Preliminary Results (Report, Video, Reproducible Code) | 
-| June 9   | Case Study 3: Wearables and Stress |  |
-| June 10  |  | Comments on Individual Project Submission II (peer and instructor) |
-| June 11   |  |   |
-| June 12    | Guest Lecture on Professional Opportunities: Prof David Banks |   |
-| June 15  | |  | 
-| June 16    | | Case Study 3 (Report, Video, Reproducible Code)  | 
-| June 17    |  |  Case Study 3 Comments (peer and instructor, including reproducibility) | 
-| June 18   |  | Case Study 2 Response and Revision |
-| June 19   | | Individual Project Submission III (Report, Video, Reproducible Code) | 
-| June 22   | | Individual Project Comments on Submission III (peer and instructor) |  
-| June 25    | | Individual Project Response and Final Revision (due at 2pm) | 
+|Date |Topic |Due |Special notes |
+| ----------- | --------------------------- | --------------- | --------------- |
+| Wednesday,  May 13 | Data Collection + Observational studies and experiments || First day of class! Begin Unit 1: Introduction to Data. |
+| Thursday,  May 14| Exploratory data analysis | | |
+| Friday,  May 15| More exploratory data analysis |  | |
+| ----------- | --------------------------- | --------------- | Enjoy your weekend! |
+| Monday,  May 18| Introduction to statistical inference | Lab 1 | |
+| Tuesday,  May 19| Probability and conditional probability | PS1 + PA1 | Begin Unit 2: Probability and distributions |
+| Wednesday,  May 20| Bayes' theorem and Bayesian inference | | |
+| Thursday,  May 21| Normal + Binomial distribution | Lab 2 | |
+| Friday,  May 22| Variability in estimates and CLT | PS2 + PA2 | Begin Unit 3: Foundations for inference |
+| ----------- | --------------------------- | --------------- | Enjoy your weekend! |
+| Monday,  May 25|  | | No class Memorial Day |
+| Tuesday,  May 26| Confidence intervals | | |
+| Wednesday,  May 27| Midterm 1 review | | |
+| Thursday,  May 28| Midterm 1 | Lab 3 | |
+| Friday,  May 29| Hypothesis tests | | |
+| ----------- | --------------------------- | --------------- | Enjoy your weekend! |
+| Monday,  June 1| Inference using the t-distribution | PS3 + PA3 + Lab 4 | Begin Unit 4: Inference for numerical variables |
+| Tuesday,  June 2| Bootstrapping |  | |
+| Wednesday,  June 3| Power | | |
+| Thursday,  June 4| ANOVA | Lab 5 | |
+| Friday,  June 5| Inference for a single proportion | PS4 + PA4 | Begin Unit 5: Inference for categorical variables |
+| ----------- | --------------------------- | --------------- | Enjoy your weekend! |
+| Monday,  June 8| Inference for comparing two proportions | Lab 6 | |
+| Tuesday,  June 9| Chi-square testing |  |  |
+| Wednesday,  June 10| Midterm 2 review |  | |
+| Thursday,  June 11| Midterm 2 | Project proposal |  |
+| Friday,  June 12| Introduction to regression | PS5 + PA5 | Begin Unit 6: Introduction to linear regression |
+| ----------- | --------------------------- | --------------- | Enjoy your weekend! |
+| Monday,  June 15| Outliers and Inference for SLR | Lab 7 | |
+| Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 | Begin Unit 7: Multiple linear regression |
+| Wednesday,  June 17| Model selection and diagnostics for MLR |  | |
+| Thursday,  June 18| Transformation and case studies | Lab 8 | |
+| Friday,  June 19| Review and project work | PS7 + PA7 | |
+| ----------- | --------------------------- | --------------- | Enjoy your weekend! |
+| Monday,  June 22| Review and project work | Lab 9 + Project | |
+| Tuesday,  June 23|  View and respond to project presentations | Project reflection |  |
+| Wednesday,  June 24| Reading day |  | |
+| Thursday,  June 25| Final exam |  |  Last day of class! |
 
