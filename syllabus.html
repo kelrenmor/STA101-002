@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Syllabus</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STA101-002</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="problem_sets.html">Problem sets</a>
+</li>
+<li>
+  <a href="daily_schedule.html">Daily schedule</a>
+</li>
+<li>
+  <a href="https://sakai.duke.edu/">Sakai</a>
+</li>
+<li>
+  <a href="https://piazza.com/class/k9ucop5biop1do">Piazza</a>
+</li>
+<li>
+  <a href="https://vm-manage.oit.duke.edu/containers">Rstudio</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Syllabus</h1>
+
+</div>
+
+
+<hr />
+<div id="class-meeting-information" class="section level2">
+<h2>Class meeting information</h2>
+<p>This is an online, asynchronous introductory statistics course designed to develop practical skills in understanding and analyzing marine science, environmental, and energy data. Asynchronous means that there is no designated class meeting time; students access materials, view lectures, and participate in the class online discussion forum on their own schedule. However, the content calendar and due dates are designed such that students will undergo shared consistent learning over the 6 week Summer 1 term, and students should expect there to be some kind of deadline most weekdays. The course will also include optional “live” virtual office hours and group work sessions; these will be scheduled based on an availability survey taken at the beginning of the course and within groups, respectively.</p>
+</div>
+<div id="course-goals-objectives" class="section level2">
+<h2>Course goals &amp; objectives</h2>
+<p>This course introduces students to the discipline of statistics as a science of understanding and analyzing data. Throughout the semester, students will learn how to effectively make use of data in the face of uncertainty: how to collect data, how to analyze data, and how to use data to make inferences and conclusions about real world phenomena. Examples, labs, and project will emphasize marine science, environmental, and energy issues.</p>
+<p>The course goals are as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Recognize the importance of data collection, identify limitations in data collection methods, and determine how these limitations affect the scope of inference.</li>
+<li>Use statistical software to explore data, summarize data numerically and visually, and to perform data analysis.</li>
+<li>Apply estimation and testing methods to analyze single variables or the relationship between two variables in order to understand natural phenomena and make data-based decisions.</li>
+<li>Model numerical response variables using explanatory variable(s).</li>
+<li>Interpret results correctly, effectively, and in context in a way that laypeople can understand (i.e., without relying on statistical jargon).</li>
+<li>Critique data-based claims and evaluate data-based decisions.</li>
+<li>Complete a research project that focuses on statistical inference.</li>
+</ol>
+</div>
+<div id="required-materials" class="section level2">
+<h2>Required materials</h2>
+<ul>
+<li>Textbook: OpenIntro Statistics (4th Edition, 2019), by Diez, Çetinkaya-Rundel, and Barr. (ISBN: 1943450072).
+<ul>
+<li>The textbook is freely available online. You’re welcomed to read on screen or print it out. If you prefer a paperback version you can buy it at the cost of printing ($20) on Amazon.</li>
+</ul></li>
+<li>Equipment / software: Computer + stable internet access + video/audio capability + latest version of Firefox, Chrome, or Safari installed on your operating system.</li>
+<li>Calculator (optional): You may use a calculator in this class. There is no restrictions on the type of calculator. A simple calculator that can take square roots should be sufficient.</li>
+</ul>
+<hr />
+</div>
+<div id="how-to-be-successful-in-this-class" class="section level2">
+<h2>How to be successful in this class</h2>
+<ol style="list-style-type: decimal">
+<li>Do not have your phone out, TV on, or 20 other tabs open while viewing online lectures—focus and take notes as though you were in a traditional classroom.</li>
+<li>Complete the videos/readings at the recommended pace, and review them after the unit is over.</li>
+<li>Be an active virtual participant during group work, office hours, and review sessions.</li>
+<li>Ask questions - during office hours, on Piazza, or via email. Ask me, your TAs, and your classmates.</li>
+<li>Do the problem sets - start early and make sure you attempt and understand all questions.</li>
+<li>Start your project early and allow adequate time to complete them.</li>
+<li>Do not procrastinate - don’t let a unit go by with unanswered questions as it will just make the following unit’s material even more difficult to follow.</li>
+</ol>
+</div>
+<div id="course-structure" class="section level2">
+<h2>Course structure</h2>
+<p>The course is divided into seven learning units. For each unit a set of learning objectives and required and suggested readings, videos, etc. will be posted on the course website, with due dates for each graded assignment and a checklist with suggested dates for viewing the content.</p>
+<p>Generally, the framework for each unit will be as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Prior to the start of each unit you are expected to watch the pre-unit videos and/or complete the readings and familiarize yourselves with the learning objectives.</li>
+<li>We will begin the unit with an individual readiness assessment: 10 multiple choice questions that you answer on Sakai, meant to assess familiarity with basic concepts.</li>
+<li>Within each unit there will be video lectures and readings available. You will complement your learning with:
+<ul>
+<li>Problem sets; some will be ungraded and have answers available in the back of the textbook, others will be turned in for points. Collaboration is welcome, but your write ups must be done individually and show your own work.</li>
+<li>Application exercises, some of which will be done in teams or collectively as a class on Piazza.</li>
+<li>Labs, some of which will be done in teams.</li>
+</ul></li>
+<li>At the end of each unit you will wrap up the module with a performance assessment, done individually, which is more in-depth than the readiness assessment and meant to help gauge your comprehension of the material.</li>
+</ol>
+<p>In addition to the standard formats of the units, there will be (approximately) weekly “Data Science in Action” lectures, two individual midterms, a final exam, and a project.</p>
+<hr />
+</div>
+<div id="time-details" class="section level2">
+<h2>Time details</h2>
+<div id="work-load" class="section level3">
+<h3>Work load</h3>
+<p>You are expected to put in about 18-20 hours of work per week, including the time spent viewing the video content and reading the required material. Some of you will do well with less time than this, and some of you will need more. Note that the less distracted you are, and the more engaged with the material, the less time it will take (i.e., if you watch tv and text while viewing the content it will take longer to learn it because you are using your time less efficiently).</p>
+</div>
+<div id="synchronous-activities" class="section level3">
+<h3>Synchronous activities</h3>
+<p>There are no required synchronous activities in the course (meaning at no point in the class will you have to be online with everyone else at the same time). The exams will be scheduled to last no more than 2 hours and fall within a given 24 window, but can be started at any time during that window.</p>
+<p>Live video/audio office hours open to the whole class, hosted via Zoom, will be scheduled for one hour two times per week (pending student survey) by each member of the instruction team. Additional office hours may be scheduled depending on student request and content in a given week.</p>
+<p>You may be invited to take part in additional synchronous social or educational events, but you will not be required to participate and these will not impact your grade.</p>
+<p>“Data Science in Action” sessions may occur “live”, but will also be recorded and made available online.</p>
+<p>Scheduling for group work on labs and application exercises will be coordinated within individual teams.</p>
+</div>
+<div id="asynchronous-activities" class="section level3">
+<h3>Asynchronous activities</h3>
+<p>Asynchronous activities (i.e., those without designated meeting times) include viewing lectures, completing the suggested readings, working on assignments, and engaging in the online discussion forum.</p>
+<p>The “Detailed schedule” page of the course website includes a daily schedule of readings/videos/work and due dates for all assignments. It is expected that you will not lag behind this daily schedule, so as to be able to complete individual assignments, contribute to team labs, and participate fully in discussions.</p>
+<hr />
+</div>
+</div>
+<div id="communication-and-feedback" class="section level2">
+<h2>Communication and feedback</h2>
+<div id="communication" class="section level3">
+<h3>Communication</h3>
+<p>Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted on Piazza. Before posting a new question please make sure to check if your question has already been answered, and answer others’ questions!</p>
+<p>I will respond to Piazza posts directed to me and individual emails/messages sent between Monday and Thursday within 24 hours. For example, an email sent at 8 PM on Thursday will receive a reply no later than 8 PM on Friday; an email sent at noon on Saturday will receive a reply by the end of Monday. My response time will usually be faster. However, know that the window is up to 24 hours and a reply is not guaranteed on the weekends—meaning that it is important not to procrastinate on big assignments! If you ask a question an hour before something is due, you may not receive an answer before the assignment submission deadline.</p>
+</div>
+<div id="feedback" class="section level3">
+<h3>Feedback</h3>
+<p>Problem/lab/application-exercise solutions will be available after everyone has submitted assignment. Graded problem sets and labs will be returned no later than 48 hours after the assignment due date. Weekly grades for Piazza participation (Monday through Sunday) will be provided no later than the following Wednesday each week.</p>
+<p>I will create and post (roughly) biweekly content (for example a video, demonstration, code example, etc.) addressing common questions, Piazza discussions, or things I’ve noticed during grading. E.g., I may notice that a topic from the day’s textbook reading wasn’t very clear and address that topic, or work the question from a problem set that the most people missed.</p>
+<p>Students will be required to schedule a 1-1 meeting with me for a point of their choosing in the semester. During this meeting, I will provide feedback on their submissions/participation thus far and discuss any topics/concerns/questions the student has. Please feel free to also request additional meetings, and/or come to my office hours!</p>
+</div>
+<div id="piazza" class="section level3">
+<h3>Piazza</h3>
+<p>A typical week on the online discussion forum will include application exercises, polls posted by the instruction team, questions posed by students, and content posted by both students and the instruction team. To get the most out of this course, plan to log into the online discussion forum and engage with your peers/instructors at least two to three times per week.</p>
+<p>The online discussion forum is so heavily emphasized in this course for three primary reasons: 1. Discussion provides continual opportunities to reflect, recall, and apply new knowledge. 2. You will have a chance to interact with each other and us, and build relationships. 3. We as your instruction team will use your questions and feedback to direct what content we provide/create.</p>
+<p>To emphasize the importance of online participation, the quality of your participation will be reflected in your final grade in the course (see “Participation” section, below).</p>
+</div>
+<div id="data-science-in-action" class="section level3">
+<h3>Data science in action</h3>
+<p>We will have (approximately) weekly invited speakers in marine/environmental science talk about how they use data and information, the goal being to expose students to real life examples of statistical thinking. Later follow up interactions with students will occur on the online discussion forum.</p>
+<hr />
+</div>
+</div>
+<div id="grading" class="section level2">
+<h2>Grading</h2>
+<p><em>Grade breakdown:</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Assignment type</th>
+<th>Share of final grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Participation</td>
+<td>15%</td>
+</tr>
+<tr class="even">
+<td>Problem sets</td>
+<td>15%</td>
+</tr>
+<tr class="odd">
+<td>Labs</td>
+<td>15%</td>
+</tr>
+<tr class="even">
+<td>Project</td>
+<td>20%</td>
+</tr>
+<tr class="odd">
+<td>Midterm 1</td>
+<td>10%</td>
+</tr>
+<tr class="even">
+<td>Midterm 2</td>
+<td>10%</td>
+</tr>
+<tr class="odd">
+<td>Final</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Curving:</em> Grades may be curved at the end of the semester. Cumulative numerical averages of 90 - 100 are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-, however the exact ranges for letter grades will be determined after the final exam. The more evidence there is that the class has mastered the material, the more generous the curve will be.</p>
+<p><em>Dropping scores:</em> The lowest score will be dropped from each of the following categories: Problem sets, Labs, Readiness assessments, Performance assessments.</p>
+<p><em>Late work policy:</em> There will be no late work accepted. The reason for this strict late work policy is so that solutions to problem sets can be released quickly for feedback to the rest of the class, and to emphasize the importance of following the pace of the course.</p>
+<p><em>Regrade requests:</em> Regrade requests must be made within 48 hours of when the assignment is returned, and must be submitted to me in writing. These will be honored if points were tallied incorrectly, or if you feel your answer is correct but it was marked wrong. No regrade will be made to alter the number of points deducted for a mistake. There will be no grade changes after the final exam.</p>
+<hr />
+</div>
+<div id="details-about-course-components" class="section level2">
+<h2>Details about course components</h2>
+<p>Participation, problem sets, labs, project, midterms, finals… what are all of these things and why are you doing them!? Read on to find out.</p>
+<div id="participation" class="section level3">
+<h3>Participation</h3>
+<p><em>Grade breakdown:</em> 1/3 completion of readiness assessments and performance assessments. 2/3 activity on online discussion forum.</p>
+<p><em>Readiness assessments (RA):</em> Readiness assessments will be given at the beginning of a unit. These are 10 question multiple choice assessments comprised of conceptual questions addressing the learning objectives of the new unit. You are not expected to master all topics in the unit ahead of time, but you are responsible for completing the reading assignment, understanding how the material fits in the greater framework of the course, and acquire a conceptual understanding of the learning objectives. I suggest not using notes/books/videos while you take this, and using it as an honest test of your readiness for the new unit.</p>
+<p><em>Performance assessments (PA):</em> These are similar to readiness assessments taken at the beginning of a unit, but the objective is to evaluate your mastery of the material by the end of a unit and give you instant feedback on your performance. The format is the same as the RAs, with 10 multiple choice questions. The assessments will be taken individually on Sakai. I suggest not using notes/books/videos while you take this, and using it as an honest test of your mastery of the past unit.</p>
+<p>You may miss one each of the RAs and PAs without it impacting your grade. Your score on RAs and PAs will not impact your grade and are based on completion; you may also retake them as many times as you would like up to the due date/time.</p>
+<p><em>Activity on online discussion forum:</em> This component of your grade is based upon the content, depth and quality of your contributions to the online discussion forum questions/discussions using the standards found within the grading rubric (see ‘Rubrics’ section under ‘Resources’ tab on course website). Participating consistently with thoughtful answers early in the week, and responding to and engaging in discussion with your peers will have positive effects on your overall grade. For grading purposes, each week runs Monday through Sunday.</p>
+</div>
+<div id="problem-sets-ps" class="section level3">
+<h3>Problem sets (PS)</h3>
+<p>These will be assigned (approximately) weekly on the course webpage and will be comprised of problems from the textbook. Each assignment will list roughly five to seven problems from the book to be turned in for grading, and roughly 10 practice problems. You do not need to turn in the practice problems, and the solutions can be found in the back of the book.</p>
+<p>The objective of the problem sets is to help you develop a more in-depth understanding of the material and help you prepare for exams and project. Grading will be based on completeness as well as accuracy. In order to receive credit you must show all your work.</p>
+<p><em>Lowest score will be dropped.</em></p>
+<p>You are welcomed, and encouraged, to work with each other on the problems, but you must turn in your own work. If you copy someone else’s work, both parties will receive a 0 for the problem set grade as well as being reported to the Office of Student Conduct. Work submitted on Sakai will be checked for instances of plagiarism prior to being graded.</p>
+</div>
+<div id="labs" class="section level3">
+<h3>Labs</h3>
+<p>The objective of the labs is to give you hands on experience with data analysis using modern statistical software. The labs will also provide you with tools that you will need to complete the project successfully. We will use a statistical analysis package called RStudio, which is a front end for the R statistical language.</p>
+<p>Some labs may be done in teams, and “live” lab meetings can be scheduled with the TAs for the course. The TAs will also provide example content and resources on successful programming.</p>
+<p><em>Lowest score will be dropped.</em></p>
+</div>
+<div id="project" class="section level3">
+<h3>Project</h3>
+<p>The project objective is to give you independent applied research experience using real data and statistical methods. For a parameter of interest to you, you will describe the relevant data, conduct an analysis, and summarize your findings in a written, fully reproducible, data analysis report. You will also upload a 10 minute video presentation in which you share your work with your peers. Students will view and engage with a subset of their peers’ projects, and respond to questions from those who viewed their presentation in the “project reflections” component of the assignment.</p>
+<ul>
+<li>Project proposal: 1/10 of overall project grade</li>
+<li>Project write-up/presentation: 6/10 of overall project grade</li>
+<li>Project reflections: 3/10 of overall project grade</li>
+</ul>
+<p>You must score at least 30% of the points on each of the three project related submissions in order to pass this class.</p>
+</div>
+<div id="exams" class="section level3">
+<h3>Exams</h3>
+<p>There will be two midterms and one final in this class. You will take the exams on Sakai. You may start the exam at any point during the specified 24 hour window; once you begin the exam you will have two hours in which to complete it. You can’t pass the class if you do not take the final exam.</p>
+<p>Midterm 1 date: Thursday, May 28 Midterm 2 date: Thursday, June 11 Final date: Thursday, June 25</p>
+<p>The midterm and final will be open book, open notes, and open internet, but NOT open communication. That is, is ok to google “normal distribution” but it is not ok to ask your roommate for help or to post the exam question on StackExchange. Students will sign an honors statement attesting that they will not share work or solutions with fellow students, nor seek out any specific assistance either online or in person.</p>
+<p>A common question is: What do I do if something goes wrong after I begin the exam? Monday through Thursday there is 24 hour support from the OIT service desk; Fridays 12am - 5pm; and Sundays 3pm - 12am. The phone number is (919) 684-2200. Obtain a ticket if Sakai crashes or the internet goes out in the middle of your exam, and contact me regarding how to proceed.</p>
+<hr />
+</div>
+</div>
+<div id="students-with-disabilities" class="section level2">
+<h2>Students with disabilities</h2>
+<p>Students with disabilities who believe they may need accommodations in this class are encouraged to contact the Student Disability Access Office at (919) 668-1267 as soon as possible to better ensure that such accommodations can be made.</p>
+</div>
+<div id="academic-integrity" class="section level2">
+<h2>Academic integrity</h2>
+<p>Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, respect, and accountability. Citizens of this community commit to reflect upon and uphold these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity. Cheating on exams and quizzes, plagiarism on homework assignments and projects, lying about an illness or absence and other forms of academic dishonesty are a breach of trust with classmates and faculty, violate the Duke Community Standard, and will not be tolerated. Such incidences will result in a 0 grade for all parties involved as well as being reported to the Office of Student Conduct. Additionally, there may be penalties to your final class grade. Please review the Duke’s Academic Dishonesty policies.</p>
+</div>
+<div id="excused-absences" class="section level2">
+<h2>Excused absences</h2>
+<p>Students who miss graded work due to a scheduled varsity trip, religious holiday or short-term illness should fill out an online NOVAP, RHoliday or short-term illness form respectively. If you cannot complete an assignment on the due date due to a reported short-term illness, you have until noon the following day to complete it at no penalty. Then the regular late work policy will kick in. Those with a personal emergency or bereavement should seek a Dean’s Excuse: Check with your academic dean for details.</p>
+</div>
+<div id="making-up-assignments" class="section level2">
+<h2>Making up assignments</h2>
+<p>There will be no make-up for readiness or performance assessments, labs, problem sets, project, or final exam. If a midterm exam must be missed, absence must be officially excused in advance, in which case the missing exam score will be imputed using the final exam score. This policy only applies to the midterms. All other missed assessments will receive a grade of 0. The final exam must be taken within the stated window. You must take the final exam and turn in the project in order to pass this course.</p>
+<p>Recall that to mitigate the impact of a 0 due to an unexpected missed assignment, the lowest grade from each of the following categories will be dropped: Problem sets, Labs, Readiness assessments, and Performance assessments (latter two are participation based, so this means you can miss one of each with no consequences).</p>
+</div>
+<div id="additional-information" class="section level2">
+<h2>Additional information</h2>
+<p><em>The Academic Resource Center (ARC):</em> The Academic Resource Center (ARC) offers free services to all students during their undergraduate careers at Duke. Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, we work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit!<br />
+Location: 211 Academic Advising Center Building, East Campus – behind Marketplace arc.duke.edu - <a href="mailto:theARC@duke.edu" class="email">theARC@duke.edu</a> - 919-684-5917</p>
+<p><em>Emergency Notification:</em> In an emergency, there are several ways that the University will contact you. Two are detailed below. Campus emergency procedures are described here: <a href="http://emergency.duke.edu" class="uri">http://emergency.duke.edu</a> 1. Text Messaging: An alert message may be sent to the mobile devices of Duke community members who register for a new text messaging system. Sign up for DukeALERT text messages or learn more about text messaging at Duke. 2. LiveSafe Mobile App: Notifications may be sent through the LiveSafe Mobile app to notify members of the Duke community of emergency situations. The free mobile app, available through the Apple App Store and Android App Store, offers real-time, two-way communication between Duke community members and the Duke University Police Department.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

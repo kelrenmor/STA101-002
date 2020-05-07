@@ -1,0 +1,73 @@
+---
+title: "Problem sets (PS)"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---- 
+
+All problems are from OpenIntro Statistics, 4th Edition. 
+
+You only need to turn in the answers to the graded problems. You can work with your classmates on the homework but you must turn in your own work. The answers to questions must be in your own words.
+
+You must show **all** work to get credit. 
+
+--- 
+
+### Where do I submit my problem sets?
+
+You will submit your problem sets on Sakai, under Assignments.
+
+### How do I submit my problem sets?
+
+You will turn in your problem sets on Sakai. We **strongly** recommend working in a word processor of your choice, saving your work as PDF, and submitting that. You are welcomed to submit as Word files as well, however if we cannot open your file you will receive a 0 on the problem set (so it may not be worth taking that risk!). Alternatively you can type your answers in the text box in Sakai however if you lose internet connection and you haven't saved you might lose your work (so if you'll use this approach make sure to save often!). You may also handwrite and take a photo of your work, but if the grader cannot read your writing (due to handwriting or photo quality) you will not receive points.
+
+### Do I need to turn in practice problems?
+
+You do not need to turn in your answers for the practice problems. In fact, brief solutions  to these problems are provided at the end of the book. However you are strongly encouraged to work through them to make sure that you grasp the material we have covered so far. You are also welcome to ask questions about them during office hours.
+
+### What do I do if I think a question is wrong?
+
+Textbook errata: If you read something that doesn't make sense first check to see if it's been corrected already. If not, send me an email about it so that I can confirm whether it's a typo or not, and if it is, it'll be added to the list. A list of known errata can be found [here](https://docs.google.com/spreadsheets/u/1/d/1qifH8VDF0p3xVaFrnOAdmX5MLVODAw6JqeAS8OinUs4/htmlview).
+
+---
+
+### PS1:
+
+* Graded problems: 
+* Practice problems: 
+
+### PS2:
+
+* Graded problems: 
+* Practice problems: 
+
+### PS3:
+
+* Graded problems: 
+* Practice problems: 
+
+### PS 4:
+
+* Graded problems: 
+* Practice problems: 
+
+### PS 5:
+
+* Graded problems: 
+* Practice problems: 
+
+### PS 6:
+
+* Graded problems: 
+* Practice problems: 
+  
+### PS 7:
+
+* Graded problems: 
+* Practice problems: 
+
+  

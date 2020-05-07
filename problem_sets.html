@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Problem sets (PS)</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STA101-002</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="daily_schedule.html">Daily schedule</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="problem_sets.html">Problem sets</a>
+</li>
+<li>
+  <a href="rubrics.html">Rubrics</a>
+</li>
+<li>
+  <a href="https://sakai.duke.edu/">Sakai</a>
+</li>
+<li>
+  <a href="https://piazza.com/class/k9ucop5biop1do">Piazza</a>
+</li>
+<li>
+  <a href="https://vm-manage.oit.duke.edu/containers">Rstudio</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Problem sets (PS)</h1>
+
+</div>
+
+
+<hr />
+<p>All problems are from OpenIntro Statistics, 4th Edition.</p>
+<p>You only need to turn in the answers to the graded problems. You can work with your classmates on the homework but you must turn in your own work. The answers to questions must be in your own words.</p>
+<p>You must show <strong>all</strong> work to get credit.</p>
+<hr />
+<div id="where-do-i-submit-my-problem-sets" class="section level3">
+<h3>Where do I submit my problem sets?</h3>
+<p>You will submit your problem sets on Sakai, under Assignments.</p>
+</div>
+<div id="how-do-i-submit-my-problem-sets" class="section level3">
+<h3>How do I submit my problem sets?</h3>
+<p>You will turn in your problem sets on Sakai. We <strong>strongly</strong> recommend working in a word processor of your choice, saving your work as PDF, and submitting that. You are welcomed to submit as Word files as well, however if we cannot open your file you will receive a 0 on the problem set (so it may not be worth taking that risk!). Alternatively you can type your answers in the text box in Sakai however if you lose internet connection and you haven’t saved you might lose your work (so if you’ll use this approach make sure to save often!). You may also handwrite and take a photo of your work, but if the grader cannot read your writing (due to handwriting or photo quality) you will not receive points.</p>
+</div>
+<div id="do-i-need-to-turn-in-practice-problems" class="section level3">
+<h3>Do I need to turn in practice problems?</h3>
+<p>You do not need to turn in your answers for the practice problems. In fact, brief solutions to these problems are provided at the end of the book. However you are strongly encouraged to work through them to make sure that you grasp the material we have covered so far. You are also welcome to ask questions about them during office hours.</p>
+</div>
+<div id="what-do-i-do-if-i-think-a-question-is-wrong" class="section level3">
+<h3>What do I do if I think a question is wrong?</h3>
+<p>Textbook errata: If you read something that doesn’t make sense first check to see if it’s been corrected already. If not, send me an email about it so that I can confirm whether it’s a typo or not, and if it is, it’ll be added to the list. A list of known errata can be found <a href="https://docs.google.com/spreadsheets/u/1/d/1qifH8VDF0p3xVaFrnOAdmX5MLVODAw6JqeAS8OinUs4/htmlview">here</a>.</p>
+<hr />
+</div>
+<div id="ps1" class="section level3">
+<h3>PS1:</h3>
+<ul>
+<li>Graded problems:</li>
+<li>Practice problems:</li>
+</ul>
+</div>
+<div id="ps2" class="section level3">
+<h3>PS2:</h3>
+<ul>
+<li>Graded problems:</li>
+<li>Practice problems:</li>
+</ul>
+</div>
+<div id="ps3" class="section level3">
+<h3>PS3:</h3>
+<ul>
+<li>Graded problems:</li>
+<li>Practice problems:</li>
+</ul>
+</div>
+<div id="ps-4" class="section level3">
+<h3>PS 4:</h3>
+<ul>
+<li>Graded problems:</li>
+<li>Practice problems:</li>
+</ul>
+</div>
+<div id="ps-5" class="section level3">
+<h3>PS 5:</h3>
+<ul>
+<li>Graded problems:</li>
+<li>Practice problems:</li>
+</ul>
+</div>
+<div id="ps-6" class="section level3">
+<h3>PS 6:</h3>
+<ul>
+<li>Graded problems:</li>
+<li>Practice problems:</li>
+</ul>
+</div>
+<div id="ps-7" class="section level3">
+<h3>PS 7:</h3>
+<ul>
+<li>Graded problems:</li>
+<li>Practice problems:</li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

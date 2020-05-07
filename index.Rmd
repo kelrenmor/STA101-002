@@ -20,7 +20,7 @@ markup: "mmark"
 
 ### About the Course
 
-STA 101-002 introduces students to the discipline of statistics as a science of understanding and analyzing data. Throughout the semester, students will learn how to effectively make use of data in the face of uncertainty: How to collect data, how to analyze data, and how to use data to make inferences and conclusions about real world phenomena. The course emphasizes examples from marine science, environmental science, conservation and energy issues. It is ordinarily taught in person at Duke's Marine Lab campus, but will be taught asynchronously online for Summer Term 1 2020.
+STA 101-002 introduces students to the discipline of statistics as a science of understanding and analyzing data. Throughout the semester, students will learn how to effectively make use of data in the face of uncertainty: How to collect data, how to analyze data, and how to use data to make inferences and conclusions about real world phenomena. The course emphasizes examples from marine science, environmental science, conservation and energy issues. This section is ordinarily taught in person at Duke's Marine Lab campus, but will be taught asynchronously online for Summer Term 1 2020.
 
 Work ethic, the ability to self-motivate, flexibility, logical thinking, professionalism, and communication skills are all strong predictors of success in STA 101-002 (as well as in the working world). Don't worry if you haven't mastered all of these -- we'll work on them in class! 
 
@@ -38,53 +38,55 @@ Recordings will be placed on Sakai, arranged by date.
 
 Note: office hours may vary. Revisions to office hours will be noted via e-mail and on the webpage. 
 
-| Team member | Office hours | Location |
-| ----------  | -------------------------------------         | ---- |
-| [Professor Kelly Moran](https://stat.duke.edu/people/kelly-moran)  <a href="mailto:kelly.r.moran@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | TBA | Zoom |
- [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo)  <a href="mailto:ezinne.nwankwo@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp;  | TBA | Zoom
+| Team member | Email | Office hours | Location |
+| ----------  | -------------------------------------         | ----  | ---- |
+| [Professor Kelly Moran](https://stat.duke.edu/people/kelly-moran) | kelly.r.moran@duke.edu | TBA | Zoom |
+ [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo) | ezinne.nwankwo@duke.edu | TBA | Zoom
+ TA Jason McEachin | marcus.mceachin@duke.edu | TBA | Zoom
+ TA Myra Cai | myra.cai@duke.edu | TBA | Zoom
 
 ### Materials
 
 The course textbook is [OpenIntro Statistics 4th Ed](https://leanpub.com/openintro-statistics) - Diez, Barr, Cetinkaya-Rundel (2019). It is free online, or can be purchased from Amazon at cost of printing. Additional texts and readings will be assigned as needed. We will support computation in R and RStudio. You will be allowed to use a calculator in class; a simple calculator that can take square roots will be sufficient.
 
-### Topics and Important Dates
+### Schedule at a glance
 
-STA 101-002 contain a mixture of short video lectures, textbook readings, seminar presentations, lab, and work sessions. Frequent smaller-scale problem sets and labs will be provided to check mastery and identify areas for additional focus. There is a tight turnaround on due dates to ensure no one falls behind; in return, .
+STA 101-002 has a tight turnaround on due dates to ensure no one falls behind; in return, the instruction team will return graded assignments no later than 48 hours after submission. Use the schedule below for a quick guide to topics and due dates. For a more complete schedule providing specific material for daily readings/viewings, see the [Detailed schedule](https://) tab.
 
 Note: this schedule is approximate and is likely to be modified as the course progresses. Some sessions may be swapped due to course timing. Assignments are due by 11:59 PM EDT unless otherwise specified. 
 
 |Date |Topic |Due |Special notes |
 | ----------- | --------------------------- | --------------- | --------------- |
-| Wednesday,  May 13 | Data Collection + Observational studies and experiments || First day of class! Begin Unit 1: Introduction to Data. |
-| Thursday,  May 14| Exploratory data analysis | | |
-| Friday,  May 15| More exploratory data analysis |  | |
+| Wednesday,  May 13 | Data Collection + Observational studies and experiments | RA1 | First day of class! Begin Unit 1: Introduction to Data. |
+| Thursday,  May 14| Sampling | | |
+| Friday,  May 15| Exploratory data analysis |  | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  May 18| Introduction to statistical inference | Lab 1 | |
-| Tuesday,  May 19| Probability and conditional probability | PS1 + PA1 | Begin Unit 2: Probability and distributions |
+| Monday,  May 18| More EDA + Introduction to statistical inference | Lab 1 | PS1 + PA1 |
+| Tuesday,  May 19| Probability and conditional probability | RA2 | Begin Unit 2: Probability and distributions |
 | Wednesday,  May 20| Bayes' theorem and Bayesian inference | | |
-| Thursday,  May 21| Normal + Binomial distribution | Lab 2 | |
-| Friday,  May 22| Variability in estimates and CLT | PS2 + PA2 | Begin Unit 3: Foundations for inference |
+| Thursday,  May 21| Normal + Binomial distribution | Lab 2 | PS2 + PA2 |
+| Friday,  May 22| Variability in estimates and CLT | RA3 | Begin Unit 3: Foundations for inference |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  May 25|  | | No class Memorial Day |
 | Tuesday,  May 26| Confidence intervals | | |
 | Wednesday,  May 27| Midterm 1 review | | |
 | Thursday,  May 28| Midterm 1 | Lab 3 | |
-| Friday,  May 29| Hypothesis tests | | |
+| Friday,  May 29| Hypothesis tests | PS3 + PA3 | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 1| Inference using the t-distribution | PS3 + PA3 + Lab 4 | Begin Unit 4: Inference for numerical variables |
-| Tuesday,  June 2| Bootstrapping |  | |
-| Wednesday,  June 3| Power | | |
-| Thursday,  June 4| ANOVA | Lab 5 | |
-| Friday,  June 5| Inference for a single proportion | PS4 + PA4 | Begin Unit 5: Inference for categorical variables |
+| Monday,  June 1| Inference for a single proportion | RA4 + Lab 4 | Begin Unit 4: Inference for categorical variables |
+| Tuesday,  June 2| Inference for comparing two proportions |  | |
+| Wednesday,  June 3| Chi-square testing | PS4 + PA4 | |
+| Thursday,  June 4| Inference using the t-distribution | RA5 + Lab 5 | Begin Unit 5: Inference for numerical variables |
+| Friday,  June 5| Bootstrapping |  |  |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 8| Inference for comparing two proportions | Lab 6 | |
-| Tuesday,  June 9| Chi-square testing |  |  |
+| Monday,  June 8| Power | Lab 6 | |
+| Tuesday,  June 9| ANOVA | PS5 + PA5 |  |
 | Wednesday,  June 10| Midterm 2 review |  | |
 | Thursday,  June 11| Midterm 2 | Project proposal |  |
-| Friday,  June 12| Introduction to regression | PS5 + PA5 | Begin Unit 6: Introduction to linear regression |
+| Friday,  June 12| Introduction to regression | RA6 | Begin Unit 6: Introduction to linear regression |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 15| Outliers and Inference for SLR | Lab 7 | |
-| Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 | Begin Unit 7: Multiple linear regression |
+| Monday,  June 15| Outliers and Inference for SLR | PS6 + PA6 + Lab 7 | |
+| Tuesday,  June 16| Introduction to multiple linear regression | RA7 | Begin Unit 7: Multiple linear regression |
 | Wednesday,  June 17| Model selection and diagnostics for MLR |  | |
 | Thursday,  June 18| Transformation and case studies | Lab 8 | |
 | Friday,  June 19| Review and project work | PS7 + PA7 | |

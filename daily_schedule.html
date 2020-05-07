@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Detailed daily schedule</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STA101-002</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="daily_schedule.html">Daily schedule</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="problem_sets.html">Problem sets</a>
+</li>
+<li>
+  <a href="rubrics.html">Rubrics</a>
+</li>
+<li>
+  <a href="https://sakai.duke.edu/">Sakai</a>
+</li>
+<li>
+  <a href="https://piazza.com/class/k9ucop5biop1do">Piazza</a>
+</li>
+<li>
+  <a href="https://vm-manage.oit.duke.edu/containers">Rstudio</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Detailed daily schedule</h1>
+
+</div>
+
+
+<p>Skip straight to a specific week:</p>
+<ul>
+<li><a href="#week-0.5">Week 0.5</a>, May 13-15.</li>
+<li><a href="#week-1">Week 1</a>, May 18-22.</li>
+<li><a href="#week-2">Week 2</a>, May 25-29.</li>
+<li><a href="#week-3">Week 3</a>, June 1-5.</li>
+<li><a href="#week-4">Week 4</a>, June 8-12.</li>
+<li><a href="#week-5">Week 5</a>, June 15-19.</li>
+<li><a href="#week-6">Week 6</a>, June 22-25.</li>
+</ul>
+<hr />
+<div id="week-0.5" class="section level1">
+<h1>Week 0.5</h1>
+<hr />
+<p>This week, we begin Unit 1 (Introduction to Data). We’ll get familiar with using the main learning resources and technologies needed for the class: the Coursera videos, the OpenIntro Statistics (OIS) textbook, R/Rstudio, and Piazza.</p>
+<hr />
+<div id="wednesday-may-13" class="section level3">
+<h3>Wednesday, May 13</h3>
+<p>Topic: Data Collection + Observational studies and experiments (Start of Unit 1!)</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/probability-intro/supplement/rooeY/lesson-learning-objectives">Learning Objectives for today and tomorrow</a>.</li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/UbGdZ/introduction">Introduction video</a>.</li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/Q0zu3/data-basics">Data Basics video</a>.</li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/Qw8iF/observational-studies-experiments">Observational Studies &amp; Experiments video</a></li>
+<li>Read OIS Chapter 1, Sections 1.1 and 1.2</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT: </strong></p>
+</div>
+<div id="thursday-may-14" class="section level3">
+<h3>Thursday, May 14</h3>
+<p>Topic: Sampling</p>
+<p>To do:</p>
+<ul>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/Y96uT/sampling-and-sources-of-bias">Sampling and sources of bias video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/Jyc3t/experimental-design">Experimental design video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/N6gE8/spotlight-random-sample-assignment">Random Sample Assignment video</a></li>
+<li>Read OIS Chapter 1, Sections 1.3 and 1.4</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT: </strong></p>
+</div>
+<div id="friday-may-15" class="section level3">
+<h3>Friday, May 15</h3>
+<p>Topic: Exploratory data analysis (EDA)</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/probability-intro/supplement/Zsmno/lesson-learning-objectives">Learning Objectives for today</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/9kRJf/visualizing-numerical-data">Visualizing Numerical Data video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/AM0o6/measures-of-center">Measures of Center video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/t9Wbk/measures-of-spread">Measures of Spread video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/ssktR/robust-statistics">Robust Statistics video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/eQa2U/transforming-data">Transforming Data video</a></li>
+<li>Read OIS Chapter 2, Section 2.1</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT:</strong></p>
+<hr />
+</div>
+</div>
+<div id="week-1" class="section level1">
+<h1>Week 1</h1>
+<hr />
+<p>This week, we wrap up Unit 1 (Introduction to Data) on Monday, work through Unit 2 (Probability and distributions) Tuesday through Thursday, and begin Unit 3 (Foundations for inference) on Friday. We will also have a “data science in action” seminar from Dr. Josh Hewitt. Don’t forget to pay attention to what is due each day. In addition to the video quizzes and application exercises, we will have a seminar reflection, two labs, and two problem sets due this week.</p>
+<hr />
+<div id="monday-may-18" class="section level3">
+<h3>Monday, May 18</h3>
+<p>Topic: More EDA + Introduction to statistical inference (End of Unit 1!)</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/probability-intro/supplement/cLKTx/lesson-learning-objectives">Learning Objectives for today</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/vEjt0/exploring-categorical-variables">Exploring Categorical Variables video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/e6IzY/introduction-to-inference">Introduction to Inference video</a></li>
+<li>Read OIS Chapter 2, Sections 2.2 and 2.3</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT:</strong></p>
+</div>
+<div id="tuesday-may-19" class="section level3">
+<h3>Tuesday, May 19</h3>
+<p>Topic: Probability and conditional probability (Start of Unit 2!)</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/probability-intro/supplement/zCmjJ/lesson-learning-objectives">Learning Objectives for today</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/07vL4/introduction">Introduction video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/qaYwc/disjoint-events-general-addition-rule">Disjoint Events + General Addition Rule video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/D1m0l/independence">Independence video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/GqcO0/probability-examples">Probability Examples video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/PSXBC/spotlight-disjoint-vs-independent">Disjoint vs. Independent video</a></li>
+<li>Read OIS Chapter 3, Section 3.1</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT:</strong></p>
+</div>
+<div id="wednesday-may-20" class="section level3">
+<h3>Wednesday, May 20</h3>
+<p>Topic: Bayes’ theorem and Bayesian inference</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/probability-intro/supplement/uIBZA/lesson-learning-objectives">Learning Objectives for today</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/fN6Kh/conditional-probability">Conditional Probability video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/QE3kX/probability-trees">Probability Trees video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/qYbZQ/bayesian-inference">Bayesian Inference video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/AWtbY/examples-of-bayesian-inference">Examples of Bayesian Inference video</a></li>
+<li>Read OIS Chapter 3, Section 3.2</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT:</strong></p>
+</div>
+<div id="thursday-may-21" class="section level3">
+<h3>Thursday, May 21</h3>
+<p>Topic: Normal + Binomial distribution (End of Unit 2!)</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/probability-intro/supplement/iElrX/lesson-learning-objectives">Learning Objectives for the normal distribution</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/M71Nv/normal-distribution">Normal Distribution video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/snzoA/evaluating-the-normal-distribution">Evaluating the Normal Distribution video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/mwnU6/working-with-the-normal-distribution">Working with the Normal Distribution video</a></li>
+<li>Read the <a href="https://www.coursera.org/learn/probability-intro/supplement/vIhUM/lesson-learning-objectives">Learning Objectives for the binomial distribution</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/kJ07f/binomial-distribution">Binomial Distribution video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/2sosk/normal-approximation-to-binomial">Normal Approximation to Binomial video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/probability-intro/lecture/yef4b/working-with-the-binomial-distribution">Working with the Binomial Distribution video</a></li>
+<li>Read OIS Chapter 4, Sections 4.1 and 4.3</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT:</strong></p>
+</div>
+<div id="friday-may-22" class="section level3">
+<h3>Friday, May 22</h3>
+<p>Topic: Variability in estimates and CLT (Start of Unit 3!)</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/inferential-statistics-intro/supplement/qRoWV/lesson-learning-objectives">Learning Objectives for today</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/EXe3o/introduction">Intruduction video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/lkQnZ/sampling-variability-and-clt">Sampling Variability and CLT video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/XhkI6/clt-for-the-mean-examples">CLT (for the mean) examples video</a></li>
+<li>Read OIS Chapter 5, Section 5.1</li>
+</ul>
+<p><strong>Due today by 11:59 PM EDT:</strong></p>
+<hr />
+</div>
+</div>
+<div id="week-2" class="section level1">
+<h1>Week 2</h1>
+<hr />
+<p>This week, we have Monday off for Memorial day, Tuesday is a normal work day, Wednesday is a review for our first midterm on Thursday, and we wrap up the end of Unit 3 on Friday.</p>
+<hr />
+<div id="monday-may-25" class="section level3">
+<h3>Monday, May 25</h3>
+<p>No class – Memorial day.</p>
+<p>Due today by 11:59 PM EDT: Nothing</p>
+</div>
+<div id="tuesday-may-26" class="section level3">
+<h3>Tuesday, May 26</h3>
+<p>Topic: Confidence intervals</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/inferential-statistics-intro/supplement/TwF4J/lesson-learning-objectives">Learning Objectives for today</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/DA30M/confidence-interval-for-a-mean">Confidence Interval (for a mean) video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/QTajX/accuracy-vs-precision">Accuracy vs. Precision video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/QPEXw/required-sample-size-for-me">Required Sample Size for a ME video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/txXVo/ci-for-the-mean-examples">CI (for a mean) examples video</a></li>
+<li>Read OIS Chapter 5, Section 5.2</li>
+</ul>
+<p>Due today by 11:59 PM EDT:</p>
+</div>
+<div id="wednesday-may-27" class="section level3">
+<h3>Wednesday, May 27</h3>
+<p>Topic: Midterm 1 review</p>
+<p>Due today by 11:59 PM EDT: Nothing</p>
+</div>
+<div id="thursday-may-28" class="section level3">
+<h3>Thursday, May 28</h3>
+<p>Topic: Midterm 1</p>
+<p>To do:</p>
+<ul>
+<li>Take Midterm 1</li>
+</ul>
+<p>Due today by 11:59 PM EDT: Midterm 1</p>
+</div>
+<div id="friday-may-29" class="section level3">
+<h3>Friday, May 29</h3>
+<p>Topic: Hypothesis tests</p>
+<p>To do:</p>
+<ul>
+<li>Read the <a href="https://www.coursera.org/learn/inferential-statistics-intro/supplement/98MG1/lesson-learning-objectives">Learning Objectives for today</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/GvyX6/another-introduction-to-inference">Another Introduction to Inference video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/nnn84/hypothesis-testing-for-a-mean">Hypothesis Testing (for a mean) video</a></li>
+<li>View the <a href="https://www.coursera.org/learn/inferential-statistics-intro/lecture/nKo0b/ht-for-the-mean-examples">HT (for the mean) examples video</a></li>
+<li>Read OIS Chapter 5, Section 5.3</li>
+</ul>
+<p>Due today by 11:59 PM EDT:</p>
+<hr />
+</div>
+</div>
+<div id="week-3" class="section level1">
+<h1>Week 3</h1>
+<hr />
+<hr />
+</div>
+<div id="week-4" class="section level1">
+<h1>Week 4</h1>
+<hr />
+<hr />
+</div>
+<div id="week-5" class="section level1">
+<h1>Week 5</h1>
+<hr />
+<hr />
+</div>
+<div id="week-6" class="section level1">
+<h1>Week 6</h1>
+<hr />
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

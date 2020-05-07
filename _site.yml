@@ -6,12 +6,14 @@ navbar:
   left:
   - text: Home
     href: index.html
+  - text: Daily schedule
+    href: daily_schedule.html
   - text: Syllabus
     href: syllabus.html
   - text: Problem sets
     href: problem_sets.html
-  - text: Daily schedule
-    href: daily_schedule.html
+  - text: Rubrics
+    href: rubrics.html
   - text: Sakai
     href: https://sakai.duke.edu/
   - text: Piazza
