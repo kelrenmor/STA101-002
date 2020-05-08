@@ -57,15 +57,15 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 
 |Date |Topic |Due |Special notes |
 | ----------- | --------------------------- | --------------- | --------------- |
-| Wednesday,  May 13 | Data Collection + Observational studies and experiments | RA1 | First day of class! Begin Unit 1: Introduction to Data. |
-| Thursday,  May 14| Sampling | | |
+| Wednesday,  May 13 | Data Collection + Observational studies and experiments | | First day of class! Begin Unit 1: Introduction to Data. |
+| Thursday,  May 14| Sampling | Lab 0 | |
 | Friday,  May 15| Exploratory data analysis |  | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  May 18| More EDA + Introduction to statistical inference | Lab 1 | PS1 + PA1 |
-| Tuesday,  May 19| Probability and conditional probability | RA2 | Begin Unit 2: Probability and distributions |
+| Monday,  May 18| More EDA + Introduction to statistical inference | Lab 1 | |
+| Tuesday,  May 19| Probability and conditional probability | PS1 + PA1 | Begin Unit 2: Probability and distributions |
 | Wednesday,  May 20| Bayes' theorem and Bayesian inference | | |
-| Thursday,  May 21| Normal + Binomial distribution | Lab 2 | PS2 + PA2 |
-| Friday,  May 22| Variability in estimates and CLT | RA3 | Begin Unit 3: Foundations for inference |
+| Thursday,  May 21| Normal + Binomial distribution | Lab 2 |  |
+| Friday,  May 22| Variability in estimates and CLT | PS2 + PA2 | Begin Unit 3: Foundations for inference |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  May 25|  | | No class Memorial Day |
 | Tuesday,  May 26| Confidence intervals | | |
@@ -73,20 +73,20 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Thursday,  May 28| Midterm 1 | Lab 3 | |
 | Friday,  May 29| Hypothesis tests | PS3 + PA3 | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 1| Inference for a single proportion | RA4 + Lab 4 | Begin Unit 4: Inference for categorical variables |
+| Monday,  June 1| Inference for a single proportion | Lab 4 | Begin Unit 4: Inference for categorical variables |
 | Tuesday,  June 2| Inference for comparing two proportions |  | |
 | Wednesday,  June 3| Chi-square testing | PS4 + PA4 | |
-| Thursday,  June 4| Inference using the t-distribution | RA5 + Lab 5 | Begin Unit 5: Inference for numerical variables |
+| Thursday,  June 4| Inference using the t-distribution | Lab 5 | Begin Unit 5: Inference for numerical variables |
 | Friday,  June 5| Bootstrapping |  |  |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  June 8| Power | Lab 6 | |
 | Tuesday,  June 9| ANOVA | PS5 + PA5 |  |
 | Wednesday,  June 10| Midterm 2 review |  | |
 | Thursday,  June 11| Midterm 2 | Project proposal |  |
-| Friday,  June 12| Introduction to regression | RA6 | Begin Unit 6: Introduction to linear regression |
+| Friday,  June 12| Introduction to regression | | Begin Unit 6: Introduction to linear regression |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  June 15| Outliers and Inference for SLR | PS6 + PA6 + Lab 7 | |
-| Tuesday,  June 16| Introduction to multiple linear regression | RA7 | Begin Unit 7: Multiple linear regression |
+| Tuesday,  June 16| Introduction to multiple linear regression | | Begin Unit 7: Multiple linear regression |
 | Wednesday,  June 17| Model selection and diagnostics for MLR |  | |
 | Thursday,  June 18| Transformation and case studies | Lab 8 | |
 | Friday,  June 19| Review and project work | PS7 + PA7 | |

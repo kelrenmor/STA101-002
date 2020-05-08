@@ -39,6 +39,8 @@ To do:
 - View the [Data Basics video](https://www.coursera.org/learn/probability-intro/lecture/Q0zu3/data-basics).
 - View the [Observational Studies & Experiments video](https://www.coursera.org/learn/probability-intro/lecture/Qw8iF/observational-studies-experiments)
 - Read OIS Chapter 1, Sections 1.1 and 1.2
+- Work on questions from PS1 at the end of these OIS sections
+- Begin Lab 0
 
 **Due today by 11:59 PM EDT: **
 
@@ -52,8 +54,10 @@ To do:
 - View the [Experimental design video](https://www.coursera.org/learn/probability-intro/lecture/Jyc3t/experimental-design)
 - View the [Random Sample Assignment video](https://www.coursera.org/learn/probability-intro/lecture/N6gE8/spotlight-random-sample-assignment)
 - Read OIS Chapter 1, Sections 1.3 and 1.4
+- Work on questions from PS1 at the end of these OIS sections
+- Wrap up Lab 0
 
-**Due today by 11:59 PM EDT: **
+**Due today by 11:59 PM EDT: Lab 0**
 
 ### Friday,  May 15
 
@@ -68,6 +72,8 @@ To do:
 - View the [Robust Statistics video](https://www.coursera.org/learn/probability-intro/lecture/ssktR/robust-statistics)
 - View the [Transforming Data video](https://www.coursera.org/learn/probability-intro/lecture/eQa2U/transforming-data)
 - Read OIS Chapter 2, Section 2.1
+- Work on questions from PS1 at the end of these OIS sections
+- Begin working on Lab 1
 
 **Due today by 11:59 PM EDT:**
 
@@ -91,8 +97,10 @@ To do:
 - View the [Exploring Categorical Variables video](https://www.coursera.org/learn/probability-intro/lecture/vEjt0/exploring-categorical-variables)
 - View the [Introduction to Inference video](https://www.coursera.org/learn/probability-intro/lecture/e6IzY/introduction-to-inference)
 - Read OIS Chapter 2, Sections 2.2 and 2.3
+- Work on questions from PS1 at the end of these OIS sections
+- Wrap up Lab 1
 
-**Due today by 11:59 PM EDT:**
+**Due today by 11:59 PM EDT: Lab 1**
 
 ### Tuesday,  May 19
 

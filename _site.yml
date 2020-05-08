@@ -12,12 +12,14 @@ navbar:
     href: syllabus.html
   - text: Problem sets
     href: problem_sets.html
-  - text: Rubrics
-    href: rubrics.html
+  - text: Labs
+    href: labs.html
+  - text: FAQ
+    href: faq.html
   - text: Sakai
     href: https://sakai.duke.edu/
   - text: Piazza
-    href: https://piazza.com/class/k9ucop5biop1do
+    href: https://piazza.com/duke/summer2020/sta10102l1su20/home
   - text: Rstudio
     href: https://vm-manage.oit.duke.edu/containers
 

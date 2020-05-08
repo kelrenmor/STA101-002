@@ -1,0 +1,49 @@
+---
+title: "Labs"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+--- 
+
+### Where do I submit my labs?
+
+You will submit your labs on Sakai, under Assignments.
+
+### How do I submit my labs?
+
+When you are done with a lab, export **both** the Rmd and the HTML files you created, and upload them to Sakai under the appropriate assignment. To export, check the box next to the Rmd and the HTML files for the lab, click on More, and then Export. This will download the files (likely to your Desktop or your Downloads folder, depending on your operating system and configurations). You can then upload these files to Sakai. Step-by-step instructions for exporting/submission can be found on the [course FAQ](https://kelrenmor.github.io/STA101-002/faq/#r5). When labs are to be done in teams, only one submission per team is required.
+
+### If a lab is individual, can I still work with other people?
+
+Yes, we encourage you to work with and talk to your fellow students! However, you will have to complete and turn in your own assignment. Discussing how to do things and showing pieces code is allowed, but allowing someone to copy your code or directly copying someone else's work is not allowed. If on an individual assignment your code is identical to someone else's for a more involved problem (including typos and exact syntax) we will consider this cheating.
+
+### What do I do if I get stuck?
+
+Reach out on Piazza, come to office hours, ask your fellow students. Don't spend forever banging your head against a wall -- labs should feel interesting or challenging, but not impossible or demotivating.
+
+---
+
+### [Lab 0 (individual)](https://kelrenmor.github.io/STA101-002/labs/lab0/lab0)
+
+### Lab 1
+
+### Lab 2
+
+### Lab 3
+
+### Lab 4
+
+### Lab 5
+
+### Lab 6
+
+### Lab 7
+
+### Lab 8
+
+### Lab 9
+
