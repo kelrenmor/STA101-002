@@ -40,9 +40,7 @@ To do:
 - View the [Observational Studies & Experiments video](https://www.coursera.org/learn/probability-intro/lecture/Qw8iF/observational-studies-experiments)
 - Read OIS Chapter 1, Sections 1.1 and 1.2
 - Work on questions from PS1 at the end of these OIS sections
-- Begin Lab 0
-
-**Due today by 11:59 PM EDT: **
+- Complete [Lab 0 (individual)](https://kelrenmor.github.io/STA101-002/labs/lab0/lab0) (not for credit)
 
 ### Thursday,  May 14
 
@@ -55,9 +53,11 @@ To do:
 - View the [Random Sample Assignment video](https://www.coursera.org/learn/probability-intro/lecture/N6gE8/spotlight-random-sample-assignment)
 - Read OIS Chapter 1, Sections 1.3 and 1.4
 - Work on questions from PS1 at the end of these OIS sections
-- Wrap up Lab 0
+- Complete [AE1](https://kelrenmor.github.io/STA101-002/application_exercises/#ae1)
+- Discuss [Team expectations agreement](https://kelrenmor.github.io/STA101-002/grouppolicies/#team-expectations-agreement), due tomorrow
+- Begin working on [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due Monday 5/18
 
-**Due today by 11:59 PM EDT: Lab 0**
+<span style="color:red">Due today by 11:59 PM EDT: AE1</span>
 
 ### Friday,  May 15
 
@@ -73,9 +73,9 @@ To do:
 - View the [Transforming Data video](https://www.coursera.org/learn/probability-intro/lecture/eQa2U/transforming-data)
 - Read OIS Chapter 2, Section 2.1
 - Work on questions from PS1 at the end of these OIS sections
-- Begin working on Lab 1
+- Continue working on [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due Monday 5/18
 
-**Due today by 11:59 PM EDT:**
+<span style="color:red">Due today by 11:59 PM EDT: Team expectations agreement</span>
 
 ---
 
@@ -97,10 +97,10 @@ To do:
 - View the [Exploring Categorical Variables video](https://www.coursera.org/learn/probability-intro/lecture/vEjt0/exploring-categorical-variables)
 - View the [Introduction to Inference video](https://www.coursera.org/learn/probability-intro/lecture/e6IzY/introduction-to-inference)
 - Read OIS Chapter 2, Sections 2.2 and 2.3
-- Work on questions from PS1 at the end of these OIS sections
-- Wrap up Lab 1
+- Work on questions from PS1 at the end of these OIS sections (note PS1 is due tomorrow!)
+- Wrap up [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due today
 
-**Due today by 11:59 PM EDT: Lab 1**
+<span style="color:red">Due today by 11:59 PM EDT: Lab 1</span>
 
 ### Tuesday,  May 19
 
@@ -116,7 +116,7 @@ To do:
 - View the [Disjoint vs. Independent video](https://www.coursera.org/learn/probability-intro/lecture/PSXBC/spotlight-disjoint-vs-independent)
 - Read OIS Chapter 3, Section 3.1 
 
-**Due today by 11:59 PM EDT:**
+<span style="color:red">Due today by 11:59 PM EDT: PS1</span>
 
 ### Wednesday,  May 20
 
@@ -131,7 +131,6 @@ To do:
 - View the [Examples of Bayesian Inference video](https://www.coursera.org/learn/probability-intro/lecture/AWtbY/examples-of-bayesian-inference)
 - Read OIS Chapter 3, Section 3.2
 
-**Due today by 11:59 PM EDT:**
 
 ### Thursday,  May 21
 
@@ -149,7 +148,7 @@ To do:
 - View the [Working with the Binomial Distribution video](https://www.coursera.org/learn/probability-intro/lecture/yef4b/working-with-the-binomial-distribution)
 - Read OIS Chapter 4, Sections 4.1 and 4.3
 
-**Due today by 11:59 PM EDT:**
+<span style="color:red">Due today by 11:59 PM EDT: Lab 2</span>
 
 ### Friday,  May 22
 
@@ -163,7 +162,7 @@ To do:
 - View the [CLT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/XhkI6/clt-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.1
 
-**Due today by 11:59 PM EDT:**
+<span style="color:red">Due today by 11:59 PM EDT: PS2</span>
 
 ---
 
@@ -194,13 +193,9 @@ To do:
 - View the [CI (for a mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/txXVo/ci-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.2
 
-Due today by 11:59 PM EDT:
-
 ### Wednesday,  May 27
 
 Topic: Midterm 1 review
-
-Due today by 11:59 PM EDT: Nothing
 
 ### Thursday,  May 28
 
@@ -210,7 +205,7 @@ To do:
 
 - Take Midterm 1
 
-Due today by 11:59 PM EDT: Midterm 1
+<span style="color:red">Due today by 11:59 PM EDT: Midterm 1 + Lab 3</span>
 
 ### Friday,  May 29
 
@@ -224,14 +219,41 @@ To do:
 - View the [HT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/nKo0b/ht-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.3
 
-Due today by 11:59 PM EDT:
-
 ---
 
 # Week 3
 
 ---
 
+### Monday, June 1
+
+Topic: Inference for a single proportion
+
+To do: 
+
+### Tuesday, June 2
+
+Topic: Inference for comparing two proportions
+
+To do: 
+
+### Wednesday, June 3
+
+Topic: Chi-square testing
+
+To do: 
+
+### Thursday, June 4
+
+Topic: Inference using the t-distribution
+
+To do: 
+
+### Friday, June 5
+
+Topic: Bootstrapping
+
+To do: 
 
 ---
 
@@ -239,6 +261,43 @@ Due today by 11:59 PM EDT:
 
 ---
 
+### Monday, June 8
+
+Topic: Power
+
+To do: 
+
+### Tuesday, June 9
+
+Topic: ANOVA
+
+To do: 
+
+### Wednesday, June 10
+
+Topic: Midterm 2 review
+
+To do: 
+
+- Review for midterm 2
+- Work on project proposal
+
+### Thursday, June 11
+
+Topic: Midterm 2
+
+To do: 
+
+- Take Midterm 2
+- Wrap up and submit project proposal
+
+<span style="color:red">Due today by 11:59 PM EDT: Midterm 2 + Project proposal</span>
+
+### Friday, June 12
+
+Topic: Introduction to regression
+
+To do: 
 
 ---
 
@@ -246,11 +305,85 @@ Due today by 11:59 PM EDT:
 
 ---
 
+### Monday, June 15
+
+Topic: Outliers and Inference for SLR
+
+To do: 
+
+### Tuesday, June 16
+
+Topic: Introduction to multiple linear regression
+
+To do: 
+
+### Wednesday, June 17
+
+Topic: Model selection and diagnostics for MLR
+
+To do: 
+
+### Thursday, June 18
+
+Topic: Transformation and case studies
+
+To do: 
+
+<span style="color:red">Due today by 11:59 PM EDT: Lab 8</span>
+
+### Friday, June 19
+
+Topic: Review and project work
+
+To do: 
+
+- Review for final
+- Work on Lab 9
+- Work on individual project
+- Wrap up and submit PS7 
+- Take PA7
+
+<span style="color:red">Due today by 11:59 PM EDT: PS7 + PA7</span>
+
 ---
 
 # Week 6
 
 ---
 
+### Monday, June 22
 
+Topic: Review and project work
 
+To do: 
+
+- Review for final
+- Wrap up and submit Lab 9
+- Wrap up and submit individual project
+
+<span style="color:red">Due today by 11:59 PM EDT: Lab 9 + Project</span>
+
+### Tuesday, June 23
+
+Topic: View and respond to assigned project presentations
+
+To do: 
+
+- Review for final
+- Project reflection
+
+<span style="color:red">Due today by 11:59 PM EDT: Project reflection</span>
+
+### Wednesday, June 24
+
+Topic: Reading day
+
+To do: Prepare for final exam (tomorrow!)
+
+### Thursday, June 25
+
+Topic: Final exam
+
+To do: Take final exam and celebrate!
+
+<span style="color:red">Due today by 11:59 PM EDT: Final exam</span>

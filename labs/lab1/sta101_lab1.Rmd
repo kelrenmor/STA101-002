@@ -1,6 +1,6 @@
 ---
-title: "Lab 0"
-author: "[Enter your name here]"
+title: "Lab 1"
+author: "[Enter recorder name here]"
 date: "[Enter date here]"
 output:
   html_document:
@@ -8,7 +8,7 @@ output:
     fig_width: 6
 ---
 
-**Discussants:** [Enter discussant names here. Remember, these are the other (non-author) team members.]
+**Full team and roles:** [Enter team member names here along with their roles.]
 
 * * *
 

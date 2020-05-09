@@ -1,0 +1,119 @@
+
+---
+title: "Lab 2 - Intro to data"
+author: "[Enter recorder name here]"
+date: "[Enter date here]"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+```
+
+**Full team and roles:** [Enter team member names here along with their roles.]
+
+* * *
+
+## Lab report
+
+#### Load data:
+```{r}
+load(url("https://kelrenmor.github.io/STA101-002/labs/data/nycflights.RData"))
+```
+
+#### Exercise 1: 
+
+
+
+```{r ex1}
+
+```
+
+#### Exercise 2: 
+
+
+
+```{r ex2}
+
+```
+
+#### Exercise 3: 
+
+
+
+```{r ex3}
+
+```
+
+#### Exercise 4: 
+
+
+
+```{r ex4}
+
+```
+
+#### Exercise 5: 
+
+
+
+```{r ex5}
+
+```
+
+#### Exercise 6: 
+
+
+
+```{r ex6}
+
+```
+
+
+#### Exercise 7: 
+
+
+
+```{r ex7}
+
+```
+
+#### Exercise 8: 
+
+
+
+```{r ex8}
+
+```
+
+#### Exercise 9: 
+
+
+
+```{r ex9}
+
+```
+
+#### Exercise 10: 
+
+
+
+```{r ex10}
+
+```
+
+#### Exercise 11: 
+
+
+
+```{r ex11}
+
+```
+

@@ -25,11 +25,15 @@ Yes, we encourage you to work with and talk to your fellow students! However, yo
 
 Reach out on Piazza, come to office hours, ask your fellow students. Don't spend forever banging your head against a wall -- labs should feel interesting or challenging, but not impossible or demotivating.
 
+### How are team labs graded?
+
+See the [Group dynamics](https://kelrenmor.github.io/STA101-002/grouppolicies) page.
+
 ---
 
 ### [Lab 0 (individual)](https://kelrenmor.github.io/STA101-002/labs/lab0/lab0)
 
-### Lab 1
+### [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1)
 
 ### Lab 2
 

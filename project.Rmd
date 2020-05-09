@@ -1,0 +1,22 @@
+---
+title: "Project"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---- 
+
+The project objective is to give you independent applied research experience using real data and statistical methods. For a parameter of interest to you, you will describe the relevant data, conduct an analysis, and summarize your findings in a written, fully reproducible, data analysis report. You will also upload a short video presentation in which you share your work with your peers. Students will view and engage with a subset of their peers’ projects, and respond to questions from those who viewed their presentation in the "project reflections" component of the assignment.
+
+* Project proposal (due Thursday, June 11): 2/10 of overall project grade
+* Project write-up/presentation (due Monday, June 22): 7/10 of overall project grade
+* Project reflections (due Tuesday, June 23): 1/10 of overall project grade
+
+You must score at least 30% of the points on each of the three project related submissions in order to pass this class.
+
+---- 
+
+More details and a syllabus soon to come!

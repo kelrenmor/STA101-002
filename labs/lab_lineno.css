@@ -85,3 +85,69 @@ div#license {
     background-color: rgba(76, 114, 29, 0.2);
     border-radius: 5px;
 }
+
+<style>
+  /* Style the linenumber div */
+
+  .linenumbers {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #EBEBEB;
+    text-align: center;
+    padding: 0px 3px;
+    font-family: monospace;
+    float: left;
+    position: absolute;
+    transform:translate(-125%);
+    font-size: inherit !important;
+  }
+
+  .main-container {
+    margin-left: 8% !important;
+  }
+
+  /* fixes the problem with inline code 
+     that makes the line spacing bigger: */
+  p > code {
+    line-height: 90% !important;
+  }
+</style>
+
+
+<script>
+  var $p = $('p:not(:has(>img)), pre,  ul, ol').slice(start=1);
+
+  $(document).ready(function(){
+    $p.wrap('<numbering/>');
+    $('numbering').prepend('<div class=\"linenumbers\"/>');
+
+    updateLines = function(p) {
+      var counter = 1; // counts total number of lines
+      $(p).each(function() {       
+
+        if($(this).is('pre')) {
+          var $s = $(this).children('code');
+          var styles = $(this).css([ "padding-top", "padding-bottom", "line-height"]);
+          $(this).siblings('.linenumbers').css(styles);
+        } else {
+          var $s = $(this);
+        }
+
+        var h  = $s.outerHeight();  // get the height
+        var nl = Math.round(h /parseFloat($s.css('line-height'))); 
+        var text = '';
+        for(var i=counter; i < counter + nl; ++i) {
+          text += i + '</br>';
+        }
+        counter += nl;
+        $(this).siblings('.linenumbers').html(text);
+      });
+    };
+    updateLines($p);
+
+  });
+
+  $(window).resize(function() {
+    updateLines($p);
+  });
+</script>

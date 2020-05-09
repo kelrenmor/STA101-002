@@ -14,6 +14,10 @@ navbar:
     href: problem_sets.html
   - text: Labs
     href: labs.html
+  - text: Application exercises
+    href: application_exercises.html
+  - text: Project
+    href: project.html
   - text: FAQ
     href: faq.html
   - text: Sakai
