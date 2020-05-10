@@ -41,7 +41,7 @@ Let's load the tidyverse package and the data.
 
 ```{r load-packages, message=FALSE}
 library(tidyverse)
-load(url("https://kelrenmor.github.io/STA101-002/labs/data/kobe.RData"))
+load(url('https://github.com/kelrenmor/STA101-002/raw/master/labs/data/kobe.RData'))
 ```
 
 ### Your reproducible lab report
@@ -92,14 +92,15 @@ in a data frame called `kobe_streak` as the `length` variable.
 ```{r calc-streak-kobe}
 # First, source the code from where we define the function
 source("https://kelrenmor.github.io/STA101-002/labs/functions/calc_streak.R") 
+
 # Then use the function to calculate the Kobe streak
-kobe_streak <- calc_streak(kobe$shot)
+kobe_streak <- data.frame(length=calc_streak(kobe$basket))
 ```
 
 We can then take a look at the distribution of these streak lengths.
 
 ```{r plot-streak-kobe}
-ggplot(data = kobe_streak, aes(x = length)) +
+ggplot(data=kobe_streak, aes(x=length)) +
   geom_bar()
 ```
 

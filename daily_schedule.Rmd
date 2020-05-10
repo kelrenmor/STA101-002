@@ -7,6 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+The following schedule will be stable once a week begins, but is subject to change up until midnight on Sunday at the start of the week. Please check frequently for updates.
 
 Skip straight to a specific week:
 
@@ -116,7 +117,7 @@ To do:
 - View the [Disjoint vs. Independent video](https://www.coursera.org/learn/probability-intro/lecture/PSXBC/spotlight-disjoint-vs-independent)
 - Read OIS Chapter 3, Section 3.1 
 
-<span style="color:red">Due today by 11:59 PM EDT: PS1</span>
+<span style="color:red">Due today by 11:59 PM EDT: PS1 + PA1 </span>
 
 ### Wednesday,  May 20
 
@@ -162,7 +163,7 @@ To do:
 - View the [CLT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/XhkI6/clt-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.1
 
-<span style="color:red">Due today by 11:59 PM EDT: PS2</span>
+<span style="color:red">Due today by 11:59 PM EDT: PS2 + PA2 </span>
 
 ---
 
@@ -205,7 +206,7 @@ To do:
 
 - Take Midterm 1
 
-<span style="color:red">Due today by 11:59 PM EDT: Midterm 1 + Lab 3</span>
+<span style="color:red">Due today by 11:59 PM EDT: Midterm 1 + Lab 3 </span>
 
 ### Friday,  May 29
 

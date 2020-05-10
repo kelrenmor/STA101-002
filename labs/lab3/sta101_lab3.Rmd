@@ -1,8 +1,8 @@
 
 ---
 title: "Lab 3 - Probability"
-author: "Your name"
-date: "Date of lab session"
+author: "[Enter your name here]"
+date: "[Enter date here]"
 output: 
   html_document: 
     fig_height: 4
@@ -17,13 +17,15 @@ library(dplyr)
 library(ggplot2)
 ```
 
+**Note: this lab is to be turned in individually.** However, feel free to discuss/work with your team. Collaboration is allowed. Copy-pasting is not.
+
 * * *
 
 ## Lab report
 
 #### Load data:
 ```{r}
-load(url("https://kelrenmor.github.io/STA101-002/labs/data/kobe.RData"))
+load(url('https://github.com/kelrenmor/STA101-002/raw/master/labs/data/kobe.RData'))
 ```
 
 #### Set seed:

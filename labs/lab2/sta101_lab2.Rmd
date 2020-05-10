@@ -17,7 +17,7 @@ library(dplyr)
 library(ggplot2)
 ```
 
-**Full team and roles:** [Enter team member names here along with their roles.]
+**Full team and roles:** [Enter all team member names here along with their roles.]
 
 * * *
 
@@ -25,7 +25,7 @@ library(ggplot2)
 
 #### Load data:
 ```{r}
-load(url("https://kelrenmor.github.io/STA101-002/labs/data/nycflights.RData"))
+load(url('https://github.com/kelrenmor/STA101-002/raw/master/labs/data/nycflights.Rdata'))
 ```
 
 #### Exercise 1: 

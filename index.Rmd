@@ -51,15 +51,15 @@ The course textbook is [OpenIntro Statistics 4th Ed](https://leanpub.com/openint
 
 ### Schedule at a glance
 
-STA 101-002 has a tight turnaround on due dates to ensure no one falls behind; in return, the instruction team will return graded assignments no later than 48 hours after submission. Use the schedule below for a quick guide to topics and due dates. For a more complete schedule providing specific material for daily readings/viewings, see the [Detailed schedule](https://) tab.
+STA 101-002 has a tight turnaround on due dates to ensure no one falls behind; in return, the instruction team will return graded assignments no later than 48 hours after submission. Use the schedule below for a quick guide to topics and due dates. For a more complete schedule providing specific material for daily readings/viewings, see the [Detailed schedule](https://kelrenmor.github.io/STA101-002/daily_schedule) tab.
 
-Note: this schedule is approximate and is likely to be modified as the course progresses. Some sessions may be swapped due to course timing. Assignments are due by 11:59 PM EDT unless otherwise specified. 
+Note: this schedule is approximate and is likely to be modified as the course progresses. Some sessions may be swapped due to course timing. Please check frequently for updates. Assignments are due by 11:59 PM EDT unless otherwise specified. 
 
 |Date |Topic |Due |Special notes |
 | ----------- | --------------------------- | --------------- | --------------- |
 | Wednesday,  May 13 | Data Collection + Observational studies and experiments | | First day of class! Begin Unit 1: Introduction to Data. |
-| Thursday,  May 14| Sampling | Lab 0 | |
-| Friday,  May 15| Exploratory data analysis |  | |
+| Thursday,  May 14| Sampling | AE1 | |
+| Friday,  May 15| Exploratory data analysis | Team agreement | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  May 18| More EDA + Introduction to statistical inference | Lab 1 | |
 | Tuesday,  May 19| Probability and conditional probability | PS1 + PA1 | Begin Unit 2: Probability and distributions |

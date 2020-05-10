@@ -35,9 +35,9 @@ See the [Group dynamics](https://kelrenmor.github.io/STA101-002/grouppolicies) p
 
 ### [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1)
 
-### Lab 2
+### [Lab 2 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab2/lab2)
 
-### Lab 3
+### [Lab 3 (individual)](https://kelrenmor.github.io/STA101-002/labs/lab3/lab3)
 
 ### Lab 4
 
