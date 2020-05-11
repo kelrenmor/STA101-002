@@ -43,6 +43,8 @@ To do:
 - Work on questions from PS1 at the end of these OIS sections
 - Complete [Lab 0 (individual)](https://kelrenmor.github.io/STA101-002/labs/lab0/lab0) (not for credit)
 
+<span style="color:blue">Daily interactive session (course intro, syllabus, and tools): 3-4:15 PM ET (recorded)</span>
+
 ### Thursday,  May 14
 
 Topic: Sampling
@@ -58,7 +60,9 @@ To do:
 - Discuss [Team expectations agreement](https://kelrenmor.github.io/STA101-002/grouppolicies/#team-expectations-agreement), due tomorrow
 - Begin working on [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due Monday 5/18
 
-<span style="color:red">Due today by 11:59 PM EDT: AE1</span>
+<span style="color:blue">Daily interactive session (sampling and covid): Time TBA (recorded)</span>
+
+<span style="color:blue">Lab session: Time TBA (recorded)</span>
 
 ### Friday,  May 15
 
@@ -75,6 +79,8 @@ To do:
 - Read OIS Chapter 2, Section 2.1
 - Work on questions from PS1 at the end of these OIS sections
 - Continue working on [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due Monday 5/18
+
+<span style="color:blue">Daily interactive session (more sampling examples): Time TBA (recorded)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Team expectations agreement</span>
 

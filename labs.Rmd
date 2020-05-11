@@ -19,11 +19,11 @@ When you are done with a lab, export **both** the Rmd and the HTML files you cre
 
 ### If a lab is individual, can I still work with other people?
 
-Yes, we encourage you to work with and talk to your fellow students! However, you will have to complete and turn in your own assignment. Discussing how to do things and showing pieces code is allowed, but allowing someone to copy your code or directly copying someone else's work is not allowed. If on an individual assignment your code is identical to someone else's for a more involved problem (including typos and exact syntax) we will consider this cheating.
+Yes, we encourage you to work with and talk to your fellow students! However, you will have to complete and turn in your own assignment. See the [Academic integrity](https://kelrenmor.github.io/STA101-002/syllabus/#academic-integrity) section of the syllabus.
 
 ### What do I do if I get stuck?
 
-Reach out on Piazza, come to office hours, ask your fellow students. Don't spend forever banging your head against a wall -- labs should feel interesting or challenging, but not impossible or demotivating.
+Attend a live lab session or view the lab session recording, reach out on Piazza, come to office hours, ask your fellow students. Don't spend forever banging your head against a wall -- labs should feel interesting or challenging, but not impossible or demotivating.
 
 ### How are team labs graded?
 

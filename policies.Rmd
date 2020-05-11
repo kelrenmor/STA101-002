@@ -8,10 +8,7 @@ library(knitr)
 library(tidyverse)
 ```
 
-
-
-
-###Diversity & inclusiveness
+### Diversity & inclusiveness
 
 The Duke University Community Commitment states: "Because diversity is essential to fulfilling the university’s mission, Duke is committed to building an inclusive and diverse university community.  Every student, faculty, and staff member —whatever their race, gender, age, ethnicity, cultural heritage or nationality; religious or political beliefs; sexual orientation or gender identity; or socioeconomic, veteran or ability status—has the right to inclusion, respect, agency and voice in the Duke community.  Further, all members of the University community have a responsibility to uphold these values and actively foster full participation in university life."
 

@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Class meeting information
 
-This is an online, asynchronous introductory statistics course designed to develop practical skills in understanding and analyzing marine science, environmental, and energy data. Asynchronous means that there is no designated class meeting time; students access materials, view lectures, and participate actively on Piazza within their own daily schedule. However, the content calendar and due dates are designed such that students will undergo shared consistent learning over the 6 week Summer 1 term, and students should expect there to be some kind of deadline most weekdays. The course will also include optional "live" virtual office hours and group work sessions; these will be scheduled based on an availability survey taken at the beginning of the course and within groups, respectively.
+This is an online, asynchronous introductory statistics course designed to develop practical skills in understanding and analyzing marine science, environmental, and energy data. Asynchronous means that there are no required class meetings; students may access materials, view lectures, and participate actively on Piazza within their own daily schedule. However, the course will include daily interactive group work sessions, virtual office hours, and lab sessions; these will be scheduled based on availability. Students are strongly encouraged to come to live work sessions if they are able to, and recordings will be made available for those who are not. The content calendar and due dates are designed such that students will undergo shared consistent learning over the 6 week Summer 1 term, and students should expect there to be some kind of deadline or deliverable most weekdays.
 
 ## Course goals & objectives
 
@@ -34,6 +34,40 @@ The course goals are as follows:
 - Equipment / software: Computer + stable internet access + video/audio capability + latest version of Firefox, Chrome, or Safari installed on your operating system.
 - Calculator (optional): You may use a calculator in this class. There is no restrictions on the type of calculator. A simple calculator that can take square roots should be sufficient.
 
+----
+
+### Diversity & inclusiveness
+
+The Duke University Community Commitment states: "Because diversity is essential to fulfilling the university’s mission, Duke is committed to building an inclusive and diverse university community.  Every student, faculty, and staff member —whatever their race, gender, age, ethnicity, cultural heritage or nationality; religious or political beliefs; sexual orientation or gender identity; or socioeconomic, veteran or ability status—has the right to inclusion, respect, agency and voice in the Duke community.  Further, all members of the University community have a responsibility to uphold these values and actively foster full participation in university life."
+
+It is my goal for our learning environment to facilitate learning and intellectual development for everyone. To help accomplish this:
+  
+  - If you have a name and/or set of pronouns that differ from those that appear in your official Duke records, please let me know.
+  - We are constantly learning more about diverse perspectives and identities. If something occurred in class that made you feel uncomfortable, please talk to me about it. 
+  
+
+### Academic integrity
+
+Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, respect, and accountability. Citizens of this community commit to reflect upon and uphold these principles in all academic and nonacademic endeavors, and to protect and promote a culture of integrity.
+
+Remember the Duke Community Standard that you have agreed to abide by:
+  
+To uphold the Duke Community Standard:
+  
+- I will not lie, cheat, or steal in my academic endeavors;
+- I will conduct myself honorably in all my endeavors; and
+- I will act if the Standard is compromised.
+
+Cheating or plagiarism on assignments, lying about an illness or absence and other forms of academic dishonesty are a breach of trust with classmates and faculty, violate the <a href="https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard">Duke Community Standard</a>, and will not be tolerated. Such incidences will result in a 0 grade.  Additionally, there may be penalties to your final class grade along with being reported to the <a href="https://studentaffairs.duke.edu/conduct/undergraduate-disciplinary-system">Undergraduate Conduct Board</a> (undergraduates) or relevant Director of Graduate Studies (graduate students).
+
+Please review the Academic Dishonesty policies <a href="https://studentaffairs.duke.edu/conduct/z-policies/academic-dishonesty">here</a>. 
+
+- Much of the work assigned in class is collaborative. The final project must be completed independently. Team labs to be completed by groups. For other assignments, while you may talk about strategies for completing them with other students in the class, the work you submit must be your own individual work.
+
+- Important note: do not share your course materials with other students after completion of this course. Doing so will be considered a violation of the Duke Community Standard.
+
+**Referencing code:** The web contains an enormous volume of code that you may find useful. You are welcome to make use of any online resources (e.g. StackOverflow), but you must explicitly cite your sources. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. On the final project you may not directly share code with another student in this class, and on team labs you may not share code with another team in this class (you are welcome to discuss the problems together and ask for advice, but you may not send or make use of code from another team). 
+
 ---- 
 
 ## How to be successful in this class
@@ -55,9 +89,10 @@ Generally, the framework for each unit will be as follows:
 1. Prior to the start of each day within a unit you are expected to familiarize yourselves with the learning objectives for the day, and then watch the day's videos and/or complete the readings.
 2. You will complement your learning with:
     * Problem sets; some will be ungraded and have answers available in the back of the textbook, others will be turned in for points. Collaboration is welcome, but your write ups must be done individually and show your own work.
-    * Application exercises, some of which will be done in teams or collectively as a class on Piazza.
+    * Collaborative group work, some of which will be done in groups via (recorded) live guided practice sessions, or as a class on Piazza.
     * Labs, some of which will be done in teams.
-3. At the end of each unit you will wrap up the module with a performance assessment, done individually, which is meant to help gauge your comprehension of the material.
+    * Data-science-in-action seminars, followed by reflections.
+3. At the end of each unit you will wrap up the module with a performance assessment, done individually, which is meant to gauge your comprehension of the material.
 
 In addition to the standard formats of the units, there will be (approximately) weekly “Data Science in Action” lectures, two individual midterms, a final exam, and a project. 
 
@@ -71,15 +106,15 @@ You are expected to put in about 18-20 hours of work per week, including the tim
 
 ### Synchronous activities
 
-There are no required synchronous activities in the course (meaning at no point in the class will you have to be online with everyone else at the same time). The exams will be scheduled to last no more than 2 hours and fall within a given 24 window, but can be started at any time during that window.
+There are no required synchronous activities in the course (meaning at no point in the class will your grade depend on you being online with everyone else at the same time). However, students are encouraged to attend the daily interactive sessions offered for the course (schedule shown on course home page and Detailed Schedule page); recordings will also be made available. The exams will be scheduled to last no more than 2 hours and fall within a given 24 window, but can be started at any time during that window.
 
-Live video/audio office hours open to the whole class, hosted via Zoom, will be scheduled for one hour two times per week (pending student survey) by each member of the instruction team. Additional office hours may be scheduled depending on student request and content in a given week.
+Live video/audio office hours open to the whole class, hosted via Zoom, will take place throughout the week with each member of the instruction team. Additional office hours may be scheduled depending on student request and content in a given week.
 
 You may be invited to take part in additional synchronous social or educational events, but you will not be required to participate and these will not impact your grade.
 
 "Data Science in Action" sessions may occur "live", but will also be recorded and made available online. 
 
-Scheduling for group work on labs and application exercises will be coordinated within individual teams.
+Scheduling for group work on labs and data-science-in-action reflections will be coordinated within individual teams.
 
 ### Asynchronous activities
 
@@ -99,15 +134,13 @@ I will respond to Piazza posts directed to me and individual emails/messages sen
 
 ### Feedback
 
-Problem/lab/application-exercise solutions will be available after everyone has submitted assignment. Graded problem sets and labs will be returned no later than 48 hours after the assignment due date. Weekly grades for Piazza participation (Monday through Sunday) will be provided no later than the following Wednesday each week.
-
-I will create and post (roughly) biweekly content (for example a video, demonstration, code example, etc.) addressing common questions, Piazza discussions, or things I've noticed during grading. E.g., I may notice that a topic from the day's textbook reading wasn't very clear and address that topic, or work the question from a problem set that the most people missed.
+Problem/lab solutions will be available after everyone has submitted the assignment. Graded problem sets and labs will be returned no later than 48 hours after the assignment due date. Weekly grades for Piazza participation (Monday through Sunday) will be provided no later than the following Wednesday each week.
 
 Students will be required to schedule a 1-1 meeting with me for a point of their choosing in the semester. During this meeting, I will provide feedback on their submissions/participation thus far and discuss any topics/concerns/questions the student has. Please feel free to also request additional meetings, and/or come to my office hours!
 
 ### Piazza
 
-A typical week on Piazza will include application exercises, polls posted by the instruction team, questions posed by students, and content posted by both students and the instruction team. To get the most out of this course, plan to log into Piazza and engage with your peers/instructors at least two to three times per week. 
+A typical week on Piazza will include discussion content and/or polls posted by the instruction team, questions posed by students, and content posted by both students and the instruction team. To get the most out of this course, plan to log into Piazza and engage with your peers/instructors at least two to three times per week. 
 
 Piazza is so heavily emphasized in this course for three primary reasons: 
 1. Discussion provides continual opportunities to reflect, recall, and apply new knowledge.
@@ -118,7 +151,7 @@ To emphasize the importance of online participation, the quality of your partici
 
 ### Data science in action
 
-We will have (approximately) weekly invited speakers in marine/environmental science talk about how they use data and information, the goal being to expose students to real life examples of statistical thinking. Later follow up interactions with students will occur on Piazza.
+We will have (approximately) weekly invited speakers in marine/environmental science talk about how they use data and information, the goal being to expose students to real life examples of statistical thinking. Later follow up interactions with students will occur on Piazza. Reflections on these seminars will contribute to your participation grade.
 
 ---- 
 
@@ -140,7 +173,7 @@ We will have (approximately) weekly invited speakers in marine/environmental sci
 Grades may be curved at the end of the semester. Cumulative numerical averages of 90 - 100 are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-, however the exact ranges for letter grades will be determined after the final exam. The more evidence there is that the class has mastered the material, the more generous the curve will be.
 
 *Dropping scores:*
-The lowest score will be dropped from each of the following categories: Problem sets, Labs, Application exercises, Performance assessments.
+The lowest score will be dropped from each of the following categories: Problem sets, Labs, Data-science-in-action reflections, Performance assessments.
 
 *Late work policy:*
 There will be no late work accepted. The reason for this strict late work policy is so that solutions to problem sets can be released quickly for feedback to the rest of the class, and to emphasize the importance of following the pace of the course.
@@ -157,20 +190,21 @@ Participation, problem sets, labs, project, midterms, finals... what are all of 
 ### Participation
 
 *Grade breakdown:*
-1/3 completion of application exercises.
+1/3 completion of data science in action reflections.
 1/3 completion of performance assessments.
 1/3 activity on Piazza.
 
-*Application exercises (AE):*
-Application exercises are varied in nature. Sometimes you will be asked to reflect on a video from that day, or on a news article. Other times, you will be creating a video explaining how to do one of the practice problems. Application exercises will at times be done in teams or groups, and at times individually; check each assignment for details.
+*Data science in action reflections (DSA):*
+
+Participation grades in this category require you to reflect on the data science in action seminar. This reflection can take many forms: you can create a video, write a short essay, interact with the speaker, and/or synthesize what you heard with other work or areas of interest to you. You may complete these reflections in teams or groups of your choosing, or individually; check each assignment for more details.
 
 *Performance assessments (PA):*
 The objective of PAs is to evaluate your mastery of the material by the end of a unit and give you instant feedback on your performance. The format is 10 multiple choice questions. The assessments will be taken individually on Sakai. I suggest not using notes/books/videos while you take this, and using it as an honest test of your mastery of the past unit. 
 
-You may miss one each of the AEs and PAs without it impacting your grade. Your score on AEs and PAs is based on completion; you may also resubmit them as many times as you would like up to the due date/time.
+You may miss one each of the DSAs and PAs without it impacting your grade. Your score on DSAs and PAs is based on completion; you may also resubmit them as many times as you would like up to the due date/time.
 
 *Activity on Piazza:*
-This component of your grade is based upon the content, depth and quality of your contributions to Piazza questions/discussions using the standards found within the grading rubric (see "Rubrics" tab on course website). Participating consistently with thoughtful answers early in the week, and responding to and engaging in discussion with your peers will have positive effects on your overall grade. For grading purposes, each week runs Monday through Sunday. Your lowest Piazza activity grade will be dropped.
+This component of your grade is based upon the content, depth and quality of your contributions to Piazza questions/discussions using the standards found within the grading rubric (see "Rubrics" tab on course website). Sometimes the instruction team will create posts asking you to reflect on a Coursera lecture from that day, an exercise or topic from the textbook, or a news article. Participating consistently with thoughtful answers early in the week, and responding to and engaging in discussion with your peers will have positive effects on your overall grade. For grading purposes, each week runs Monday through Sunday. Your lowest Piazza activity grade will be dropped.
 
 ### Problem sets (PS)
 
@@ -186,7 +220,7 @@ You are welcomed, and encouraged, to work with each other on the problems, but y
 
 The objective of the labs is to give you hands on experience with data analysis using modern statistical software. The labs will also provide you with tools that you will need to complete the project successfully. We will use a statistical analysis package called RStudio, which is a front end for the R statistical language.
 
-Some labs may be done in teams, and "live" lab meetings can be scheduled with the TAs for the course. The TAs will also provide example content and resources on successful programming.
+Some labs will be done in teams. The TAs will host "live" lab meetings twice per week (recorded for those unable to attend), with additional help available in office hours. The TAs will also provide example content and resources on successful programming.
 
 *Lowest score will be dropped.*
 
@@ -218,19 +252,15 @@ A common question is: What do I do if something goes wrong after I begin the exa
 
 Students with disabilities who believe they may need accommodations in this class are encouraged to contact the Student Disability Access Office at (919) 668-1267 as soon as possible to better ensure that such accommodations can be made.
 
-## Academic integrity
-
-Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, respect, and accountability. Citizens of this community commit to reflect upon and uphold these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity. Cheating on exams and quizzes, plagiarism on homework assignments and projects, lying about an illness or absence and other forms of academic dishonesty are a breach of trust with classmates and faculty, violate the Duke Community Standard, and will not be tolerated. Such incidences will result in a 0 grade for all parties involved as well as being reported to the Office of Student Conduct. Additionally, there may be penalties to your final class grade. Please review the Duke’s Academic Dishonesty policies.
-
 ## Excused absences
 
 Students who miss graded work due to a scheduled varsity trip, religious holiday or short-term illness should fill out an online NOVAP, RHoliday or short-term illness form respectively. If you cannot complete an assignment on the due date due to a reported short-term illness, you have until noon the following day to complete it at no penalty. Then the regular late work policy will kick in. Those with a personal emergency or bereavement should seek a Dean’s Excuse: Check with your academic dean for details.
 
 ## Making up assignments
 
-There will be no make-up for application exercises or performance assessments, labs, problem sets, project, or final exam. If a midterm exam must be missed, absence must be officially excused in advance, in which case the missing exam score will be imputed using the final exam score. This policy only applies to the midterms. All other missed assessments will receive a grade of 0. The final exam must be taken within the stated window. You must take the final exam and turn in the project in order to pass this course.
+There will be no make-up for data-science-in-action reflections or performance assessments, labs, problem sets, project, or final exam. If a midterm exam must be missed, absence must be officially excused in advance, in which case the missing exam score will be imputed using the final exam score. This policy only applies to the midterms. All other missed assessments will receive a grade of 0. The final exam must be taken within the stated window. You must take the final exam and turn in the project in order to pass this course.
 
-Recall that to mitigate the impact of a 0 due to an unexpected missed assignment, the lowest grade from each of the following categories will be dropped: Problem sets, Labs, Application exercises, and Performance assessments.
+Recall that to mitigate the impact of a 0 due to an unexpected missed assignment, the lowest grade from each of the following categories will be dropped: Problem sets, Labs, Data-science-in-action reflections, and Performance assessments.
 
 ## Additional information
 

@@ -14,8 +14,6 @@ navbar:
     href: problem_sets.html
   - text: Labs
     href: labs.html
-  - text: Application exercises
-    href: application_exercises.html
   - text: Project
     href: project.html
   - text: FAQ
@@ -23,7 +21,7 @@ navbar:
   - text: Sakai
     href: https://sakai.duke.edu/
   - text: Piazza
-    href: https://piazza.com/duke/summer2020/sta10102l1su20/home
+    href: https://piazza.com/duke/summer2020/sta10102l1su20/
   - text: Rstudio
     href: https://vm-manage.oit.duke.edu/containers
 

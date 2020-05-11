@@ -9,7 +9,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ---- 
 
-All problems are from OpenIntro Statistics, 4th Edition. 
+Graded problems are often modified from OpenIntro Statistics questions. They are available on Sakai under the relevant assignment.
+
+Practice problems are from OpenIntro Statistics, 4th Edition. 
 
 You only need to turn in the answers to the graded problems. You can work with your classmates on the homework but you must turn in your own work. The answers to questions must be in your own words.
 
@@ -37,10 +39,7 @@ Textbook errata: If you read something that doesn't make sense first check to se
 
 ### PS1:
 
-Graded questions: 
-
-* Chapter 1: 1.2, 1.6, 1.16, 1.22, 1.30, 1.32
-* Chapter 2: 2.2, 2.12, 2.14, 2.16, 2.20, 2.22, 2.24, 2.26, 2.28, 2.30
+Graded questions: See Sakai assignment.
 
 Practice questions: 
 
@@ -49,10 +48,7 @@ Practice questions:
 
 ### PS2:
 
-Graded questions: 
-
-* Chapter 3: 3.2, 3.8, 3.16, 3.18, 3.20, 3.42
-* Chapter 4: 4.4, 4.6, 4.18, 4.36, 4.42, 4.48
+Graded questions: TBA
 
 Practice questions: 
 
@@ -61,28 +57,32 @@ Practice questions:
 
 ### PS3:
 
-Graded questions: 5.2, 5.4, 5.6, 5.8, 5.10, 5.12, 5.18, 5.20, 5.24, 5.26, 5.30, 5.32, 5.34, 5.36
+Graded questions: TBA
 
 Practice questions: 5.1, 5.3, 5.5, 5.9, 5.11, 5.15, 5.17, 5.21, 5.23, 5.25, 5.27, 5.29, 5.31, 5.33, 5.35, 5.37
 
 ### PS 4:
 
-* Graded problems: 
-* Practice problems: 
+Graded questions: TBA
+
+Practice questions: TBA
 
 ### PS 5:
 
-* Graded problems: 
-* Practice problems: 
+Graded questions: TBA
+
+Practice questions: TBA
 
 ### PS 6:
 
-* Graded problems: 
-* Practice problems: 
-  
+Graded questions: TBA
+
+Practice questions: TBA
+
 ### PS 7:
 
-* Graded problems: 
-* Practice problems: 
+Graded questions: TBA
+
+Practice questions: TBA
 
   
