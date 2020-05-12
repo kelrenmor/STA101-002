@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Class meeting information
 
-This is an online, asynchronous introductory statistics course designed to develop practical skills in understanding and analyzing marine science, environmental, and energy data. Asynchronous means that there are no required class meetings; students may access materials, view lectures, and participate actively on Piazza within their own daily schedule. However, the course will include daily interactive group work sessions, virtual office hours, and lab sessions; these will be scheduled based on availability. Students are strongly encouraged to come to live work sessions if they are able to, and recordings will be made available for those who are not. The content calendar and due dates are designed such that students will undergo shared consistent learning over the 6 week Summer 1 term, and students should expect there to be some kind of deadline or deliverable most weekdays.
+This is an online, asynchronous introductory statistics course designed to develop practical skills in understanding and analyzing marine science, environmental, and energy data. Asynchronous means that there are no required class meetings; students may access materials, view lectures, and participate actively on Piazza within their own daily schedule. However, the course will include interactive seminars, group work sessions, virtual office hours, and lab sessions; these will be scheduled based on availability. Students are encouraged to come to live seminars and work sessions if they are able to, and recordings will be made available for those who are not. The content calendar and due dates are designed such that students will undergo shared consistent learning over the 6 week Summer 1 term, and students should expect there to be some kind of deadline or deliverable most weekdays.
 
 ## Course goals & objectives
 
@@ -106,7 +106,7 @@ You are expected to put in about 18-20 hours of work per week, including the tim
 
 ### Synchronous activities
 
-There are no required synchronous activities in the course (meaning at no point in the class will your grade depend on you being online with everyone else at the same time). However, students are encouraged to attend the daily interactive sessions offered for the course (schedule shown on course home page and Detailed Schedule page); recordings will also be made available. The exams will be scheduled to last no more than 2 hours and fall within a given 24 window, but can be started at any time during that window.
+There are no required synchronous activities in the course (meaning at no point in the class will your grade depend on you being online with everyone else at the same time). However, students are encouraged to attend the interactive sessions offered for the course (schedule shown on course home page and Detailed Schedule page); recordings will also be made available. The exams will be scheduled to last no more than 2 hours and fall within a given 24 window, but can be started at any time during that window.
 
 Live video/audio office hours open to the whole class, hosted via Zoom, will take place throughout the week with each member of the instruction team. Additional office hours may be scheduled depending on student request and content in a given week.
 
