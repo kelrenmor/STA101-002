@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The following schedule will be stable once a week begins, but is subject to change up until midnight on Sunday at the start of the week. Please check frequently for updates. All live sessions will be available as a recording under Resources in Sakai.
+The following schedule will be stable once a week begins, but is subject to change up until midnight on Sunday at the start of the week. Please check frequently for updates. All live sessions will be available as a recording [under Resources in Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main).
 
 <span style="color:blue">Live interactive and lab session times are shown in blue.</span>
 
@@ -55,7 +55,7 @@ Topic: Sampling
 
 To do:
 
-- Watch yesterday's course intro video (if you weren't able to attend live yesterday), saved under the Resources tab on Sakai
+- Watch yesterday's course intro video (if you weren't able to attend live yesterday), saved [under the Resources tab on Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main)
 - View the [Sampling and sources of bias video](https://www.coursera.org/learn/probability-intro/lecture/Y96uT/sampling-and-sources-of-bias)
 - View the [Experimental design video](https://www.coursera.org/learn/probability-intro/lecture/Jyc3t/experimental-design)
 - View the [Random Sample Assignment video](https://www.coursera.org/learn/probability-intro/lecture/N6gE8/spotlight-random-sample-assignment)
@@ -75,7 +75,7 @@ Topic: Exploratory data analysis (EDA)
 
 To do:
 
-- Watch yesterday's Lab video (if you weren't able to attend live yesterday), saved under the Resources tab on Sakai
+- Watch yesterday's Lab video (if you weren't able to attend live yesterday), saved under the [Resources tab on Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main)
 - Read the [Learning Objectives for today](https://www.coursera.org/learn/probability-intro/supplement/Zsmno/lesson-learning-objectives)
 - View the [Visualizing Numerical Data video](https://www.coursera.org/learn/probability-intro/lecture/9kRJf/visualizing-numerical-data)
 - View the [Measures of Center video](https://www.coursera.org/learn/probability-intro/lecture/AM0o6/measures-of-center)
