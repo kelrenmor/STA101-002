@@ -89,7 +89,7 @@ Generally, the framework for each unit will be as follows:
 1. Prior to the start of each day within a unit you are expected to familiarize yourselves with the learning objectives for the day, and then watch the day's videos and/or complete the readings.
 2. You will complement your learning with:
     * Problem sets; some will be ungraded and have answers available in the back of the textbook, others will be turned in for points. Collaboration is welcome, but your write ups must be done individually and show your own work.
-    * Collaborative group work, some of which will be done in groups via (recorded) live guided practice sessions, or as a class on Piazza.
+    * Collaborative group work, some of which may be done via (optional) live guided practice sessions, or as a class on Piazza.
     * Labs, some of which will be done in teams.
     * Data-science-in-action seminars, followed by reflections.
 3. At the end of each unit you will wrap up the module with a performance assessment, done individually, which is meant to gauge your comprehension of the material.

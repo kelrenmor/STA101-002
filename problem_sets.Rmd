@@ -1,6 +1,8 @@
 ---
 title: "Problem sets (PS)"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -35,11 +37,13 @@ You do not need to turn in your answers for the practice problems. In fact, brie
 
 Textbook errata: If you read something that doesn't make sense first check to see if it's been corrected already. If not, send me an email about it so that I can confirm whether it's a typo or not, and if it is, it'll be added to the list. A list of known errata can be found [here](https://docs.google.com/spreadsheets/u/1/d/1qifH8VDF0p3xVaFrnOAdmX5MLVODAw6JqeAS8OinUs4/htmlview).
 
+If you think one of the non-textbook questions has an error, post to Piazza or email me directly.
+
 ---
 
 ### PS1:
 
-Graded questions: See Sakai assignment.
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_1), or download template on Sakai under the Resources tab.
 
 Practice questions: 
 

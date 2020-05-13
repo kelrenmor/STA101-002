@@ -1,0 +1,245 @@
+---
+title: "Problem set 1"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+set.seed(1204)
+```
+
+--- 
+
+## Chapter 1 problems
+
+--- 
+
+### Problem 1: Hypothermia and stroke
+
+In animal stroke models, neuronal damage during stroke is profoundly affected by body temperature. In humans, hypothermia reportedly improves outcomes in traumatic brain injury, and has been shown to be neuroprotective during surgery. Some work has been done on anesthesia in conjunction with hypothermia for stroke patients, and lower body temperature at admission is associated with improved outcomes among stroke patients. Researchers are interested in whether achieving modest hypothermia without anesthesia is feasible, and if so whether it improves patient outcomes. One of the outcomes measured was mortality at 28 days.$^1$
+          
+|  | Mortality within 28 days | | |
+| --- | --- | --- | --- |
+
+|  | Yes | No | Total |
+| --- | --- | --- | --- |
+| Treatment | 1 | 15 | 16
+| Control | 6 | 44 | 50
+| | 7 | 59 | 66 |
+
+(a) What percent of patients in the treatment group died within 28 days?
+(b) What percent died within 28 days in the control group?
+(c) In which group did a higher percentage of patients die within 28 days?
+(d) Your findings so far might suggest a real difference in the effect of modest hypothermia on mortality outcomes in stroke patients. However, this is not the only possible conclusion that can be drawn based on your findings so far. What is one other possible explanation for the observed difference between the percentage of patients in the hypothermia and regular care groups that died within 28 days?
+
+### Problem 2: Association
+
+(a) Would you expect ice cream sales and shark attack rate to be associated or independent? Why or why not?
+(b) If associated, do you think that a causal relationship exists?
+
+### Problem 3: Socio-economic class and unethical behavior$^2$
+
+In one of seven studies on the relationship between socio-economic class and unethical behavior, researchers studied the relationship between socio-economic class and unethical driving behavior among 274 California drivers. Drivers' vehicle status (make, age, and appearance) was used as a proxy for drivers’ social class. Observers noted each vehicle status, and also recorded whether or not each driver cut off other vehicles at a busy 4-way stop by crossing the intersection before it was their turn.$^2$
+
+(a) Identify the main research question of the study.
+(b) Who are the subjects in this study, and how many are included?
+(c) The study found that students who were identified as upper-class cut off more vehicles than others. What variables were recorded for each subject in the study in order to conclude these findings? State the variables and their types.
+(d) What potential problems exist with the assumption that vehicle can be used as a proxy for drivers’ social class?
+
+### Problem 4: Socio-economic class and unethical behavior (part two)
+
+The previous problem introduced a study on the relationship between socio-economic class and unethical behavior.
+
+(a) Identify the population of interest and the sample in this study.
+(b) Comment on whether or not the results of the study can be generalized to the population, and if the findings of the study can be used to establish causal relationships.
+
+### Problem 5: School is a pain in the neck
+
+A study surveying a random sample of college students found that they are more likely to have neck pain, drink more coffee, and stay awake later when they are stressed.
+
+(a) What type of study is this?
+(b) Can this study be used to conclude a causal relationship between increased stress and neck pain?
+(c) State possible confounding variables that might explain the observed relationship between increased
+stress and neck pain.
+
+### Problem 6: Vitamin supplements. 
+
+[Note: This is problem 1.30 from the OIS book.] To assess the effectiveness of taking large doses of vitamin C in reducing the duration of the common cold, researchers recruited 400 healthy volunteers from staff and students at a
+university. A quarter of the patients were assigned a placebo, and the rest were evenly divided between 1g
+Vitamin C, 3g Vitamin C, or 3g Vitamin C plus additives to be taken at onset of a cold for the following two
+days. All tablets had identical appearance and packaging. The nurses who handed the prescribed pills to
+the patients knew which patient received which treatment, but the researchers assessing the patients when
+they were sick did not. No significant differences were observed in any measure of cold duration or severity
+between the four groups, and the placebo group had the shortest duration of symptoms.$^3$
+
+(a) Was this an experiment or an observational study? Why?
+(b) What are the explanatory and response variables in this study?
+(c) Were the patients blinded to their treatment?
+(d) Was this study double-blind?
+(e) Participants are ultimately able to choose whether or not to use the pills prescribed to them. We might
+expect that not all of them will adhere and take their pills. Does this introduce a confounding variable
+to the study? Explain your reasoning.
+
+### Problem 7: Aromatherapy and learning
+
+You have been tasked with conducting an experiment among your classmates to see if students learn better if they study without any scents, with essential oils applied just before studying, or with an oil diffuser turned on during studying. Briefly outline a design for this study.
+
+--- 
+
+## Chapter 2 problems
+
+--- 
+
+### Problem 8: Associations
+
+Indicate which of the plots show (a) a positive association, (b) a negative association,
+or (c) no association. Also determine if the positive and negative associations are linear or nonlinear. Each
+part may refer to more than one plot.
+
+```{r assoc, echo=F, fig.width = 10, fig.height = 3}
+N = 50
+x = runif(N)
+par(mfrow=c(1,4))
+plot(runif(N), runif(N), xlab='(1)', ylab='', xaxt='n', yaxt='n')
+plot(x, 0.4*x + rnorm(N,sd=0.1), xlab='(2)', ylab='', xaxt='n', yaxt='n')
+plot(x, -0.8*x^4 + rnorm(N,sd=0.1), xlab='(3)', ylab='', xaxt='n', yaxt='n')
+plot(x, -1.3*x + rnorm(N,sd=0.1), xlab='(4)', ylab='', xaxt='n', yaxt='n')
+
+```
+
+### Problem 9: Mix-and-match
+
+Describe the distribution in the histograms below and match them to the box plots.
+
+```{r mix, echo=F, fig.width = 10, fig.height = 3}
+N = 10000
+x1 = runif(N)
+x2 = rnorm(N)
+x3 = rgamma(N, shape=1)
+par(mfrow=c(1,6))
+hist(x1, breaks=10, xlab='(1)', ylab='', xaxt='n', yaxt='n', main='')
+hist(x2, breaks=10, xlab='(2)', ylab='', xaxt='n', yaxt='n', main='')
+hist(x3, breaks=10, xlab='(3)', ylab='', xaxt='n', yaxt='n', main='')
+boxplot(x2, xlab='(a)', ylab='', xaxt='n', yaxt='n')
+boxplot(x3, xlab='(b)', ylab='', xaxt='n', yaxt='n')
+boxplot(x1, xlab='(c)', ylab='', xaxt='n', yaxt='n')
+
+```
+
+### Problem 10: Median vs. mean. 
+
+Estimate the median for the 500 observations shown in the histogram, and note
+whether (and why) you expect the mean to be higher or lower than the median.
+
+```{r est, echo=F, fig.width = 5, fig.height = 3}
+N = 500
+x = sn::rsn(400, xi=10, omega=-5, alpha=10.5)
+par(mfrow=c(1,1))
+xlabel <- round(seq(min(x), max(x), by = 2))
+hist(x, breaks=12, xlab='', ylab='', xaxt='n',  main='')
+axis(1, at = xlabel)
+
+```
+
+### Problem 11:
+
+An informal study of cats showed that 50% of cats nap 10 or more times per day, and that the average daily nap count of cats is 17. What does this study imply about the shape of the distribution of number of cat naps per day?
+
+### Problem 12: Distributions and appropriate statistics
+
+For each of the following, state whether you expect
+the distribution to be symmetric, right skewed, or left skewed. Also specify whether the mean or median
+would best represent a typical observation in the data, and whether the variability of observations would be
+best represented using the standard deviation or IQR. Explain your reasoning.
+
+(a) Prom gown prices in a store where 25% of the gowns cost below \$100, 50% of the gowns cost below \$200, 75% of the gowns cost below \$300, and very few gowns cost more than $400.
+(b) Bridal gown prices in a (very fancy) store where 25% of the gowns cost below \$2,000, 50% of the gowns cost below \$4,000, 75% of the gowns cost below \$12,000, and there are a meaningful number of gowns that cost more than $30,000.
+(c) Ages of medical students, where the majority of students are of typical mid- to late-20s college age, some are in their 30s, and only a very few are returning to medicine as a second career and are in their mid 50s.
+(d) Number of alcoholic drinks consumed by college students in a given week. Assume that most of these
+students don't drink since they are under 21 years old, and only a few drink excessively.
+
+### Problem 13:
+
+The American Community Survey (ACS) records data on the per capita income of Americans, among many other variables. The histogram below shows the distribution of the per capita income of the population in 3,142 counties in the US in 2013. Also shown is a histogram of logs of these values.
+
+```{r county, echo=F, message=FALSE, fig.width=8, fig.height = 4}
+
+library(choroplethr)
+library(choroplethrMaps)
+data("df_county_demographics")
+par(mfrow=c(1,2))
+df_county_demographics$value = df_county_demographics$per_capita_income
+hist(df_county_demographics$value, xlab="Per capita income", ylab='', main='')
+hist(log(df_county_demographics$value), xlab="log(Per capita income)", ylab='', main='')
+par(mfrow=c(1,1))
+county_choropleth(df_county_demographics,
+                  title = "", 
+                  legend = "Per capita income")
+
+```
+
+(a) Describe the numerical distribution and comment on why we might want to use log-transformed values
+in analyzing or modeling these data.
+(b) What features of the distribution of income in US counties are apparent in the map but not in the histogram? What features are apparent in the histogram but not the map?
+(c) Is one visualization more appropriate or helpful than the other? Explain your reasoning.
+
+### Problem 14:
+
+In [SurveyUSA, News Poll #18927](http://www.surveyusa.com/client/PollReport.aspx?g=60d6fa81-2698-4c51-a5f8-714f40976df2) 977 randomly sampled registered voters from Tampa, FL were asked if negative campaign ads (i) made them not want to vote, (ii) made them want to vote even more, or (iii) didn't affect them. The results of the survey by political
+ideology are shown below. Note data were collected on Jan 27-29, 2012.
+
+| | Republican | Democrat | Independent | All |
+| -- | -- | -- | -- | -- |
+| (i) Not want to vote | 119 | 132 | 81 | 332 |
+| (ii) Want to vote more | 93 | 68 | 40 | 201 |
+| (iii) No affect | 204 | 133 | 101 | 438 |
+| (iv) Not sure | 0 | 5 | 1 | 6 |
+| Total | 416 | 338 | 223 | 977
+
+(a) What percent of these Tampa, FL voters identify themselves as Republicans?
+(b) Negative campaign ads make what percent of these Tampa, FL voters not want to vote?
+(c) What percent of these Tampa, FL voters identify themselves as Republicans and also feel discouraged from voting by negative campaign ads?
+(d) What percent of these Tampa, FL voters who identify themselves as Republicans are discouraged from voting by negavite campaign ads? What percent of Democrats feel this way? What percent of Independents feel this way?
+(e) Do political party and voting discouragement by negative campaign ads appear to be independent? Explain your reasoning.
+
+### Problem 15:
+
+In the same SurveyUSA News Poll the voters from Tampa, FL were asked if the government should be doing more, less, or about the same to help the housing market recover. Based on the mosaic plot shown below, do views on housing market recovery and political affiliation appear to be independent? Explain your reasoning.
+
+```{r mos, echo=F, message=FALSE, fig.width=4, fig.height = 4}
+library(vcd)
+mat = matrix(c(155,232,98,176,53,57,75,49,53,10,4,14), nrow=4, ncol=3, byrow=T)
+colnames(mat) = c('Republican','Democrat','Independent')
+rownames(mat) = c('More','Less','Same','Unsure')
+mosaic(t(mat), dir=c("v"), 
+       labeling=labeling_border(rot_labels = c(90,0,0,0), 
+                                 just_labels = c("left","left", 
+                                                 "center","center")) )
+```
+
+### Problem 16: OIS Exercise
+
+Complete problem 2.26 on Page 76 of the OIS book.
+
+### Problem 17:
+
+Alspaugh residents at Duke were asked how many hours of video games they play per week. This sample yielded an average of 3.92 hours, with a standard deviation of 3.29 hours. Is the distribution of the number of hours Alspaugh residents game weekly symmetric? If not, what shape would you expect this distribution to have? Explain your reasoning.
+
+### Problem 18:
+
+Suppose you have observations $x_1,\ldots,x_n$ of some quantity. Let $\bar{x}$ be the mean of these $n$ observations, and let $m$ denote the median. Suppose we have some distribution where all observations are negative, i.e. $x_i<0$. What is the expected shape of the distribution under the following conditions?
+
+(a) $\bar{x}/m = 1$
+(b) $\bar{x}/m < 1$
+(c) $\bar{x}/m > 1$
+
+----
+
+$^1$Kammersgaard, L. P., et al. "Feasibility and safety of inducing modest hypothermia in awake patients with acute stroke through surface cooling: a case-control study: the Copenhagen Stroke Study." Stroke 31.9 (2000): 2251-2256.
+
+$^2$Piff, Paul K., et al. "Higher social class predicts increased unethical behavior." Proceedings of the National Academy of Sciences 109.11 (2012): 4086-4091.
+
+$^3$Audera, Carmen, et al. "Mega‐dose vitamin C in treatment of the common cold: a randomised controlled trial." Medical journal of Australia 175.7 (2001): 359-362.

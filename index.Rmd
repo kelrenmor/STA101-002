@@ -28,26 +28,30 @@ Work ethic, the ability to self-motivate, flexibility, logical thinking, profess
 
 <font color="#6CA0DC"><i class="fas fa-university fa-lg"></i></font> &nbsp; Zoom (asynchronous)
 
-<font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MTWThF (office hours with instructor or TA, some live group work sessions, labs, and seminars to be recorded)
+<font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MTWThF (office hours with instructor or TAs, live group work sessions, and seminars -- which will be recorded)
 
-See below for current week's live session times (in addition to regular office hours). Recordings will be placed on Sakai for those who cannot attend live, arranged by date.
+<font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MW 2-3pm lab sessions (intro will be recorded, followed by live work session) in [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963)
+
+<span style="color:red">Since this is the first week, our regularly scheduled W lab session and office hours will not be occuring. The regular office hour schedule will begin Thursday May 14th.</span>
+
+See below for current week's live session times (in addition to regular office hours). Recordings will be placed on Sakai for those who cannot attend live, arranged by date. 
 
 | Day | Time | Team member | Topic | Location |
-| ----   | ----   | ----   | ----  | ---- |
-| Wednesday,  May 13 | 3-4:15 PM ET | Dr. Moran | Course intro and tools | [Zoom room](https://duke.zoom.us/j/9271657735) |
-| Thursday,  May 14 | TBA | Ezinne | Lab | Zoom room (link TBA) |
-| Friday,  May 15 | TBA | Dr. Moran | Covid and sampling | [Zoom room](https://duke.zoom.us/j/9271657735) |
+| ---   | ---   | ---   | ----  | ---- |
+| Wednesday,  May 13 | 3-4:15pm | Dr. Moran | Course intro and tools | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Thursday,  May 14 | 4-5pm | Ezinne | Lab | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Friday,  May 15 | 12:30-2pm | Dr. Moran | Group work session (drop in) | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
 
 ### Teaching team and office hours 
 
-Note: office hours may vary. Revisions to office hours will be noted via e-mail and on the webpage. 
+All times are in Eastern time zone. Note: office hours may vary. Revisions to office hours will be noted via e-mail and on the webpage. 
 
 | Team member | Email | Office hours | Location |
-| ----------  | -------------------------------------         | ----  | ---- |
-| [Professor Kelly Moran](https://stat.duke.edu/people/kelly-moran) | kelly.r.moran@duke.edu | TBA | [Zoom room](https://duke.zoom.us/j/9271657735) |
-| [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo) | ezinne.nwankwo@duke.edu | TBA | Zoom room (link TBA) |
-| TA Jason McEachin | marcus.mceachin@duke.edu | TBA | [Zoom room](https://duke.zoom.us/j/6489339892) |
-| TA Myra Cai | myra.cai@duke.edu | TBA | Zoom room (link TBA) |
+| -- | -- | ---- | -- |
+| [Dr. Kelly Moran](https://stat.duke.edu/people/kelly-moran) | kelly.r.moran@duke.edu | M 9:30-11am, T 1:30-3pm, W 9:30-11am, Th 5:30-7pm | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo) | ezinne.nwankwo@duke.edu | M 3-4:30pm, W 3-4:30pm | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| TA Jason McEachin | marcus.mceachin@duke.edu | T 7-9pm, Th 7-9pm | [Jason's Zoom room](https://duke.zoom.us/j/6489339892) |
+| TA Myra Cai | myra.cai@duke.edu | F 4-6pm | [Myra's Zoom room](https://duke.zoom.us/j/9923268136) |
 
 ### Materials
 
