@@ -208,7 +208,7 @@ This component of your grade is based upon the content, depth and quality of you
 
 ### Problem sets (PS)
 
-These will be assigned (approximately) weekly on the course webpage and will be comprised of problems from the textbook. Each assignment will have problems to be turned in for grading, and practice problems from the OpenIntro book. You do not need to turn in the practice problems, and the solutions can be found in the back of the book.
+These will be assigned (approximately) weekly on the course webpage. Each assignment will have problems to be turned in for grading, and practice problems from the OpenIntro book. You do not need to turn in the practice problems, and the solutions can be found in the back of the book.
 
 The objective of the problem sets is to help you develop a more in-depth understanding of the material and help you prepare for exams and project. Grading will be based on completeness as well as accuracy. In order to receive credit you must show all your work.
 
