@@ -392,7 +392,7 @@ The <a href="http://www.rstudio.com/resources/cheatsheets/">RStudio cheatsheet</
 
 <a name="g1">1. What is and isn't allowed on the midterms and final?</a>
 
-The midterms and final will be open note, open book, open problem set, open labs, open Coursera videos, and open provided practice exams. They are **not** open internet. You are allowed to use existing material from the course, but you are not allowed to visit other web pages, seek out additional material during the test, communicate with other people about the exam, or otherwise solicit answers or outside help. 
+The midterm and final will be open course materials and open internet, but **not** open communication. That is, you can look at your OpenIntro book, notes, problem set keys, google 'Normal distribution', etc, but you cannot ask your classmate/roommate/parent/tutor for help, or solicit answers to the exam question online (e.g., by posting the question on StackExchange). Students will sign an honors statement attesting that they will not share work or solutions with fellow students, nor seek out any assistance with test content either online or in person. 
 
 If you have questions about a specific resource or scenario not covered here please email me or post to the class Piazza page.
 
