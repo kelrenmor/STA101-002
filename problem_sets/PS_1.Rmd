@@ -28,7 +28,7 @@ In animal stroke models, neuronal damage during stroke is profoundly affected by
 | --- | --- | --- | --- |
 | Treatment | 1 | 15 | 16
 | Control | 6 | 44 | 50
-| | 7 | 59 | 66 |
+| All | 7 | 59 | 66 |
 
 (a) What percent of patients in the treatment group died within 28 days?
 (b) What percent died within 28 days in the control group?
@@ -134,7 +134,7 @@ boxplot(x1, xlab='(c)', ylab='', xaxt='n', yaxt='n')
 Estimate the median for the 500 observations shown in the histogram, and note
 whether (and why) you expect the mean to be higher or lower than the median.
 
-```{r est, echo=F, fig.width = 5, fig.height = 3}
+```{r est, echo=F, fig.width = 3, fig.height = 3}
 N = 500
 x = sn::rsn(400, xi=10, omega=-5, alpha=10.5)
 par(mfrow=c(1,1))
@@ -144,7 +144,7 @@ axis(1, at = xlabel)
 
 ```
 
-### Problem 11:
+### Problem 11: Cat naps
 
 An informal study of cats showed that 50% of cats nap 10 or more times per day, and that the average daily nap count of cats is 17. What does this study imply about the shape of the distribution of number of cat naps per day?
 
@@ -161,7 +161,7 @@ best represented using the standard deviation or IQR. Explain your reasoning.
 (d) Number of alcoholic drinks consumed by college students in a given week. Assume that most of these
 students don't drink since they are under 21 years old, and only a few drink excessively.
 
-### Problem 13:
+### Problem 13: Per capita income
 
 The American Community Survey (ACS) records data on the per capita income of Americans, among many other variables. The histogram below shows the distribution of the per capita income of the population in 3,142 counties in the US in 2013. Also shown is a histogram of logs of these values.
 
@@ -186,7 +186,7 @@ in analyzing or modeling these data.
 (b) What features of the distribution of income in US counties are apparent in the map but not in the histogram? What features are apparent in the histogram but not the map?
 (c) Is one visualization more appropriate or helpful than the other? Explain your reasoning.
 
-### Problem 14:
+### Problem 14: Negative campaign ads
 
 In [SurveyUSA, News Poll #18927](http://www.surveyusa.com/client/PollReport.aspx?g=60d6fa81-2698-4c51-a5f8-714f40976df2) 977 randomly sampled registered voters from Tampa, FL were asked if negative campaign ads (i) made them not want to vote, (ii) made them want to vote even more, or (iii) didn't affect them. The results of the survey by political
 ideology are shown below. Note data were collected on Jan 27-29, 2012.
@@ -205,30 +205,29 @@ ideology are shown below. Note data were collected on Jan 27-29, 2012.
 (d) What percent of these Tampa, FL voters who identify themselves as Republicans are discouraged from voting by negavite campaign ads? What percent of Democrats feel this way? What percent of Independents feel this way?
 (e) Do political party and voting discouragement by negative campaign ads appear to be independent? Explain your reasoning.
 
-### Problem 15:
+### Problem 15: Helping the housing market
 
-In the same SurveyUSA News Poll the voters from Tampa, FL were asked if the government should be doing more, less, or about the same to help the housing market recover. Based on the mosaic plot shown below, do views on housing market recovery and political affiliation appear to be independent? Explain your reasoning.
+In the same SurveyUSA News Poll the voters from Tampa, FL were asked if the government should be doing more, less, or about the same to help the housing market recover. Based on the mosaic plot shown below, do views on housing market recovery and political affiliation appear to be independent? Explain your reasoning. Note for the columns Rep = Republican, Dem = Democrat, Ind = Independent; for the rows More = more, Less = less, NC = no change, and DK = don't know.
 
-```{r mos, echo=F, message=FALSE, fig.width=4, fig.height = 4}
+```{r mos, echo=F, message=FALSE, fig.width=3, fig.height = 3}
 library(vcd)
 mat = matrix(c(155,232,98,176,53,57,75,49,53,10,4,14), nrow=4, ncol=3, byrow=T)
-colnames(mat) = c('Republican','Democrat','Independent')
-rownames(mat) = c('More','Less','Same','Unsure')
-mosaic(t(mat), dir=c("v"), 
-       labeling=labeling_border(rot_labels = c(90,0,0,0), 
-                                 just_labels = c("left","left", 
-                                                 "center","center")) )
+colnames(mat) = c('Rep','Dem','Ind')
+rownames(mat) = c('More','Less','NC','DK')
+mat = as.table(mat)
+names(dimnames(mat)) <- c("Do", "Party")
+mosaic(t(mat), dir=c("v"))
 ```
 
 ### Problem 16: OIS Exercise
 
 Complete problem 2.26 on Page 76 of the OIS book.
 
-### Problem 17:
+### Problem 17: Video games in Alspaugh
 
 Alspaugh residents at Duke were asked how many hours of video games they play per week. This sample yielded an average of 3.92 hours, with a standard deviation of 3.29 hours. Is the distribution of the number of hours Alspaugh residents game weekly symmetric? If not, what shape would you expect this distribution to have? Explain your reasoning.
 
-### Problem 18:
+### Problem 18: Conditions
 
 Suppose you have observations $x_1,\ldots,x_n$ of some quantity. Let $\bar{x}$ be the mean of these $n$ observations, and let $m$ denote the median. Suppose we have some distribution where all observations are negative, i.e. $x_i<0$. What is the expected shape of the distribution under the following conditions?
 

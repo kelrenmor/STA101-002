@@ -1,8 +1,8 @@
 ---
 title: "Problem sets (PS)"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ---- 
 
-Graded problems are often modified from OpenIntro Statistics questions. They are available on Sakai under the relevant assignment.
+Graded problems are available as html links below, or as Word templates on Sakai under the resources tab. They are often modified from questions in OpenIntro Statistics, 4th Edition.
 
 Practice problems are from OpenIntro Statistics, 4th Edition. 
 
@@ -23,11 +23,11 @@ You must show **all** work to get credit.
 
 ### Where do I submit my problem sets?
 
-You will submit your problem sets on Sakai, under Assignments.
+You will submit your problem sets on Gradescope.
 
 ### How do I submit my problem sets?
 
-You will turn in your problem sets on Sakai. We **strongly** recommend working in a word processor of your choice, saving your work as PDF, and submitting that. You are welcomed to submit as Word files as well, however if we cannot open your file you will receive a 0 on the problem set (so it may not be worth taking that risk!). Alternatively you can type your answers in the text box in Sakai however if you lose internet connection and you haven't saved you might lose your work (so if you'll use this approach make sure to save often!). You may also handwrite and take a photo of your work, but if the grader cannot read your writing (due to handwriting or photo quality) you will not receive points.
+First, log into Gradescope using your Duke credentials [here](https://www.gradescope.com/saml). We **strongly** recommend working in a word processor of your choice, saving your work as PDF, and submitting that. You may also handwrite and take a photo of your work, but if the grader cannot read your writing (due to handwriting or photo quality) you will not receive points. See [Gradescope help page](https://www.gradescope.com/help#help-center-section-student-workflow) for common questions related to GradeScope.
 
 ### Do I need to turn in practice problems?
 
@@ -43,7 +43,7 @@ If you think one of the non-textbook questions has an error, post to Piazza or e
 
 ### PS1:
 
-Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_1), or download template on Sakai under the Resources tab.
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_1), or download Word template on Sakai under the Resources tab. Submit to Gradescope.
 
 Practice questions: 
 

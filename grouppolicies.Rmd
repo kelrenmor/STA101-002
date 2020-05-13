@@ -1,5 +1,5 @@
 ---
-  title: "Group dynamics"
+title: "Group dynamics"
 ---
   
 ```{r, echo=FALSE, include=FALSE}
@@ -8,14 +8,32 @@ library(knitr)
 library(tidyverse)
 ```
 
+### Teams
+
+Team 1: Xavier, Juliana, and Zavera
+
+Team 2: Elana, Joshua, and Brooke
+
+Team 3: Connor, Rachel H., and Zoe
+
+Team 4: Skylar, Braden, and Jules
+
+Team 5: Kylie, Paige, and Kate
+
+Team 6: Maya, Rand, Ghalia, and Giselle
+
+Team 7: Ayden, Rachel P., and Olivia
+
+Team 8: Alexa, Cynthia, and Aaron
+
 ### Policies
 
 Your group has a number of responsibilities for team assignments, described below.
 
-- Designate a coordinator, recorder, and monitor, checker, reviewer for each assignment. These should vary so that each group member takes a different role on a new assignment. For smaller teams, members may need to take on multiple roles.
-- Agree on meeting times in advance and on what each member should have complete before the meetings (readings, initial analysis, coding, etc.).
+- Designate a coordinator, recorder, and monitor, checker, reviewer for each assignment. These should vary so that each group member takes a different role on a new assignment. Since teams are smaller, members will need to take on multiple roles.
+- Agree on meeting times in advance and on what each member should have complete before the meetings (readings, initial analysis, coding, etc.)
 - Do the required individual preparation.
-- Coordinator sends reminder before meeting that includes meeting location, time, and individual preparation assignments
+- Coordinator sends reminder before meeting that includes meeting location, time, and individual preparation assignments.
 - Meet and work. Coordinator keeps everyone on task and makes sure everyone is involved, recorder prepares final solution to be turned in, monitor makes sure everyone understands the solution, including the coding, the checker double-checks the work for reproducibility (and errors!), and the reviewer is responsible for (1) sharing comments on the graded lab with the team (2) leading a discussion about them, with a focus on the revision and how to improve moving forward, and (3) reviewing effort apportionment in a constructive conversation with the team.
 - Checker turns in assignment, which also indicates which student took on each role.
 - All team members complete written evaluations of effort put forth by other team members.
@@ -29,8 +47,8 @@ Potential expectations include the following (not an exhaustive list!):
 
 - Make a serious effort at assigned work before meetings
 - Make sure anyone who misses a meeting for a good cause gets caught up on progress
-- Attend meetings
-- Show up on time and stay for full meeting
+- Attend meetings, or ensure you understand your responsibilities if unable to attend synchronous meeting
+- Show up on time and stay for full meeting when possible
 - Notify project coordinator as soon as possible if unable to attend a meeting or fulfill a responsibility
 - Listen thoughtfully to all team members
 - Follow up promptly on assigned tasks
