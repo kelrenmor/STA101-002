@@ -66,6 +66,8 @@ To do:
 
 <span style="color:blue">Lab session: 4-5 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 ### Friday,  May 15
 
 Topic: Exploratory data analysis (EDA)
@@ -83,6 +85,8 @@ To do:
 - Continue working on [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due Monday 5/18
 
 <span style="color:blue">Group work session (drop in): Time 12:30-2 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735), any common questions to be posted on Piazza)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Team expectations agreement</span>
 
@@ -109,6 +113,10 @@ To do:
 - Work on questions from PS1 (note PS1 is due tomorrow!)
 - Wrap up [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due today
 
+<span style="color:blue">Lab session: 2-3 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 <span style="color:red">Due today by 11:59 PM EDT: Lab 1</span>
 
 ### Tuesday,  May 19
@@ -125,6 +133,8 @@ To do:
 - View the [Disjoint vs. Independent video](https://www.coursera.org/learn/probability-intro/lecture/PSXBC/spotlight-disjoint-vs-independent)
 - Read OIS Chapter 3, Section 3.1 
 
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 <span style="color:red">Due today by 11:59 PM EDT: PS1 + PA1 </span>
 
 ### Wednesday,  May 20
@@ -139,6 +149,10 @@ To do:
 - View the [Bayesian Inference video](https://www.coursera.org/learn/probability-intro/lecture/qYbZQ/bayesian-inference)
 - View the [Examples of Bayesian Inference video](https://www.coursera.org/learn/probability-intro/lecture/AWtbY/examples-of-bayesian-inference)
 - Read OIS Chapter 3, Section 3.2
+
+<span style="color:blue">Lab session: 2-3 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 
 ### Thursday,  May 21
@@ -157,6 +171,8 @@ To do:
 - View the [Working with the Binomial Distribution video](https://www.coursera.org/learn/probability-intro/lecture/yef4b/working-with-the-binomial-distribution)
 - Read OIS Chapter 4, Sections 4.1 and 4.3
 
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 <span style="color:red">Due today by 11:59 PM EDT: Lab 2</span>
 
 ### Friday,  May 22
@@ -170,6 +186,8 @@ To do:
 - View the [Sampling Variability and CLT video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/lkQnZ/sampling-variability-and-clt)
 - View the [CLT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/XhkI6/clt-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.1
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS2 + PA2 </span>
 
@@ -187,6 +205,8 @@ This week, we have Monday off for Memorial day, Tuesday is a normal work day, We
 
 No class -- Memorial day.
 
+No office hours or lab session.
+
 Due today by 11:59 PM EDT: Nothing
 
 ### Tuesday,  May 26
@@ -201,6 +221,8 @@ To do:
 - View the [Required Sample Size for a ME video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/QPEXw/required-sample-size-for-me)
 - View the [CI (for a mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/txXVo/ci-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.2
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 ### Wednesday,  May 27
 
