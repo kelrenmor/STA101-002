@@ -9,6 +9,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This page (which has been initialized with questions common from previously offered 101 courses) will be updated as the class progresses with common questions I receive from students. I recommend that you check this page when you have a question to see if it has already been answered. If not, post to Piazza, and if it is something that has commonly come up in office hours or receives a lot of responses I'll post it here as well. Note that references are to the [OpenIntro Statistics, 4th Edition](https://www.openintro.org/).
 
+### Logistics:
+
+1. [What are the links for the tools I need for the class?](#l1)
+2. [Do I need to pay for Coursera, or worry about Coursera due dates?](#l2)
+3. [Where should I ask my question about a lab, problem set, or assignment?](#l3)
+
 ### Conceptual:
 
 1. [What is the difference between an explanatory and response variable?](#c1)
@@ -35,6 +41,34 @@ This page (which has been initialized with questions common from previously offe
 2. [I won't have internet for a day, what do I do about turning in problem sets / labs / etc?](#g2)
 3. [Is the final cumulative?](#g3)
 
+* * *
+### Logistics:
+* * *
+
+<a name="l1">1. What are the links for the tools I need for the class?</a>
+
+- Course website: https://kelrenmor.github.io/STA101-002/
+- Sakai: https://sakai.duke.edu/
+- Piazza: https://piazza.com/duke/summer2020/sta10102l1su20/
+- RStudio: https://vm-manage.oit.duke.edu/containers
+- Coursera: https://online.duke.edu/coursera-for-duke/
+- Gradescope: https://www.gradescope.com/saml
+
+* * *
+
+<a name="l2">2. Do I need to pay for Coursera, or worry about Coursera due dates?</a>
+
+Short answer: No, and no!
+
+When you register for the Coursera course, you may notice assignments and deadlines posted on Coursera itself. You can ignore these (though of course are welcome to do the practice questions if you wish)! We will be using Coursera for videos and learning objectives, not assignments. All graded work for the class will be specified on the course website and linked to directly from there (or you will be told to see assignment description on Sakai): https://kelrenmor.github.io/STA101-002.
+
+Coursera courses are free to Duke students. To make sure you are recognized as a Duke student, sign up with your NetID via https://online.duke.edu/coursera-for-duke/. If you would prefer to use a non-Duke email for your Coursera login, you will still be able to sign up to "audit" the Coursera course for free.
+
+* * *
+
+<a name="l3">3. Where should I ask my question about a lab, problem set, or assignment?</a>
+
+If your question is non-personal (e.g., 'What does the axis label mean on probelem 2?') post to Piazza. If your question is sensitive or personal (e.g., 'I have been having conflicts with my group over lab work division') reach out via email or come to office hours and let me know you would like to discuss something privately.
 
 * * *
 ### Conceptual:

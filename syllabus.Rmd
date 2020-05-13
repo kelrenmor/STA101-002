@@ -238,9 +238,9 @@ You must score at least 30% of the points on each of the three project related s
 
 There will be two midterms and one final in this class. You will take the exams on Sakai. You may start the exam at any point during the specified 24 hour window; once you begin the exam you will have two hours in which to complete it. You can’t pass the class if you do not take the final exam.
 
-Midterm 1 date: Thursday, May 28
-Midterm 2 date: Thursday, June 11
-Final date: Thursday, June 25
+* Midterm 1 date: Thursday, May 28
+* Midterm 2 date: Thursday, June 11
+* Final date: Thursday, June 25
 
 The midterm and final will be open course materials, but NOT open internet or open communication. That is, you can look at your OpenIntro book, notes, problem set keys, etc, but you cannot use google, ask your roommate for help, or post the exam question on StackExchange. Students will sign an honors statement attesting that they will not share work or solutions with fellow students, nor seek out any assistance with test content either online or in person. 
 
