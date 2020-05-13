@@ -22,7 +22,7 @@ markup: "mmark"
 
 STA 101-002 introduces students to the discipline of statistics as a science of understanding and analyzing data. Throughout the semester, students will learn how to effectively make use of data in the face of uncertainty: How to collect data, how to analyze data, and how to use data to make inferences and conclusions about real world phenomena. The course emphasizes examples from marine science, environmental science, conservation and energy issues. This section is ordinarily taught in person at Duke's Marine Lab campus, but will be taught asynchronously online for Summer Term 1 2020.
 
-Work ethic, the ability to self-motivate, flexibility, logical thinking, professionalism, and communication skills are all strong predictors of success in STA 101-002 (as well as in the working world). Don't worry if you haven't mastered all of these -- we'll work on them in class! 
+Work ethic, the ability to self-motivate, flexibility, logical thinking, professionalism, and communication skills are all strong predictors of success in STA 101-002 (as well as in the working world). Don't worry if you haven't mastered all of these -- we'll work on them in class!
 
 ### Class Meetings
 
@@ -52,6 +52,10 @@ All times are in Eastern time zone. Note: office hours may vary. Revisions to of
 | [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo) | ezinne.nwankwo@duke.edu | M 3-4:30pm, W 3-4:30pm | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
 | TA Jason McEachin | marcus.mceachin@duke.edu | T 7-9pm, Th 7-9pm | [Jason's Zoom room](https://duke.zoom.us/j/6489339892) |
 | TA Myra Cai | myra.cai@duke.edu | F 4-6pm | [Myra's Zoom room](https://duke.zoom.us/j/9923268136) |
+
+### Teams
+
+See the [Group dynamics](https://kelrenmor.github.io/STA101-002/grouppolicies) page for team assignments. Let me know if you or a team member intends to drop the class so we can restructure your team.
 
 ### Materials
 
