@@ -30,7 +30,7 @@ Work ethic, the ability to self-motivate, flexibility, logical thinking, profess
 
 <font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MTWThF (office hours with instructor or TAs, live group work sessions, and seminars -- which will be recorded)
 
-<font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MW 2-3pm lab sessions (intro will be recorded, followed by live work session) in [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963)
+<font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MW 2-3:15pm lab sessions (intro will be recorded, followed by live work session) in [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963)
 
 <span style="color:red">Since this is the first week, our regularly scheduled W lab session and office hours will not be occuring. The regular office hour schedule will begin Thursday May 14th.</span>
 
@@ -49,7 +49,7 @@ Additional times available on request. All times are in Eastern time zone. Note:
 | Team member | Email | Office hours | Location |
 | -- | -- | ---- | -- |
 | [Dr. Kelly Moran](https://stat.duke.edu/people/kelly-moran) | kelly.r.moran@duke.edu | M 10-11am, T 2-3pm, W 10-11am, Th 6-7pm | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
-| [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo) | ezinne.nwankwo@duke.edu | M 3-4:30pm, W 3-4:30pm | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo) | ezinne.nwankwo@duke.edu | M 3:15-5pm, W 3:15-5pm | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
 | TA Jason McEachin | marcus.mceachin@duke.edu | T 7-9pm, Th 7-9pm | [Jason's Zoom room](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/page/6f2b8b5d-66df-4833-bd08-787e2aa06c11) |
 | TA Myra Cai | myra.cai@duke.edu | F 4-6pm | [Myra's Zoom room](https://duke.zoom.us/j/9923268136) |
 

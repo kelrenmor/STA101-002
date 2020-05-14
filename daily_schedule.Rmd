@@ -62,7 +62,7 @@ To do:
 - Read OIS Chapter 1, Sections 1.3 and 1.4
 - Continue work on questions from PS1
 - Interact with Piazza discussion (to be posted this morning)
-- Discuss [Team expectations agreement](https://kelrenmor.github.io/STA101-002/grouppolicies/#team-expectations-agreement), due tomorrow
+- Discuss Team expectations agreement (attachment in Sakai assignment), due tomorrow
 - Begin working on [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due Monday 5/18
 
 <span style="color:blue">Lab session: 4-5 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
