@@ -114,6 +114,7 @@ To do:
 - Read OIS Chapter 2, Sections 2.2 and 2.3
 - Work on questions from PS1 (note PS1 is due tomorrow!)
 - Wrap up [Lab 1 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab1/lab1), due today
+- Begin working on Lab 2 (teams), due Thursday
 
 <span style="color:blue">Lab session: 2-3 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -134,6 +135,7 @@ To do:
 - View the [Probability Examples video](https://www.coursera.org/learn/probability-intro/lecture/GqcO0/probability-examples)
 - View the [Disjoint vs. Independent video](https://www.coursera.org/learn/probability-intro/lecture/PSXBC/spotlight-disjoint-vs-independent)
 - Read OIS Chapter 3, Section 3.1 
+- Continue working on Lab 2 (teams), due Thursday
 
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
@@ -151,6 +153,7 @@ To do:
 - View the [Bayesian Inference video](https://www.coursera.org/learn/probability-intro/lecture/qYbZQ/bayesian-inference)
 - View the [Examples of Bayesian Inference video](https://www.coursera.org/learn/probability-intro/lecture/AWtbY/examples-of-bayesian-inference)
 - Read OIS Chapter 3, Section 3.2
+- Continue working on Lab 2 (teams), due Thursday
 
 <span style="color:blue">Lab session: 2-3 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -172,6 +175,7 @@ To do:
 - View the [Normal Approximation to Binomial video](https://www.coursera.org/learn/probability-intro/lecture/2sosk/normal-approximation-to-binomial)
 - View the [Working with the Binomial Distribution video](https://www.coursera.org/learn/probability-intro/lecture/yef4b/working-with-the-binomial-distribution)
 - Read OIS Chapter 4, Sections 4.1 and 4.3
+- Finish working on Lab 2 (teams), due today
 
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
