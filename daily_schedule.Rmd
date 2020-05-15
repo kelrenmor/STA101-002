@@ -108,6 +108,7 @@ Topic: More EDA + Introduction to statistical inference (End of Unit 1!)
 
 To do: 
 
+- Watch Friday's 'question summary' and 'sampling comment'  videos (if you weren't able to attend the group work session live), saved under the [Resources tab on Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main)
 - Read the [Learning Objectives for today](https://www.coursera.org/learn/probability-intro/supplement/cLKTx/lesson-learning-objectives)
 - View the [Exploring Categorical Variables video](https://www.coursera.org/learn/probability-intro/lecture/vEjt0/exploring-categorical-variables)
 - View the [Introduction to Inference video](https://www.coursera.org/learn/probability-intro/lecture/e6IzY/introduction-to-inference)
