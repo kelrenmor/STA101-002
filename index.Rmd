@@ -32,15 +32,15 @@ Work ethic, the ability to self-motivate, flexibility, logical thinking, profess
 
 <font color="#6CA0DC"><i class="fas fa-calendar-alt fa-lg"></i></font> &nbsp; MW 2-3:15pm lab sessions (intro will be recorded, followed by live work session) in [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963)
 
-<span style="color:red">Since this is the first week, our regularly scheduled W lab session and office hours will not be occuring. The regular office hour schedule will begin Thursday May 14th.</span>
-
-See below for current week's live session times (in addition to regular office hours). Recordings will be placed [under resources on Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main) for those who cannot attend live, arranged by date. 
+See below for current week's live session times (note that these times are **in addition to** office hours, which are shown in the next section). Recordings will be placed [under resources on Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main) for those who cannot attend live, arranged by date. 
 
 | Day | Time | Team member | Topic | Location |
 | ---   | ---   | ---   | ----  | ---- |
-| Wednesday,  May 13 | 3-4:15pm | Dr. Moran | Course intro and tools | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
-| Thursday,  May 14 | 4-5pm | Ezinne | Lab | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
-| Friday,  May 15 | 12:30-2pm | Dr. Moran | Group work session (drop in) | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Monday,  May 18 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Tuesday,  May 19 | 3-4pm | Dr. Moran | Intro to Unit 2 | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Wednesday,  May 20 | 11am-12pm | Dr. Moran | Go over PS1 + PA1 | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Wednesday,  May 20 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Thursday,  May 21 | 5-6pm | Dr. Moran | Group work session (drop in) | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
 
 ### Teaching team and office hours 
 
