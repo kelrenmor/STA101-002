@@ -150,7 +150,7 @@ The CDC estimates that 12% of Americans have HSV-2.
 (b) Calculate the probability that exactly 20 out of 100 randomly sampled Americans have HSV-2.
 (c) What is the probability that exactly 5 out of a new sample of 100 Americans do *not* have HSV-2?
 (d) What is the probability that at least 1 out of 10 randomly sampled Americans have HSV-2?
-(d) What is the probability that more than 2 out of 10 randomly sampled Americans have had HSV-2?
+(e) What is the probability that more than 2 out of 10 randomly sampled Americans have had HSV-2?
 
 ### Problem 12: I-40 Speeds
 
