@@ -35,7 +35,7 @@ processing and subsetting.
 **A note on expectations: ** For each exercise and on your own question you 
 answer include any relevant output (tables, summary statistics, plots) in your 
 answer. Doing this is easy! Just place any relevant R code in a code chunk, 
-and hit Knit HTML.
+and hit Knit to PDF.
 </div>
 
 ## Getting started
@@ -115,6 +115,10 @@ on time percentage for departing flights.
 
 ### R Packages
 
+Hadley Wickham, the Chief Scientist at RStudio, descibes packages: "In R, the fundamental unit of shareable code is the package. A package bundles together code, data, documentation, and tests, and is easy to share with others."
+
+Some R functions and documentation are available immediately when you open R or RStudio. We call these base R functions. For example, `str()`, `mean()`, and `plot()` are base R functions. Some live inside packages, which R doesn't load unless we tell it to.
+
 In this lab we will explore these questions using the `dplyr` package for data
 wrangling and the `ggplot2` package for data visualization. So let's load these 
 packages:
@@ -125,6 +129,41 @@ library(dplyr)
 ```
 
 Note that these two lines are also included in your R Markdown template.
+
+See https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf and https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf for plotting and data wrangling cheat sheets using `ggplot2` and `dplyr` (also available on Sakai under Resources tab).
+
+### Same task, different functions
+
+One of the great and terrible things about R is that there are often many ways to do the same task. For example, if you wanted to plot `distance` vs. `air_time` from the nycflight data set, you could use base R `plot()` function:
+
+```{r plot_method_1}
+plot(nycflights$distance, nycflights$air_time)
+```
+
+Alternatively, you could use the `ggplot2` package's `qplot()` function (short for **q**uick plot), which uses similar syntax:
+
+```{r plot_method_2}
+qplot(nycflights$distance, nycflights$air_time)
+```
+
+Or you could use the `ggplot2` package's `ggplot()` function, which offers more functionality that we will explore later (we can easily color or resize points by values of a different variable, change aesthetics, etc.)
+
+```{r plot_method_3}
+# Note the ggplot() syntax. 
+# We first tell it what data set we're working with: data = nycflights,
+# then we tell it what the x (and y) variables are: aes(x = distance, y = air_time),
+# and finally we tell it we want to add points (i.e. make a scatter plot): + geom_point()
+ggplot(data = nycflights, aes(x = distance, y = air_time)) + 
+  geom_point()
+```
+
+Similarly, there are **many** ways to subset a data frame (i.e., to select row(s) and/or column(s)). Here we show a few. You've already seen the dollar-sign notation to select a column by name: `nycflights$distance`. In base R, you can also select by name `nycflights[,'distance']` (recall the syntax `mat[rows, cols]` to subset a matrix or data frame). Or we can use the `dplyr` function `select()`. Below you can see these methods in action; note we surround the commands with `head()` so that only the first few entires will print (rather than all 32735, which would take up a lot of page space!).
+
+```{r select_examples}
+head(nycflights$distance)
+head(nycflights[,'distance']) # single quote or double quote is fine here!
+head(select(nycflights, distance))
+```
 
 ### Seven verbs
 
@@ -150,6 +189,10 @@ We can examine the distribution of departure delays of all flights with a
 histogram.
 
 ```{r hist-dep-delay}
+# Note the ggplot() syntax. 
+# We first tell it what data set we're working with: data = nycflights,
+# then we tell it what the x variable is: aes(x = dep_delay),
+# and finally we tell it we want to add a histogram: + geom_histogram()
 ggplot(data = nycflights, aes(x = dep_delay)) +
   geom_histogram()
 ```
