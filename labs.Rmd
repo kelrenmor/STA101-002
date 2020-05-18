@@ -15,7 +15,7 @@ You will submit your labs on Sakai, under Assignments.
 
 ### How do I submit my labs?
 
-When you are done with a lab, export **both** the Rmd and the HTML files you created, and upload them to Sakai under the appropriate assignment. To export, check the box next to the Rmd and the HTML files for the lab, click on More, and then Export. This will download the files (likely to your Desktop or your Downloads folder, depending on your operating system and configurations). You can then upload these files to Sakai. Step-by-step instructions for exporting/submission can be found on the [course FAQ](https://kelrenmor.github.io/STA101-002/faq/#r5). When labs are to be done in teams, only one submission per team is required.
+When you are done with a lab, export **both** the Rmd and the HTML (or PDF-- follow lab instruction for each lab) files you created, and upload them to Sakai under the appropriate assignment. To export, check the box next to the Rmd and the HTML (or PDF) files for the lab, click on More, and then Export. This will download the files (likely to your Desktop or your Downloads folder, depending on your operating system and configurations). You can then upload these files to Sakai. Step-by-step instructions for exporting/submission can be found on the [course FAQ](https://kelrenmor.github.io/STA101-002/faq/#r5). When labs are to be done in teams, only one submission per team is required.
 
 ### If a lab is individual, can I still work with other people?
 

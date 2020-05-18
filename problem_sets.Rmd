@@ -52,7 +52,7 @@ Practice questions:
 
 ### PS2:
 
-Graded questions: TBA
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_2), or download Word template on Sakai under the Resources tab. Submit to Gradescope.
 
 Practice questions: 
 

@@ -130,6 +130,7 @@ Topic: Probability and conditional probability (Start of Unit 2!)
 
 To do: 
 
+- Take PA1 (performance assessment for Unit 1) on Sakai, due today
 - View the Lab video from yesterday if you weren't able to attend live (saved under the Resources tab on Sakai)
 - Read the [Learning Objectives for today](https://www.coursera.org/learn/probability-intro/supplement/zCmjJ/lesson-learning-objectives)
 - View the [Introduction video](https://www.coursera.org/learn/probability-intro/lecture/07vL4/introduction)
@@ -138,6 +139,7 @@ To do:
 - View the [Probability Examples video](https://www.coursera.org/learn/probability-intro/lecture/GqcO0/probability-examples)
 - View the [Disjoint vs. Independent video](https://www.coursera.org/learn/probability-intro/lecture/PSXBC/spotlight-disjoint-vs-independent)
 - Read OIS Chapter 3, Section 3.1 
+- Finish up work on PS1 (due today), and begin work on questions from PS2
 - Continue working on Lab 2 (teams), due Thursday
 
 <span style="color:blue">Intro to Unit 2: Time 3-4pm ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735))</span>
@@ -159,6 +161,7 @@ To do:
 - View the [Bayesian Inference video](https://www.coursera.org/learn/probability-intro/lecture/qYbZQ/bayesian-inference)
 - View the [Examples of Bayesian Inference video](https://www.coursera.org/learn/probability-intro/lecture/AWtbY/examples-of-bayesian-inference)
 - Read OIS Chapter 3, Section 3.2
+- Continue work on questions from PS2
 - Continue working on Lab 2 (teams), due Thursday
 
 <span style="color:blue">Go over PS1 + PA1: Time 11am-12pm ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735))</span>
@@ -184,6 +187,7 @@ To do:
 - View the [Normal Approximation to Binomial video](https://www.coursera.org/learn/probability-intro/lecture/2sosk/normal-approximation-to-binomial)
 - View the [Working with the Binomial Distribution video](https://www.coursera.org/learn/probability-intro/lecture/yef4b/working-with-the-binomial-distribution)
 - Read OIS Chapter 4, Sections 4.1 and 4.3
+- Continue work on questions from PS2, due tomorrow
 - Finish working on Lab 2 (teams), due today
 
 <span style="color:blue">Group work session (drop in): Time 5-6 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735), any common questions to be posted on Piazza)</span>
@@ -198,11 +202,13 @@ Topic: Variability in estimates and CLT  (Start of Unit 3!)
 
 To do: 
 
+- Take PA2 (performance assessment for Unit 2) on Sakai, due today
 - Read the [Learning Objectives for today](https://www.coursera.org/learn/inferential-statistics-intro/supplement/qRoWV/lesson-learning-objectives)
 - View the [Intruduction video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/EXe3o/introduction)
 - View the [Sampling Variability and CLT video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/lkQnZ/sampling-variability-and-clt)
 - View the [CLT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/XhkI6/clt-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.1
+- Finish work on questions from PS2, due today, and begin work on questions from PS3
 
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
