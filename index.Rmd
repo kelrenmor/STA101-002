@@ -64,9 +64,9 @@ The course textbook is [OpenIntro Statistics 4th Ed](https://leanpub.com/openint
 ### Data science in action speakers by week
 
 - May 13-15: None (first week)
-- May 18-22: [Joshua Hewitt](https://jmhewitt.github.io/)
+- May 18-22: [Joshua Hewitt](https://jmhewitt.github.io/) (asynchronous and posted on Sakai)
 - May 25-29: None (last week delayed, so extra time)
-- June 1-5: [David Gill](https://nicholas.duke.edu/people/faculty/gill)
+- June 1-5: [David Gill](https://nicholas.duke.edu/people/faculty/gill) (there will be a synchronous session at 1pm on Friday, June 5)
 - June 8-12: [Kersey Sturdivant](https://nicholas.duke.edu/people/faculty/sturdivant)
 - June 15-19: [Kate Hoffman](https://nicholas.duke.edu/people/faculty/hoffman)
 - June 22-25: None (last week)
@@ -90,25 +90,25 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Friday,  May 22| Variability in estimates and CLT | PS2 + PA2 | Begin Unit 3: Foundations for inference |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  May 25|  | | No class Memorial Day |
-| Tuesday,  May 26| Confidence intervals | | |
+| Tuesday,  May 26| Confidence intervals | DSA1 | |
 | Wednesday,  May 27| Midterm 1 review | | |
 | Thursday,  May 28| Midterm 1 | Lab 3 | |
-| Friday,  May 29| Hypothesis tests | PS3 + PA3 | |
+| Friday,  May 29| Hypothesis tests | | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 1| Inference for a single proportion | Lab 4 | Begin Unit 4: Inference for categorical variables |
+| Monday,  June 1| Inference for a single proportion | PS3 + PA3 + Lab 4 | Begin Unit 4: Inference for categorical variables |
 | Tuesday,  June 2| Inference for comparing two proportions |  | |
-| Wednesday,  June 3| Chi-square testing | PS4 + PA4 | |
-| Thursday,  June 4| Inference using the t-distribution | Lab 5 | Begin Unit 5: Inference for numerical variables |
-| Friday,  June 5| Bootstrapping |  |  |
+| Wednesday,  June 3| Chi-square testing | Lab 5 | |
+| Thursday,  June 4| Inference using the t-distribution | PS4 + PA4 | Begin Unit 5: Inference for numerical variables |
+| Friday,  June 5| Bootstrapping |  | Data-science-in-action with David Gill |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 8| Power | Lab 6 | |
-| Tuesday,  June 9| ANOVA | PS5 + PA5 |  |
+| Monday,  June 8| Power | | |
+| Tuesday,  June 9| ANOVA | Lab 6 |  |
 | Wednesday,  June 10| Midterm 2 review |  | |
 | Thursday,  June 11| Midterm 2 | Project proposal |  |
-| Friday,  June 12| Introduction to regression | | Begin Unit 6: Introduction to linear regression |
+| Friday,  June 12| Introduction to regression | PS5 + PA5 | Begin Unit 6: Introduction to linear regression |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 15| Outliers and Inference for SLR | PS6 + PA6 + Lab 7 | |
-| Tuesday,  June 16| Introduction to multiple linear regression | | Begin Unit 7: Multiple linear regression |
+| Monday,  June 15| Outliers and Inference for SLR | Lab 7 | |
+| Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 | Begin Unit 7: Multiple linear regression |
 | Wednesday,  June 17| Model selection and diagnostics for MLR |  | |
 | Thursday,  June 18| Transformation and case studies | Lab 8 | |
 | Friday,  June 19| Review and project work | PS7 + PA7 | |
