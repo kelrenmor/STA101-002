@@ -65,7 +65,7 @@ The course textbook is [OpenIntro Statistics 4th Ed](https://leanpub.com/openint
 
 - May 13-15: None (first week)
 - May 18-22: [Joshua Hewitt](https://jmhewitt.github.io/)
-- May 25-29: TBA
+- May 25-29: None (last week delayed, so extra time)
 - June 1-5: [David Gill](https://nicholas.duke.edu/people/faculty/gill)
 - June 8-12: [Kersey Sturdivant](https://nicholas.duke.edu/people/faculty/sturdivant)
 - June 15-19: [Kate Hoffman](https://nicholas.duke.edu/people/faculty/hoffman)
