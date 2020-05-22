@@ -25,7 +25,7 @@ Yes, we encourage you to work with and talk to your fellow students! However, yo
 
 Attend a live lab session or view the lab session recording, reach out on Piazza, come to office hours, ask your fellow students. Don't spend forever banging your head against a wall -- labs should feel interesting or challenging, but not impossible or demotivating.
 
-### How are team labs graded?
+### How are labs graded?
 
 See the [Group dynamics](https://kelrenmor.github.io/STA101-002/grouppolicies) page for how team lab grading works.
 
