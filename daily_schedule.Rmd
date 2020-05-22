@@ -207,11 +207,13 @@ To do:
 - Take PA2 (performance assessment for Unit 2) on Sakai, due today
 - Agree with your team (if doing group option) on when you'll do DSA1 reflection either synchronously or asynchronously
 - Read the [Learning Objectives for today](https://www.coursera.org/learn/inferential-statistics-intro/supplement/qRoWV/lesson-learning-objectives)
-- View the [Intruduction video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/EXe3o/introduction)
+- View the [Introduction video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/EXe3o/introduction)
 - View the [Sampling Variability and CLT video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/lkQnZ/sampling-variability-and-clt)
 - View the [CLT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/XhkI6/clt-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.1
 - Finish work on questions from PS2, due today, and begin work on questions from PS3
+
+<span style="color:blue">NOTE: I will be adding a video today by 8 AM discussing lab grading, the midterm, and Piazza. I will also be adding practice midterm exams to Sakai under Resources no later than 11:59 PM tonight, and will note this on Piazza when I do.</span>
 
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 

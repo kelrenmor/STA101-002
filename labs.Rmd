@@ -27,7 +27,27 @@ Attend a live lab session or view the lab session recording, reach out on Piazza
 
 ### How are team labs graded?
 
-See the [Group dynamics](https://kelrenmor.github.io/STA101-002/grouppolicies) page.
+See the [Group dynamics](https://kelrenmor.github.io/STA101-002/grouppolicies) page for how team lab grading works.
+
+The following will lead to point deductions on labs:
+
+- Missing interpretation or content
+  - Exercise asks for a plot/table, but no plot/table included
+  - Exercise asks for your observations, what you see, for you to reflect on something specific, etc. and you do not include this
+  - Include some detail, but missing key part(s) 
+- Missing code
+  - Do not use code when should have (e.g., if you go through a data set by hand to find the minimum rather than using code)
+  - Used code, but did not include it in the output (e.g., if you did something in the console but didn't add a code chunk to show your work)
+- Correctness
+  - Your plot/table contains the wrong information, or a different type of information/data than asked for
+  - You make incorrect conclusions
+- Formatting
+  - Not taking out comments like "enter code here" from the template
+  - Inappropriate text size, or formatting response text as header
+  - Code not easily readable in one line
+- Misc 
+  - Random number seed set multiple times (i.e., use `set.seed` more than once)
+  - Anything specific to a particular lab not covered here
 
 ---
 
