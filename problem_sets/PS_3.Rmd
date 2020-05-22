@@ -1,0 +1,154 @@
+---
+title: "Problem set 3"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+set.seed(1204)
+```
+
+--- 
+
+## Section 5.1 problems
+
+--- 
+
+### Problem 1: Identify the parameter
+
+For each of the following situations, state whether the parameter of interest is a mean or a proportion.
+
+(a) A survey reports that hand sanitizer products show a 255% increase in revenue within a 1-year period.$^1$
+(b) A NBC News survey reports that 60 percent of Americans support keeping stay-at-home restrictions to fight coronavirus.$^2$
+(c) A Duke student survey asks whether or not students have left Durham for the summer.
+(d) In a survey, people who ride the bus are asked whether or not they use the online schedule.
+(e) In a survey, people who ride the bus are asked how many times they used the online schedule last year.
+(f) The bus company reports that the number of daily riders shows a 12% increase since last month.
+
+### Problem 2: Wearing masks
+
+In a random sample 823 adults in the United States, 461 say they plan to always wear a mask in public in the next two months.
+
+(a) What population is under consideration in the data set?
+(b) What parameter is being estimated?
+(c) What is the point estimate for the parameter?
+(d) What is the name of the statistic can we use to measure the uncertainty of the point estimate?
+(e) Compute the value from part (d) for this context.
+(f) An NBC news host thinks the value is actually 50%. Should she be surprised by the data?
+(g) Suppose the true population value was found to be 58%. If we use this proportion to recompute the value in part (e) using $p = 0.58$ instead of $\hat{p}$, does the resulting value change much?
+
+### Problem 3: Repeated sea hare samples. 
+
+Aplysia vaccaria, coloquially known as the California black sea hare, can grow to be up to 75 cm (29 in) in length, making it the largest gastropod in the world. About 13% of sea hares grow to weigh over 20 pounds. Marine scientists randomly sample 30 hares and check if those hares exceed 20 pounds. They repeat this 1,000 times and build a distribution of sample proportions.
+
+(a) What is this distribution called?
+(b) Would you expect the shape of this distribution to be symmetric, right skewed, or left skewed? Explain your reasoning.
+(c) Calculate the variability of this distribution.
+(d) What is the formal name of the value you computed in (c)?
+(e) Suppose the scientists decide to sample again, this time collecting 110 sea hares per sample, and they again collect 1,000 samples. They build a new distribution of sample proportions. How will the variability of this new distribution compare to the variability of the distribution when each sample contained 30 observations?
+
+--- 
+
+## Section 5.2 problems
+
+--- 
+
+### Problem 4: Nuclear opposition
+
+A Gallup poll conducted in 2016 fount that 54% of the American public oppose nuclear energy.$^3$ This marked the first time that public opposition to nuclear power in the United States had achieved a majority in the 23 years of Gallup polling on the subject. The standard error for this estimate was 4.0%, and a normal distribution may be used to model the sample proportion. Construct a 99% confidence interval for the fraction of the American public who oppose nuclear energy, and interpret the confidence interval in context.
+
+### Problem 5: Mental health
+
+An survey of Duke grad students asked the question: For how many days over the past 30 days was your mental health negatively impacted by your studies? Based on responses from 953 Duke grad students, the survey reported a 95% confidence interval of 6.31 to 8.54 days in 2019.
+
+(a) Interpret this interval in context of the data.
+(b) What does "95% confident" mean? Explain in the context of the application.
+(c) Suppose the researchers think a 99% confidence level would be more appropriate for this interval. Will this new interval be smaller or wider than the 95% confidence interval?
+(d) If a new survey were to be done with 500 Duke grad students, do you think the standard error of the estimate would be larger, smaller, or about the same.
+
+--- 
+
+## Section 5.3 problems
+
+--- 
+
+### Problem 6: Nuclear opposition part II
+
+Using the Gallup poll from Problem 4, identify each of the following statements as true or false. Provide an explanation to justify each of your answers.
+
+(a) The data provide statistically significant evidence that more than half of the American public opposes nuclear energy. Use a significance level of $\alpha = 0.01$.
+(b) Since the standard error is 4%, we can conclude that 96% of the American public were included in the study.
+(c) If we want to reduce the standard error of the estimate, we should collect less data.
+(d) If we construct a 90% confidence interval for the percentage of the American public that opposes nuclear energy, this confidence interval will be wider than a corresponding 99% confidence interval.
+
+### Problem 7: Climate change
+
+An article on climate change suggests that 30% of college-aged Americans don't believe in global warming. You think that this may be wrong and decide to collect your own sample for a hypothesis. From a random sample of 780 college-aged Americans, you find that 28% of them don't believe in climate change. Someone in your study group offers to help you with setting up the hypothesis test and comes up with the following hypothesis. Indicate any errors you see.
+
+$$ H_0: \hat{p} = 0.28 $$
+$$ H_A: \hat{p} \neq 0.28 $$
+
+### Problem 8: Waiting at an Urgent Care
+
+The Duke Orthopoedic Urgent Care center reports a 95% confidence interval for the mean waiting time at their facility of (44 minutes, 97 minutes). Answer the following questions based on this interval.
+
+(a) A local newspaper claims that the average waiting time at this Urgent Care exceeds 2 hours. Is this claim supported by the confidence interval? Explain your reasoning.
+(b) The Dean of Medicine at this center claims the average wait time is 1.1 hours. Is this claim supported by the confidence interval? Explain your reasoning.
+(c) Without actually calculating the interval, determine if the claim of the Dean from part (b) would be supported based on a 99% confidence interval?
+
+### Problem 9: Working backwards
+
+You are given the following hypotheses:
+
+$$ H_0: p = 0.8 $$
+$$ H_A: p \neq 0.8 $$
+
+We know that the sample size is 1,238. For what sample proportion would the p-value be equal to 0.01? Assume that all conditions necessary for inference are satisfied.
+
+### Problem 10: Which is higher?
+
+In each part below, there is a value of interest and two scenarios (I and II). For
+each part, report if the value of interest is larger under scenario I, scenario II, or whether the value is equal under the scenarios.
+
+(a) The standard error of $\hat{p}$ when (I) $n = 150$ or (II) $n = 600$.
+(b) The margin of error of a confidence interval when the confidence level is (I) 90% or (II) 80%.
+(c) The p-value for a Z-statistic of 2.5 calculated based on a (I) sample with $n = 1000$ or based on a (II) sample with $n = 1500$.
+(d) The probability of making a Type 2 Error when the alternative hypothesis is true and the significance level is (I) 0.01 or (II) 0.05.
+
+--- 
+
+## Chapter problems
+
+--- 
+
+### Problem 11: True or false
+
+Determine if the following statements are true or false, and explain your reasoning. If false, state how it could be corrected.
+
+(a) If a given value (for example, the null hypothesized value of a parameter) is within a 95% confidence interval, it will also be within a 90% confidence interval.
+(b) Increasing the significance level ($\alpha$) will increase the probability of making a Type 1 Error.
+(c) Suppose the null hypothesis is $p = 0.2$ and we fail to reject $H_0$. Under this scenario, the true population proportion is 0.2.
+(d) With large sample sizes, the magnitude of the difference between the null value and the observed point estimate, a difference often called the effect size, needs to be quite large in order to be identified as statistically significant.
+
+### Problem 12: Atlantic salmon
+
+It is believed that about 30 percent of Atlantic salmon survive to spawn again (these are called repeat spawners). In a random sample of 205 Atlantic salmon, 49 are repeat spawners Conduct a hypothesis test for the following question: do these data provide evidence that the 30% value is inaccurate?
+
+### Problem 13: CLT for proportions
+
+CLT for proportions. Define the term "sampling distribution" of the sample proportion, and describe how the shape, center, and spread of the sampling distribution change as the sample size increases when p = 0.1. (Note this is OIS Problem 5.34.)
+
+### Problem 14: Same observation, different sample size
+
+Suppose you conduct a hypothesis test based on a sample where the sample size is $n = 800$, and arrive at a p-value of $0.13$. You then refer back to your notes and discover that you made a careless mistake, the sample size should have been $n = 80$. Will your p-value increase, decrease, or stay the same? Explain.
+
+----
+
+$^1$ https://www.cnbc.com/2020/03/03/coronavirus-hand-sanitizer-sales-surge-leading-to-price-hikes.html
+
+$^2$ https://www.nbcnews.com/politics/meet-the-press/poll-six-10-support-keeping-stay-home-restrictions-fight-coronavirus-n1187011
+
+$^3$ https://news.gallup.com/poll/190064/first-time-majority-oppose-nuclear-energy.aspx

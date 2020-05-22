@@ -61,7 +61,7 @@ Practice questions:
 
 ### PS3:
 
-Graded questions: TBA
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_3), or download Word template on Sakai under the Resources tab. Submit to Gradescope.
 
 Practice questions: 5.1, 5.3, 5.5, 5.9, 5.11, 5.15, 5.17, 5.21, 5.23, 5.25, 5.27, 5.29, 5.31, 5.33, 5.35, 5.37
 
