@@ -251,6 +251,8 @@ To do:
 - Read OIS Chapter 5, Section 5.2
 - Make sure you've completed and turned in DSA1 (due today)
 
+<span style="color:blue">Q&A for practice exam questions (post to Piazza if you can’t come but want me to cover something): Time 5-7 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
+
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: DSA1 </span>
@@ -259,13 +261,23 @@ To do:
 
 Topic: Midterm 1 review
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Bonus office hours with Jason: 7-9 PM ET (Jason's Zoom room)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 ### Thursday,  May 28
 
 Topic: Midterm 1
 
+Sakai issues? Let the instruction team know and contact [OIT](https://oit.duke.edu/help).
+
 To do: 
 
 - Take Midterm 1
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Midterm 1 + Lab 3 </span>
 
@@ -281,6 +293,8 @@ To do:
 - View the [HT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/nKo0b/ht-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.3
 
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 ---
 
 # Week 3
@@ -293,11 +307,19 @@ Topic: Inference for a single proportion
 
 To do: 
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: PS3 + PA3 + Lab 4 </span>
+
 ### Tuesday, June 2
 
 Topic: Inference for comparing two proportions
 
 To do: 
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 ### Wednesday, June 3
 
@@ -305,17 +327,31 @@ Topic: Chi-square testing
 
 To do: 
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: Lab 5 </span>
+
 ### Thursday, June 4
 
 Topic: Inference using the t-distribution
 
 To do: 
 
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: PS4 + PA4 </span>
+
 ### Friday, June 5
 
 Topic: Bootstrapping
 
 To do: 
+
+<span style="color:blue">Live data science in action seminar with [David Gill](https://nicholas.duke.edu/people/faculty/gill): Time 1-2pm ET</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 ---
 
@@ -329,11 +365,19 @@ Topic: Power
 
 To do: 
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 ### Tuesday, June 9
 
 Topic: ANOVA
 
 To do: 
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: Lab 6 </span>
 
 ### Wednesday, June 10
 
@@ -344,6 +388,10 @@ To do:
 - Review for midterm 2
 - Work on project proposal
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 ### Thursday, June 11
 
 Topic: Midterm 2
@@ -353,6 +401,8 @@ To do:
 - Take Midterm 2
 - Wrap up and submit project proposal
 
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 <span style="color:red">Due today by 11:59 PM EDT: Midterm 2 + Project proposal</span>
 
 ### Friday, June 12
@@ -360,6 +410,10 @@ To do:
 Topic: Introduction to regression
 
 To do: 
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: PS5 + PA5 </span>
 
 ---
 
@@ -373,11 +427,21 @@ Topic: Outliers and Inference for SLR
 
 To do: 
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: Lab 7 </span>
+
 ### Tuesday, June 16
 
 Topic: Introduction to multiple linear regression
 
 To do: 
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: PS6 + PA6 </span>
 
 ### Wednesday, June 17
 
@@ -385,11 +449,17 @@ Topic: Model selection and diagnostics for MLR
 
 To do: 
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 ### Thursday, June 18
 
 Topic: Transformation and case studies
 
 To do: 
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 8</span>
 
@@ -404,6 +474,8 @@ To do:
 - Work on individual project
 - Wrap up and submit PS7 
 - Take PA7
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS7 + PA7</span>
 
@@ -423,6 +495,10 @@ To do:
 - Wrap up and submit Lab 9
 - Wrap up and submit individual project
 
+<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 <span style="color:red">Due today by 11:59 PM EDT: Lab 9 + Project</span>
 
 ### Tuesday, June 23
@@ -434,6 +510,8 @@ To do:
 - Review for final
 - Project reflection
 
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
 <span style="color:red">Due today by 11:59 PM EDT: Project reflection</span>
 
 ### Wednesday, June 24
@@ -441,6 +519,8 @@ To do:
 Topic: Reading day
 
 To do: Prepare for final exam (tomorrow!)
+
+<span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 ### Thursday, June 25
 
