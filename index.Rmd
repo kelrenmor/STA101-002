@@ -49,14 +49,14 @@ More TBA.
 
 Additional times available on request. All times are in Eastern time zone. Note: office hours may vary. Revisions to office hours will be noted via e-mail and on the webpage. 
 
-<span style="color:red">No office hours Monday, May 25 (Memorial Day). Myra's regularly scheduled Friday office hours have been moved to 5-7 Wednesday. </span>
+<span style="color:red">No office hours Monday, May 25 (Memorial Day). Kelly's regularly scheduled Thursday office hours have been cancelled, but meetings Th/F are available on request (just send an email!), Myra's regularly scheduled Friday office hours have been moved to 5-7 Wednesday. </span>
 
 | Team member | Email | Office hours | Location |
 | -- | -- | ---- | -- |
-| [Dr. Kelly Moran](https://stat.duke.edu/people/kelly-moran) | kelly.r.moran@duke.edu | M 10-11am, T 2-3pm, W 10-11am, Th 6-7pm | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| [Dr. Kelly Moran](https://stat.duke.edu/people/kelly-moran) | kelly.r.moran@duke.edu | M 10-11am, T 2-3pm, W 10-11am, ~~Th 6-7pm~~ | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
 | [TA Ezinne Nwankwo](https://stat.duke.edu/people/ezinne-nwankwo) | ezinne.nwankwo@duke.edu | M 3:15-5pm, W 3:15-5pm | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
 | TA Jason McEachin | marcus.mceachin@duke.edu | T 7-9pm, Th 7-9pm | [Jason's Zoom room](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/page/6f2b8b5d-66df-4833-bd08-787e2aa06c11) |
-| TA Myra Cai | myra.cai@duke.edu | F 4-6pm | [Myra's Zoom room](https://duke.zoom.us/j/9923268136) |
+| TA Myra Cai | myra.cai@duke.edu | <span style="color:red">W 5-7</span> ~~F 4-6pm~~ | [Myra's Zoom room](https://duke.zoom.us/j/9923268136) |
 
 ### Teams
 
