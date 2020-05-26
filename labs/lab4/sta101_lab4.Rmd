@@ -1,0 +1,47 @@
+---
+title: "Lab 4 - Foundations for Inference"
+author: "[Enter recorder name here]"
+date: "[Enter date here]"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(openintro)
+library(infer)
+library(ggplot2)
+```
+
+**Full team:** [Enter all team member names here.]
+
+* * *
+### Set seed:
+```{r}
+# Insert code for setting seed in this code chunk
+```
+
+### Exercise 1: 
+
+### Exercise 2: 
+
+### Exercise 3: 
+
+### Exercise 4: 
+
+### Exercise 5:
+
+### Exercise 6:
+
+### Exercise 7:
+
+### Exercise 8:
+
+### Exercise 9:
+
+### Exercise 10:
