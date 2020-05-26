@@ -46,7 +46,8 @@ library(ggplot2)
 Before you get started, download the R Markdown 
 template for this lab. Remember all of your code and answers go in this document:
 ```{r load-template, eval = FALSE}
-download.file("https://kelrenmor.github.io/STA101-002/labs/lab4/sta101_lab4.Rmd", destfile="sta101_lab4.Rmd")
+download.file("https://kelrenmor.github.io/STA101-002/labs/lab4/sta101_lab4.Rmd",
+              destfile="sta101_lab4.Rmd")
 ```
 
 ### The data
