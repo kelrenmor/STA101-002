@@ -40,6 +40,7 @@ See below for current week's live session times (note that these times are **in 
 | ---   | ---   | ---   | ----  | ---- |
 | Tuesday,  May 26 | 5-7pm | Dr. Moran | Q&A for practice exam questions (post to Piazza if you can't come but want me to cover something) | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
 | Wednesday,  May 27 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Wednesday,  May 27 | 5-7pm | Myra | Office hours (adjusted time) | [Myra's Zoom room](https://duke.zoom.us/j/9923268136) |
 | Wednesday,  May 27 | 7-9pm | Jason | Bonus office hours | [Jason's Zoom room](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/page/6f2b8b5d-66df-4833-bd08-787e2aa06c11) |
 
 More TBA.
@@ -48,7 +49,7 @@ More TBA.
 
 Additional times available on request. All times are in Eastern time zone. Note: office hours may vary. Revisions to office hours will be noted via e-mail and on the webpage. 
 
-<span style="color:red">No office hours Monday, May 25 (Memorial Day). </span>
+<span style="color:red">No office hours Monday, May 25 (Memorial Day). Myra's regularly scheduled Friday office hours have been moved to 5-7 Wednesday. </span>
 
 | Team member | Email | Office hours | Location |
 | -- | -- | ---- | -- |

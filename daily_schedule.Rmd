@@ -263,6 +263,8 @@ Topic: Midterm 1 review
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
+<span style="color:blue">Shifted office hours with Myra: 5-7 PM ET ([Myra's Zoom room](https://duke.zoom.us/j/9923268136))</span>
+
 <span style="color:blue">Bonus office hours with Jason: 7-9 PM ET (Jason's Zoom room)</span>
 
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
@@ -293,7 +295,7 @@ To do:
 - View the [HT (for the mean) examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/nKo0b/ht-for-the-mean-examples)
 - Read OIS Chapter 5, Section 5.3
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">No regularly scheduled office hours (but available on request -- email if you want to talk)</span>
 
 ---
 
