@@ -303,11 +303,25 @@ To do:
 
 ---
 
+This week, we have a **live Data Science in Action seminar** on Friday with Dr. David Gill from 1-2pm ET (will be recorded for those unable to attend live). He will be discussing his work on marine protected areas. We begin Unit 4 (Inference for categorical variables) on Monday and wrap up that unit Wednesday, then begin Unit 5 (Inference for numerical variables) on Thursday. In addition to "regular programming" from Coursera and OIS, this week I'll be providing more information about your final project so you can begin working on your proposal (due next Thursday). I'll also be going over Midterm 1 problems/scores, addressing some nuances from Unit 3 (diving deeper into the idea of a confidence interval), and providing additional content about reporting and interpreting data/statistics.
+
+---
+
 ### Monday, June 1
 
 Topic: Inference for a single proportion
 
 To do: 
+
+- Read the [Learning Objectives for today and tomorrow](https://www.coursera.org/learn/inferential-statistics-intro/supplement/AphlU/lesson-learning-objectives)
+- View the [Introduction to Inference for Categorical Variables video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/ruAZK/introduction)
+- View the [Sampling Variability and CLT for Proportions video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/oJxbr/sampling-variability-and-clt-for-proportions)
+- View the [Confidence Interval for a Proportion video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/nK388/confidence-interval-for-a-proportion)
+- View the [Hypothesis Test for a Proportion video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/VAo5K/hypothesis-test-for-a-proportion)
+- Read OIS Chapter 6, Section 6.1
+- Work on PS4 problems from section 6.1
+- Wrap up and submit PS3 + Lab 4 (due today)!
+- Don't forget to take PA3 (due today) and reflect on your understanding of Unit 3!
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -321,6 +335,12 @@ Topic: Inference for comparing two proportions
 
 To do: 
 
+- Review the [Learning Objectives for today and yesterday](https://www.coursera.org/learn/inferential-statistics-intro/supplement/AphlU/lesson-learning-objectives)
+- View the [Estimating the Difference Between Two Proportions video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/kI4Ma/estimating-the-difference-between-two-proportions)
+- View the [Hypothesis Test for Comparing Two Proportions video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/vMH7n/hypothesis-test-for-comparing-two-proportions)
+- Read OIS Chapter 6, Section 6.2
+- Work on PS4 problems from section 6.2
+
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 ### Wednesday, June 3
@@ -328,6 +348,16 @@ To do:
 Topic: Chi-square testing
 
 To do: 
+
+- Read the [Learning Objectives for today](https://www.coursera.org/learn/inferential-statistics-intro/supplement/bd1oR/lesson-learning-objectives)
+- View the [Small Sample Proportions video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/B7mb4/small-sample-proportions)
+- View the [Examples video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/w7VQF/examples)
+- View the [Comparing Two Small Sample Proportions video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/rUhQw/comparing-two-small-sample-proportions)
+- View the [Chi-Square GOF Test video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/OO6iS/chi-square-gof-test)
+- View the [Chi-Square Independence Test video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/LEIm3/the-chi-square-independence-test)
+- Read OIS Chapter 6, Section 6.3
+- Work on PS4 problems from section 6.3 and 'all section' problems
+- Wrap up and turn in Lab 5 (due today)
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -341,15 +371,31 @@ Topic: Inference using the t-distribution
 
 To do: 
 
+- Read the [Learning Objectives for today and tomorrow](https://www.coursera.org/learn/inferential-statistics-intro/supplement/KxvWg/lesson-learning-objectives)
+- View the [Introduction to Inference for Numerical Variables video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/xtUR0/introduction)
+- View the [t-distribution video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/FlRrd/t-distribution)
+- View the [Inference for a mean video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/qs7Ml/inference-for-a-mean)
+- Read OIS Chapter 7, Sections 7.1 and 7.2
+- Work on PS5 problems from sections 7.1 and 7.2
+- Wrap up and submit PS4 (due today)!
+- Don't forget to take PA4 (due today) and reflect on your understanding of Unit 4!
+
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS4 + PA4 </span>
 
 ### Friday, June 5
 
-Topic: Bootstrapping
+Topic: Inference for comparing two means + Power
 
 To do: 
+
+- Review the [Learning Objectives for today and yesterday](https://www.coursera.org/learn/inferential-statistics-intro/supplement/KxvWg/lesson-learning-objectives)
+- View the [Inference for comparing two independent means video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/wkwlZ/inference-for-comparing-two-independent-means)
+- View the [Inference for comparing two paired means video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/k5zhM/inference-for-comparing-two-paired-means)
+- View the [Power video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/kdnQf/power)
+- Read OIS Chapter 7, Sections 7.3 and 7.4
+- Work on PS5 problems from sections 7.3 and 7.4
 
 <span style="color:blue">Live data science in action seminar with [David Gill](https://nicholas.duke.edu/people/faculty/gill): Time 1-2pm ET</span>
 
@@ -363,9 +409,17 @@ To do:
 
 ### Monday, June 8
 
-Topic: Power
+Topic: ANOVA
 
 To do: 
+
+- Read the [Learning Objectives for today and tomorrow](https://www.coursera.org/learn/inferential-statistics-intro/supplement/ctr7d/lesson-learning-objectives)
+- View the [Comparing more than two means video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/TI3DD/comparing-more-than-two-means)
+- View the [ANOVA video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/KoTvZ/anova)
+- View the [Conditions for ANOVA video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/hSgp3/conditions-for-anova)
+- View the [Multiple comparisons video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/6wfP3/multiple-comparisons)
+- Read OIS Chapter 7, Section 7.5
+- Work on PS5 problems from sections 7.5 and rest of chapter
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -373,9 +427,14 @@ To do:
 
 ### Tuesday, June 9
 
-Topic: ANOVA
+Topic: Bootstrapping
 
 To do: 
+
+- View the [Bootstrapping video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/u3k1n/bootstrapping)
+- Wrap up Lab 6 (due today)
+- Work on project proposal (due Thursday)
+- Work on PS5 problems (due Friday)
 
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
 
@@ -388,7 +447,7 @@ Topic: Midterm 2 review
 To do: 
 
 - Review for midterm 2
-- Work on project proposal
+- Work on project proposal (due tomorrow)
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 

@@ -104,10 +104,10 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Tuesday,  June 2| Inference for comparing two proportions |  | |
 | Wednesday,  June 3| Chi-square testing | Lab 5 | |
 | Thursday,  June 4| Inference using the t-distribution | PS4 + PA4 | Begin Unit 5: Inference for numerical variables |
-| Friday,  June 5| Bootstrapping |  | Data-science-in-action with David Gill |
+| Friday,  June 5| Inference for comparing two means + Power |  | Data-science-in-action with David Gill |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 8| Power | | |
-| Tuesday,  June 9| ANOVA | Lab 6 |  |
+| Monday,  June 8| ANOVA | | |
+| Tuesday,  June 9| Bootstrapping | Lab 6 |  |
 | Wednesday,  June 10| Midterm 2 review |  | |
 | Thursday,  June 11| Midterm 2 | Project proposal |  |
 | Friday,  June 12| Introduction to regression | PS5 + PA5 | Begin Unit 6: Introduction to linear regression |
