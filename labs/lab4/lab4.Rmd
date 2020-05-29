@@ -154,15 +154,15 @@ Not surprisingly, every time you take another random sample, you might get a dif
 It's useful to get a sense of just how much variability you should expect when estimating the population mean this way. 
 The distribution of sample proportions, called the *sampling distribution (of the proportion)*, can help you understand this variability. 
 In this lab, because you have access to the population, you can build up the sampling distribution for the sample proportion by repeating the above steps many times. 
-Here, we use R to take 15,000 different samples of size 50 from the population, calculate the proportion of responses in each sample, filter for only the *Doesn't benefit* responses, and store each result in a vector called `sample_props50`. 
+Here, we use R to take 15,000 different samples of size 50 from the population, calculate the number and proportion of *Doesn't benefit* responses in each sample, and store each result in a tibble called `sample_props50`. 
 Note that we specify that `replace = TRUE` since sampling distributions are constructed by sampling with replacement.
 
 ```{r iterate}
 sample_props50 <- global_monitor %>%
-                    rep_sample_n(size = 50, reps = 15000, replace = TRUE) %>%
-                    count(scientist_work) %>%
-                    mutate(p_hat = n /sum(n)) %>%
-                    filter(scientist_work == "Doesn't benefit")
+  rep_sample_n(size = 50, reps = 15000, replace = TRUE) %>%
+  summarise(n = sum(scientist_work == "Doesn't benefit"),
+            p_hat = mean(scientist_work == "Doesn't benefit"))
+
 ```
 
 And we can visualize the distribution of these proportions with a histogram.
@@ -198,9 +198,9 @@ We would have to manually run the following code 15,000 times
 ```{r sample-code}
 global_monitor %>%
   sample_n(size = 50, replace = TRUE) %>%
-  count(scientist_work) %>%
-  mutate(p_hat = n /sum(n)) %>%
-  filter(scientist_work == "Doesn't benefit")
+  summarise(n = sum(scientist_work == "Doesn't benefit"),
+            p_hat = mean(scientist_work == "Doesn't benefit"))
+
 ```
 
 as well as store the resulting sample proportions each time in a separate vector.
