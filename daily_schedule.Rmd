@@ -313,6 +313,7 @@ Topic: Inference for a single proportion
 
 To do: 
 
+- Note I left comments on your DSA1 submissions - go to the Assessment on Sakai to see. Will post when Josh responds to questions!
 - Watch the Midterm 1 Common Issues video, saved [under the Resources tab on Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main)
 - Read the [Learning Objectives for today and tomorrow](https://www.coursera.org/learn/inferential-statistics-intro/supplement/AphlU/lesson-learning-objectives)
 - View the [Introduction to Inference for Categorical Variables video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/ruAZK/introduction)
