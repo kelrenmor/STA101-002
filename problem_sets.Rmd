@@ -67,9 +67,14 @@ Practice questions: 5.1, 5.3, 5.5, 5.9, 5.11, 5.15, 5.17, 5.21, 5.23, 5.25, 5.27
 
 ### PS 4:
 
-Graded questions: TBA
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_4), or download Word template on Sakai under the Resources tab. Submit to Gradescope.
 
-Practice questions: TBA
+Practice questions: 
+
+* Section 6.1: 6.1, 6.3, 6.9, 6.11, 6.15
+* Section 6.2: 6.17, 6.19, 6.21, 6.23, 6.25, 6.27
+* Section 6.3: 6.31, 6.33
+* Section 6.4: 6.35, 6.37, 6.43, 6.45, 6.47, 6.49
 
 ### PS 5:
 

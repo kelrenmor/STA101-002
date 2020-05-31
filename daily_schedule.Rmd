@@ -313,6 +313,7 @@ Topic: Inference for a single proportion
 
 To do: 
 
+- Watch the Midterm 1 Common Issues video, saved [under the Resources tab on Sakai](https://sakai.duke.edu/portal/site/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/tool/6db0f8ad-d49b-4034-8f6a-b2f47eae96bb?panel=Main)
 - Read the [Learning Objectives for today and tomorrow](https://www.coursera.org/learn/inferential-statistics-intro/supplement/AphlU/lesson-learning-objectives)
 - View the [Introduction to Inference for Categorical Variables video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/ruAZK/introduction)
 - View the [Sampling Variability and CLT for Proportions video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/oJxbr/sampling-variability-and-clt-for-proportions)
@@ -322,6 +323,7 @@ To do:
 - Work on PS4 problems from section 6.1
 - Wrap up and submit PS3 + Lab 4 (due today)!
 - Don't forget to take PA3 (due today) and reflect on your understanding of Unit 3!
+- Work on Midterm 1 corrections (optional) -- template on Sakai under Resources.
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -340,8 +342,11 @@ To do:
 - View the [Hypothesis Test for Comparing Two Proportions video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/vMH7n/hypothesis-test-for-comparing-two-proportions)
 - Read OIS Chapter 6, Section 6.2
 - Work on PS4 problems from section 6.2
+- Work on Midterm 1 corrections (optional).
 
 <span style="color:blue">Regularly scheduled office hours (see main page)</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: MT1 Corrections </span>
 
 ### Wednesday, June 3
 
