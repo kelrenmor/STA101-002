@@ -322,8 +322,8 @@ To do:
 - View the [Hypothesis Test for a Proportion video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/VAo5K/hypothesis-test-for-a-proportion)
 - Read OIS Chapter 6, Section 6.1
 - Work on PS4 problems from section 6.1
-- Make sure you saw the [Lab 4 sampler edit](https://piazza.com/class/k9ucop5biop1do?cid=78)!
-- Wrap up and submit PS3 + Lab 4 (due today)!
+- Make sure you saw the [Lab 4 sampler edit](https://piazza.com/class/k9ucop5biop1do?cid=78) -- due date extended to tomorrow!
+- Wrap up and submit PS3 (due today)!
 - Don't forget to take PA3 (due today) and reflect on your understanding of Unit 3!
 - Work on Midterm 1 corrections (optional) -- template on Sakai under Resources.
 
@@ -331,7 +331,7 @@ To do:
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: PS3 + PA3 + Lab 4 </span>
+<span style="color:red">Due today by 11:59 PM EDT: PS3 + PA3 </span>
 
 ### Tuesday, June 2
 
@@ -345,10 +345,11 @@ To do:
 - Read OIS Chapter 6, Section 6.2
 - Work on PS4 problems from section 6.2
 - Work on Midterm 1 corrections (optional).
+- Wrap up and submit Lab 4 (due today)!
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: MT1 Corrections </span>
+<span style="color:red">Due today by 11:59 PM EDT: MT1 Corrections + Lab 4 </span>
 
 ### Wednesday, June 3
 
@@ -364,13 +365,11 @@ To do:
 - View the [Chi-Square Independence Test video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/LEIm3/the-chi-square-independence-test)
 - Read OIS Chapter 6, Section 6.3
 - Work on PS4 problems from section 6.3 and 'all section' problems
-- Wrap up and turn in Lab 5 (due today)
+- Work on Lab 5 (due Friday)
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
-
-<span style="color:red">Due today by 11:59 PM EDT: Lab 5 </span>
 
 ### Thursday, June 4
 
@@ -385,6 +384,7 @@ To do:
 - Read OIS Chapter 7, Sections 7.1 and 7.2
 - Work on PS5 problems from sections 7.1 and 7.2
 - Wrap up and submit PS4 (due today)!
+- Work on Lab 5 (due tomorrow)
 - Don't forget to take PA4 (due today) and reflect on your understanding of Unit 4!
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
@@ -403,10 +403,13 @@ To do:
 - View the [Power video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/kdnQf/power)
 - Read OIS Chapter 7, Sections 7.3 and 7.4
 - Work on PS5 problems from sections 7.3 and 7.4
+- Wrap up and turn in Lab 5 (due today)
 
 <span style="color:blue">Live data science in action seminar with [David Gill](https://nicholas.duke.edu/people/faculty/gill): Time 1-2pm ET</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: Lab 5 </span>
 
 ---
 

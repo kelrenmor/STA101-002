@@ -96,15 +96,15 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Thursday,  May 28| Midterm 1 | Lab 3 | |
 | Friday,  May 29| Hypothesis tests | | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 1| Inference for a single proportion | PS3 + PA3 + Lab 4 | Begin Unit 4: Inference for categorical variables |
-| Tuesday,  June 2| Inference for comparing two proportions |  | |
-| Wednesday,  June 3| Chi-square testing | Lab 5 | |
+| Monday,  June 1| Inference for a single proportion | PS3 + PA3 | Begin Unit 4: Inference for categorical variables |
+| Tuesday,  June 2| Inference for comparing two proportions | MT1 Corrections + Lab 4 | |
+| Wednesday,  June 3| Chi-square testing | | |
 | Thursday,  June 4| Inference using the t-distribution | PS4 + PA4 | Begin Unit 5: Inference for numerical variables |
-| Friday,  June 5| Inference for comparing two means + Power |  | Data-science-in-action with David Gill |
+| Friday,  June 5| Inference for comparing two means + Power | Lab 5 | Data-science-in-action with David Gill |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  June 8| ANOVA | | |
-| Tuesday,  June 9| Bootstrapping | Lab 6 |  |
-| Wednesday,  June 10| Midterm 2 review |  | |
+| Tuesday,  June 9| Bootstrapping | Lab 6 | |
+| Wednesday,  June 10| Midterm 2 review | | |
 | Thursday,  June 11| Midterm 2 | Project proposal |  |
 | Friday,  June 12| Introduction to regression | PS5 + PA5 | Begin Unit 6: Introduction to linear regression |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
