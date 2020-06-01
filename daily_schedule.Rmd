@@ -67,7 +67,7 @@ To do:
 
 <span style="color:blue">Lab session: 4-5 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 ### Friday,  May 15
 
@@ -88,7 +88,7 @@ To do:
 
 <span style="color:blue">Group work session (drop in): Time 12:30-2 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735), any common questions to be posted on Piazza)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Team expectations agreement</span>
 
@@ -120,7 +120,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 1</span>
 
@@ -144,7 +144,7 @@ To do:
 
 <span style="color:blue">Intro to Unit 2: Time 3-4pm ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735))</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS1 + PA1 </span>
 
@@ -169,7 +169,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 
 ### Thursday,  May 21
@@ -194,7 +194,7 @@ To do:
 
 <span style="color:blue">Group work session (drop in): Time 5-6 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735), any common questions to be posted on Piazza)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 2</span>
 
@@ -215,7 +215,7 @@ To do:
 
 <span style="color:blue">NOTE: I added a video (as of 9am ET) discussing lab grading, the midterm, and Piazza. I will also be adding practice midterm exams to Sakai under Resources no later than 11:59 PM tonight, and will note this on Piazza when I do.</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS2 + PA2 </span>
 
@@ -253,7 +253,7 @@ To do:
 
 <span style="color:blue">Q&A for practice exam questions (post to Piazza if you can’t come but want me to cover something): Time 5-7 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: DSA1 </span>
 
@@ -267,7 +267,7 @@ Topic: Midterm 1 review
 
 <span style="color:blue">Bonus office hours with Jason: 7-9 PM ET (Jason's Zoom room)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 ### Thursday,  May 28
 
@@ -279,7 +279,7 @@ To do:
 
 - Take Midterm 1
 
-<span style="color:blue">Regularly scheduled office hours with Jason (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours with Jason (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Midterm 1 + Lab 3 </span>
 
@@ -322,13 +322,14 @@ To do:
 - View the [Hypothesis Test for a Proportion video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/VAo5K/hypothesis-test-for-a-proportion)
 - Read OIS Chapter 6, Section 6.1
 - Work on PS4 problems from section 6.1
+- Make sure you saw the [Lab 4 sampler edit](https://piazza.com/class/k9ucop5biop1do?cid=78)!
 - Wrap up and submit PS3 + Lab 4 (due today)!
 - Don't forget to take PA3 (due today) and reflect on your understanding of Unit 3!
 - Work on Midterm 1 corrections (optional) -- template on Sakai under Resources.
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS3 + PA3 + Lab 4 </span>
 
@@ -345,7 +346,7 @@ To do:
 - Work on PS4 problems from section 6.2
 - Work on Midterm 1 corrections (optional).
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: MT1 Corrections </span>
 
@@ -367,7 +368,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 5 </span>
 
@@ -386,7 +387,7 @@ To do:
 - Wrap up and submit PS4 (due today)!
 - Don't forget to take PA4 (due today) and reflect on your understanding of Unit 4!
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS4 + PA4 </span>
 
@@ -405,7 +406,7 @@ To do:
 
 <span style="color:blue">Live data science in action seminar with [David Gill](https://nicholas.duke.edu/people/faculty/gill): Time 1-2pm ET</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 ---
 
@@ -429,7 +430,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 ### Tuesday, June 9
 
@@ -442,7 +443,7 @@ To do:
 - Work on project proposal (due Thursday)
 - Work on PS5 problems (due Friday)
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 6 </span>
 
@@ -457,7 +458,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 ### Thursday, June 11
 
@@ -468,7 +469,7 @@ To do:
 - Take Midterm 2
 - Wrap up and submit project proposal
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Midterm 2 + Project proposal</span>
 
@@ -478,7 +479,7 @@ Topic: Introduction to regression
 
 To do: 
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS5 + PA5 </span>
 
@@ -496,7 +497,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 7 </span>
 
@@ -506,7 +507,7 @@ Topic: Introduction to multiple linear regression
 
 To do: 
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS6 + PA6 </span>
 
@@ -518,7 +519,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 ### Thursday, June 18
 
@@ -526,7 +527,7 @@ Topic: Transformation and case studies
 
 To do: 
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 8</span>
 
@@ -542,7 +543,7 @@ To do:
 - Wrap up and submit PS7 
 - Take PA7
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS7 + PA7</span>
 
@@ -564,7 +565,7 @@ To do:
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Lab 9 + Project</span>
 
@@ -577,7 +578,7 @@ To do:
 - Review for final
 - Project reflection
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: Project reflection</span>
 
@@ -587,7 +588,7 @@ Topic: Reading day
 
 To do: Prepare for final exam (tomorrow!)
 
-<span style="color:blue">Regularly scheduled office hours (see main page)</span>
+<span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 ### Thursday, June 25
 
