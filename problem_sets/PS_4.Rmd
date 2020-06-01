@@ -1,9 +1,9 @@
 ---
 title: "Problem set 4"
 output:
-  html_document: default
-  pdf_document: default
   word_document: default
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +20,7 @@ set.seed(1204)
 
 ### Problem 1: Elderly Drivers. (Modification of OIS Problem 6.6)
 
-The New Marist Poll published a report stating that 25% of adults nationally think licensed rivers should be required to retake their road test once they reach 65 years of age.  It was also reported that interviews were conducted on 1,018 American adults, and that the margin of error was 3% using a 90% confidence level.
+The New Marist Poll published a report stating that 25% of adults nationally think licensed drivers should be required to retake their road test once they reach 65 years of age.  It was also reported that interviews were conducted on 1,018 American adults, and that the margin of error was 2.2% using a 90% confidence level.
 
 (a)  Verify the margin of error reported by The New Marist Poll.
 
@@ -44,15 +44,14 @@ Among a simple random sample of 331 American adults who do not have a four-year 
 
 ### Problem 4: Legalize Marijuana,  Part II. (Modification of OIS Problem 6.16)
 
-As discussed  in Problem 1, the  General  Social  Survey reported  a sample where about 61% of US residents thought marijuana should be made legal.  If we wanted to limit the margin of error of a 99% confidence interval to 2%, about how many Americans would we need to survey?
-
+As discussed  in Problem 2, the  General  Social  Survey reported  a sample where about 61% of US residents thought marijuana should be made legal.  If we wanted to limit the margin of error of a 99% confidence interval to 2%, about how many Americans would we need to survey?
 
 ## Section 6.2 problems
 
 
 ### Problem 5: Sleep deprivation, CA vs. OR, Part I. (Modification of OIS Problem 6.22)
 
-According to a report on sleep deprivation by the Centers for Disease Control and Prevention, the proportion of California residents who reported insufficient rest or sleep during  each  of  the  preceding  30  days  is  9.0%,  while  this proportion  is  9.8%  for  Oregon residents.   These data are based on simple random samples of 11,545 California and 4,691 Oregon residents.  Calculate a 90% confidence interval for the difference between the proportions of Californians and Oregonians who are sleep deprived and interpret it in context of the data.
+According to a report on sleep deprivation by the Centers for Disease Control and Prevention, the proportion of California residents who reported insufficient rest or sleep during  each  of  the  preceding  30  days  is 9.0%,  while  this proportion  is  9.8%  for  Oregon residents.   These data are based on simple random samples of 11,545 California and 4,691 Oregon residents.  Calculate a 90% confidence interval for the difference between the proportions of Californians and Oregonians who are sleep deprived and interpret it in context of the data.
 
 
 ### Problem 6: Sleep deprivation, CA vs. OR, Part II. (Modification of OIS Problem 6.24)
@@ -65,13 +64,12 @@ deprivation is different for the two states. (Reminder: Check conditions.)
 (b) It is possible the conclusion of the test in part (a) is incorrect. If this is the case, what type
 of error was made?
 
-
 ## Section 6.3 problems
 
 ### Problem 7: Wearing masks (Modification of OIS Problem 6.32)
 
 In a random sample 823 adults in the United States, 461 say they plan to always wear a mask in public in the next two months.
-Determine if the statements below are true or false. For each false statement,suggest an alternative wording to make it a true statement.
+Determine if the statements below are true or false. For each false statement, suggest an alternative wording to make it a true statement.
 
 (a)  As the degrees of freedom increases, the mean of the chi-square distribution decreases.
 (b)  If you found $\chi^2$= 10 with df=5 you would reject $H_0$ at the 5% significance level.
@@ -103,7 +101,6 @@ A  Gallup  poll  surveyed  Americans  about  their  employment  statusand whethe
 (b)  State  appropriate hypotheses to test for difference in proportions  of  diabetes between employed  and unemployed Americans.
 (c)  The sample difference is about 1%.  If we completed the hypothesis test, we would find that the p-value is very small (about 0), meaning the difference is statistically significant.  Use this result to explain the difference between statistically significant and practically significant findings.
 
-
 ### Problem 10: Coffee and Depression. (OIS Problem 6.50)
 
 Researchers conducted a study investigating the relationship between caffeinated coffee consumption and risk of depression in women.  They collected data on 50,739 women free of depression symptoms at the start of the study in the year 1996, and these women were followed through 2006.The researchers used questionnaires to collect data on caffeinated coffee consumption, asked each individual about physician-diagnosed depression, and also asked about the use of antidepressants.  The table below shows the distribution of incidences of depression by amount of caffeinated coffee consumption
@@ -116,7 +113,7 @@ and depression?
 (c) Is the ratio of women who do and do not suffer from depression proportion?
 (d) Identify the expected count for the highlighted cell, and calculate the contribution of this cell
 to the test statistic, i.e. $(Observed - Expected)^2=Expected$.
-(e) The test statistic is $\chi^2=4.14$. What is the p-value?
+(e) The test statistic is $\chi^2=20.93$. What is the p-value?
 (f) What is the conclusion of the hypothesis test?
 (g) One of the authors of this study was quoted on the NY Times as saying it was too early to recommend that women load up on extra coffee" based on just this study. Do you agree with this statement?
 Explain your reasoning.
