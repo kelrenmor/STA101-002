@@ -24,7 +24,7 @@ The New Marist Poll published a report stating that 25% of adults nationally thi
 
 (a)  Verify the margin of error reported by The New Marist Poll.
 
-(b)  Based on a 95% confidence interval, does the poll provide convincing evidence that more  than 20% of the population think that licensed drivers should be required to retake their road test once they turn 65?
+(b)  Based on a 90% confidence interval, does the poll provide convincing evidence that more  than 20% of the population think that licensed drivers should be required to retake their road test once they turn 65?
 
 ### Problem 2: Legalize Marijuana,  Part I. (Modification of OIS Problem 6.10)
 
