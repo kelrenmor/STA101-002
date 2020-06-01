@@ -137,36 +137,6 @@ the error margin for surveys of this kind is $\pm$ 3-5% at 95% confidence".
 6.  Based on the R output, what is the margin of error for the estimate of the 
     proportion of atheists in US in 2012?
 
-## How does the proportion affect the margin of error?
-
-Imagine you've set out to survey 1000 people on two questions: are you female? 
-and are you left-handed? Since both of these sample proportions were 
-calculated from the same sample size, they should have the same margin of 
-error, right? Wrong! While the margin of error does change with sample size, 
-it is also affected by the proportion.
-
-Think back to the formula for the standard error: $SE = \sqrt{p(1-p)/n}$. This 
-is then used in the formula for the margin of error for a 95% confidence 
-interval: $ME = 1.96\times SE = 1.96\times\sqrt{p(1-p)/n}$. Since the 
-population proportion $p$ is in this $ME$ formula, it should make sense that 
-the margin of error is in some way dependent on the population proportion. We 
-can visualize this relationship by creating a plot of $ME$ vs. $p$.
-
-The first step is to make a vector `p` that is a sequence from 0 to 1 with 
-each number separated by 0.01. We can then create a vector of the margin of 
-error (`me`) associated with each of these values of `p` using the above  
-formula ($ME = 1.96 \times SE$). Lastly, we plot the two vectors 
-against each other to reveal their relationship.
-
-```{r me-plot}
-n <- 1000                         # Fix n
-p <- seq(0, 1, 0.01)              # Get an even sequence of values of p
-me <- 1.96 * sqrt(p * (1 - p)/n)  # Calculate ME = 1.96 x SE
-plot(me ~ p, ylab = "Margin of Error", xlab = "Population Proportion")
-```
-
-7.  Describe the relationship between `p` and `me`.
-
 ## Success-failure condition
 
 The textbook emphasizes that you must always check conditions before making 
@@ -183,28 +153,7 @@ reaches 10 the sampling distribution is sufficiently normal to use confidence
 intervals and hypothesis tests that are based on that approximation.
 
 We can further investigate the interplay between $n$ and $p$ and the shape of the 
-sampling distribution by using simulations. Before we do the simulation,
-we'll need to learn about a programming tool called a `for` loop.
-
-```{r for-loop-1}
-x <- c('This', 'is', 'my', 'vector')
-print(x[1])
-print(x[2])
-print(x[3])
-print(x[4])
-```
-
-Instead of going through each entry of `x` by hand, we could "loop" over
-all of the entries in `x`!
-
-```{r for-loop-2}
-# In R, saying 1:length(x) is the same as saying 1:4, i.e. the vector c(1,2,3,4)
-for(i in 1:length(x)){ # i ranges from 1 to the length of x...
-  print(x[i]) # i is like a place holder, taking on whatever the current loop value is.
-}
-```
-
-In the following code, we simulate the 
+sampling distribution by using simulations. In the following code, we simulate the 
 process of drawing 5000 samples of size 1040 from a population with a true 
 atheist proportion of 0.1. For each of the 5000 samples we compute $\hat{p}$ 
 and then plot a histogram to visualize their distribution.
@@ -247,23 +196,16 @@ atheists in this sample and record this value." The loop allows us to repeat
 this process 5,000 times to build a good representation of the sampling 
 distribution.
 
-8.  Describe the sampling distribution of sample proportions at $n = 1040$ and 
+7.  Describe the sampling distribution of sample proportions at $n = 1040$ and 
     $p = 0.1$. Be sure to note the center, spread, and shape.\
     *Hint:* Remember that R has functions such as `mean` to calculate summary
     statistics.
 
-9. Replicate the above simulation three more times but with modified sample
+8. Replicate the above simulation three more times but with modified sample
     sizes and proportions: for $n = 400$ and $p = 0.1$, $n = 1040$ and 
     $p = 0.02$, and $n = 400$ and $p = 0.02$. Describe the three new sampling distributions. 
     Based on these limited plots, how does $n$ appear to affect the 
-    distribution of $\hat{p}$? How does $p$ affect the sampling distribution?
-
-10. If you refer to Table 6, you'll find that Australia has a sample 
-    proportion of 0.1 on a sample size of 1040, and that Ecuador has a sample 
-    proportion of 0.02 on 400 subjects. Let's suppose for this exercise that 
-    these point estimates are actually the truth. Then given the shape of 
-    their respective sampling distributions, do you think it is sensible to 
-    proceed with inference and report margin of errors, as the reports does?
+    distribution of $\hat{p}$? How does $p$ affect the sampling distribution of sample proportions?
 
 * * *
 
@@ -274,7 +216,7 @@ Remember to use the `inference` function when finding CIs. As
 always, write out the hypotheses for any tests you conduct and outline the
 status of the conditions for inference.
 
-11. Calculate confidence intervals for the 
+9. Calculate confidence intervals for the 
     proportion of atheists in 2012 in two other countries of your choice, and 
     report the associated margins of error as in questions 5 and 6. 
     Be sure to note whether the conditions for inference are met. 
@@ -286,30 +228,18 @@ survey that was conducted in 2005. (We assume here that sample sizes have
 remained the same.) Table 4 on page 12 of the report summarizes survey results 
 from 2005 and 2012 for 39 countries.
 
-12. Is there convincing evidence that Spain has seen a change in its 
+10. Is there convincing evidence that Spain has seen a change in its 
     atheism index between 2005 and 2012?
     *Hint:* Create a new data set for respondents from Spain. Form
     confidence intervals for the true proportion of athiests in both
     years, and determine whether they overlap.
 
-13. Is there convincing evidence that the United States has seen a
-    change in its atheism index between 2005 and 2012?
-
-14. If in fact there has been no change in the atheism index in the countries 
+11. If in fact there has been no change in the atheism index in the countries 
     listed in Table 4, in how many of those countries would you expect to 
     detect a change (at a significance level of 0.05) simply by chance?\
     *Hint:* Look in the textbook index under Type 1 error.
 
-15. Suppose you're hired by the local government to estimate the proportion of 
-    residents that attend a religious service on a weekly basis. According to 
-    the guidelines, the estimate must have a margin of error no greater than 
-    1% with 95% confidence. You have no idea what to expect for $p$. How many 
-    people would you have to sample to ensure that you are within the 
-    guidelines?\
-    *Hint:* Refer to your plot of the relationship between $p$ and margin of 
-    error. Do not use the data set to answer this question.
-
-16. What does the CLT imply about the sampling distribution of the sample proportion?
+12. What does the CLT imply about the sampling distribution of the sample proportion?
     What does the CLT imply about the distribution of the data?
 
 </div>
