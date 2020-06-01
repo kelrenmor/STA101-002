@@ -1,0 +1,73 @@
+---
+title: "Lab 5 - Inference for Categorical Data"
+author: "[Enter recorder name here]"
+date: "[Enter date here]"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(statsr)
+```
+
+**Full team:** [Enter all team member names here.]
+
+* * *
+
+**Set seed:**
+```{r}
+# Insert code for setting seed in this code chunk
+```
+
+**Load data:**
+```{r}
+# Insert code to load data
+```
+
+* * *
+
+## Together
+
+#### 1:
+
+#### 2:
+
+#### 3: 
+
+#### 4:
+
+#### 5:
+
+#### 6:
+
+#### 7:
+
+#### 8:
+
+#### 9:
+
+#### 10:
+
+* * *
+
+## On your own
+
+#### 11:
+
+#### 12:
+
+#### 13:
+
+#### 14:
+
+#### 15:
+
+#### 16:
+
+
