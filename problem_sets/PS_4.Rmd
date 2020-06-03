@@ -110,7 +110,7 @@ Researchers conducted a study investigating the relationship between caffeinated
 (a) What type of test is appropriate for evaluating if there is an association between coffee intake
 and depression?
 (b) Write the hypotheses for the test you identicated in part (a).
-(c) Is the ratio of women who do and do not suffer from depression proportion?
+(c) Calculate the overall proportion of women who do and do not suffer from depression.
 (d) Identify the expected count for the highlighted cell, and calculate the contribution of this cell
 to the test statistic, i.e. $(Observed - Expected)^2=Expected$.
 (e) The test statistic is $\chi^2=20.93$. What is the p-value?
