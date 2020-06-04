@@ -78,7 +78,7 @@ Practice questions:
 
 ### PS 5:
 
-Graded questions: TBA
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_5). Submit to Gradescope. Note as of June 4 at 2:15pm ET only problems for Sections 7.1 and 7.2 are uploaded. Word template on Sakai to be added once problem set is completed (by COB).
 
 Practice questions: TBA
 
