@@ -77,7 +77,7 @@ biol <- rnorm(n, sd=5, mean=50)
 df <- data.frame(test=c(rep('chem',n), rep('bio',n)), score=c(chem,biol))
 boxplot(data=df, score~test, las=2, xlab='')
 points(factor(df$test), df$score, col=3)
-hist(chem - biol, xlab='Difference in scores (chem - bio)')
+hist(chem - biol, xlab='Score difference (chem - bio)', main='')
 ```
 
 (a) Is there a clear difference in the average chemistry and biology scores?
@@ -95,7 +95,50 @@ differences is `r round(sd(chem - biol),3)` points. Do these data provide convin
 
 --- 
 
+### Problem 7: Gold, pt. 1
 
+The unit of a karat, when used with gold, describes purity. 24-karat gold is pure gold, but pure gold is usually too soft to make jewelry and so is mixed with a metal like copper or silver. If, for example, a piece of jewelry is made of metal that is 18 parts gold and 6 parts copper, that is 18-karat gold. 
+
+We would expect the price of gold to differ by karat, but is this difference proportional to the purity increase? We explore this question using two random samples of gold, 14 karat and 18 karat,
+each sample of size 33, and compare the average prices of the gold. In order to be able to compare equivalent units, we first divide the price for each piece by its weight in karats. That is, for a 14 karat piece, we divide the price by 14. For a 18 karat piece, we divide the price by 18. The distributions and some sample statistics are shown below.
+
+```{r echo=F}
+par(mfrow=c(1,1))
+n=33
+chem <- rnorm(n, sd=7.32, mean=47.38)
+biol <- rnorm(n, sd=5.21, mean=55.41)
+df <- data.frame(test=c(rep('14 karat',n), rep('18 karat',n)), score=c(chem,biol))
+boxplot(data=df, score~test, las=2, xlab='')
+```
+
+|        | 14 karat | 18 karat |
+|---------------|:-------------:|------:|
+| Mean     | \$47.38 | \$55.41 |
+| SD     | \$7.32    |   \$5.21 |
+| n | 33   |  33 |
+
+Conduct a hypothesis test to evaluate if there is a difference
+between the average standardized prices of 14 and 18 karat
+gold. Make sure to state your hypotheses clearly, check
+relevant conditions, and interpret your results in context of
+the data.
+
+### Problem 8: Gold, pt. 2
+
+Using the information provided in Problem 7, construct a 95%
+confidence interval for the average difference between the standardized prices of 14 and 18 karat gold. You may assume the conditions for inference are met.
+
+### Problem 9: Netflix and eat
+
+A group of researchers are interested in the possible effects of distracting stimuli during eating on the mindfulness experience of eating. They want to know whether people who do an activity while eating remember their food any differently than those who don't. To test this hypothesis, they monitored food intake for a group of 52 students who were randomized into two equal groups. The treatment group ate dinner while watching Netflix, and the control group ate dinner without any added distractions. The 26 students in the treatment group who ate their dinner while watching Netflix were asked to do a serial-order recall of the dinner food items they ate. The average number of items recalled by the students in this group was 2.9, with a standard deviation of 1.8. The average number of items recalled by the students in the control group (no Netflix) was 5.1, with a standard deviation of 1.8. Do these data provide strong evidence that the average number of food items recalled by the students in the treatment and control groups are different?
+
+### Problem 10: True / False comparing means
+
+Determine if the following statements are true or false, and explain your reasoning for statements you identify as false.
+
+(a) We use a pooled standard error for calculating the standard error of the difference between means when the variability in groups is constant.
+(b) When comparing means of two samples where $n_1 = 10$ and $n_2 = 20$, we can use the normal model for the difference in means since $n_1+n_2 \geq 30$.
+(c) As the degrees of freedom decreases, the t-distribution approaches normality.
 
 --- 
 
@@ -103,9 +146,95 @@ differences is `r round(sd(chem - biol),3)` points. Do these data provide convin
 
 --- 
 
+### Problem 11: Outpatient surveys
+
+A Duke Outpatient clinic sends follow-up surveys regarding patient care. For example, one survey asks about how the patient felt about their provider's listening skills, attention to detail, and care for their experience. Another survey asks about whether the patient felt that their issue had been thoroughly addressed. So far, patients respond to an average of just 3 surveys, and the standard deviation of the number of surveys is about 1.4. The public relations team at the clinic wants to try a new format that they think will encourage patients to complete more surveys. They plan to conduct a study where they randomize each patient to either get the new interface or the current interface. How many new patients do they need for each interface to detect an effect size of 0.5 surveys per patient, if the desired power level is 90%?
 
 --- 
 
 ## Section 7.5 problems
 
 --- 
+
+### Problem 12: Communicating disease risk, part ii.
+
+A study compared five different methods for informing the public about the disease risk associated with various activities. The five methods were a verbal delivery, text without pictures, text with pictures, a short video, and an interactive demonstration. 50 participants were randomly assigned, 10 to each method. After completing the risk learning module, participants took an exit exam.
+
+(a) What are the hypotheses for evaluating if the average exam scores are different for the different communication methods?
+(b) What are the degrees of freedom associated with the F-test for evaluating these hypotheses?
+(c) Suppose the p-value for this test is 0.023. What is the conclusion?
+
+### Problem 13: Teaching team comparison
+
+Suppose a professor at a large research institution has a lecture course with 185 students divided into 7 discussion sections. Each discussion section has its own teaching assistant who leads problem set reviews and covers labs. She is curious if the midterm exam scores in her class differ across discussion section. The summary table below shows the average midterm exam score for each discussion section as well as the standard deviation of scores and the number of students in each section.
+
+```{r, echo=F}
+n = c(30, 32, 23, 18, 29, 25, 28)
+means = c(92, 91, 89, 92, 90, 91, 90)
+sds = c(4, 5, 6, 4, 5, 6, 5)
+scores = list()
+df = data.frame(section=rep('Empty',sum(n)), score=rep(NA, sum(n)))
+ct = 1
+for(i in 1:length(n)){
+  scores[[i]] = rnorm(n[i], means[i], sds[i])
+  df[ct:(ct+n[i]-1),1] = as.character(i)
+  df[ct:(ct+n[i]-1),2] = scores[[i]]
+  ct = ct + n[i]
+}
+
+# Compute the analysis of variance
+res.aov <- aov(score ~ section, data = df)
+# Summary of the analysis
+res.tab = summary(res.aov)[[1]]
+
+```
+
+|        | Sec 1 | Sec 2 |  Sec 3 |  Sec 4 |  Sec 5 |  Sec 6 |  Sec 7 |
+|--------|:-----:|-----:|-----:|-----:|-----:|-----:|-----:|
+| $\bar{x}_i$ | `r round(mean(scores[[1]]),2)` | `r round(mean(scores[[2]]),2)` | `r round(mean(scores[[3]]),2)` | `r round(mean(scores[[4]]),2)` | `r round(mean(scores[[5]]),2)` | `r round(mean(scores[[6]]),2)` | `r round(mean(scores[[7]]),2)` |
+| $s_i$ |  `r round(sd(scores[[1]]),2)` | `r round(sd(scores[[2]]),2)` | `r round(sd(scores[[3]]),2)` | `r round(sd(scores[[4]]),2)` | `r round(sd(scores[[5]]),2)` | `r round(sd(scores[[6]]),2)` | `r round(sd(scores[[7]]),2)` |
+| $n_i$ | `r n[1]` | `r n[2]` | `r n[3]` | `r n[4]` | `r n[5]` | `r n[6]` | `r n[7]` |
+
+The ANOVA output below can be used to test for differences between the average scores from the different discussion sections.
+
+|        | Df | Sum Sq | Mean Sq | F value | Pr(>F) |
+|---------------|-----:|-----:|-----:|-----:|-----:|
+| section     | `r res.tab[1,1]` | `r round(res.tab[1,2],2)` |`r round(res.tab[1,3],2)` |`r round(res.tab[1,4],2)` |`r round(res.tab[1,5],4)` |
+| Residuals   | `r res.tab[2,1]` | `r round(res.tab[2,2],2)` | `r round(res.tab[2,3],2)` | | | 
+
+Conduct a hypothesis test to determine if these data provide convincing evidence that the average score varies across some (or all) groups. Check conditions and describe any assumptions you must make to proceed with the test.
+
+### Problem 14: OIS Problem 7.42 (Work hours and education)
+
+See OIS Problem 7.42 for problem statement and numeric values.
+
+(a) Write hypotheses for evaluating whether the average number of hours worked varies across the five groups.
+(b) Check conditions and describe any assumptions you must make to proceed with the test.
+(c) Below is part of the output associated with this test. Report the values for i. through vii.
+
+|        | Df | Sum Sq | Mean Sq | F value | Pr(>F) |
+|---------------|-----:|-----:|-----:|-----:|-----:|
+| section     | i. |  ii. |501.54 | iii. | 0.0682 |
+| Residuals   | iv. | 267,382 | v. | | | 
+| Total | vi. | vii. | | | | 
+
+(d) What is the conclusion of the test?
+
+### Problem 15: True / False ANOVA
+
+Determine if the following statements are true or false, and explain
+your reasoning for statements you identify as false.
+
+Suppose we are comparing the means of four groups using ANOVA at a 5% significance level.
+
+(a) the appropriate $\alpha$ to be used in pairwise comparisons is 0.05 / 4 = 0.0125 since there are four groups.
+
+If the null hypothesis that the means of four groups are all the same is rejected, then ...
+
+(b) we can then conclude that all the means are different from one another.
+(c) the pairwise analysis will identify at least one pair of means that are significantly different.
+
+If we fail to reject the null hypothesis that the means of four groups are all the same, then ...
+
+(d) we can then conclude that all the means are definitely the same.
+(e) the standardized variability between groups is lower than the standardized variability within groups.
