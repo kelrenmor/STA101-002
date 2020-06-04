@@ -42,6 +42,7 @@ population distribution is approximately normal and the population standard devi
 
 Researchers interested in environmental exposure to radon in a small town in northern New Mexico sampled the blood of 47 park rangers subjected to possibly damaging levels of environmental radon levels while working in a primarily rural environment. The blood samples of these rangers had an average
 radon concentration of 744.3 Bq m$^{−3}$ and a SD of 82.7 m$^{−3}$; a previous study of individuals from a different location in New Mexico, with no history of exposure, found an average blood level concentration of 417.2 m$^{−3}$
+
 (a) Write down the hypotheses that would be appropriate for testing if the park rangers appear to have been exposed to a different concentration of radon
 (b) Explicitly state and check all conditions necessary for inference on these data.
 (c) Regardless of your answers in part (b), test the hypothesis that the park rangers have a higher radon exposure than the group in the previous study. Interpret your results in context.
