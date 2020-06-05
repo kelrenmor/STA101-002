@@ -158,8 +158,7 @@ since the null hypothesis sets the two population means equal to each other.
 The `alternative` hypothesis can be `"less"`, `"greater"`, or `"twosided"`. 
 Lastly, the `method` of inference can be `"theoretical"` or `"simulation"` based.
 
-4.  Interpret the output of the above function call. What is the p-value? 
-Do we reject the null hypothesis at the level $\alpha=0.05$?
+4.  Interpret the output of the above function call (assume $\alpha=0.05$).
 
 5.  Now we change the `type` argument to `"ci"` to construct and record a confidence 
 interval for the difference between the weights of babies born to nonsmoking and 
@@ -203,6 +202,7 @@ the one obtained in the the previous exercise.
 
 8. Conduct a hypothesis test evaluating whether the average weight gained by 
 younger mothers is different than the average weight gained by mature mothers.
+Use the standard $\alpha$ level.
 
 
 

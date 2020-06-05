@@ -22,7 +22,7 @@ library(statsr)
 
 #### Load data:
 ```{r}
-load(url("https://stat.duke.edu/~mc301/data/nc.RData"))
+load(url("https://www.openintro.org/data/rda/ncbirths.rda"))
 ```
 
 ## Together:
@@ -48,7 +48,7 @@ nc %>%
   summarise(sample_size = n())
 ```
 
-#### Exercise 4: Interpret the output of the function call.
+#### Exercise 4: Interpret the output of the above function call (assume $\alpha=0.05$).
 
 ```{r inf-weight-habit-ht, tidy=FALSE}
 inference(y = weight, x = habit, data = nc, statistic = "mean", type = "ht", null = 0, 
