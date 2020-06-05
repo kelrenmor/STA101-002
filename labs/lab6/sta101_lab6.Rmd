@@ -1,0 +1,79 @@
+---
+title: "Lab 6- Inference for numerical data"
+author: "[Enter your name here]"
+date: "[Enter date here]"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(statsr)
+```
+
+* * *
+
+## Lab report
+
+#### Load data:
+```{r}
+load(url("https://stat.duke.edu/~mc301/data/nc.RData"))
+```
+
+## Together:
+
+#### Exercise 1: What are the cases in this data set? How many cases are there in our sample?
+
+```{r summary}
+str(nc)
+```
+
+#### Exercise 2: What does the plot highlight about the relationship between these two variables?
+
+```{r boxplot}
+ggplot(nc, aes(x=habit, y=weight)) + 
+  geom_boxplot()
+```
+
+#### Exercise 3: Are all conditions necessary for inference satisfied? Comment on each.
+
+```{r sample-sizes}
+nc %>%
+  group_by(habit) %>%
+  summarise(sample_size = n())
+```
+
+#### Exercise 4: Interpret the output of the function call.
+
+```{r inf-weight-habit-ht, tidy=FALSE}
+inference(y = weight, x = habit, data = nc, statistic = "mean", type = "ht", null = 0, 
+          alternative = "twosided", method = "theoretical")
+```
+
+#### Exercise 5: Interpret this confidence interval in context of the data.
+
+```{r inf-weight-habit-ci1, tidy=FALSE}
+inference(y = weight, x = habit, data = nc, statistic = "mean", type = "ci", 
+          method = "theoretical")
+```
+
+* * *
+
+## On your own
+
+#### Exercise 6: Insert code and answer question.
+
+
+
+#### Exercise 7: Insert code and answer question.
+
+
+
+#### Exercise 8: Insert code and answer question.
+
+
