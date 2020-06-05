@@ -103,10 +103,10 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Friday,  June 5| Inference for comparing two means + Power | Lab 5 | Data-science-in-action with David Gill |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  June 8| ANOVA | | |
-| Tuesday,  June 9| Bootstrapping | Lab 6 | |
-| Wednesday,  June 10| Midterm 2 review | | |
-| Thursday,  June 11| Midterm 2 | Project proposal |  |
-| Friday,  June 12| Introduction to regression | PS5 + PA5 | Begin Unit 6: Introduction to linear regression |
+| Tuesday,  June 9| Bootstrapping | Lab 6 + DSA2 | |
+| Wednesday,  June 10| Midterm 2 review | PS5 + PA5 | |
+| Thursday,  June 11| Midterm 2 |  |  |
+| Friday,  June 12| Introduction to regression | Project proposal | Begin Unit 6: Introduction to linear regression |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  June 15| Outliers and Inference for SLR | Lab 7 | |
 | Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 | Begin Unit 7: Multiple linear regression |
