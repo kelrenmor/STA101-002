@@ -15,12 +15,7 @@ library(tidyverse)
 * * *
 
 <div id="template">
-**Your reproducible lab report:** Before you get started, download the R Markdown 
-template for this lab. Remember all of your code and answers go in this document:
-```{r load-template, eval=FALSE}
-download.file("https://kelrenmor.github.io/STA101-002/labs/lab6/sta101_lab6.Rmd",
-              destfile="sta101_lab6.Rmd")
-```
+**Not for submission:** Note that in order to ease the burden during midterm week, this Lab will not be submitted and all answers will be shown in the document below. We will discuss the results in Lab and you may use this Lab as a reference for how to perform inference on and plot numerical data.
 </div>
 
 ## North Carolina births
@@ -80,6 +75,9 @@ by using the following command:
 str(nc)
 ```
 
+Here each case (i.e. row in the data frame) is a birth, and there are 
+1000 cases in this sample (i.e. rows in the data frame).
+
 As you review the variable summaries, consider which variables are categorical 
 and which are numerical. For numerical variables, are there outliers? If you 
 aren't sure or want to take a closer look at the data, make a graph.
@@ -96,6 +94,8 @@ highlight about the relationship between these two variables?
 ggplot(nc, aes(x=habit, y=weight)) + 
   geom_boxplot()
 ```
+
+We see the median weight for babies born to non-smoking parents is higher than the median for smoking parents.  The max, 1st, and 3rd quantiles are also higher, but the minimum is lower. The IQR seems to be very close between the two groups. Both distributions are roughly symmetric, but non-smokers tend to have more values considered as outliers by the default settings. This could imply that the size of that group may be much larger than the smoking group.
 
 The box plots show how the medians of the two distributions compare, but we can
 also compare the means of the distributions using the following to 
@@ -122,6 +122,8 @@ nc %>%
   group_by(habit) %>%
   summarise(sample_size = n())
 ```
+
+From information given, we assume that cases are independent (both within smoking habit group and between smoking habit groups). Each sample size is larger than 30. And the boxplots did not reveal strong skew.
 
 Let $\mu_{non-smoker}$ denote the average weights of babies born to 
 non-smoking mothers and $\mu_{smoker}$ denote the average weights of babies born to 
@@ -160,6 +162,8 @@ Lastly, the `method` of inference can be `"theoretical"` or `"simulation"` based
 
 4.  Interpret the output of the above function call (assume $\alpha=0.05$).
 
+We see a p-value < 0.05, hence we reject the null hypothesis that the average weight in babies born to non-smokers and smokers is the same.
+
 5.  Now we change the `type` argument to `"ci"` to construct and record a confidence 
 interval for the difference between the weights of babies born to nonsmoking and 
 smoking mothers. Note that when doing a confidence interval arguments like
@@ -175,6 +179,8 @@ Interpret this interval in context of the data. Note that by
 default you'll get a 95% confidence interval. If you want to change the
 confidence level, add a new argument (`conf_level`) which takes on a value
 between 0 and 1.
+
+We see the 95% confidence interval for the weight difference in babies born to non-smokers and smokers is (.0508,.5803) with non-smokers having larger babies on average. We are 95% confident that the mean weight difference between babies born to smokers and non-smokers is between .0508 and .5803 pounds.
 
 By default the function reports an interval for ($\mu_{nonsmoker} - \mu_{smoker}$). 
 We can easily change this order by using the `order` argument:
@@ -195,16 +201,35 @@ Note that since you're doing inference  on a single population parameter,
 there is no explanatory variable, so you can 
 omit the `x` variable from the function.
 
+```{r}
+inference(y = weeks, data=nc, statistic = "mean", type = "ci", method = "theoretical")
+```
+
+We are 95% confident that the true mean length of pregnacies lies between 38.1526 and 38.5168 weeks. 
+
 7. Calculate a new confidence interval for the same parameter at the 90% 
 confidence level. You can change the confidence level by adding a new argument 
 to the function: `conf_level = 0.90`. Comment on the width of this interval versus 
 the one obtained in the the previous exercise.
 
+```{r}
+inference(y = weeks, data=nc, statistic = "mean", type = "ci", method = "theoretical", conf_level = 0.90)
+```
+
+The width of this interval is narrower than  
+the one obtained in the the previous exercise
+
 8. Conduct a hypothesis test evaluating whether the average weight gained by 
 younger mothers is different than the average weight gained by mature mothers.
 Use the standard $\alpha$ level.
 
+Before running the test, we decide to use $\alpha = .05$.
 
+```{r}
+inference(y = gained, x = mature, data=nc, statistic = "mean", type = "ht", null = 0, alternative = "twosided", method = "theoretical")
+```
+
+After running the hypothesis test, we see the resulting p-value is .1686. This means that if there were no difference in average weight gained between mature mothers and younger mothers, we would expect to see a difference of 1.7697 pounds or more in about 16.58% of repeated random samples from the population. Since our $p-value > \alpha$, we fail to reject the null hypothesis and thus cannot conclude whether or not there is a difference in the true average weight gained by the two groups.
 
 <div id="license">
 This is a product of OpenIntro that is released under a [Creative Commons 
