@@ -36,10 +36,11 @@ See below for current week's live session times (note that these times are **in 
 
 | Day | Time | Team member | Topic | Location |
 | ---   | ---   | ---   | ----  | ---- |
-| Monday,  June 1 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
-| Tuesday,  June 2 | 3-5pm | Dr. Moran | Drop in time to talk about Midterm 1 | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
-| Wednesday,  June 3 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
-| Friday,  June 5 | 1-2pm | Dr. David Gill | Data Science in Action seminar | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Monday,  June 8 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Tuesday,  June 9 | 3-5pm | Dr. Moran | Q&A for practice midterm 2 | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Wednesday,  June 10 | 9-10am | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Wednesday,  June 10 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Friday,  June 12 | 11am-12pm | Dr. Moran | Drop in time to talk about Project proposal | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
 
 ### Teaching team and office hours 
 

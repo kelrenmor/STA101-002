@@ -450,6 +450,8 @@ To do:
 - Review for Midterm 2 (Thursday!)
 - Decide on data set for project (proposal due Friday)
 
+<span style="color:blue">Drop in Q&A for practice exam questions (post to Piazza if you can’t come but want me to cover something): Time 3-5 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
+
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: DSA2 </span>
@@ -463,6 +465,8 @@ To do:
 - Review for Midterm 2 (tomorrow!)
 - Take PA5 and wrap up PS5 (due today)
 - Work on project proposal (due Friday)
+
+<span style="color:blue">Extra drop in time: Time 9-10 AM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -491,6 +495,8 @@ To do:
 
 - Coursera vids and readings TBA
 - Wrap up and submit project proposal
+
+<span style="color:blue">Extra drop in time to talk about project proposals: Time 11 AM - 12 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
