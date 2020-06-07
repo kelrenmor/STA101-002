@@ -428,6 +428,7 @@ Topic: ANOVA
 To do: 
 
 - Check out what's been happening on Piazza
+- View the [project proposal video](https://sakai.duke.edu/access/content/group/eaca1fc1-5920-4d0a-b7a6-6f33b35d298e/Video%20recordings/06_07_20_project_proposal.mp4)
 - Read the [Learning Objectives for today and tomorrow](https://www.coursera.org/learn/inferential-statistics-intro/supplement/ctr7d/lesson-learning-objectives)
 - View the [Comparing more than two means video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/TI3DD/comparing-more-than-two-means)
 - View the [ANOVA video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/KoTvZ/anova)
