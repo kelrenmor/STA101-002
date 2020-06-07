@@ -1,6 +1,6 @@
 ---
 title: "TENTATIVE PROJECT TITLE"
-author: "NAME"
+author: "YOUR NAME"
 output:
   html_document:
     css: https://kelrenmor.github.io/STA101-002/project_files/project.css
@@ -25,59 +25,69 @@ if (before && options$fig.show!='none') par(mar=c(4,4,.2,.1),cex.lab=.95,cex.axi
 ```
 
 ```{r}
-# load data
+# Load data (copy from project statement and replace this line)
 
 ```
 
+* * *
 
-### Research question 
+## Data
 
-**You should phrase your research question in a way that matches up with the scope of inference your dataset allows for.**
+**Describe your data set and discuss your motivation for choosing it.**
 
+* * *
 
+## Research questions
 
-### Cases 
+<!-- Come up with two interesting research questions that you would like to explore with your data. Don’t simply ask “Is there a relationship between x and y?”. Instead, provide motivation for why a relationship between x and y is worth studying. Use outside resources to investigate this relationship, and explain what you expect to observe from the data. Finally, expand your question to consider other variables in your data set. How might the relationship between x and y change when we consider z? These questions can be based on the existing variables in your data set, but you are also free to create new variables from the data. You will have the option to update / revise / change these questions when doing Stage 2 of the project. -->
 
-**What are the cases, and how many are there?**
+1. **Question 1 here**
 
+Hypothesis: **Insert what you think the answer to your question will be.**
 
+2. **Question 2 here**
 
-### Data collection 
+Hypothesis: **Insert what you think the answer to your question will be.**
 
-**Describe the method of data collection.**
+* * *
 
+## Resources
 
+<!--List the references of at least 2 resources you used to inform your research questions. These could be news articles, scholarly publications, additional data, etc. Give a brief explanation of the significance of each resource.-->
 
-### Type of study 
+**Resource 1 citation here**
 
-**What type of study is this (observational/experiment)?**
+**Resource 1 explanation/significance here**
 
+**Resource 2 citation here**
 
-
-### Data Source 
-
-**If you collected the data, state self-collected. If not, provide a citation/link.**
-
-
-
-
-### Response 
-
-**What is the response variable, and what type is it (numerical/categorival)?**
+**Resource 2 explanation/significance here**
 
 
+* * *
 
-### Explanatory 
+## Exploratory data analysis
 
-**What is the explanatory variable, and what type is it (numerical/categorival)?**
+<!--Perform an exploratory data analysis that addresses each of your two research questions. Your EDA should contain numerical summaries and visualizations. Your R output and plots should be accompanied by a brief explanation and interpretation of what you observed.
 
+Remember the summary statistics relevant to your research question. For example, if you’re comparing means across groups provide means, SDs, sample sizes of each group and discuss what you see. This step requires the use of R, hence a code chunk is provided below. Insert more code chunks as needed (it's better to use a new chunk for each thing you're showing; e.g., one chunk for summary stats, one for your first plot, one for your second plot, etc.-->
 
-
-### Relevant summary statistics 
-
-**Provide summary statistics relevant to your research question. For example, if you’re comparing means across groups provide means, SDs, sample sizes of each group. This step requires the use of R, hence a code chunk is provided below. Insert more code chunks as needed.**
+### Exploration for question 1
 
 ```{r}
-
+# Include a comment at the start of each code chunk saying what you are doing in that chunk
+# (for example you could say: "Create summary statistics output")
 ```
+
+**Insert discussion for your summary stats / plots / etc for Q1**
+
+### Exploration for question 2
+
+**Insert discussion for your summary stats / plots / etc for Q2**
+
+* * *
+
+## Timeline, Teamwork, and Office hours
+
+<!--The bulk of the work on Stage 2 of the project will be done after the second midterm, once we have covered linear regression. Identify times between then and the project deadline when you will be able to meet with Dr. Moran or TAs if needed (note office hour(s) and date(s) you could make, email if no existing hours work). Discuss with your lab team (or other classmates of your choosing) about when you can meet to workshop each others' project drafts -- write down the agreed upon date and time here, along with the names of anyone you intend to discuss your project with.-->
 

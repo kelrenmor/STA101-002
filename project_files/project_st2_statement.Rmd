@@ -1,0 +1,110 @@
+---
+title: "STA 101 Project Stage 2: Write Up and Final Presentation"
+output:
+  html_document:
+    css: project.css
+    highlight: pygments
+    theme: cerulean
+  pdf_document: default
+---
+
+* * *
+
+## Report format
+
+All code used to generate the statistics and plots in your presentation should be submitted in an R Markdown document, which should be organized as outlined in the next section. There is no limit on the length of this document. 
+
+Download the template for the RMD/HTML file:
+
+```{r tidy=FALSE, eval=FALSE}
+download.file("https://kelrenmor.github.io/STA101-002/project_files/sta101_prj.Rmd",
+              destfile = "sta101_prj.Rmd")
+```
+
+## Tone
+
+Write as if you are explaining your results to whoever would be interested in your research question, whether this is other scholars in your field or peers sharing your interest in the topic. Keep in mind this audience may or may not have taken statistics. You must be statistically accurate and use correct statistical terminology, but must also explain your conclusions in a way that anyone can understand.
+
+## Content for the RMD/HTML file
+
+1. **Introduction:** The goal of your final project and presentation (ie stage 2), is to tell a compelling story based on the data analysis you performed. Introduce the overarching theme or idea that you will be investigating, and, within that framework, describe the questions you will be addressing with your analysis. Use your research from Stage 1 to provide background on your topic, and motivate why your analysis is relevant.
+2. **Analysis:** The data analysis portion of your project will consist of a hypothesis test, an exploratory data analysis, and a multivariate linear model. You should use your research questions from Stage 1 to help you choose which variables you’ll use for each portion of the analysis. However, you are not required to answer all of your research questions from the previous part of the project.
+    * **EDA:** Compare two variables in your dataset while controlling for a third (categorical) variable. This is typically done using nested side-by-side boxplots, or with a color coded scatterplot. Explain the relationship of the variables -- you can include relevant EDA you performed in Stage 1 of the project here if you wish. (You can have as many visualizations as you want, but at least one should contain 3 variables in the same plot).
+    * **Hypothesis Test:** Use the inference() function from the labs to perform one of the hypothesis tests from Units 4 or 5. If the R output includes a confidence interval, interpret it along with the results of your test. If you conduct an ANOVA test, include and interpret the results of the post-hoc pair-wise tests. Make sure you address whether the necessary conditions for your inference are met. If they aren’t satisfied, still proceed with the test but make note of this when you state your findings.
+    * **Run an Initial "Full Model":** Develop a multiple linear regression model to predict a numerical variable in the dataset. This model should start with a minimum of 5 explanatory variables, but you are welcome to use more than that. The variables you choose should be related to the research interests stated in the Introduction, and you should provide a substantial discussion of your model’s output. For instance, what do the coefficient values tell you about the relationship between the explanatory variables and the response variable?
+    * **Perform Model Selection:** After running the initial "full model" in the previous step, you should next perform model selection starting with this "full" linear regression model. (Please read the instruction below for how we specifically want you to do this.)
+        * **Split Data into Test and Training Data** In order to assess how well your model predicts new data, you will need to set aside some of the observations before fitting your model. Replace “your_data” in the code below with the name of your data set and run it. This will create two separate data sets, project.train and project.test. The project.train data set contains 80\% of the observations, and will be used to fit your model. The remaining 20\% of the observations in project.test will be used to test your model’s predictions.
+        * **Perform Backwards Elimination on the Training Data:** With the project.train data, start with all of the variables you’ve chosen to be in the model, and perform the backward selection process. Use $R^2_{adj}$ for selction since your model will be used to make predictions. At the bottom of this document is a function (`single.step.backwards()`) that will compute the $R^2_{adj}$ values for a single step of the backwards selection process. This function takes for arguments a data frame with the variables for that step, and the name of the response variable in quotations.
+          * You can use the single.step.backwards() function on the whole dataset or just the explanatory variables that you are interested in. For example, if you would like to run a single step of backwards elimination on the the whole ames dataset, where your response variable is ‘Lot.Area’, you could use the code: `single.step.backwards(project.train,'Lot.Area')`.
+          * Alternatively, for example, if you would like to run backwards elimination on the ames data set, where your response variable is ‘Lot.Area’ and you only wish to consider three explanatory variables (Street, Lot.Shape, Lot.Config), you could use the code: `single.step.backwards(project.train%>%select(Street,Lot.Shape,Lot.Config),'Lot.Area')`. If the rules of backwards elimination suggested that you remove Street then you would run the single.step.backwards() function again, removing Street from the select().
+        * **Set your "final" model.** After you’ve selected the best model, fit it using the project.train data and save it as “model.best”. (The code at the bottom of this document gives you an example of how you might do this. Replace the variables in the lm() function that correspond to your response variable and explanatory variables that were left over from the backwards elimination you performed.)
+        * **Perform Model Diagnostics on your Final Model:** Remember to create the necessary diagnostic plots for this model and determine if a linear model is appropriate. If you find your residuals are heavily skewed, fit another model replacing your response variable with the log transformed response (you don’t need to redo the backwards selection). Is there an improvement in the diagnostic plots?
+        * **Extra Questions about Your Final Model:** When you performed your model selection, were you supprised that a particular variable wasn’t included in the model? If your model included the same variables from your hypothesis test or EDA, do you still see the same relationship between the explanatory and response variables?
+    * **Assessing the Performance of your Final Model:** To assess how accurate your model’s predictions are, compute the Root Mean Square Error (RMSE) for your testing data, project.test. The RMSE estimates the average difference between your model’s predictions and the actual observed values, and is given by the formula $$RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^n(y_i-\hat{y}_i)^2}.$$ To compute the RMSE for your test data, replace “response_var” with the name of your response variable in the code block titled "Calculate RMSE" at the bottom of this document.
+    * **Make a Prediction and Prediction Interval:** Lastly, choose a point from the test dataset and use the predict function to calculate the predicted value and the corresponding prediction interval.
+3. **Conclusion:** Tie together the findings of your analysis with the ideas in your Introduction. Which questions were you able to answer, and what where your conclusions? Where there shortcomings in your data that prevented you from fully answering a particular question? If so, how could future studies fix this problem? How might the results of your analysis be used to motivate or inform future research?
+
+* * *
+
+## Presentation format & length
+
+**Presentation:** You should put together a short PowerPoint-like presentation of your analysis to be recorded and submitted as an mp4 (note you can use Zoom's 'share screen' and 'record' functions to easily create this presentation). Keep you presentation under 8 minutes. Any content past the 8 minute mark will not be viewed. Your presentation needs to highlight each component of your project: hypothesis test, EDA, model and prediction; however, you should focus on your results and conclusions, and leave the details for your markdown file.
+
+## Grading
+
+The Project Stage 2 and presentation will make up 70% of your overall project score. Stage 1 was worth 20%, and Stage 3 will be worth 10%.
+
+Grading of the project will take into account:
+
+* Correctness: Are the procedures and explanations correct?
+* Presentation: Are your slides well organized and your results clearly presented? (see project presentation rubric on Sakai under Resources).
+* Content/Critical thought: Did you think carefully about the problem?
+* Tidiness: Is your code and text well organized?
+
+* * *
+
+## Code referenced above
+    
+**Split Data into Test and Training Data**
+```{r test_train, eval=FALSE}
+project.data <- your_data
+n.obs <- dim(project.data)[1]
+
+train.index <- sample(1:n.obs,floor(.8*n.obs),replace=FALSE)  # randomly select 80% of obs for training
+project.train <- project.data[train.index,]  # Data for training the model
+project.test <- project.data[-train.index,]  # Data for testing the model's accuracy
+```
+
+**Perform Backwards Elimination on the Training Data**        
+```{r backwards_elim, eval=FALSE}
+single.step.backwards <- function(data,response){
+resp.indx <- which(names(data)==response)
+y <- data[[response]]]
+X <- data[,-resp.indx]
+n.pred <- dim(X)[2]
+if(n.pred > 1){
+  for(i in 1:n.pred){
+      print(paste0("Variable ", names(X)[i]," removed: Adjusted R-squared =  ",
+          round(summary(lm(y~.,data=as.data.frame(X[,-i])))$adj.r.squared,5)))
+      }
+}
+else{
+  print("Model only contains one variable.")
+}
+}
+```
+
+**Set your "final" model**
+```{r best_model, eval=FALSE}
+model.best<-lm(response_variable ~ left_over_expl_variable1+ left_over_expl_variable2 + ...,
+               data=project.train)
+```
+
+**Calculate RMSE**
+```{r rmse, eval=FALSE}
+predictions.test <- predict(model.best,project.test)
+y <- project.test$response_var
+mse <- mean((y-predictions.test)^2)
+(rmse <- sqrt(mse))
+```
+

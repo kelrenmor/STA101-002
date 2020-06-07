@@ -1,0 +1,141 @@
+---
+title: "STA 101 Project Stage 1: Introduction and Data Exploration (Proposal)"
+output:
+  html_document:
+    css: project.css
+    highlight: pygments
+    theme: cerulean
+  pdf_document: default
+---
+
+* * *
+
+## Stages of the project
+
+You will complete this project in three stages:
+
+1. Stage 1: Introduction and Data Exploration (Proposal) (4% of course grade)
+2. Stage 2: Project and Final Presentation
+    * Final Project RMD File and Html File (7% of course grade)
+    * Final Project Presentation (7% of course grade)
+3. Stage 3: Reflection on others' code/presentation (2% of course grade)
+
+The purpose of Stage 1 is to explore the data set you’ll be working with, and have you propose research questions to potentially investigate in Stage 2 of the project. At this point in the term we haven’t covered all of the statistical inference methods needed to complete Stage 2 (but you're welcome to look at the example presentation and project description now).
+
+You must score at least 30% of the points on each of the three project related submissions in order to pass this class.
+
+* * *
+
+## Data
+
+For your project, you may select your own data set (just email me first to see if it's ok to use) or pick one of the following data sets to use for your analyses.
+
+* [Ames Housing](https://rdrr.io/cran/statsr/man/ames.html) All residential home sales in Ames, Iowa between 2006 and 2010
+* [Body Measurements](https://www.openintro.org/data/index.php?data=bdims) Body girth measurements and skeletal diameter measurements for 507 physically active individuals.
+* [Pokemon](https://www.openintro.org/book/statdata/index.php?data=pokemon) Data on 75 Pokemon evolutions spread across four species.
+* [U.S. Counties](https://www2.stat.duke.edu/courses/Spring20/sta101.002/us_healthinfo.html) Data for 3081 counties in the United States,
+
+To load one of the above data sets, copy the appropriate line of code from the chunk below into your
+Rmd document in the appropriate section.
+
+```{r load_data, eval=FALSE}
+# Load Ames housing data
+library(statsr); data(ames)
+
+# Load body measurements data
+load(url("https://www.openintro.org/data/rda/bdims.rda"))
+
+# Load Pokemon data
+pokemon <- read.csv(url("https://www.openintro.org/book/statdata/pokemon.csv"))
+
+# Load U.S. Counties data
+load(url("https://kelrenmor.github.io/STA101-002/data/us_health.rdata"))
+```
+
+Some of the variables in these data sets may only be there for informational 
+purposes and do not make any sense to include in a statistical analysis. 
+It is up to you to decide which variables are meaningful and which should be omitted. 
+For example in the Ames housing data `PID` gives the parcel identification number, 
+which is used with the city web site for parcel review but will not be relevant 
+for your analyses.
+
+You might also choose to omit certain observations or restructure some of
+the variables to make them suitable for answering your research questions.
+
+When you are fitting a model in Stage 2 you should also be careful about collinearity, 
+as some of these variables may be dependent on each other.
+
+* * *
+
+## Content
+
+The remainder of this document outlines the requirements and expectations of what your Stage 1 report should contain.
+
+1. Title: (2 points) Choose an appropriate working title for your project.
+2. Data: (5 points) Describe your data set and discuss your motivation for choosing it.
+3. Research questions: (10 points) Come up with two interesting research questions that you would like to explore with your data. Don’t simply ask “Is there a relationship between x and y?”. Instead, provide motivation for why a relationship between x and y is worth studying. Use outside resources to investigate this relationship, and explain what you expect to observe from the data. Finally, expand your question to consider other variables in your data set. How might the relationship between x and y change when we consider z? These questions can be based on the existing variables in your data set, but you are also free to create new variables from the data. You will have the option to update / revise / change these questions when doing Stage 2 of the project.
+4. Resources: (4 points) List the references of at least 2 resources you used to inform your research questions. These could be news articles, scholarly publications, additional data, etc. Give a brief explanation of the significance of each resource.
+5. Exploratory data analysis: (6 points) Perform an exploratory data analysis that addresses each of your two research questions. Your EDA should contain numerical summaries and visualizations. Your R output and plots should be accompanied by a brief explanation and interpretation of what you observed.
+6. Timeline, Teamwork, and Office hours: (3 points) The bulk of the work on Stage 2 of the project will be done after the second midterm, once we have covered linear regression. Identify times between then and the project deadline when you will be able to meet with Dr. Moran or TAs if needed (note office hour(s) and date(s) you could make, email if no existing hours work). Discuss with your lab team (or other classmates of your choosing) about when you can meet to workshop each others' project drafts -- write down the agreed upon date and time here, along with the names of anyone you intend to discuss your project with.
+
+### Format & length
+
+Your Stage 1 Project should be written using the R Markdown template, so that all R code, output, and plots will be automatically included in your write up.
+
+Download the template for the proposal:
+
+```{r tidy=FALSE, eval=FALSE}
+# When you run the code below, replace [Last_First] with your last and first name 
+# separated with an underscore (e.g., Moran_Kelly)
+download.file("https://kelrenmor.github.io/STA101-002/project_files/sta101_prj_proposal.Rmd",
+              destfile = "[Last_First]_sta101_proposal.Rmd")
+```
+
+Your Stage 1 Project Proposal should not exceed 10 pages (view a print preview to determined length). Adjust you plot sizes or text output if it’s too long.
+
+### Grading
+
+Your Stage 1 Project Proposal will be graded out of 30 points (as outlined above), and will make up 20% of your overall project score (i.e. 4% of your grade for the course).
+
+### The following will result in deductions:
+
+* Reproducibility issues, requiring to make changes to the R Markdown file to knit the document: -3 points.
+* Each page over 10 page limit: -2 points per page (view print preview to confirm length)
+* Lack of organization: up to -5 points
+
+### Examples
+
+An example of a Proposal (i.e., Stage 1) submission scoring full points is available on the course website and on Sakai under the Resources tab. Note that for the provided example proposal, the assignment required three questions in the proposal (you are only asked to come up with two for your assignments). An example of a final presentation (i.e., Stage 2) is also provided.
+
+* * *
+
+## Submission
+
+Submit online on Sakai under Assignments. Include:
+
+1. R Markdown file (.Rmd)
+2. HTML output (.html)
+
+I will download your R Markdown file and run your code to confirm 
+reproducibility of your work. Grading will be based on the document I 
+compile, so make sure that your R Markdown file contains everything 
+necessary to compile your entire work.
+
+* * *
+
+## Honor code
+
+You may discuss your work on this project with your lab team and fellow classmates,
+however you may not create the same projects. That is, if you work with someone
+you are free to talk about how to perform coding tasks, what analyses may be appropriate for 
+given variable(s), and even work on the same data set. However, you must address 
+__different__ questions and use different resources for each of your projects. 
+If you work on your project with a lab mate's input  and you create proposals addressing 
+the exact same questions, this will be considered an honor code violation. Similarly,
+you may google how to perform coding tasks, or seek research questions from existing studies 
+if you cite these resources, but using full existing projects from previous semesters 
+(including using the example as your own submission) or from 
+online is considered plagiarism and is an honor code violation.
+Failure to abide by these policies will result in a 0 for all individuals involved.
+Please ask for clarification if you are unsure about the acceptability of a given action.
+

@@ -11,12 +11,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The project objective is to give you independent applied research experience using real data and statistical methods. For a parameter of interest to you, you will describe the relevant data, conduct an analysis, and summarize your findings in a written, fully reproducible, data analysis report. You will also upload a short video presentation in which you share your work with your peers. Students will view and engage with a subset of their peers’ projects, and respond to questions from those who viewed their presentation in the "project reflections" component of the assignment.
 
-* Project proposal (due Thursday, June 11): 2/10 of overall project grade
-* Project write-up/presentation (due Monday, June 22): 7/10 of overall project grade
+* [Project proposal](https://kelrenmor.github.io/STA101-002/project_files/project_st1_statement) (due Friday, June 12): 2/10 of overall project grade
+* [Project write-up/presentation](https://kelrenmor.github.io/STA101-002/project_files/project_st2_statement) (due Monday, June 22): 7/10 of overall project grade
 * Project reflections (due Tuesday, June 23): 1/10 of overall project grade
 
 You must score at least 30% of the points on each of the three project related submissions in order to pass this class.
 
 ---- 
 
-More details and a syllabus soon to come!
+An example of a Proposal (i.e., Stage 1) submission scoring full points is available [here](https://kelrenmor.github.io/STA101-002/project_files/Stage1_example), and both the Rmd and html files are on Sakai under the Resources tab. Note that for the provided example proposal, the assignment required three questions in the proposal (you are only asked to come up with two for your assignments).
+
+Rubrics for the project write up and presentation are available on Sakai under Resources. An example of a final presentation (i.e., Stage 2) is also provided on Sakai.
+
+---- 
+
+Recommended little-bit-a-day completion plan for Stage 1:
+
+- Monday, June 8: Choose your data set and come up with two research questions
+- Tuesday, June 9: Come up with hypotheses for your two research questions, and references
+- Wednesday, June 10: Do EDA and discussion for Q1
+- Thursday, June 11: Do EDA and discussion for Q2
+- Friday, June 12: Wrap up and double check work
+
+---- 
+
+Recommended little-bit-a-day completion plan for Stage 2:
+
+- To be added following Stage 1 submission.

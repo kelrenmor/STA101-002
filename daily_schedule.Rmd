@@ -417,12 +417,17 @@ To do:
 
 ---
 
+This week, Monday and Tuesday are normal work days in which we will wrap up Unit 5, Wednesday is a review for our second midterm on Thursday, and we begin Unit 6 on Friday. We will have a data science in action seminar, either offered live on Friday or recorded (TBD). You will begin working on your final projects. There are also bonus drop in sessions in addition to regularly scheduled office hours this week -- see the [main page](https://kelrenmor.github.io/STA101-002/index.html) for scheduling.
+
+---
+
 ### Monday, June 8
 
 Topic: ANOVA
 
 To do: 
 
+- Check out what's been happening on Piazza
 - Read the [Learning Objectives for today and tomorrow](https://www.coursera.org/learn/inferential-statistics-intro/supplement/ctr7d/lesson-learning-objectives)
 - View the [Comparing more than two means video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/TI3DD/comparing-more-than-two-means)
 - View the [ANOVA video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/KoTvZ/anova)
@@ -430,6 +435,7 @@ To do:
 - View the [Multiple comparisons video](https://www.coursera.org/learn/inferential-statistics-intro/lecture/6wfP3/multiple-comparisons)
 - Read OIS Chapter 7, Section 7.5
 - Work on PS5 problems from sections 7.5 and rest of chapter
+- Choose your data set and come up with two research questions (project project proposal due Friday)
 - Review for Midterm 2
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
@@ -448,7 +454,7 @@ To do:
 - Review Lab 6 video if you missed live session yesterday (not for submission, for your reference)
 - Work on PS5 problems (due tomorrow)
 - Review for Midterm 2 (Thursday!)
-- Decide on data set for project (proposal due Friday)
+- Come up with hypotheses for your two research questions, and references (project proposal due Friday)
 
 <span style="color:blue">Drop in Q&A for practice exam questions (post to Piazza if you can’t come but want me to cover something): Time 3-5 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
 
@@ -464,7 +470,7 @@ To do:
 
 - Review for Midterm 2 (tomorrow!)
 - Take PA5 and wrap up PS5 (due today)
-- Work on project proposal (due Friday)
+- Do EDA and discussion for Q1 of your project proposal (due Friday)
 
 <span style="color:blue">Extra drop in time: Time 9-10 AM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
 
@@ -481,7 +487,7 @@ Topic: Midterm 2
 To do: 
 
 - Take Midterm 2
-- Work on project proposal
+- Do EDA and discussion for Q2 of your project proposal (due Friday)
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
@@ -494,7 +500,7 @@ Topic: Introduction to regression
 To do: 
 
 - Coursera vids and readings TBA
-- Wrap up and submit project proposal
+- Wrap up and submit project project proposal
 
 <span style="color:blue">Extra drop in time to talk about project proposals: Time 11 AM - 12 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
 
