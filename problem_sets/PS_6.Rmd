@@ -1,0 +1,226 @@
+---
+title: "Problem set 6"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+set.seed(1204)
+library(ggplot2)
+```
+
+--- 
+
+## Section 8.1 problems
+
+--- 
+
+### Problem 1: Focus groups and product reviews.
+
+The two scatterplots below show the relationship between Stage 1 product testing reviews, 
+Stage 2 product testing reviews, and Markeplace reviews recorded during development 
+for many objects sold by a major online retailer. Stage 1 typically occurs a year or 
+more before the product goes to market, Stage 2 a few months before the product goes to market, and the Marketplace review is from the final product.
+
+```{r reviews, echo=F, fig.width=8, fig.height=3.5}
+n = 40
+x = runif(n, min=3, max=8)
+df = data.frame(p1=x+rnorm(n, sd=1.3),p2=x+rnorm(n,sd=0.5))
+g1 = ggplot(df, aes(x=x,y=p1)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  xlab('Stage 1 review') + ylab('Markeplace review') + ylim(range(df))
+
+g2 = ggplot(df, aes(x=x,y=p2)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  xlab('Stage 2 review') + ylab('Markeplace review') + ylim(range(df))
+
+gridExtra::grid.arrange(g1,g2,nrow=1)
+
+```
+
+(a) Based on these graphs, which of the two testing stage reviews has the strongest correlation with the markeplace review? Explain.
+(b) Can you think of a reason why the correlation between the stage you chose in part (a) and the marketplace review is higher?
+(c) Suppose you are interested in testing the hypothesis that the average reviews were consistent across the three time points. Would these data violate the independence assumption necessary to perform an ANOVA?
+
+### Problem 2: By eye.
+
+```{r, echo=F, fig.width=8, fig.height=3.5}
+n = 50
+x = runif(n, min=0, max=5)
+df = data.frame(p1= -0.4 * x+rnorm(n, sd=1.1),p2=x+rnorm(n,sd=0.15), 
+                p3=(x-2.5)*(x-2.5) + rnorm(n,sd=0.5))
+g1 = ggplot(df, aes(x=x,y=p1)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  xlab('x') + ylab('y') + ggtitle('(i)')
+
+g2 = ggplot(df, aes(x=x,y=p2)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  xlab('x') + ylab('y') + ggtitle('(ii)')
+
+g3 = ggplot(df, aes(x=x,y=p3)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  xlab('x') + ylab('y') + ggtitle('(iii)')
+
+gridExtra::grid.arrange(g1,g2,g3,nrow=1)
+```
+
+(a) For each of the plots above, identify the strength of the relationship (e.g. weak, moderate, or strong) in the data and whether fitting a linear model would be reasonable.
+(b) For the plots in which you identified a linear model as being reasonable, suppose you were asked to estimate an intercept and slope for each. Which plot would you be more confident about making these estimates for? Put another way, which plot would you have less uncertainty about?
+
+### Problem 3: Correlation. 
+
+What would the correlation be between the annual rainfall in Durham and annual rainfall in Beaufort if Durham always got
+
+(a) 20 inches more rain than Beaufort?
+(b) half as much rain as Beaufort?
+(c) 15% more rain than Beaufort?
+
+--- 
+
+## Section 8.2 problems
+
+--- 
+
+### Problem 4: Over-under. 
+
+Suppose we fit a regression line to predict the price of a decorative rug based on its area. For a particular rug, we predict the price to be 128 US dollars. The rug's residual is 35 US dollars. Did we over or under estimate the price of the rug? Explain your reasoning.
+
+### Problem 5: Skin cancer mortality and latitude. 
+
+The following regression output is for predicting annual skin cancer mortality per ten million from state latitude.
+
+```{r, echo=F, fig.width=8, fig.height=3.5}
+n = 50
+latitude = runif(n, min=30, max=50)
+df = data.frame(p1= 389.2 - 5.98*latitude+rnorm(n, sd=20))
+ggplot(df, aes(x=latitude,y=p1)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  xlab('Latitude (at center of state)') + ylab('Mortality (deaths per 10 million)')
+
+tmp = summary(lm(df$p1~latitude))
+round(tmp$coefficients, 3)
+```
+
+We also know $s=$ `r round( sd(df$p1), 3)`, $R^2=$ `r round(tmp$r.squared, 3)*100`%, and $R^2_{adj}=$ `r round(tmp$adj.r.squared, 3)*100`%.
+
+(a) Write out the linear model.
+(b) Interpret the intercept.
+(c) Interpret the slope.
+(d) Interpret $R^2$.
+(e) Calculate the correlation coefficient.
+
+--- 
+
+## Section 8.3 problems
+
+--- 
+
+### Problem 6: Outliers
+
+```{r, echo=F, fig.width=8, fig.height=3.5}
+n = 50
+x = runif(n, min=0, max=5)
+df = data.frame(x=c(-20.5,x), p1=c(-15,rnorm(n, sd=1.1)))
+g1 = ggplot(df, aes(x=x,y=p1)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) + 
+  geom_smooth(method='lm', formula= y~x, se=F) +
+  ggtitle('(i)')
+
+n = 50
+x = runif(n, min=0, max=5)
+df = data.frame(x=c(x,8), p1=c(2*x+rnorm(n, sd=1.1),-3))
+g2 = ggplot(df, aes(x=x,y=p1)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) + 
+  geom_smooth(method='lm', formula= y~x, se=F) +
+  ggtitle('(ii)')
+
+n = 50
+x = runif(n, min=0, max=5)
+df = data.frame(x=c(2.5,x), p1=c(10, -0.4*x+rnorm(n, sd=1.1)))
+g3 = ggplot(df, aes(x=x,y=p1)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) + 
+  geom_smooth(method='lm', formula= y~x, se=F) +
+  ggtitle('(iii)')
+
+gridExtra::grid.arrange(g1,g2,g3,nrow=1)
+```
+
+(a) Identify the outliers in the scatterplots shown below, and determine what type of
+outliers they are. Explain your reasoning.
+(b) Order the three plots from smallest to largest apparent leverage of each of the outliers shown.
+
+--- 
+
+## Section 8.4 problems
+
+--- 
+
+In the following exercises, visually check the conditions for fitting a least squares regression line. However, you do not need to report these conditions in your solutions.
+
+### Problem 7: Car weight and fuel efficiency
+
+The scatterplot below summarizes the relationship between weight (in 1000s of pounds) and fuel efficiency (in Miles/(US) gallon, i.e. mpg) for 32 automobiles for which information was provided in 1974 Motor Trend US magazine. Summary output of the least squares fit for predicting mpg from weight is also provided in the table.
+
+```{r, echo=F}
+ggplot(mtcars, aes(x=wt,y=mpg)) + geom_point() + theme_linedraw() + 
+  theme(axis.line = element_line(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  xlab('Weight (1000s of lbs)') + ylab('Miles/(US) gallon')
+
+tmp = summary(lm(mtcars$mpg~mtcars$wt))
+round(tmp$coefficients, 3)
+```
+
+(a) Is there strong evidence that heavier cars are less fuel efficient? State the hypotheses and include any information used to conduct the test.
+(b) Write the equation of the regression line for predicting mpg from car weight.
+(c) Interpret the slope and intercept in the context of the application.
+(d) Given that $R^2 =$ `r round(tmp$r.squared, 2)`, what is the correlation between weight and mpg in this data set?
+(e) You see an ad for a 1970s car that weighs 4000 lbs. What would you predict its mpg to be? How reliable is this prediction?
+(f) You see an ad for a different 1970s car that weighs 6000 lbs. Would it be wise to use the same linear model to predict its mpg? Why or why not?
+
+### Problem 8: 
+
+Is the amount spent on advertising in a given year predictive of how much a store will earn in sales? A local department store tracks its financial expenditures and profits for 24 years.  The management board calculated the regression of net sales against advertising spending (both in thousands of US dollars). The estimated regression line is $$\widehat{Sales} = 78 + 12 \times Advertising.$$
+
+(a) What is the predicted net sales for a year in which five thousand dollars is spent on advertising?
+(b) The standard error for the coefficient of advertising is 5, which is associated with df = 22. Does the model provide strong evidence that advertising is significantly associated with sales?

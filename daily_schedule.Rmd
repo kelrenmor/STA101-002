@@ -500,8 +500,21 @@ Topic: Introduction to regression
 
 To do: 
 
-- Coursera vids and readings TBA
+- Read the [first set of Learning Objectives for today](https://www.coursera.org/learn/linear-regression-model/supplement/3bj25/lesson-learning-objectives)
+- View the [Introduction video](https://www.coursera.org/learn/linear-regression-model/lecture/UcKYt/introduction)
+- View the [Correlation video](https://www.coursera.org/learn/linear-regression-model/lecture/QP6Mw/correlation)
+- View the [Residuals video](https://www.coursera.org/learn/linear-regression-model/lecture/FpKWn/residuals)
+- View the [Least Squares line video](https://www.coursera.org/learn/linear-regression-model/lecture/YqOrs/least-squares-line)
+- Read the [second set of Learning Objectives for today](https://www.coursera.org/learn/linear-regression-model/supplement/FSZgH/lesson-learning-objectives)
+- View the [Prediction and Extrapolation video](https://www.coursera.org/learn/linear-regression-model/lecture/aHBzs/prediction-and-extrapolation)
+- View the [Conditions for Linear Regression video](https://www.coursera.org/learn/linear-regression-model/lecture/MKPvv/conditions-for-linear-regression)
+- View the [R squared video](https://www.coursera.org/learn/linear-regression-model/lecture/lMej8/r-squared)
+- View the [Regression with Categorical Variables video](https://www.coursera.org/learn/linear-regression-model/lecture/FdxeN/regression-with-categorical-explanatory-variables)
+- Read OIS Chapter 8, Section 8.1 and 8.2
+- Work on PS6 problems from sections 8.1 and 8.2
+- Review Lab video if you missed live session Wednesday
 - Work on project proposal (due Saturday)
+- Stay tuned for DSA3 (Kersey will be sending me his presentation sometime today)
 
 <span style="color:blue">Extra drop in time to talk about project proposals: Time 11 AM - 12 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735) and recorded)</span>
 
@@ -521,11 +534,17 @@ Topic: Outliers and Inference for SLR
 
 To do: 
 
+- Read the [Learning Objectives for today](https://www.coursera.org/learn/linear-regression-model/supplement/d4hSt/lesson-learning-objectives)
+- View the [Outliers in Regression video](https://www.coursera.org/learn/linear-regression-model/lecture/10xAG/outliers-in-regression)
+- View the [Inference for Linear Regression video](https://www.coursera.org/learn/linear-regression-model/lecture/icLpS/inference-for-linear-regression)
+- View the [Variability Partitioning video](https://www.coursera.org/learn/linear-regression-model/lecture/7ZhYT/variability-partitioning)
+- Read OIS Chapter 8, Section 8.3 and 8.4
+- Work on PS6 problems from sections 8.3 and 8.4 (due tomorrow)
+- Work on project
+
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
-
-<span style="color:red">Due today by 11:59 PM EDT: Lab 7 </span>
 
 ### Tuesday, June 16
 
@@ -533,9 +552,11 @@ Topic: Introduction to multiple linear regression
 
 To do: 
 
+- Remember to take PA6 and turn in PS6 and Lab 7 (due today)
+
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: PS6 + PA6 + DSA3 </span>
+<span style="color:red">Due today by 11:59 PM EDT: PS6 + PA6 + Lab 7 </span>
 
 ### Wednesday, June 17
 
@@ -543,9 +564,13 @@ Topic: Model selection and diagnostics for MLR
 
 To do: 
 
+- Wrap up DSA3 reflection (due today)
+
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
+
+<span style="color:red">Due today by 11:59 PM EDT: DSA3 </span>
 
 ### Thursday, June 18
 
@@ -593,7 +618,7 @@ To do:
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: Lab 9 + Project</span>
+<span style="color:red">Due today by 11:59 PM EDT: Project</span>
 
 ### Tuesday, June 23
 
@@ -606,7 +631,7 @@ To do:
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: Project reflection</span>
+<span style="color:red">Due today by 11:59 PM EDT: Lab 9 + Project reflection</span>
 
 ### Wednesday, June 24
 

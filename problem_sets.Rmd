@@ -90,7 +90,7 @@ Practice questions:
 
 ### PS 6:
 
-Graded questions: TBA
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_6), or download Word template on Sakai under the Resources tab. Submit to Gradescope.
 
 Practice questions: TBA
 

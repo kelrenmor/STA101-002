@@ -110,14 +110,14 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Friday,  June 12| Introduction to regression | | Begin Unit 6: Introduction to linear regression |
 | Saturday,  June 13|  | Project proposal |  |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 15| Outliers and Inference for SLR | Lab 7 | |
-| Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 + DSA3 | Begin Unit 7: Multiple linear regression |
-| Wednesday,  June 17| Model selection and diagnostics for MLR |  | |
+| Monday,  June 15| Outliers and Inference for SLR |  | |
+| Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 + Lab 7 | Begin Unit 7: Multiple linear regression |
+| Wednesday,  June 17| Model selection and diagnostics for MLR | DSA3 | |
 | Thursday,  June 18| Transformation and case studies | Lab 8 | |
 | Friday,  June 19| Review and project work | PS7 + PA7 | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 22| Review and project work | Lab 9 + Project | |
-| Tuesday,  June 23|  View and respond to project presentations | Project reflection |  |
+| Monday,  June 22| Review and project work | Project | |
+| Tuesday,  June 23|  View and respond to project presentations | Lab 9 + Project reflection |  |
 | Wednesday,  June 24| Reading day |  | |
 | Thursday,  June 25| Final exam |  |  Last day of class! |
 
