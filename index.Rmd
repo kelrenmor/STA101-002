@@ -36,11 +36,11 @@ See below for current week's live session times (note that these times are **in 
 
 | Day | Time | Team member | Topic | Location |
 | ---   | ---   | ---   | ----  | ---- |
-| Monday,  June 8 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
-| Tuesday,  June 9 | 3-5pm | Dr. Moran | Q&A for practice midterm 2 | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
-| Wednesday,  June 10 | 9-10am | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
-| Wednesday,  June 10 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
-| Friday,  June 12 | 11am-12pm | Dr. Moran | Drop in time to talk about Project proposal | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Monday,  June 15 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Tuesday,  June 16 | 3-4pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Wednesday,  June 17 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Thursday,  June 18 | 5-6pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Friday,  June 19 | 11am-1pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
 
 ### Teaching team and office hours 
 
@@ -113,10 +113,10 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Monday,  June 15| Outliers and Inference for SLR |  | |
 | Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 + Lab 7 | Begin Unit 7: Multiple linear regression |
 | Wednesday,  June 17| Model selection and diagnostics for MLR | DSA3 | |
-| Thursday,  June 18| Transformation and case studies | Lab 8 | |
+| Thursday,  June 18| Transformation, case studies, and logistic regression | Lab 8 | |
 | Friday,  June 19| Review and project work | PS7 + PA7 | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 22| Review and project work | Project | |
+| Monday,  June 22| Review and project work | Project + DSA4 | |
 | Tuesday,  June 23|  View and respond to project presentations | Lab 9 + Project reflection |  |
 | Wednesday,  June 24| Reading day |  | |
 | Thursday,  June 25| Final exam |  |  Last day of class! |

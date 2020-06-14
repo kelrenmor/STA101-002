@@ -528,6 +528,10 @@ To do:
 
 ---
 
+We're entering the home stretch!! This week is our second to last week of class, and the last week in which we will be covering new content. We will wrap up Unit 6 on Monday and cover Unit 7 on Tuesday through Thursday. Friday will be a work day. We will have a data science in action seminar, recorded, that will be available on Friday. You will begin working on Stage 2 of your final projects this week (see project page for suggested daily schedule). There are also bonus drop in sessions in addition to regularly scheduled office hours this week -- see the [main page](https://kelrenmor.github.io/STA101-002/index.html) for scheduling.
+
+---
+
 ### Monday, June 15
 
 Topic: Outliers and Inference for SLR
@@ -540,7 +544,8 @@ To do:
 - View the [Variability Partitioning video](https://www.coursera.org/learn/linear-regression-model/lecture/7ZhYT/variability-partitioning)
 - Read OIS Chapter 8, Section 8.3 and 8.4
 - Work on PS6 problems from sections 8.3 and 8.4 (due tomorrow)
-- Work on project
+- Work on Lab 7 (due tomorrow -- video to be posted after Ezinne's session)
+- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -552,6 +557,14 @@ Topic: Introduction to multiple linear regression
 
 To do: 
 
+- Read the [Learning Objectives for today](https://www.coursera.org/learn/linear-regression-model/supplement/tt46B/lesson-learning-objectives)
+- View the [Introduction to Multiple Linear Regression video](https://www.coursera.org/learn/linear-regression-model/lecture/5e9jF/introduction)
+- View the [Multiple Predictors video](https://www.coursera.org/learn/linear-regression-model/lecture/liFqd/multiple-predictors)
+- View the [Adjusted R Squared video](https://www.coursera.org/learn/linear-regression-model/lecture/bd2xT/adjusted-r-squared)
+- View the [Collinearity and Parsimony video](https://www.coursera.org/learn/linear-regression-model/lecture/ukePA/collinearity-and-parsimony)
+- Read OIS Chapter 9, Section 9.1
+- Work on PS7 problems from section 9.1
+- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
 - Remember to take PA6 and turn in PS6 and Lab 7 (due today)
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
@@ -564,7 +577,15 @@ Topic: Model selection and diagnostics for MLR
 
 To do: 
 
+- Read the [Learning Objectives for today](https://www.coursera.org/learn/linear-regression-model/supplement/66ZpP/lesson-learning-objectives)
+- View the [Inference for MLR video](https://www.coursera.org/learn/linear-regression-model/lecture/Pg7rK/inference-for-mlr)
+- View the [Model Selection video](https://www.coursera.org/learn/linear-regression-model/lecture/pR8Mi/model-selection)
+- View the [Diagnostics for MLR video](https://www.coursera.org/learn/linear-regression-model/lecture/quxtC/diagnostics-for-mlr)
+- Read OIS Chapter 9, Section 9.2 and 9.3
+- Work on PS7 problems from sections 9.2 and 9.3
 - Wrap up DSA3 reflection (due today)
+- Work on Lab 8 (due tomorrow -- video to be posted after Ezinne's session)
+- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
 
 <span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
@@ -574,9 +595,16 @@ To do:
 
 ### Thursday, June 18
 
-Topic: Transformation and case studies
+Topic: Transformation, case studies, and logistic regression
 
 To do: 
+
+- View a non-Coursera [Transformations video](https://www.youtube.com/watch?v=HIcqQhn3vSM)
+- View a non-Coursera [Logistic regression video](https://www.youtube.com/watch?v=yIYKR4sgzI8)
+- Read OIS Chapter 9, Sections 9.4 and 9.5
+- Work on PS7 problems from sections 9.4 and 9.5
+- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
+- Wrap up and submit Lab 8
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
@@ -588,9 +616,10 @@ Topic: Review and project work
 
 To do: 
 
-- Review for final
+- View the Lab 9 video (to be added)
+- View the data science in action seminar (to be added)
 - Work on Lab 9
-- Work on individual project
+- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
 - Wrap up and submit PS7 
 - Take PA7
 
@@ -611,14 +640,16 @@ Topic: Review and project work
 To do: 
 
 - Review for final
-- Wrap up and submit Lab 9
-- Wrap up and submit individual project
+- Work on Lab 9
+- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
+- Wrap up and submit your individual project presentation and written report, plus send to your "reviewers"
+- Wrap up and submit DSA4 Reflection
 
-<span style="color:blue">Lab session: 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+<span style="color:blue">Lab session (last-minute project help): 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: Project</span>
+<span style="color:red">Due today by 11:59 PM EDT: Project + DSA4 </span>
 
 ### Tuesday, June 23
 
@@ -627,7 +658,8 @@ Topic: View and respond to assigned project presentations
 To do: 
 
 - Review for final
-- Project reflection
+- Wrap up and submit Lab 9
+- Do and submit project reflection
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
