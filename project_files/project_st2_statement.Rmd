@@ -16,6 +16,8 @@ All code used to generate the statistics and plots in your presentation should b
 
 Download the template for the RMD/HTML file:
 
+<span style="color:red">NOTE THIS TEMPLATE IS NOT YET FINALIZED -- this statement will be updated by June 15 at 11:59pm ET with the finalized template.</span>
+
 ```{r tidy=FALSE, eval=FALSE}
 download.file("https://kelrenmor.github.io/STA101-002/project_files/sta101_prj.Rmd",
               destfile = "sta101_prj.Rmd")
