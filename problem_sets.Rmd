@@ -94,7 +94,6 @@ Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/p
 
 Practice questions: 
 
-
 * Section 8.1: 8.1, 8.7, 8.9
 * Section 8.2: 8.17, 8.21
 * Section 8.3: 8.29
@@ -102,8 +101,14 @@ Practice questions:
 
 ### PS 7:
 
-Graded questions: TBA
+Graded questions: See [assignment file](https://kelrenmor.github.io/STA101-002/problem_sets/PS_7), or download Word template on Sakai under the Resources tab. Submit to Gradescope. Note this PS has been shortened, so there will be no skip problems permitted.
 
-Practice questions: TBA
+Practice questions: 
 
+* Section 9.1: 9.1, 9.5
+* Section 9.2: 9.7
+* Section 9.3: 9.13
+* Section 9.4: None
+* Section 9.5: 9.15
+* Chapter: 9.19
   

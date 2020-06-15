@@ -1,0 +1,112 @@
+---
+title: "Problem set 7"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+set.seed(1204)
+library(ggplot2)
+```
+
+--- 
+
+## Section 9.1 problems
+
+--- 
+
+### Problem 1: R$^2$ and adjusted R$^2$ math
+
+The following are the formulas for R$^2$ and adjusted R$^2$:
+
+$$R^2 = 1 - \frac{s^2_\text{residuals}}{s^2_\text{outcome}}$$
+
+$$R^2_{adj} = 1 - \frac{s^2_\text{residuals}}{s^2_\text{outcome}} \times \frac{n-1}{n-k-1}$$
+
+(a) As we add more explanatory variables to the model, can $s^2_\text{residuals}$ ever increase?
+(b) As we add more explanatory variables to the model, will $s^2_\text{outcome}$ change?
+(c) Based on your answers to parts (a) and (b), say whether the following statement is true or false: "$R^2$ can never decrease when adding a new explanatory variable."
+(d) For $k>0$ and $n>k$, $\frac{n-1}{n-k-1}$ will always be greater than 1. What does this imply about the relationship between $R^2$ and $R^2_{adj}$?
+
+### Problem 2: OIS Problem 9.4
+
+See OIS book for problem statement and summary table.
+
+(a) Write the equation of the regression model.
+(b) Interpret each one of the slopes in this context.
+(c) Calculate the residual for the first observation in the data set: a student who is aboriginal, male, a slow learner, and missed 2 days of school.
+(d) The variance of the residuals is 240.57, and the variance of the number of absent days for all students in the data set is 264.17. Calculate the R$^2$ and the adjusted R$^2$. Note that there are 146 observations in the data set.
+
+### Problem 3: Coefficient confidence
+
+Calculate a 95% confidence interval for the coefficient of `eth` in the model from Problem 2, and interpret it in the context of the data.
+
+--- 
+
+## Section 9.2 problems
+
+--- 
+
+### Problem 4: Fuel efficiency
+
+Below we show regression output for a multiple regression model for fuel efficiency, including a subset of the explanatory variables available in the data set (weight (wt), horsepower (hp), number of cylinders (cyl), and transmission type (am)), for predicting the miles per gallon (mpg) of the vehicle. 
+
+```{r}
+m1 <- lm(mpg~wt+hp+cyl+am,data=mtcars)
+summary(m1)$coefficients
+```
+
+We now consider a forward-selection algorithm and add variables to the model one-at-a-time. The table below shows the p-value and adjusted $R^2$ of each model where we include only the corresponding predictor.
+
+| variable  | wt   | hp  | cly  | am  |
+| ------------- | ----- | ----- | ----- | ----- |
+| p-value | $1.29 \times 10^{-10}$ | $1.79 \times 10^{-7}$ | $6.11 \times 10^{-10}$ | 0.0003 |
+| $R^2_{adj}$ | 0.7446 | 0.5892  | 0.7171 | 0.3385 |
+
+(a) Based on this table, which variable should be added to the model first?
+(b) Does your answer to part (a) depend on whether you use the p-value method or the adjusted $R^2$ method?
+
+### Problem 5: Water quality
+
+Suppose an environmental scientist is interested in studying the community factors related to poor water quality in rivers and lakes. She collects samples from a random sample of bodies of water (including information about flow rate, soil composition, distance to a major city, whether or not a manufacturing plant is nearby, etc.) as well as a measure of the water quality (total petroleum hydrocarbons, aka TPH). 
+
+(a) If as part of her research she is interested in finding out which variables are significant predictors of water quality, what type of model selection method should she use?
+(b) If instead her primary focus is on predicting the water quality in new bodies of water to identify potential "trouble zones", what type of model selection method should she use?
+
+--- 
+
+## Section 9.3 problems
+
+--- 
+
+### Problem 6: OIS Problem 9.14
+
+A FiveThirtyEight.com article reports that "Horror movies get nowhere near
+as much draw at the box office as the big-time summer blockbusters or action/adventure movies ... but there's a huge incentive for studios to continue pushing them out. The return-on-investment potential for horror movies is absurd." To investigate how the return-on-investment compares between genres and how this relationship has changed over time, an introductory statistics student fit a model predicting the ratio of gross revenue of movies from genre and release year for 1,070 movies released between 2000 and 2018. Using the plots given in the OIS book under this problem, determine if this regression model is appropriate for these data.
+
+--- 
+
+## Section 9.5 problems (note there are no problems from 9.4)
+
+--- 
+
+### Problem 7: OIS Problem 9.16
+
+See OIS book for problem statement, data, and summary tables.
+
+(a) Each column of the first table shown in the OIS problem statement represents a different shuttle mission. Examine these data and describe what you observe with respect to the relationship between temperatures and damaged O-rings.
+(b) Failures have been coded as 1 for a damaged O-ring and 0 for an undamaged O-ring, and a logistic regression model was fit to these data. A summary of this model is given in the OIS book. Describe the key components of this summary table in words.
+(c) Write out the logistic model using the point estimates of the model parameters.
+(d) Based on the model, do you think concerns regarding O-rings are justied? Explain.
+
+### Problem 8: True or false
+
+Determine which of the following statements are true and false.
+For each statement that is false, explain why it is false.
+
+(a) When using a logistic regression model, it is impossible for the model to predict a probability that is negative or a probability that is greater than 1.
+(b) Because logistic regression predicts probabilities of outcomes, each observation used to build a logistic regression model needs to be a probability of occurrence.
+(c) With logistic regression, we don't have to worry about outliers in our explanatory variables like we would for linear regression.

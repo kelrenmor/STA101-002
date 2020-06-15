@@ -602,7 +602,7 @@ To do:
 - View a non-Coursera [Transformations video](https://www.youtube.com/watch?v=HIcqQhn3vSM)
 - View a non-Coursera [Logistic regression video](https://www.youtube.com/watch?v=yIYKR4sgzI8)
 - Read OIS Chapter 9, Sections 9.4 and 9.5
-- Work on PS7 problems from sections 9.4 and 9.5
+- Work on PS7 problems from section 9.5
 - Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
 - Wrap up and submit Lab 8
 
