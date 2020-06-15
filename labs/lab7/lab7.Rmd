@@ -18,7 +18,7 @@ library(statsr)
 **Your reproducible lab report:** Before you get started, download the R Markdown 
 template for this lab. Remember all of your code and answers go in this document:
 ```{r load-template, eval = FALSE}
-download.file("https://kelrenmor.github.io/STA101-002/labs/lab5/sta101_lab7.Rmd",
+download.file("https://kelrenmor.github.io/STA101-002/labs/lab7/sta101_lab7.Rmd",
               destfile="sta101_lab7.Rmd")
 ```
 </div>
