@@ -30,11 +30,11 @@ If you ask a question like "Is there a relationship between x and y?", you will 
 
 Try a log transformation prior to performing regression or inference! Remember you'll have to adjust your interpretations when talking about things like the difference in means or the meaning of coefficients in a regression.
 
-#### What if my data still don't seem normal enough for inference?
+#### What if the test/procedure I want to do has a normality assumption but my data don't seem normal enough for inference?
 
-The `inference` function has a `method="simulation"` argument that allows you to perform bootstrapping rather than getting theoretical results. That is, if conditions aren't met you can still perform inference.
+The `inference` function has a `method="simulation"` argument that allows you to perform bootstrapping rather than getting theoretical results. That is, if conditions for using the CLT are violated (non-normal and small sample size) you can still perform inference.
 
-For ANOVA and regression, if even after log transforming you see violations of normality (or issues with your residual plots) just make note of these and discuss what tells you there may be cause for concern -- I don't expect you to solve all of these data issues!
+For ANOVA and regression, if even after transforming (e.g., via the log transform) you see violations of normality (or issues with your residual plots) just make note of these and discuss what tells you there may be cause for concern -- I don't expect you to solve all of these data issues!
 
 * * * 
 
@@ -200,7 +200,9 @@ In this section we want to:
 
 We consider a hypothesis test of the difference of two means. Our null hypothesis is that the average birth weight for babies is the same for non-smoking and smoking mothers. Our alternative hypothesis is that the average birth weight for babies is different for non-smoking and smoking mothers.
 
-Because the data are a random sample of 1,000 cases from births recorded in NC, independence within and between groups is satisfied. However, as we saw in our box plots, there are more outliers than we would expect from normally distributed data. We proceed with inference using simulation-based methods (the bootstrap) because we have reason to suspect conditions for the theoretical test are not met.
+Because the data are a random sample of 1,000 cases from births recorded in NC, independence within and between groups is satisfied. However, as we saw in our box plots, there are more outliers than we would expect from normally distributed data. However, because $n>30$ for both groups the conditions for the CLT are met and we could proceed with theoretically based inference.
+
+We show inference using simulation-based methods (the bootstrap) for illustrative purposes, although in this case conditions for the theoretical test have been met. Note that to use CLT-based methods you would just replace `method="simulation"` with `method="theoretical"`.
 
 ```{r}
 # Test for the difference of two means
