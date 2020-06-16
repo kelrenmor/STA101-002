@@ -28,7 +28,7 @@ If you ask a question like "Is there a relationship between x and y?", you will 
 
 #### What if my data are super right-skewed?
 
-Try a log transformation prior to performing regression or inference! Remember you'll have to adjust your interpretations when talking about things like the difference in means or the meaning of coefficients in a regression.
+Try a log transformation prior to performing regression or inference! Remember you'll have to adjust your interpretations when talking about things like the difference in means or the meaning of coefficients in a regression. See [this resource](https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/) for a great explanation of how to interpret your ouput in the case of log transformation of the explanatory and/or response variables. 
 
 #### What if the test/procedure I want to do has a normality assumption but my data don't seem normal enough for inference?
 
