@@ -1,0 +1,218 @@
+---
+title: "FAQs and example for project"
+author: "Dr. Kelly R. Moran"
+date: "6/16/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(statsr)
+set.seed(1204)
+```
+
+* * * 
+
+## Project FAQs
+
+#### Should I be using the same questions as I used in my proposal?
+
+You are welcome to use these questions as a starting point, so long as you tweak them so they are appropriate for the type of analyses you will do in this project! You may also choose to focus in on one of your questions from the proposal, and use it as the basis for both inferential questions you'll address in this project. Remember, one of your questions should lend itself to being answered with inference, and one should lend itself to being answered with multiple linear regression.
+
+#### Do I need to include the word 'significant' in my question?
+
+No! Most research papers ask about relationships. Significance is one aspect of the story that is told about a relationship, but so are the direction and magnitude of that relationship. 
+
+If you ask a question like "Is there a relationship between x and y?", you will of course end up reporting the significance of observed relationships. But you will first visually explore said relationship. How exactly does x seem to impact y? How big is that impact? Is it what you expected? Then you'll get to significance. But asking the question "Is there a _significant_ relationship between x and y?" right off the bat implies that significance is the end-all-be-all, or the entire point of the research... and it isn't.
+
+#### What if my data are super right-skewed?
+
+Try a log transformation prior to performing regression or inference! Remember you'll have to adjust your interpretations when talking about things like the difference in means or the meaning of coefficients in a regression.
+
+#### What if my data still don't seem normal enough for inference?
+
+The `inference` function has a `method="simulation"` argument that allows you to perform bootstrapping rather than getting theoretical results. That is, if conditions aren't met you can still perform inference.
+
+For ANOVA and regression, if even after log transforming you see violations of normality (or issues with your residual plots) just make note of these and discuss what tells you there may be cause for concern -- I don't expect you to solve all of these data issues!
+
+* * * 
+
+## Partial example with commentary
+
+```{r}
+# Load data
+load(url("https://www.openintro.org/data/rda/ncbirths.rda"))
+```
+
+### Questions
+
+_Here I would first introduce the data set (as you all did in your proposals)._
+
+_Now I would build up to why I should care about the research questions to follow (you could also structure your project by putting this after the questions themselves). E.g., for me I would talk about how birthweight is linked to a lot of health outcomes for the infant, and is tied to some details of the mother/pregnancy-- I would cite sources here._
+
+_Then I would introduce my inferential and regression questions. You can use one or both questions from your proposal if they are able to be answered by inference/regression, though you will likely have to tweak the wording somewhat. These questions need not be tied to the same outcome variable, but you will likely have an easier time with the flow of your story if they are. I include an example of a couple of questions below._
+
+1. Is there a difference in neonatal birth weight between babies born to smoking and non-smoking mothers? 
+
+_Talk about my hypothesis. E.g., babies born to smoking mothers will weigh less than those born to nonsmoking mothers because [citation]._
+
+2. More broadly, what are the predictive factors of neonatal birth weight for mothers in North Carolina?
+
+_Talk about my hypothesis. E.g., longer gestation will naturally increase birthweight, race of mother will... [citation]._
+
+### Exploratory data analysis
+
+Remember, we want to tell a story with our EDA. My main variable of interest is birthweight, and both my questions center around understanding the relationship between birthweight and other variables in the data set. To begin, I would look at birthweight on its own.
+
+```{r}
+# Plot histogram of birthweight
+ggplot(ncbirths, aes(x=weight)) + 
+  geom_histogram() + 
+  ylab('Count') + 
+  xlab('Birth weight') + 
+  ggtitle('Distribution of neonatal birth weights')
+
+# Numerically summarize birthweight on its own
+ncbirths %>% 
+  summarise(mean_bw=mean(weight), 
+            med_bw=median(weight),
+            sd_bw=sd(weight),
+            iqr_bw=IQR(weight),
+            n_obs=n())
+```
+
+The distribution of birthweight is unimodal. The weights are left skewed, and the typical observation is 7.31 pounds, which is slightly higher than the mean (7.1 pounds) due to the left skewness. The middle 50% of observations have a spread of 1.68 pounds, and the standard deviation is 1.51 pounds. _I could also further discuss why the data may be left skewed (there's a "cap" at which babies really can't weigh more, but premature babies can be quite underweight)._
+
+_Now I would move on to EDA relevant to my first question (the inference question). Since this question is about seeing if there is a difference in birth weight for mothers having smoking vs. nonsmoking status, I would want numeric and visual summaries that could let me qualitatively explore that before I moved on to formal testing in the next section._
+
+```{r}
+# Plot boxplot of birthweight by mom's smoking status
+ggplot(ncbirths, aes(x=habit, y=weight)) + 
+  geom_boxplot() + 
+  ylab('Birth weight') + 
+  xlab('Smoking status') + 
+  ggtitle("Comparison of birth weight by mother's smoking status")
+
+# Numerically summarize birthweight by mom's smoking status
+ncbirths %>% 
+  group_by(habit) %>% 
+  summarise(mean_bw=mean(weight), 
+            med_bw=median(weight),
+            sd_bw=sd(weight),
+            iqr_bw=IQR(weight),
+            n_obs=n())
+```
+
+In the data set, 873 mothers are smokers, 126 are nonsmokers, and 1 did not have this information reported. The median (mean) neonatal birth weight is 0.25 lbs (0.32 lbs) higher among nonsmoking mothers than smoking mothers. Visually, this difference does not appear large relative to the variability in the data. The IQRs are similar between groups, but the SD is higher among nonsmoking mothers than smoking mothers. Based on the boxplot above, there appear to be some outliers among both groups, although likely due to the larger number of infants born to nonsmoking mothers we see more apparent outliers among this group.
+
+_Next I would move on to EDA relevant to my second question (the regression question). Since this question is about exploring the predictive factors of neonatal birth weight, I would want numeric and visual summaries that could let me explore that before I moved on to formal testing in the regression section._
+
+```{r}
+# Plot boxplot of birthweight by gestation week
+ggplot(ncbirths, aes(x=weeks, y=weight)) + 
+  geom_point() + 
+  geom_smooth(method='lm', se=FALSE) + 
+  ylab('Birth weight') + 
+  xlab('Weeks of gestation') + 
+  ggtitle("Relationship between gestation time and birth weight")
+```
+
+_Describe positive association between weeks of gestation and birth weight. Note how there are many more observations at 33-45 weeks than <33 weeks, and how the line seems to be an over-prediction for babies born pre-33 weeks._
+
+_Now I'll show a couple of examples of how I could look at this relationship while controlling for an additional variable. First, using my smoking status variable from before._
+
+```{r}
+# Plot boxplot of birthweight by gestation week, colored by smoking status of mother
+ggplot(ncbirths, aes(x=weeks, y=weight, color=habit)) + 
+  geom_point() + 
+  geom_smooth(method='lm', se=FALSE, fullrange=TRUE) + 
+  ylab('Birth weight') + 
+  xlab('Weeks of gestation') + 
+  ggtitle("Gestation time and birth weight for smoking and non-smoking mothers")
+```
+
+The story told in the above plot is interesting. We see that late in gestation, the average birth weight for smoking and non-smoking mothers appears similar, but that this gap is wider earlier in gestation. It is possible that smoking may inhibit growth early in pregnancy, but as time goes on babies are able to "catch up" in weight gain even if their mother smokes (though of course since this is an observational study we can't speak to the causality of smoking in observed differences in the relationship between gestation weeks and birth weight). 
+
+To put in terms of the fitted lines, the slope of the line for smoking mothers appears larger than the slope for non-smoking mothers; that is, the a one week increase in week seems to lead to a higher increase in weight for babies of smoking mothers than that of non-smoking mothers. However, the starting weight for smoking mothers (i.e. the average weight at 20 weeks) appears smaller.
+
+_Suppose I want to instead show how the relationship between gestation weeks and birth weight varies with mother age (another continuous variable). I could just color by age in my plot, but it's hard to see anything just by that..._
+
+```{r}
+# Plot boxplot of birthweight by gestation week, faceted by mother age
+ggplot(ncbirths, aes(x=weeks, y=weight, color=mage)) + 
+  geom_point() + 
+  geom_smooth(method='lm', se=FALSE, fullrange=TRUE) + 
+  ylab('Birth weight') + 
+  xlab('Weeks of gestation') + 
+  ggtitle("Gestation time and birth weight for mothers by age")
+```
+
+_Visually it will be easier to see what's going on if I bin the `mage` variable._
+
+```{r}
+# Show mother age variable
+ggplot(ncbirths, aes(x=mage)) + 
+  geom_histogram()
+
+# Create a new categorical variable by binning mother's age
+ncbirths <- ncbirths %>%
+  mutate(mage_bin=cut(mage, 
+                      breaks=quantile(ncbirths$mage, prob=c(0,0.25,0.5,0.75,1)),
+                      labels=c("very young","youngish","bit older","very old")))
+```
+
+_Then I can do the same coloring as before but with color by bin:_ 
+
+```{r}
+# Plot boxplot of birthweight by gestation week, faceted by mother age
+ggplot(ncbirths, aes(x=weeks, y=weight, color=mage_bin)) + 
+  geom_point() + 
+  geom_smooth(method='lm', se=FALSE, fullrange=TRUE) + 
+  ylab('Birth weight') + 
+  xlab('Weeks of gestation') + 
+  ggtitle("Gestation time and birth weight for mothers by age")
+```
+
+_Or I could facet by age:_ 
+
+```{r}
+# Plot boxplot of birthweight by gestation week, faceted by mother age
+ggplot(ncbirths, aes(x=weeks, y=weight)) + 
+  geom_point() + 
+  facet_grid(~mage_bin) + 
+  geom_smooth(method='lm', se=FALSE, fullrange=TRUE) + 
+  ylab('Birth weight') + 
+  xlab('Weeks of gestation') + 
+  ggtitle("Gestation time and birth weight for mothers by age")
+```
+
+_I would do the same type of discussion here as for the weight, weeks, and smoking plot, noting that differences seem fairly minimal._ 
+
+### Inference
+
+In this section we want to:
+
+- State the null and alternative hypotheses.
+- Check necessary conditions.
+- Provide test results (p-value and decision) below code used to get this output.
+- Interpret results in context of the data.
+
+We consider a hypothesis test of the difference of two means. Our null hypothesis is that the average birth weight for babies is the same for non-smoking and smoking mothers. Our alternative hypothesis is that the average birth weight for babies is different for non-smoking and smoking mothers.
+
+Because the data are a random sample of 1,000 cases from births recorded in NC, independence within and between groups is satisfied. However, as we saw in our box plots, there are more outliers than we would expect from normally distributed data. We proceed with inference using simulation-based methods (the bootstrap) because we have reason to suspect conditions for the theoretical test are not met.
+
+```{r}
+# Test for the difference of two means
+inference(y=weight, x=habit, data=ncbirths,
+          type="ht",           # hypothesis test
+          statistic="mean",    # interested in mean
+          method="simulation", # using bootstrap
+          alternative="twosided") # type of alternative
+```
+
+In the EDA section, our boxplot and summary statistics showed that non-smoking mothers had babies that were on average slightly heavier at birth than smoking mothers. Here we assess whether this finding is statistically significant. Using the bootstrap, we reject the null hypothesis that the average birth weight for babies is the same for non-smoking and smoking mothers at the 0.05 level ($p=0.033$). Our data provide strong evidence in favor of the alternative hypothesis that the average birth weight for babies is different for non-smoking and smoking mothers, and our data suggest that the direction of the relationship favors non-smoking mothers as birthing heavier babies.
+
+### Regression
+
+To be added later in the week!

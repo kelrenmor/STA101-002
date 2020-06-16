@@ -21,6 +21,8 @@ You must score at least 30% of the points on each of the three project related s
 
 Two examples of a Proposal (i.e., Stage 1) submission scoring full points are available [here](https://kelrenmor.github.io/STA101-002/project_files/Stage1_example_2) and [here](https://kelrenmor.github.io/STA101-002/project_files/Stage1_example_1), and both the Rmd and html files are on Sakai under the Resources tab. Note that for the provided example proposal, the assignment required three questions in the proposal (you are only asked to come up with two for your assignments).
 
+My (sketched out, not fully completed) example of how Stage 2 should look, along with some FAQs, is available [here](https://kelrenmor.github.io/STA101-002/project_files/Stage2_example).
+
 Rubrics for the project write up and presentation are available on Sakai under Resources. An example of a final presentation (i.e., Stage 2) is also provided on Sakai.
 
 ---- 
