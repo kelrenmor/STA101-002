@@ -565,11 +565,12 @@ To do:
 - Read OIS Chapter 9, Section 9.1
 - Work on PS7 problems from section 9.1
 - Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
-- Remember to take PA6 and turn in PS6 and Lab 7 (due today)
+- Work on Lab 7 (deadline extended to **noon tomorrow**), view video from lab session yesterday
+- Remember to take PA6 and turn in PS6 (due today)
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: PS6 + PA6 + Lab 7 </span>
+<span style="color:red">Due today by 11:59 PM EDT: PS6 + PA6 </span>
 
 ### Wednesday, June 17
 
@@ -584,6 +585,7 @@ To do:
 - Read OIS Chapter 9, Section 9.2 and 9.3
 - Work on PS7 problems from sections 9.2 and 9.3
 - Wrap up DSA3 reflection (due today)
+- Turn in Lab 7 by **noon today**
 - Work on Lab 8 (due tomorrow -- video to be posted after Ezinne's session)
 - Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
 
@@ -591,7 +593,7 @@ To do:
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: DSA3 </span>
+<span style="color:red">Due today by 11:59 PM EDT: DSA3 + Lab 7 </span>
 
 ### Thursday, June 18
 

@@ -112,8 +112,8 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Saturday,  June 13|  | Project proposal |  |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
 | Monday,  June 15| Outliers and Inference for SLR |  | |
-| Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 + Lab 7 | Begin Unit 7: Multiple linear regression |
-| Wednesday,  June 17| Model selection and diagnostics for MLR | DSA3 | |
+| Tuesday,  June 16| Introduction to multiple linear regression | PS6 + PA6 | Begin Unit 7: Multiple linear regression |
+| Wednesday,  June 17| Model selection and diagnostics for MLR | Lab 7 (noon) + DSA3 | |
 | Thursday,  June 18| Transformation, case studies, and logistic regression | Lab 8 | |
 | Friday,  June 19| Review and project work | PS7 + PA7 | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |

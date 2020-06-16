@@ -1,6 +1,6 @@
 ---
-title: "PROJECT TITLE"
-author: "NAME"
+title: "INSERT YOUR PROJECT TITLE"
+author: "INSERT YOUR NAME"
 output:
   html_document:
     css: https://kelrenmor.github.io/STA101-002/project_files/project.css
@@ -16,6 +16,8 @@ output:
 # IF YOU WOULD LIKE TO CHANGE THESE, SEE HELP FILES ON THE par() FUNCTION
 # OR ASK FOR HELP
 library(knitr)
+library(tidyverse)
+library(statsr)
 ## set global chunk options
 opts_chunk$set(fig.path='figure/manual-', cache.path='cache/manual-', fig.align='center', fig.show='hold', par=TRUE)
 ## tune details of base graphics (http://yihui.name/knitr/hooks)
@@ -25,29 +27,100 @@ if (before && options$fig.show!='none') par(mar=c(4,4,.2,.1),cex.lab=.95,cex.axi
 ```
 
 ```{r echo=FALSE}
-# load data
+# Load data
 
 ```
 
 
-### Part 1 - Introduction:
+* * *
 
+## Introduction
 
-### Part 2 - Data:
+<!-- Remember, you're telling a story here. The story starts with your data, then goes to your questions and hypotheses, then visualizations (next section), then formal analyses (sections after that), then a discussion of your findings (the end section). It should all move in one cohesive flow!-->
 
+<!-- First, describe your data set and discuss your motivation for choosing it.-->
 
-### Part 3 - Exploratory data analysis:
+<!-- Next, describe the research questions (one that can appropriately be answered with an inferential test, one that can appropriately be answered with multiple regression) that you will be exploring with your data in the following sections of this project. You are welcome to use your question(s) from the project proposal as the basis for this content, but note that you may have to modify them slightly to be relevant for the desired analyses.-->
 
+1. **Question to be answered using hypothesis testing here**
 
-### Part 4 - Inference:
+Hypothesis: **Insert what you think the answer to your question will be.**
 
+2. **Question to be answered using multiple regression here.**
 
-### Part 5 - Conclusion: 
+Hypothesis: **Insert what you think the answer to your question will be.**
 
+* * *
 
-### References:
+## Exploratory data analysis
 
+### Variables one at a time
 
-### Appendix (optional):
+```{r}
+# Include a comment at the start of each code chunk saying what you are doing in that chunk
+# (for example you could say: "Create summary statistics output")
+```
 
-Remove this section if you don't have an appendix
+**For individual variables of interest (i.e., variable(s) considered in the hypothesis test, and the response variable in the regression section), show histograms and numeric summary of center/spread above, then insert description in words of the distribution (shape/center/spread).**
+
+### Exploration for hypothesis test
+
+**Show R plot of visualization(s) relevant for inferential test. Describe what you see, and whether your hypothesis is supported.**
+
+### Exploration for regression
+
+**Show R plot of visualization(s) relevant for regression, including at least one plot showing the relationship of x vs. y while controlling for some other variable z. The description of this relationship should be complete and accurate (the variable on the y-axis of this plot should be your continuous outcome that you’re modeling in the regression section).**
+
+* * *
+
+## Inference
+
+Each of the following steps will involve either a code chunk, a verbal description, or both. Rather than saving the description until the very end of this section, I recommend the format of small-chunk-followed-by-text, then another-small-chunk-followed-by-text, in order to make the logical flow and the reference of what code you're discussing clearer.
+
+- State the null and alternative hypotheses.
+- Check necessary conditions.
+- Provide test results (p-value and decision) below code used to get this output.
+- Interpret results in context of the data.
+- Note that any hypothesis test we've learned in this class is ok (including test for difference in proportions, Chi square test of independence, one or two-sample t-test, ANOVA, etc.)
+- Read assignment statement for more details: https://kelrenmor.github.io/STA101-002/project_files/project_st2_statement.
+
+* * *
+
+## Regression
+
+Each of the following steps will involve either a code chunk, a verbal description, or both. Rather than saving the description until the very end of this section, I recommend the format of small-chunk-followed-by-text, then another-small-chunk-followed-by-text, in order to make the logical flow and the reference of what code you're discussing clearer.
+
+- Run an Initial "Full Model", and discuss the output
+- Run backward elimination procedure
+- Show model output for "Final Model" (hint: use `summary()` function)
+- Show and interpret diagnostic plots – fitted vs. residuals, normal probability (QQ) plot, histogram of residuals.
+- Provide parameter interpretation – summarize the relationship between the response variable and the explanatory variables in the model. 
+- Compute the RMSE and interpret the value.
+- Include a prediction for a new observation and interpret the prediction interval correctly.
+- Read assignment statement for more details, and for code snippets for doing the above: https://kelrenmor.github.io/STA101-002/project_files/project_st2_statement.
+
+* * *
+
+## Conclusion
+
+**Call back to your research questions; Did the results from your visual summaries hold up when you assessed significance via your inference/regression results? Did your findings match your initial hypothesis? What else would you like to explore?**
+
+* * *
+
+## References
+
+<!--List the references of at least 2 resources you used to inform your research questions (feel free to add more). These could be news articles, scholarly publications, additional data, etc. Give a brief explanation of the significance of each resource.-->
+
+**Resource 1 citation here**
+
+**Resource 1 explanation/significance here**
+
+**Resource 2 citation here**
+
+**Resource 2 explanation/significance here**
+
+* * *
+
+## Appendix (optional)
+
+**Add any additional code/plots/content here that you'd like to keep but that doesn't fit with the flow of your document. Feel free to reference this in the text above. Remove this section if you don't have an appendix.**
