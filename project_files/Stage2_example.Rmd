@@ -45,7 +45,7 @@ For ANOVA and regression, if even after transforming (e.g., via the log transfor
 load(url("https://www.openintro.org/data/rda/ncbirths.rda"))
 ```
 
-### Questions
+### Introduction
 
 _Here I would first introduce the data set (as you all did in your proposals)._
 
