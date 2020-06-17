@@ -1,0 +1,75 @@
+---
+title: "Lab 8 -  Multiple linear regression"
+author: "[Enter recorder name here]"
+date: "[Enter date here]"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+**Full team:** [Enter all team member names here.]
+
+* * *
+
+## Lab report
+
+#### Load data:
+```{r}
+load(url("http://www.openintro.org/stat/data/evals.RData"))
+```
+
+Note you will need to insert code chunks and text as needed beneath each of the following questions.
+
+* * *
+
+## Together:
+
+#### Exercise 1
+
+#### Exercise 2
+
+#### Exercise 3
+
+#### Exercise 4
+
+#### Exercise 5
+
+#### Exercise 6
+
+#### Exercise 7
+
+#### Exercise 8
+
+#### Exercise 9
+
+#### Exercise 10
+
+#### Exercise 11
+
+#### Exercise 12
+
+#### Exercise 13
+
+#### Exercise 14
+
+* * *
+
+## On your own
+
+#### Exercise 15
+
+#### Exercise 16
+
+#### Exercise 17
+
+#### Exercise 18
+
+#### Exercise 19

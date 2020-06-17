@@ -67,7 +67,7 @@ The following will lead to point deductions on labs:
 
 ### [Lab 7 (individual)](https://kelrenmor.github.io/STA101-002/labs/lab7/lab7)
 
-### Lab 8
+### [Lab 8 (teams)](https://kelrenmor.github.io/STA101-002/labs/lab8/lab8)
 
 ### Lab 9
 

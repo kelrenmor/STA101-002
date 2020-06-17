@@ -80,19 +80,18 @@ project.test <- project.data[-train.index,]  # Data for testing the model's accu
 **Perform Backwards Elimination on the Training Data**        
 ```{r backwards_elim, eval=FALSE}
 single.step.backwards <- function(data,response){
-resp.indx <- which(names(data)==response)
-y <- data[[response]]]
-X <- data[,-resp.indx]
-n.pred <- dim(X)[2]
-if(n.pred > 1){
-  for(i in 1:n.pred){
-      print(paste0("Variable ", names(X)[i]," removed: Adjusted R-squared =  ",
-          round(summary(lm(y~.,data=as.data.frame(X[,-i])))$adj.r.squared,5)))
-      }
-}
-else{
-  print("Model only contains one variable.")
-}
+  resp.indx <- which(names(data)==response)
+  y <- data[[response]]
+  X <- data[,-resp.indx]
+  n.pred <- dim(X)[2]
+  if(n.pred > 1){
+    for(i in 1:n.pred){
+        print(paste0("Variable ", names(X)[i]," removed: Adjusted R-squared =  ",
+            round(summary(lm(y~.,data=as.data.frame(X[,-i])))$adj.r.squared,5)))
+        }
+  } else{
+    print("Model only contains one variable.")
+  }
 }
 ```
 
