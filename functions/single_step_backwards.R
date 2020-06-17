@@ -1,7 +1,8 @@
-single_step_backwards <- function(data, response){
-  resp.indx <- which(names(data)==response)
-  y <- data[[response]]
-  X <- data[,-resp.indx]
+single_step_backwards <- function(data, response_var, explanatory_vars){
+  resp.indx <- which(names(data)==response_var)
+  expl.indx <- sapply(explanatory_vars, function(x) which(names(data)==x))
+  y <- data[[response_var]]
+  X <- data[,expl.indx]
   n.pred <- dim(X)[2]
   if(n.pred > 1){
     full_adjrsq = summary(lm(y~.,data=as.data.frame(X)))$adj.r.squared
