@@ -605,7 +605,7 @@ To do:
 - View a non-Coursera [Logistic regression video](https://www.youtube.com/watch?v=yIYKR4sgzI8)
 - Read OIS Chapter 9, Sections 9.4 and 9.5
 - Work on PS7 problems from section 9.5
-- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
+- Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2), and note that the [example of how Stage 2 should look](https://kelrenmor.github.io/STA101-002/project_files/Stage2_example) now includes regression (video going over new content to be posted to Sakai by no later than 9am ET today).
 - Work on Lab 8 (due tomorrow)
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
