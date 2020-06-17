@@ -28,7 +28,7 @@ If you ask a question like "Is there a relationship between x and y?", you will 
 
 #### What if my data are super right-skewed?
 
-Try a log transformation prior to performing regression or inference! Remember you'll have to adjust your interpretations when talking about things like the difference in means or the meaning of coefficients in a regression. See [this resource](https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/) for a great explanation of how to interpret your ouput in the case of log transformation of the explanatory and/or response variables. 
+Try a log transformation prior to performing regression or inference! Remember you'll have to adjust your interpretations when talking about things like the difference in means or the meaning of coefficients in a regression. See [this resource](https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/) for a great explanation of how to interpret your ouput in the case of log transformation of the explanatory and/or response variables.
 
 #### What if the test/procedure I want to do has a normality assumption but my data don't seem normal enough for inference?
 
@@ -211,8 +211,144 @@ inference(y=weight, x=habit, data=ncbirths,
           alternative="twosided") # type of alternative
 ```
 
-In the EDA section, our boxplot and summary statistics showed that non-smoking mothers had babies that were on average slightly heavier at birth than smoking mothers. Here we assess whether this finding is statistically significant. Using the bootstrap, we reject the null hypothesis that the average birth weight for babies is the same for non-smoking and smoking mothers at the 0.05 level ($p=0.033$). Our data provide strong evidence in favor of the alternative hypothesis that the average birth weight for babies is different for non-smoking and smoking mothers, and our data suggest that the direction of the relationship favors non-smoking mothers as birthing heavier babies.
+In the EDA section, our boxplot and summary statistics showed that non-smoking mothers had babies that were on average slightly heavier at birth than smoking mothers. Here we assess whether this finding is statistically significant. Using the bootstrap, we reject the null hypothesis that the average birth weight for babies is the same for non-smoking and smoking mothers at the 0.05 level ($p=0.03$). Our data provide strong evidence in favor of the alternative hypothesis that the average birth weight for babies is different for non-smoking and smoking mothers, and our data suggest that the direction of the relationship favors non-smoking mothers as birthing heavier babies.
 
 ### Regression
 
-To be added later in the week!
+_Read assignment statement for more details: https://kelrenmor.github.io/STA101-002/project_files/project_st2_statement._
+
+**Run an Initial "Full Model", and discuss the output**
+```{r}
+# Regress birth weight on various explanatory variables
+mod_full = lm(weight ~ mage + mature + weeks + visits + marital + gender + habit + whitemom, 
+              data = ncbirths)
+
+# Summarize output
+summary(mod_full)
+```
+
+_First, talk about the significance:_
+
+For the intercept, and each of the coefficients associated with time of gestation (`weeks`), marital status of mother (`marital`), baby sex (`gender`), mother's smoking status (`habit`), and mother's race (`whitemom`), we reject the null hypothesis of the coefficient equaling 0. 
+
+_Then, interpret the coefficient values for the significant coefficients:_
+
+We expect a one-week increase in gestation time to lead to an increase in neonatal birth weight of 0.336 pounds, all else held constant. We expect male babies to weigh 0.376 pounds more than female babies, all else held constant. Etc... [you should expand on all significant predictors.]
+
+_Finally, note the R-squared value and interpret in the context of the data (how much variability is explained by these explanatory variables?_
+
+**Split Data into Test and Training Data**
+```{r test_train}
+project.data <- ncbirths
+n.obs <- dim(project.data)[1]
+
+train.index <- sample(1:n.obs,floor(.8*n.obs),replace=FALSE)  # randomly select 80% of obs for training
+project.train <- project.data[train.index,]  # Data for training the model
+project.test <- project.data[-train.index,]  # Data for testing the model's accuracy
+```
+
+Above, we split the data into 80% training and 20% testing. Note that because we set a seed using the `set.seed()` function at the beginning of this document, our test/train split is reproducible. 
+
+**Perform Backwards Elimination on the Training Data** 
+
+First, we copy the single_step_backwards function from the [project statement](https://kelrenmor.github.io/STA101-002/project_files/project_st2_statement).
+```{r}
+# Define the single_step_backwards function 
+# Copy and run this to be able to use the function yourself (DO NOT EDIT)
+single_step_backwards <- function(data, response_var, explanatory_vars){
+  resp.indx <- which(names(data)==response_var)
+  expl.indx <- sapply(explanatory_vars, function(x) which(names(data)==x))
+  y <- data[[response_var]]
+  X <- data[,expl.indx]
+  n.pred <- dim(X)[2]
+  if(n.pred > 1){
+    full_adjrsq = summary(lm(y~.,data=as.data.frame(X)))$adj.r.squared
+    print(paste0("Adjusted R-squared of model including all input explanatory variables: ",
+                 round(full_adjrsq,5)))
+    print("")
+    for(i in 1:n.pred){
+      red_adjrsq <- summary(lm(y~.,data=as.data.frame(X[,-i])))$adj.r.squared
+      print(paste0("With variable ", names(X)[i]," removed, adj R-squared becomes: ",
+                   round(red_adjrsq,5), 
+                   ifelse(red_adjrsq>full_adjrsq,", an improvement ",", a deterioration "),
+                   "from the input model"))
+    }
+  } else{
+    print("Model only contains one variable.")
+  }
+}
+```
+
+Now, we are able to use the `single_step_backwards()` function, and we go through the backward selection process using the metric of $R^2_{adj}$, beginning with all of the variables included in our full model.
+```{r}
+single_step_backwards(data = project.train, 
+                      response_var = "weight",
+                      explanatory_vars = c("mage", "mature", "weeks", "visits", "marital", 
+                                           "gender", "habit", "whitemom") )
+```
+
+We see above that $R^2_{adj}$ increases when we remove either the `mature` or the `visits` variable from the model. Since the resulting $R^2_{adj}$ is higher when `visits` is removed, we drop this as our first step in the backward selection process. We now take another single step having removed `visits` from the list of explanatory variables.
+
+```{r}
+single_step_backwards(data = project.train, 
+                      response_var = "weight",
+                      explanatory_vars = c("mage", "mature","weeks", "marital", 
+                                           "gender", "habit", "whitemom") )
+```
+
+We see above that $R^2_{adj}$ increases when we remove the `mature` variable from the model, and the removal of any other variable in this step would decrease $R^2_{adj}$. Therefore, we drop this as our second step in the backward selection process. We now take another single step having removed `mature` from the list of explanatory variables.
+
+```{r}
+single_step_backwards(data = project.train, 
+                      response_var = "weight",
+                      explanatory_vars = c("mage", "weeks", "marital", 
+                                           "gender", "habit", "whitemom") )
+```
+
+Now the removal of any individual variable would lead to a decrease in $R^2_{adj}$ relative to the model including all input explanatory variables, i.e. a deterioration in performance. So we stop here and consider this our "Final Model".
+
+**Show model output for "Final Model"**
+
+```{r}
+# Regress birth weight on the kept explanatory variables using TRAINING DATA
+model.best = lm(weight ~ mage + weeks + marital + gender + habit + whitemom, 
+               data = project.train)
+
+# Summarize output
+summary(model.best)
+```
+
+**Show and interpret diagnostic plots – fitted vs. residuals, normal probability (QQ) plot, histogram of residuals.**
+
+_See labs 7 and 8 for examples of this._
+
+**Provide parameter interpretation – summarize the relationship between the response variable and the explanatory variables in the model.**
+
+_As with the full model, interpret the parameters in the context of the data (using proper units). See labs 7 and 8, and OIS book Ch 8 and 9 for examples of this. See [this resource](https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/) if you have log transformed response and/or explanatory variables._
+
+**Compute the RMSE and interpret the value.**
+
+```{r}
+predictions.test <- predict(model.best,project.test)
+y <- project.test$weight
+mse <- mean((y-predictions.test)^2, na.rm=TRUE)
+(rmse <- sqrt(mse))
+```
+
+The average difference between our model’s predictions of neonatal birthweight and the actual observed neonatal birth weights is 1.1 pounds in the test data.
+
+**Include a prediction for a new observation and interpret the prediction interval correctly.**
+
+```{r}
+# Look at first few rows of the test data set.
+head(project.test %>% select(mage, weeks, marital, gender, habit, whitemom))
+```
+
+We will predict the nenatal birth weight for a male infant born to a 15 year old (yikes!) nonsmoking, non-white unmarried woman after 37 weeks of gestation [reading off of the first row of this data set].
+
+```{r}
+# Get prediction interval for first baby in test set
+predict(model.best, project.test[1,], interval="predict")
+```
+
+We predict that the neonatal birth weight (under the above stated conditions) will be 6.46 pounds, and we are 95% confident that this value will be between 4.33 and 8.58 pounds.

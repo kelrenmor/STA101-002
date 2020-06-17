@@ -14,6 +14,8 @@ output:
 
 All code used to generate the statistics and plots in your presentation should be submitted in an R Markdown document, which should be organized as outlined in the next section. There is no limit on the length of this document. 
 
+See here for [an example of how Stage 2 should look, along with some FAQs](https://kelrenmor.github.io/STA101-002/project_files/Stage2_example).
+
 Download the template for the RMD/HTML file:
 
 <span style="color:red">Statement updated June 15 at 10:59pm ET. Template (below) is ready for download at this time.</span>
@@ -36,9 +38,9 @@ Write as if you are explaining your results to whoever would be interested in yo
     * **Run an Initial "Full Model":** Develop a multiple linear regression model to predict a numerical variable in the dataset. This model should start with a minimum of 5 explanatory variables, but you are welcome to use more than that. The variables you choose should be related to the research interests stated in the Introduction, and you should provide a substantial discussion of your model’s output. For instance, what do the coefficient values tell you about the relationship between the explanatory variables and the response variable?
     * **Perform Model Selection:** After running the initial "full model" in the previous step, you should next perform model selection starting with this "full" linear regression model. (Please read the instruction below for how we specifically want you to do this.)
         * **Split Data into Test and Training Data** In order to assess how well your model predicts new data, you will need to set aside some of the observations before fitting your model. Replace “your_data” in the code below with the name of your data set and run it. This will create two separate data sets, project.train and project.test. The project.train data set contains 80\% of the observations, and will be used to fit your model. The remaining 20\% of the observations in project.test will be used to test your model’s predictions.
-        * **Perform Backwards Elimination on the Training Data:** With the project.train data, start with all of the variables you’ve chosen to be in the model, and perform the backward selection process. Use $R^2_{adj}$ for selction since your model will be used to make predictions. At the bottom of this document is a function (`single.step.backwards()`) that will compute the $R^2_{adj}$ values for a single step of the backwards selection process. This function takes for arguments a data frame with the variables for that step, and the name of the response variable in quotations.
-          * You can use the single.step.backwards() function on the whole dataset or just the explanatory variables that you are interested in. For example, if you would like to run a single step of backwards elimination on the the whole ames dataset, where your response variable is ‘Lot.Area’, you could use the code: `single.step.backwards(project.train,'Lot.Area')`.
-          * Alternatively, for example, if you would like to run backwards elimination on the ames data set, where your response variable is ‘Lot.Area’ and you only wish to consider three explanatory variables (Street, Lot.Shape, Lot.Config), you could use the code: `single.step.backwards(project.train%>%select(Street,Lot.Shape,Lot.Config),'Lot.Area')`. If the rules of backwards elimination suggested that you remove Street then you would run the single.step.backwards() function again, removing Street from the select().
+        * **Perform Backwards Elimination on the Training Data:** With the project.train data, start with all of the variables you’ve chosen to be in the model, and perform the backward selection process. Use $R^2_{adj}$ for selction since your model will be used to make predictions. At the bottom of this document is a function (`single_step_backwards()`) that will compute the $R^2_{adj}$ values for a single step of the backwards selection process. This function takes for arguments a data frame with the variables for that step, and the name of the response variable in quotations.
+          * You can use the single_step_backwards() function on the whole dataset or just the explanatory variables that you are interested in. For example, if you would like to run a single step of backwards elimination on the the whole ames dataset, where your response variable is ‘Lot.Area’, you could use the code: `single_step_backwards(project.train,'Lot.Area')`.
+          * Alternatively, for example, if you would like to run backwards elimination on the ames data set, where your response variable is ‘Lot.Area’ and you only wish to consider three explanatory variables (Street, Lot.Shape, Lot.Config), you could use the code: `single_step_backwards(project.train%>%select(Street,Lot.Shape,Lot.Config),'Lot.Area')`. If the rules of backwards elimination suggested that you remove Street then you would run the single_step_backwards() function again, removing Street from the select().
         * **Set your "final" model.** After you’ve selected the best model, fit it using the project.train data and save it as “model.best”. (The code at the bottom of this document gives you an example of how you might do this. Replace the variables in the lm() function that correspond to your response variable and explanatory variables that were left over from the backwards elimination you performed.)
         * **Perform Model Diagnostics on your Final Model:** Remember to create the necessary diagnostic plots for this model and determine if a linear model is appropriate. If you find your residuals are heavily skewed, fit another model replacing your response variable with the log transformed response (you don’t need to redo the backwards selection). Is there an improvement in the diagnostic plots?
         * **Extra Questions about Your Final Model:** When you performed your model selection, were you supprised that a particular variable wasn’t included in the model? If your model included the same variables from your hypothesis test or EDA, do you still see the same relationship between the explanatory and response variables?
@@ -79,16 +81,26 @@ project.test <- project.data[-train.index,]  # Data for testing the model's accu
 
 **Perform Backwards Elimination on the Training Data**        
 ```{r backwards_elim, eval=FALSE}
-single.step.backwards <- function(data,response){
-  resp.indx <- which(names(data)==response)
-  y <- data[[response]]
-  X <- data[,-resp.indx]
+# Define the single_step_backwards function 
+# Copy and run this to be able to use the function yourself (DO NOT EDIT)
+single_step_backwards <- function(data, response_var, explanatory_vars){
+  resp.indx <- which(names(data)==response_var)
+  expl.indx <- sapply(explanatory_vars, function(x) which(names(data)==x))
+  y <- data[[response_var]]
+  X <- data[,expl.indx]
   n.pred <- dim(X)[2]
   if(n.pred > 1){
+    full_adjrsq = summary(lm(y~.,data=as.data.frame(X)))$adj.r.squared
+    print(paste0("Adjusted R-squared of model including all input explanatory variables: ",
+                 round(full_adjrsq,5)))
+    print("")
     for(i in 1:n.pred){
-        print(paste0("Variable ", names(X)[i]," removed: Adjusted R-squared =  ",
-            round(summary(lm(y~.,data=as.data.frame(X[,-i])))$adj.r.squared,5)))
-        }
+      red_adjrsq <- summary(lm(y~.,data=as.data.frame(X[,-i])))$adj.r.squared
+      print(paste0("With variable ", names(X)[i]," removed, adj R-squared becomes: ",
+                   round(red_adjrsq,5), 
+                   ifelse(red_adjrsq>full_adjrsq,", an improvement ",", a deterioration "),
+                   "from the input model"))
+    }
   } else{
     print("Model only contains one variable.")
   }
@@ -104,8 +116,8 @@ model.best<-lm(response_variable ~ left_over_expl_variable1+ left_over_expl_vari
 **Calculate RMSE**
 ```{r rmse, eval=FALSE}
 predictions.test <- predict(model.best,project.test)
-y <- project.test$response_var
-mse <- mean((y-predictions.test)^2)
+y <- project.test$response_var # Note you need to put your own response_var here
+mse <- mean((y-predictions.test)^2, na.rm=TRUE)
 (rmse <- sqrt(mse))
 ```
 

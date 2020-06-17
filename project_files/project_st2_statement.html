@@ -428,6 +428,7 @@ summary {
 <div id="report-format" class="section level2">
 <h2>Report format</h2>
 <p>All code used to generate the statistics and plots in your presentation should be submitted in an R Markdown document, which should be organized as outlined in the next section. There is no limit on the length of this document.</p>
+<p>See here for <a href="https://kelrenmor.github.io/STA101-002/project_files/Stage2_example">an example of how Stage 2 should look, along with some FAQs</a>.</p>
 <p>Download the template for the RMD/HTML file:</p>
 <p><span style="color:red">Statement updated June 15 at 10:59pm ET. Template (below) is ready for download at this time.</span></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">download.file</span>(<span class="st">&quot;https://kelrenmor.github.io/STA101-002/project_files/sta101_prj.Rmd&quot;</span>,</a>
@@ -449,10 +450,10 @@ summary {
 <li><strong>Perform Model Selection:</strong> After running the initial “full model” in the previous step, you should next perform model selection starting with this “full” linear regression model. (Please read the instruction below for how we specifically want you to do this.)
 <ul>
 <li><strong>Split Data into Test and Training Data</strong> In order to assess how well your model predicts new data, you will need to set aside some of the observations before fitting your model. Replace “your_data” in the code below with the name of your data set and run it. This will create two separate data sets, project.train and project.test. The project.train data set contains 80% of the observations, and will be used to fit your model. The remaining 20% of the observations in project.test will be used to test your model’s predictions.</li>
-<li><strong>Perform Backwards Elimination on the Training Data:</strong> With the project.train data, start with all of the variables you’ve chosen to be in the model, and perform the backward selection process. Use <span class="math inline">\(R^2_{adj}\)</span> for selction since your model will be used to make predictions. At the bottom of this document is a function (<code>single.step.backwards()</code>) that will compute the <span class="math inline">\(R^2_{adj}\)</span> values for a single step of the backwards selection process. This function takes for arguments a data frame with the variables for that step, and the name of the response variable in quotations.
+<li><strong>Perform Backwards Elimination on the Training Data:</strong> With the project.train data, start with all of the variables you’ve chosen to be in the model, and perform the backward selection process. Use <span class="math inline">\(R^2_{adj}\)</span> for selction since your model will be used to make predictions. At the bottom of this document is a function (<code>single_step_backwards()</code>) that will compute the <span class="math inline">\(R^2_{adj}\)</span> values for a single step of the backwards selection process. This function takes for arguments a data frame with the variables for that step, and the name of the response variable in quotations.
 <ul>
-<li>You can use the single.step.backwards() function on the whole dataset or just the explanatory variables that you are interested in. For example, if you would like to run a single step of backwards elimination on the the whole ames dataset, where your response variable is ‘Lot.Area’, you could use the code: <code>single.step.backwards(project.train,'Lot.Area')</code>.</li>
-<li>Alternatively, for example, if you would like to run backwards elimination on the ames data set, where your response variable is ‘Lot.Area’ and you only wish to consider three explanatory variables (Street, Lot.Shape, Lot.Config), you could use the code: <code>single.step.backwards(project.train%&gt;%select(Street,Lot.Shape,Lot.Config),'Lot.Area')</code>. If the rules of backwards elimination suggested that you remove Street then you would run the single.step.backwards() function again, removing Street from the select().</li>
+<li>You can use the single_step_backwards() function on the whole dataset or just the explanatory variables that you are interested in. For example, if you would like to run a single step of backwards elimination on the the whole ames dataset, where your response variable is ‘Lot.Area’, you could use the code: <code>single_step_backwards(project.train,'Lot.Area')</code>.</li>
+<li>Alternatively, for example, if you would like to run backwards elimination on the ames data set, where your response variable is ‘Lot.Area’ and you only wish to consider three explanatory variables (Street, Lot.Shape, Lot.Config), you could use the code: <code>single_step_backwards(project.train%&gt;%select(Street,Lot.Shape,Lot.Config),'Lot.Area')</code>. If the rules of backwards elimination suggested that you remove Street then you would run the single_step_backwards() function again, removing Street from the select().</li>
 </ul></li>
 <li><strong>Set your “final” model.</strong> After you’ve selected the best model, fit it using the project.train data and save it as “model.best”. (The code at the bottom of this document gives you an example of how you might do this. Replace the variables in the lm() function that correspond to your response variable and explanatory variables that were left over from the backwards elimination you performed.)</li>
 <li><strong>Perform Model Diagnostics on your Final Model:</strong> Remember to create the necessary diagnostic plots for this model and determine if a linear model is appropriate. If you find your residuals are heavily skewed, fit another model replacing your response variable with the log transformed response (you don’t need to redo the backwards selection). Is there an improvement in the diagnostic plots?</li>
@@ -491,27 +492,37 @@ summary {
 <a class="sourceLine" id="cb2-5" data-line-number="5">project.train &lt;-<span class="st"> </span>project.data[train.index,]  <span class="co"># Data for training the model</span></a>
 <a class="sourceLine" id="cb2-6" data-line-number="6">project.test &lt;-<span class="st"> </span>project.data[<span class="op">-</span>train.index,]  <span class="co"># Data for testing the model's accuracy</span></a></code></pre></div>
 <p><strong>Perform Backwards Elimination on the Training Data</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">single.step.backwards &lt;-<span class="st"> </span><span class="cf">function</span>(data,response){</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">  resp.indx &lt;-<span class="st"> </span><span class="kw">which</span>(<span class="kw">names</span>(data)<span class="op">==</span>response)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">  y &lt;-<span class="st"> </span>data[[response]]</a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">  X &lt;-<span class="st"> </span>data[,<span class="op">-</span>resp.indx]</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5">  n.pred &lt;-<span class="st"> </span><span class="kw">dim</span>(X)[<span class="dv">2</span>]</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">  <span class="cf">if</span>(n.pred <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>){</a>
-<a class="sourceLine" id="cb3-7" data-line-number="7">    <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n.pred){</a>
-<a class="sourceLine" id="cb3-8" data-line-number="8">        <span class="kw">print</span>(<span class="kw">paste0</span>(<span class="st">&quot;Variable &quot;</span>, <span class="kw">names</span>(X)[i],<span class="st">&quot; removed: Adjusted R-squared =  &quot;</span>,</a>
-<a class="sourceLine" id="cb3-9" data-line-number="9">            <span class="kw">round</span>(<span class="kw">summary</span>(<span class="kw">lm</span>(y<span class="op">~</span>.,<span class="dt">data=</span><span class="kw">as.data.frame</span>(X[,<span class="op">-</span>i])))<span class="op">$</span>adj.r.squared,<span class="dv">5</span>)))</a>
-<a class="sourceLine" id="cb3-10" data-line-number="10">        }</a>
-<a class="sourceLine" id="cb3-11" data-line-number="11">  } <span class="cf">else</span>{</a>
-<a class="sourceLine" id="cb3-12" data-line-number="12">    <span class="kw">print</span>(<span class="st">&quot;Model only contains one variable.&quot;</span>)</a>
-<a class="sourceLine" id="cb3-13" data-line-number="13">  }</a>
-<a class="sourceLine" id="cb3-14" data-line-number="14">}</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># Define the single_step_backwards function </span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co"># Copy and run this to be able to use the function yourself (DO NOT EDIT)</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">single_step_backwards &lt;-<span class="st"> </span><span class="cf">function</span>(data, response_var, explanatory_vars){</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">  resp.indx &lt;-<span class="st"> </span><span class="kw">which</span>(<span class="kw">names</span>(data)<span class="op">==</span>response_var)</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">  expl.indx &lt;-<span class="st"> </span><span class="kw">sapply</span>(explanatory_vars, <span class="cf">function</span>(x) <span class="kw">which</span>(<span class="kw">names</span>(data)<span class="op">==</span>x))</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">  y &lt;-<span class="st"> </span>data[[response_var]]</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">  X &lt;-<span class="st"> </span>data[,expl.indx]</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">  n.pred &lt;-<span class="st"> </span><span class="kw">dim</span>(X)[<span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">  <span class="cf">if</span>(n.pred <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>){</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">    full_adjrsq =<span class="st"> </span><span class="kw">summary</span>(<span class="kw">lm</span>(y<span class="op">~</span>.,<span class="dt">data=</span><span class="kw">as.data.frame</span>(X)))<span class="op">$</span>adj.r.squared</a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">    <span class="kw">print</span>(<span class="kw">paste0</span>(<span class="st">&quot;Adjusted R-squared of model including all input explanatory variables: &quot;</span>,</a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">                 <span class="kw">round</span>(full_adjrsq,<span class="dv">5</span>)))</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">    <span class="kw">print</span>(<span class="st">&quot;&quot;</span>)</a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">    <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n.pred){</a>
+<a class="sourceLine" id="cb3-15" data-line-number="15">      red_adjrsq &lt;-<span class="st"> </span><span class="kw">summary</span>(<span class="kw">lm</span>(y<span class="op">~</span>.,<span class="dt">data=</span><span class="kw">as.data.frame</span>(X[,<span class="op">-</span>i])))<span class="op">$</span>adj.r.squared</a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">      <span class="kw">print</span>(<span class="kw">paste0</span>(<span class="st">&quot;With variable &quot;</span>, <span class="kw">names</span>(X)[i],<span class="st">&quot; removed, adj R-squared becomes: &quot;</span>,</a>
+<a class="sourceLine" id="cb3-17" data-line-number="17">                   <span class="kw">round</span>(red_adjrsq,<span class="dv">5</span>), </a>
+<a class="sourceLine" id="cb3-18" data-line-number="18">                   <span class="kw">ifelse</span>(red_adjrsq<span class="op">&gt;</span>full_adjrsq,<span class="st">&quot;, an improvement &quot;</span>,<span class="st">&quot;, a deterioration &quot;</span>),</a>
+<a class="sourceLine" id="cb3-19" data-line-number="19">                   <span class="st">&quot;from the input model&quot;</span>))</a>
+<a class="sourceLine" id="cb3-20" data-line-number="20">    }</a>
+<a class="sourceLine" id="cb3-21" data-line-number="21">  } <span class="cf">else</span>{</a>
+<a class="sourceLine" id="cb3-22" data-line-number="22">    <span class="kw">print</span>(<span class="st">&quot;Model only contains one variable.&quot;</span>)</a>
+<a class="sourceLine" id="cb3-23" data-line-number="23">  }</a>
+<a class="sourceLine" id="cb3-24" data-line-number="24">}</a></code></pre></div>
 <p><strong>Set your “final” model</strong></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">model.best&lt;-<span class="kw">lm</span>(response_variable <span class="op">~</span><span class="st"> </span>left_over_expl_variable1<span class="op">+</span><span class="st"> </span>left_over_expl_variable2 <span class="op">+</span><span class="st"> </span>...,</a>
 <a class="sourceLine" id="cb4-2" data-line-number="2">               <span class="dt">data=</span>project.train)</a></code></pre></div>
 <p><strong>Calculate RMSE</strong></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">predictions.test &lt;-<span class="st"> </span><span class="kw">predict</span>(model.best,project.test)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2">y &lt;-<span class="st"> </span>project.test<span class="op">$</span>response_var</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3">mse &lt;-<span class="st"> </span><span class="kw">mean</span>((y<span class="op">-</span>predictions.test)<span class="op">^</span><span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">y &lt;-<span class="st"> </span>project.test<span class="op">$</span>response_var <span class="co"># Note you need to put your own response_var here</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">mse &lt;-<span class="st"> </span><span class="kw">mean</span>((y<span class="op">-</span>predictions.test)<span class="op">^</span><span class="dv">2</span>, <span class="dt">na.rm=</span><span class="ot">TRUE</span>)</a>
 <a class="sourceLine" id="cb5-4" data-line-number="4">(rmse &lt;-<span class="st"> </span><span class="kw">sqrt</span>(mse))</a></code></pre></div>
 </div>
 
