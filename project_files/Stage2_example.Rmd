@@ -109,7 +109,7 @@ In the data set, 873 mothers are smokers, 126 are nonsmokers, and 1 did not have
 _Next I would move on to EDA relevant to my second question (the regression question). Since this question is about exploring the predictive factors of neonatal birth weight, I would want numeric and visual summaries that could let me explore that before I moved on to formal testing in the regression section._
 
 ```{r}
-# Plot boxplot of birthweight by gestation week
+# Plot relationship between gestation time and birth weight
 ggplot(ncbirths, aes(x=weeks, y=weight)) + 
   geom_point() + 
   geom_smooth(method='lm', se=FALSE) + 
@@ -123,7 +123,7 @@ _Describe positive association between weeks of gestation and birth weight. Note
 _Now I'll show a couple of examples of how I could look at this relationship while controlling for an additional variable. First, using my smoking status variable from before._
 
 ```{r}
-# Plot boxplot of birthweight by gestation week, colored by smoking status of mother
+# Plot relationship between gestation time and birth weight, colored by smoking status of mother
 ggplot(ncbirths, aes(x=weeks, y=weight, color=habit)) + 
   geom_point() + 
   geom_smooth(method='lm', se=FALSE, fullrange=TRUE) + 
@@ -139,7 +139,7 @@ To put in terms of the fitted lines, the slope of the line for smoking mothers a
 _Suppose I want to instead show how the relationship between gestation weeks and birth weight varies with mother age (another continuous variable). I could just color by age in my plot, but it's hard to see anything just by that..._
 
 ```{r}
-# Plot boxplot of birthweight by gestation week, faceted by mother age
+# Plot relationship between gestation time and birth weight, faceted by mother age
 ggplot(ncbirths, aes(x=weeks, y=weight, color=mage)) + 
   geom_point() + 
   geom_smooth(method='lm', se=FALSE, fullrange=TRUE) + 
@@ -165,7 +165,7 @@ ncbirths <- ncbirths %>%
 _Then I can do the same coloring as before but with color by bin:_ 
 
 ```{r}
-# Plot boxplot of birthweight by gestation week, faceted by mother age
+# Plot relationship between gestation time and birth weight, faceted by mother age
 ggplot(ncbirths, aes(x=weeks, y=weight, color=mage_bin)) + 
   geom_point() + 
   geom_smooth(method='lm', se=FALSE, fullrange=TRUE) + 
@@ -177,7 +177,7 @@ ggplot(ncbirths, aes(x=weeks, y=weight, color=mage_bin)) +
 _Or I could facet by age:_ 
 
 ```{r}
-# Plot boxplot of birthweight by gestation week, faceted by mother age
+# Plot relationship between gestation time and birth weight, faceted by mother age
 ggplot(ncbirths, aes(x=weeks, y=weight)) + 
   geom_point() + 
   facet_grid(~mage_bin) + 
