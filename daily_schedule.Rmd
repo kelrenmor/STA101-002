@@ -624,6 +624,8 @@ To do:
 - Work on Lab 9
 - View the data science in action seminar (to be added by end of day)
 
+**Note: I will post more information about the final by tomorrow (Saturday June 20) at noon ET, and will aim to get out a topic/study guide by then as well.**
+
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
 <span style="color:red">Due today by 11:59 PM EDT: PS7 + PA7 + Lab 8</span>
