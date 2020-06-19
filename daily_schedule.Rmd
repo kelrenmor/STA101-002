@@ -616,6 +616,7 @@ Topic: Review and project work
 
 To do: 
 
+- **RENAME YOUR PROJECT RMD FILE** (e.g., sta101_prj.Rmd should be renamed, with your name instead of mine, Moran_Kelly_sta101_prj.Rmd)
 - Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
 - Wrap up and submit PS7 
 - Wrap up and submit Lab 8
