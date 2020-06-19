@@ -623,7 +623,7 @@ To do:
 - Take PA7
 - View the Lab 9 video
 - Work on Lab 9
-- View the data science in action seminar (to be added by end of day)
+- View the data science in action seminar (under Resources tab on Sakai)
 
 **Note: I will post more information about the final by tomorrow (Saturday June 20) at noon ET, and will aim to get out a topic/study guide by then as well.**
 
