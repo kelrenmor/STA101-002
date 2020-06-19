@@ -1,0 +1,59 @@
+---
+title: "Lab 9 -  Logistic regression"
+author: "[Enter you name here]"
+date: "[Enter date here]"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+* * *
+
+## Lab report
+
+#### Load data:
+```{r}
+load(url("https://kelrenmor.github.io/STA101-002/labs/data/email.Rdata"))
+```
+
+Note you will need to insert code chunks and text as needed beneath each of the following questions.
+
+* * *
+
+## Covered or started in lab video
+
+#### Exercise 1
+
+#### Exercise 2
+
+#### Exercise 3
+
+#### Exercise 4
+
+#### Exercise 5
+
+#### Exercise 6
+
+#### Exercise 7
+
+#### Exercise 8
+
+* * *
+
+## Video ends here
+
+#### Exercise 9
+
+#### Exercise 10
+
+#### Exercise 11
+
+

@@ -1,0 +1,137 @@
+---
+title: "Lab 9 -  Logistic regression"
+output:
+  html_document:
+    theme: cerulean
+    highlight: pygments
+    css: ../lab.css
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(eval = TRUE)
+library(knitr)
+library(tidyverse)
+```
+
+<div id="template">
+Before you get started, download the R Markdown template for this lab. Remember all of your code and answers go in this document:
+```{r template, eval=FALSE}
+download.file("https://kelrenmor.github.io/STA101-002/labs/lab9/sta101_lab9.Rmd",
+              destfile="sta101_lab9.Rmd")
+```
+</div>
+
+## Spam Emails
+
+Today we will be working with a corpus of emails received by a single gmail account over the first three months of 2012. Just like any other email address this account received and sent regular emails as well as receiving a large amount of spam (unsolicited bulk email). We will be using what we have learned about logistic regression models to see if we can build a model that is able to predict whether or not a message is spam based on a variety of characteristics of the email (e.g. inclusion of words like winner, inherit, or password, the number of exclamation marks used, etc.) While the spam filters used by large coorportations like Google and Microsoft are quite a bit more complex the fundamental idea is the same - binary classification based on a set of explanatory variables.
+
+## The data
+
+First, we will load the data.
+
+```{r load-data}
+load(url("https://kelrenmor.github.io/STA101-002/labs/data/email.Rdata"))
+```
+
+variable         | description
+---------------- | -----------
+`spam`          | Indicator for whether the email was spam.
+`to_multiple`    | Indicator for whether the email was addressed to more than one recipient.
+`from`      | Whether the message was listed as from anyone (this is usually set by default for regular outgoing email).
+`cc`          | Indicator for whether anyone was CCed.
+`sent_email`    | Indicator for whether the sender had been sent an email in the last 30 days.
+`image`      | Indicates whether any images were attached.
+`attach`          | Indicates whether any files were attached.
+`dollar`    | Indicates whether a dollar sign or the word "dollar" appeared in the email.
+`winner`      | Indicates whether "winner" appeared in the email.
+`inherit`  | Indicates whether "inherit" (or an extension, such as "inheritance") appeared in the email.
+`password`          | Indicates whether "password" appeared in the email.
+`num_char`    | The number of characters in the email, in thousands.
+`line_breaks`      | The number of line breaks in the email (does not count text wrapping).
+`format`      | Indicates whether the email was written using HTML (e.g. may have included bolding or active links) or plaintext.
+`re_subj`          | Indicates whether the subject started with "Re:", "RE:", "re:", or "rE":
+`exclaim_subj`    | Indicates whether there was an exclamation point in the subject.
+`urgent_subj`    | Indicates whether the word "urgent" was in the email subject.
+`exclaim_mess`    | The number of exclamation points in the email message.
+`number`    | Factor variable saying whether there was no number, a small number (under 1 million), or a big number.
+
+## Exploring the data
+
+1.  In this lab we will focus on predicting whether an email is spam or not. 
+    How many emails make up this data set? What proportion of the emails were spam?
+
+2.  Visually explore if/how the proportion of emails that are sent to multiple people 
+    differs by spam status. Comment on what you see.
+
+## A simple spam filter
+
+We will start with a simple spam filter that will only use a single explanatory variable `to_multiple` to classify a message as spam or not. To do this we will fit a logistic regression model between `spam` and `to_multiple` using the `glm` function. This is done in the same way that a simple or multiple regression model is fit in R, except we use the `glm` function instead of `lm`, and we must indicate that we wish to fit a logistic model by include the argument `family="binomial"`.
+
+```{r}
+g_simple = glm(spam ~ to_multiple, data=email, family="binomial")
+summary(g_simple)
+```
+
+3. Based on the results of this logistic regression does the inclusion of multiple recipients make a message more or less likely to be spam? Explain your reasoning.
+
+Here we are modeling $\text{log}(\frac{p_{spam}}{1-p_{spam}}) = \beta_0 + \beta_1 \times to\_multiple.$ We can rearrange this to see that $p_{spam} = \frac{e^{\beta_0 + \beta_1 \times to\_multiple}}{1+e^{\beta_0 + \beta_1 \times to\_multiple}}.$ This inverse logit transformation can also be defined using an R function!
+
+```{r}
+inv_logit <- function(x){ exp(x)/(1+exp(x)) }
+```
+
+4. Using these results calculate the probability that a message is spam if it has multiple recipients, and the probability if it does not have multiple recipients. (We can define an inverse logit function in R to do this quickly.)
+
+5. [**On your own**] Pick one of the other 17 remaining explanatory variables that you think is most likely to predict an email's spam status and fit a `glm` model using it. Describe how this explanatory variable affects the probability of an email being spam generally, and calculating the probability that the message is spam for two values of your explanatory variable (e.g., in the previous problem we calculated the probability for emails that were and were not sent to multiple recipients).
+
+## A more complex spam filter
+
+We will now fit a multiple logistic regression model by including more than one of the explanatory variables in our model. We choose `to_multiple`, `from`, `image`, `attach`, and `number` for illustrative purposes.
+
+```{r}
+g_mult = glm(spam ~ to_multiple + from + image + attach + number, data=email, family=binomial)
+summary(g_mult)
+```
+
+6. Imagine we are using this logistic regression model as a spam filter, every new message you receive is analyzed and its characteristics calculated for each of the 5 included explanatory variables. If the message contained an image is it more or less likely to be flagged as spam? What if it only had an attachment? What if it had an image and an attachment?
+
+7. Which of the included variables appear to be meaningful for identifying spam? Describe how each of these variables affects the probability of an email being spam, numerical answers are not needed here. (For categorical explanatory variables be sure to indicate the reference level and how this affects the interpretation)
+
+8. Which of the statistically significant explanatory variables appears to have the largest effect of this group? [**On your own**] Does this agree with what you have seen in the spam you receive?
+
+## Assessing our spam filter
+
+While not quite the same as the residual plots we saw in simple and multiple linear regression we can create a plot that shows how well out logistic regession model is doing by plotting our predicted probability against the response variable (spam or not spam). We jitter the y coordinates slightly so that emails with similar probabilities are not directly on top of one another in the plot.
+
+```{r}
+res_display = data.frame(predicted = g_mult$fitted.values, 
+                         observed = email$spam)
+
+ggplot(res_display, aes(x=predicted, y=observed)) +
+  geom_jitter(alpha=0.3, color='blue') + 
+  xlab("Predicted probability") + ylab("") + 
+  scale_y_continuous(breaks=c(0,1), labels=c("0 (not spam)", "1 (spam)"))
+```
+
+We can also see the difference in the distribution of probabilities for the two classes by plotting side by side box plots.
+
+```{r}
+ggplot(res_display, aes(x=as.factor(observed), y=predicted)) + 
+  geom_boxplot() + 
+  scale_x_discrete(breaks=c(0,1), labels=c("0 (not spam)", "1 (spam)"))
+```
+
+From both plots it is clear that in general spam messages have higher probabilities, which is what we expect to see if our spam filter is working well. 
+
+9. Fit another `glm` model with the subset of the explanatory variables that you think will result in the best possible spam filter. Your criteria should be based on both what you know about spam and the results of fitting the `g_mult` model. Describe why you chose this particular model and how its results differ from the `g_mult` model. For each explanatory variable you included, say whether it makes a message more or less likely to be spam (For categorical explanatory variables be sure to indicate the reference level and how this affects the interpretation).
+
+10. Recreate the above plots for your new model. based on these plots discuss if your model appears to be a better or worse spam filter than the `g_mult` model. What other information do you think you would need to better make this decision?
+
+11. In the dot plots we've seen, there appears to be a banding pattern in the predicted probabilities, many points falling at the same or very nearly the same predicted probabilities. Explain why this pattern is occuring. (Hint: think about the explanatory variables and the possible values they can take, and what this means for the number of possible values our prediction could take.)
+
+<div id="license">
+This is a product of OpenIntro that is released under a [Creative Commons 
+Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0). 
+This lab was adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel 
+from a lab written by the faculty and TAs of UCLA Statistics.
+</div>
