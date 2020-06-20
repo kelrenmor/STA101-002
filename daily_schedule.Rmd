@@ -625,7 +625,7 @@ To do:
 - Work on Lab 9
 - View the data science in action seminar (under Resources tab on Sakai)
 
-**Note: I will post more information about the final by tomorrow (Saturday June 20) at noon ET, and will aim to get out a topic/study guide by then as well.**
+**Note: I will post more information about the final content and get out a topic/study guide by Monday morning.**
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
@@ -637,6 +637,10 @@ To do:
 
 ---
 
+We're in the last week!!! Congratulations on making it through our 6-week summer stats class -- I'm thankful for all of your hard work and patience through this learning experience. Monday and Tuesday will be work days. Be sure to submit **all** of the required files for the project (for the write-up: rmd, html or pdf; for the presentation: mp4, slides -- likely powerpoint or pdf) on Monday by 11:59pm, and also share with your reviewers using the [Box folder](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)). Finish up and submit your last lab, DSA reflection, and project reflections on Tuesday. Wednesday is a final prep day. Thursday you will take and submit your final (you will have the full 24 hours on Thursday to access the final, but it will be designed to be completed in 2-3 hours). 
+
+---
+
 ### Monday, June 22
 
 Topic: Review and project work
@@ -644,16 +648,19 @@ Topic: Review and project work
 To do: 
 
 - Review for final
-- Work on Lab 9
+- Work on Lab 9 (due tomorrow)
+- Work on DSA4 (due tomorrow)
 - Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
-- Wrap up and submit your individual project presentation and written report, plus send to your "reviewers"
-- Wrap up and submit DSA4 Reflection
+- Wrap up and submit your individual project presentation and written report
+- Share the **video** with your "reviewers" by dropping it into the provided Duke Box (sent to you via email, or [see project page for link](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2))
 
-<span style="color:blue">Lab session (last-minute project help): 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) and recorded)</span>
+<span style="color:blue">Extra drop in time: 9-10 AM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735))</span>
+
+<span style="color:blue">Lab session (drop-in and last-minute project help): 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963))</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: Project + DSA4 </span>
+<span style="color:red">Due today by 11:59 PM EDT: Project write up </span>
 
 ### Tuesday, June 23
 
@@ -664,16 +671,23 @@ To do:
 - Review for final
 - Wrap up and submit Lab 9
 - Do and submit project reflection
+- Wrap up and submit DSA4 Reflection
+
+<span style="color:blue">Extra drop in time: 3-4 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735))</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 
-<span style="color:red">Due today by 11:59 PM EDT: Lab 9 + Project reflection</span>
+<span style="color:red">Due today by 11:59 PM EDT: Lab 9 + Project reflection + DSA4</span>
 
 ### Wednesday, June 24
 
 Topic: Reading day
 
 To do: Prepare for final exam (tomorrow!)
+
+<span style="color:blue">Extra drop in time: 11 AM - 12 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735))</span>
+
+<span style="color:blue">Lab session (drop-in and final prep time): 2-3:15 PM ET ([Ezinne's Zoom room](https://duke.zoom.us/j/2914105963))</span>
 
 <span style="color:blue">Regularly scheduled office hours (see [schedule](https://kelrenmor.github.io/STA101-002/#teaching-team-and-office-hours))</span>
 

@@ -36,18 +36,17 @@ See below for current week's live session times (note that these times are **in 
 
 | Day | Time | Team member | Topic | Location |
 | ---   | ---   | ---   | ----  | ---- |
-| Monday,  June 15 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
-| Tuesday,  June 16 | 3-4pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
-| ~~Wednesday,  June 17~~ | ~~11am-12pm~~ | ~~Dr. Moran~~ | ~~Extra drop in time~~ | ~~Kelly's Zoom room~~ |
-| Wednesday,  June 17 | 2-3:15pm | Ezinne | Lab session | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
-| Thursday,  June 18 | 5-6pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
-| Friday,  June 19 | 11am-1pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Monday,  June 22 | 9-10am | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Monday,  June 22 | 2-3:15pm | Ezinne | Lab session (drop-in and last-minute project help) | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
+| Tuesday,  June 23 | 3-4pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Wednesday,  June 24 | 11am-12pm | Dr. Moran | Extra drop in time | [Kelly's Zoom room](https://duke.zoom.us/j/9271657735) |
+| Wednesday,  June 24 | 2-3:15pm | Ezinne | Lab session (drop-in and final prep time) | [Ezinne's Zoom room](https://duke.zoom.us/j/2914105963) |
 
 ### Teaching team and office hours 
 
 Additional times available on request. All times are in Eastern time zone. Note: office hours may vary. Revisions to office hours will be noted via e-mail and on the webpage. 
 
-<span style="color:red">Additional office hours available on request (just send an email!)</span>
+<span style="color:red">Note since Thursday (6/25) is our final, we won't have Th/F OH this week.</span>
 
 | Team member | Email | Office hours | Location |
 | -- | -- | ---- | -- |
@@ -117,8 +116,8 @@ Note: this schedule is approximate and is likely to be modified as the course pr
 | Thursday,  June 18| Transformation, case studies, and logistic regression | | |
 | Friday,  June 19| Review and project work | PS7 + PA7 + Lab 8 | |
 | ----------- | --------------------------- | --------------- | Enjoy your weekend! |
-| Monday,  June 22| Review and project work | Project + DSA4 | |
-| Tuesday,  June 23|  View and respond to project presentations | Lab 9 + Project reflection |  |
+| Monday,  June 22| Review and project work | Project | |
+| Tuesday,  June 23|  View and respond to project presentations | Lab 9 + Project reflection + DSA4 |  |
 | Wednesday,  June 24| Reading day |  | |
 | Thursday,  June 25| Final exam |  |  Last day of class! |
 
