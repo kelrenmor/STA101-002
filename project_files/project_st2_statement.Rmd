@@ -52,7 +52,15 @@ Write as if you are explaining your results to whoever would be interested in yo
 
 ## Presentation format & length
 
-**Presentation:** You should put together a short PowerPoint-like presentation of your analysis to be recorded and submitted as an mp4 (note you can use Zoom's 'share screen' and 'record' functions to easily create this presentation). Keep you presentation under 8 minutes. Any content past the 8 minute mark will not be viewed. Your presentation needs to highlight each component of your project: hypothesis test, EDA, model and prediction; however, you should focus on your results and conclusions, and leave the code snippets for your markdown file.
+**Presentation:** You should put together a short PowerPoint-like presentation of your analysis to be recorded and submitted as an mp4 (note you can use Zoom's 'share screen' and 'record' functions to easily create this presentation). Try to keep your presentation under 8 minutes -- any note that anything over 10 minutes will not be viewed. Your presentation needs to highlight each component of your project: hypothesis test, EDA, model and prediction; however, you should focus on your results and conclusions, and leave the code snippets for your markdown file.
+
+The groups/folders in which you should share the video of your presentation (in addition to submitting it on Sakai) are as follows: 
+
+- [Folder for Group A](https://duke.box.com/s/5wcea496knys7vm7n2mfatfyx6hmb3is): accessible to Xavier, Juliana, Connor, Rachel H., and Zoe
+- [Folder for Group B](https://duke.box.com/s/jf4hzjxhj8z4mcq5wi0su54v9th7rx7z): accessible to Joshua, Brooke, Skylar, Braden, and Jules
+- [Folder for Group C](https://duke.box.com/s/n9aqduypjuhrdyyiw951jx4a2lrkvgmm): accessible to Rachel P., Olivia, Alexa, Cynthia, and Aaron
+- [Folder for Group D](https://duke.box.com/s/zwr2q1q2o4dzh1y3y4x2l8uqruka59wr): accessible to Kylie, Paige, Kate, Alice, and Giselle
+- [Folder for Group E](https://duke.box.com/s/xq4728wm8hsizdwy27orep9opuwbcb67): accessible to Maya, Rand, Ghalia, Zavera, and Elana
 
 ## Grading
 

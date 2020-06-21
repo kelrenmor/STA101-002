@@ -1,0 +1,62 @@
+---
+title: "STA 101 Project Stage 3: View and reflect"
+output:
+  html_document:
+    css: project.css
+    highlight: pygments
+    theme: cerulean
+  pdf_document: default
+---
+
+* * *
+
+## Purpose
+
+The purpose of Stage 3 is to critically view the presentations made by your fellow students. This assignment is meant to mimick the experience of presenting final projects synchronously in a live lab session. 
+
+You must score at least 30% of the points on each of the three project related submissions (including this one!) in order to pass this class.
+
+* * *
+
+## Content
+
+The remainder of this document outlines the requirements and expectations of what your Stage 3 reflection should contain. Note that if you are unable answer these questions based on the presentation, say that as your response.
+
+For **each of the 4 presentations you are reviewing** address the following:
+
+1. Inference result: (2 points) What inferential test did the presenter perform, and what was their conclusion?
+2. Best model: (2 points) What variables ended up being included in the best model for this presenter? What were the directions of the relationships between response and explanatory variables in the model?
+3. Private critique: (2 points) Did you notice any mistakes in the presenter's phrasing of their hypotheses, results, or conclusions? Here's where you should be nitpicky and think critically (these comments will be seen just by me and not the presenter). After this class is over I want you to turn on this skeptical part of your brain as you read/view research or news.
+4. Shared positive and constructive feedback: (2 points) What did you think the presenter did particularly well? (E.g.: Was their problem really well thought out? Did they explain something particularly well? Was their organization spot-on?) What constructive feedback could you share with them to improve or expand on their work? Share this with the presenter via their unique Duke Box file (see the Submission section below for link).
+5. Further work: (2 points) Think about the presentation you just saw. What ideas do you have for future work on the problem(s) the presenter addressed?
+
+### Format & length
+
+Your Stage 3 Project Reflection should be written using the [provided Word template](https://kelrenmor.github.io/STA101-002/project_files/sta101_prj_reflection.docx). There is no length requirement.
+
+### Grading
+
+Your Stage 3 Project Reflection will be graded out of 40 points (as outlined above), and will make up 10% of your overall project score (i.e. 2% of your grade for the course).
+
+### The following will result in deductions:
+
+* Does not use provided rubric: up to -5 points
+* Peer review feedback is mean-spirited: up to -10 points
+
+* * *
+
+## Submission
+
+Submit online on Sakai under Assignments. Include:
+
+1. Word or PDF document
+2. Confirmation that you have provided positive/constructive feedback to each of the presenters via the Box file (links below)
+
+The groups/folders in which you should share your positive/constructive feedback are as follows: 
+
+- [Folder for Group A](https://duke.box.com/s/5wcea496knys7vm7n2mfatfyx6hmb3is): accessible to Xavier, Juliana, Connor, Rachel H., and Zoe
+- [Folder for Group B](https://duke.box.com/s/jf4hzjxhj8z4mcq5wi0su54v9th7rx7z): accessible to Joshua, Brooke, Skylar, Braden, and Jules
+- [Folder for Group C](https://duke.box.com/s/n9aqduypjuhrdyyiw951jx4a2lrkvgmm): accessible to Rachel P., Olivia, Alexa, Cynthia, and Aaron
+- [Folder for Group D](https://duke.box.com/s/zwr2q1q2o4dzh1y3y4x2l8uqruka59wr): accessible to Kylie, Paige, Kate, Alice, and Giselle
+- [Folder for Group E](https://duke.box.com/s/xq4728wm8hsizdwy27orep9opuwbcb67): accessible to Maya, Rand, Ghalia, Zavera, and Elana
+

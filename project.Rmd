@@ -13,7 +13,7 @@ The project objective is to give you independent applied research experience usi
 
 * [Project proposal](https://kelrenmor.github.io/STA101-002/project_files/project_st1_statement) (extended due date Saturday, June 13): 2/10 of overall project grade
 * [Project write-up/presentation](https://kelrenmor.github.io/STA101-002/project_files/project_st2_statement) (due Monday, June 22): 7/10 of overall project grade
-* Project reflections (due Tuesday, June 23): 1/10 of overall project grade
+* [Project reflections](https://kelrenmor.github.io/STA101-002/project_files/project_st3_statement) (due Tuesday, June 23): 1/10 of overall project grade
 
 You must score at least 30% of the points on each of the three project related submissions in order to pass this class.
 
@@ -59,4 +59,4 @@ The groups/folders in which you should upload your **presentation video** are as
 
 You have each been provided access to a Duke Box folder (see links above), in which you should have shared the video recording of your project presentation.
 
-The assignment for reflection will be shown here soon.
+Your Stage 3 Project Reflection should be written using the [provided Word template](https://kelrenmor.github.io/STA101-002/project_files/sta101_prj_reflection.docx). There is no length requirement. The positive/constructive feeback component should be shared via the Duke Box file associated with each presenter (see links above).
