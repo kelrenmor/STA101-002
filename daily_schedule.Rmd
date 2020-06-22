@@ -647,7 +647,7 @@ Topic: Review and project work
 
 To do: 
 
-- Review for final
+- Review for final (note as of now I am planning to have the final be available to download and turn in under 'Assignments' on Sakai instead of Tests/quizzes, but check Wednesday to make sure)
 - Work on Lab 9 (due tomorrow)
 - Work on DSA4 (due tomorrow)
 - Work on [today's step of individual project](https://kelrenmor.github.io/STA101-002/project.html#for-stage-2)
@@ -669,7 +669,7 @@ Topic: View and respond to assigned project presentations
 
 To do: 
 
-- Review for final
+- Review for final (note I am planning to have the final be available to download and turn in under 'Assignments' on Sakai instead of Tests/quizzes, but check tomorrow to make sure)
 - Wrap up and submit Lab 9
 - Do and submit project reflection
 - Wrap up and submit DSA4 Reflection
