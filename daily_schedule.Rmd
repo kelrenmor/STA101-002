@@ -669,9 +669,9 @@ Topic: View and respond to assigned project presentations
 
 To do: 
 
-- Review for final (note I am planning to have the final be available to download and turn in under 'Assignments' on Sakai instead of Tests/quizzes, but check tomorrow to make sure)
+- Review for final (note I am planning to have the final be available to download and turn in under 'Assignments' on Sakai instead of Tests/quizzes, but check tomorrow to make sure) -- Exam Topic Review and Exam Practice available on Sakai under Resources
 - Wrap up and submit Lab 9
-- Do and submit project reflection
+- Do and submit the completion-based [project reflection](https://kelrenmor.github.io/STA101-002/project_files/project_st3_statement) using the [provided Word template](https://kelrenmor.github.io/STA101-002/project_files/sta101_prj_reflection.docx) (if your folder only has 4 vids you will only need to do 3 reflections)
 - Wrap up and submit DSA4 Reflection
 - Fill out course evaluations (if you haven't already done so)
 
@@ -685,7 +685,7 @@ To do:
 
 Topic: Reading day
 
-To do: Prepare for final exam (tomorrow!)
+To do: Prepare for final exam (tomorrow!) -- Exam Topic Review and Exam Practice available on Sakai under Resources
 
 <span style="color:blue">Extra drop in time: 11 AM - 12 PM ET ([Kelly's Zoom room](https://duke.zoom.us/j/9271657735))</span>
 
