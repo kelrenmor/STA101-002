@@ -82,7 +82,7 @@ inv_logit <- function(x){ exp(x)/(1+exp(x)) }
 
 4. Using these results calculate the probability that a message is spam if it has multiple recipients, and the probability if it does not have multiple recipients. (We can define an inverse logit function in R to do this quickly.)
 
-5. [**On your own**] Pick one of the other 17 remaining explanatory variables that you think is most likely to predict an email's spam status and fit a `glm` model using it. Describe how this explanatory variable affects the probability of an email being spam generally, and calculating the probability that the message is spam for two values of your explanatory variable (e.g., in the previous problem we calculated the probability for emails that were and were not sent to multiple recipients).
+5. [**On your own**] Pick one of the other 17 remaining explanatory variables that you think is most likely to predict an email's spam status and fit a `glm` model using it. Describe how this explanatory variable affects the probability of an email being spam generally, and calculate the probability that the message is spam for two values of your explanatory variable (e.g., in the previous problem we calculated the probability for emails that were and were not sent to multiple recipients).
 
 ## A more complex spam filter
 
